@@ -1,0 +1,151 @@
+{
+  "source_pdf": "sources/Assignment_Instructions.pdf",
+  "source_sha256": "4b15fb5d7ddedaef00c3da808f1b07164ded4bb8295d2697d9b46dbdb871ab1b",
+  "extracted_on": "2026-11-12",
+  "method": "Reconstructed line breaks and leading spaces from PDF glyph positions; no strategy or parameter edits.",
+  "source_mapping": [
+    {
+      "file": "Racing/design.json",
+      "pdf_page": 14,
+      "column": "left",
+      "lines": [
+        1,
+        19
+      ]
+    },
+    {
+      "file": "Racing/agent.py",
+      "pdf_page": 14,
+      "column": "right",
+      "lines": [
+        1,
+        26
+      ]
+    },
+    {
+      "file": "Racing/agent.py",
+      "pdf_page": 15,
+      "column": "left",
+      "lines": [
+        27,
+        52
+      ]
+    },
+    {
+      "file": "Racing/agent.py",
+      "pdf_page": 15,
+      "column": "right",
+      "lines": [
+        53,
+        78
+      ]
+    },
+    {
+      "file": "Racing/agent.py",
+      "pdf_page": 16,
+      "column": "left",
+      "lines": [
+        79,
+        104
+      ]
+    },
+    {
+      "file": "Racing/agent.py",
+      "pdf_page": 16,
+      "column": "right",
+      "lines": [
+        105,
+        129
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 17,
+      "column": "left",
+      "lines": [
+        1,
+        30
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 17,
+      "column": "right",
+      "lines": [
+        31,
+        60
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 18,
+      "column": "left",
+      "lines": [
+        61,
+        90
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 18,
+      "column": "right",
+      "lines": [
+        91,
+        120
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 19,
+      "column": "left",
+      "lines": [
+        121,
+        150
+      ]
+    },
+    {
+      "file": "FPS/agent.py",
+      "pdf_page": 19,
+      "column": "right",
+      "lines": [
+        151,
+        177
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "01_Official_Starter/Racing/design.json",
+      "lines": 19,
+      "sha256": "8b6eea2a9a577dbbfbcf70de7453fb4e1d74b89b377dc97db3b9ca0389444059"
+    },
+    {
+      "path": "01_Official_Starter/Racing/agent.py",
+      "lines": 129,
+      "sha256": "e9900f55b48a8b2c941f832f8db26e75c1150b5c94efefcc31773b2291a3ffa2"
+    },
+    {
+      "path": "01_Official_Starter/FPS/agent.py",
+      "lines": 177,
+      "sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7"
+    }
+  ],
+  "archives": [
+    {
+      "path": "02_Upload/FPS_Official_Starter.zip",
+      "sha256": "8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad"
+    },
+    {
+      "path": "02_Upload/Racing_Official_Starter.zip",
+      "sha256": "4636307570d444b61748490bafd280e1ac670a352db3da51e06808c5b1034e67"
+    }
+  ],
+  "checks": {
+    "python_ast_and_compile": "passed",
+    "json_parse": "passed",
+    "zip_integrity_and_contents": "passed",
+    "platform_validation": "not performed",
+    "competition_activation": "not performed",
+    "independent_pdf_visual_review": "passed: Racing pp14-16 and FPS pp17-19; identifiers, literals, operators, block structure and line continuity matched"
+  }
+}
