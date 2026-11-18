@@ -1,0 +1,5 @@
+map,seed,seat,baseline_own,baseline_other,candidate_own,candidate_other,baseline_result,candidate_result,total_faults
+borgo-r3-v54,1811,0,13,11,13,11,win,win,0
+borgo-r3-v54,1812,5,10,13,7,13,loss,loss,0
+molo-r3-v54,1811,0,13,0,13,0,win,win,0
+molo-r3-v54,1812,5,10,13,10,13,loss,loss,0

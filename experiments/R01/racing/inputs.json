@@ -1,0 +1,36 @@
+{
+  "sha256": {
+    "racing-crossover.mapdata.json": "8262cfc9f6bf18f7584e9367894ce4bc37a7af64ef792a8eb30d45f156fe2ff5",
+    "racing-highland.mapdata.json": "c02f7b571ef8729c52d131cf64e2cfeb0cb887bae808a13f8ac42dd3e14783eb",
+    "racing-parkland.mapdata.json": "11ac15e0272d532aaafdeabe5024a2becc3f9fa0db6bfda231ebb34ae468110e",
+    "baseline.agent.py": "e9900f55b48a8b2c941f832f8db26e75c1150b5c94efefcc31773b2291a3ffa2",
+    "candidate.agent.py": "da25179ecc8b98ec8270fbae1f2cfa279d8be64d62b5af717995f8fdbd621c8b"
+  },
+  "scenarios": [
+    [
+      "dry",
+      0.0,
+      0.05,
+      5.5,
+      10.0,
+      0.1
+    ],
+    [
+      "damp",
+      0.3,
+      0.2,
+      4.7,
+      8.0,
+      0.2
+    ],
+    [
+      "wet",
+      0.7,
+      0.3,
+      3.8,
+      6.8,
+      0.3
+    ]
+  ],
+  "dt": 0.1
+}

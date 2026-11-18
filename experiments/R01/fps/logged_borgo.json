@@ -1,0 +1,27 @@
+{
+  "scope": "offline replay of the original policy on the recorded seat observations",
+  "export_complete_and_decision_byte_hash_verified": true,
+  "seat_zero_based": 8,
+  "decision_rows": 44158,
+  "baseline_actions_match_within_1e-8": 44158,
+  "map_id": "borgo-r3-v54",
+  "public_nav_nodes": 33,
+  "public_nav_edges": 38,
+  "paired_baseline_route_requests": 27,
+  "reachable_requests": 27,
+  "distinct_snapped_endpoint_pairs": 6,
+  "shorter": 7,
+  "equal": 20,
+  "longer": 0,
+  "baseline_requested_path_total_m": 3005.845,
+  "candidate_requested_path_total_m": 2826.411,
+  "stall_definition": "alive/live, continuous applied movement magnitude >= 0.1, consecutive 3-tick samples all within 0.15 m XY of anchor for at least 60 ticks",
+  "observed_stall_intervals_at_least_1s": 96,
+  "longest_observed_interval": {
+    "round_index": 17,
+    "first_tick": 100872,
+    "last_tick": 102498,
+    "max_offset_m": 0.12974480748878997
+  },
+  "tick_hz": 60
+}

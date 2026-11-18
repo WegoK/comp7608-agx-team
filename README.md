@@ -1,8 +1,8 @@
 # COMP7608 · AGX 四人协作比赛
 
-两项比赛：多人赛车 Racing、多人枪战 FPS。四人每四天完成一轮可验证的策略实验，代码、结果和报告同步更新。仓库为私有，供课程小组协作。
+两项比赛：多人赛车 Racing、多人枪战 FPS。四人每四天完成一轮可验证的策略实验，代码、结果和报告同步更新。仓库已公开，供课程小组协作。
 
-当前代码均来自老师 starter；尚未在本仓库实施策略优化。课程登记、计分账号确认、两项 v1 激活已完成（用户确认）；历史平台截图和状态见 [参赛记录](Submission_Record.md)，当前名次与比赛结果待补录。
+首轮候选已完成本地对照。参见 [初版报告](report/REPORT.md)、[模拟复现](simulation/README.md) 和 [平台记录](Submission_Record.md)。
 
 ## 从这里开始
 
@@ -18,7 +18,7 @@
 |---|---|
 | `01_Official_Starter/` | 原始基线，禁止修改；来源与校验值见 Source_Manifest.json |
 | `02_Upload/` | 已有官方原版 ZIP，原样保留 |
-| `strategies/racing/`、`strategies/fps/` | 后续开发代码；目前与官方版本完全一致 |
+| `strategies/racing/`、`strategies/fps/` | 首轮开发代码 |
 | `experiments/` | 每人每轮实验记录，包括失败和回退 |
 | `report/` | 持续报告、结果表和贡献记录 |
 | `releases/` | Git 提交与平台版本对应记录 |

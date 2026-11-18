@@ -1,6 +1,6 @@
 """Rule-based player: public map, combat and bomb objectives."""
 import math
-from collections import deque
+import heapq
 
 
 def clip(value):
@@ -40,13 +40,28 @@ class Player:
                     key=lambda k: distance(start, self.nodes[k]))
         last = min(self.nodes,
                    key=lambda k: distance(goal, self.nodes[k]))
-        queue, parent = deque([first]), {first: None}
-        while queue and last not in parent:
-            here = queue.popleft()
+        # A* minimises the length of the route along the public graph.
+        # Straight-line distance is a lower bound on any remaining route.
+        target = self.nodes[last]
+        best = {first: 0.0}
+        parent = {first: None}
+        # The counter preserves insertion order for ties, independent of ID type.
+        sequence = 0
+        queue = [(math.dist(self.nodes[first], target), 0.0, sequence, first)]
+        while queue:
+            _, travelled, _, here = heapq.heappop(queue)
+            if travelled != best[here]:
+                continue
+            if here == last:
+                break
             for there in self.edges[here]:
-                if there not in parent:
+                new_cost = travelled + math.dist(self.nodes[here], self.nodes[there])
+                if new_cost < best.get(there, math.inf):
+                    best[there] = new_cost
                     parent[there] = here
-                    queue.append(there)
+                    estimate = new_cost + math.dist(self.nodes[there], target)
+                    sequence += 1
+                    heapq.heappush(queue, (estimate, new_cost, sequence, there))
         if last not in parent:
             return [goal]
         path, cursor = [goal], last

@@ -1,0 +1,103 @@
+{
+  "file_sha256": "714e2fbdf330b21d9e6b44014652d4501d7468870ca0ae5fbfb9d6337e64aff8",
+  "seat": 5,
+  "rows": {
+    "qualifying": 3256,
+    "race": 13435
+  },
+  "faults": 0,
+  "stats": {
+    "qualifying": {
+      "starter": {
+        "calls": 3256,
+        "ers_diff": 2405,
+        "steer_diff_gt_1e-5": 3253
+      },
+      "candidate": {
+        "calls": 3256,
+        "ers_diff": 2405,
+        "steer_diff_gt_1e-5": 3253
+      },
+      "recorded_ers_modes": {
+        "3": 1208,
+        "0": 1197,
+        "1": 851
+      }
+    },
+    "race": {
+      "starter": {
+        "calls": 13435,
+        "ers_diff": 6345,
+        "steer_diff_gt_1e-5": 13434
+      },
+      "candidate": {
+        "calls": 13435,
+        "ers_diff": 6358,
+        "steer_diff_gt_1e-5": 13434
+      },
+      "recorded_ers_modes": {
+        "3": 1516,
+        "0": 3077,
+        "1": 7411,
+        "2": 1431
+      }
+    }
+  },
+  "first_last": {
+    "qualifying": {
+      "first": {
+        "time": 685.8667,
+        "n": 0.0,
+        "heading_error": 0.0,
+        "speed_mps": 22.0,
+        "wetness": 0.0,
+        "remaining_preview_half_width_m": 6.0,
+        "recorded_steer": 0.06147448531145897,
+        "starter_steer": -0.138255,
+        "candidate_steer": -0.138255
+      },
+      "last": {
+        "time": 794.3667,
+        "n": 6.393,
+        "heading_error": -0.01866,
+        "speed_mps": 63.5743,
+        "wetness": 0.0,
+        "remaining_preview_half_width_m": 1.6070000000000002,
+        "recorded_steer": -0.011071759505451527,
+        "starter_steer": -0.819194,
+        "candidate_steer": -0.819194
+      }
+    },
+    "race": {
+      "first": {
+        "time": 1407.4333,
+        "n": 3.5,
+        "heading_error": 0.0,
+        "speed_mps": 0.0,
+        "wetness": 0.0,
+        "remaining_preview_half_width_m": 4.5,
+        "recorded_steer": -0.2932497072746932,
+        "starter_steer": -0.15,
+        "candidate_steer": -0.15
+      },
+      "last": {
+        "time": 1855.2333,
+        "n": 6.405,
+        "heading_error": -0.02019,
+        "speed_mps": 72.8794,
+        "wetness": 0.0,
+        "remaining_preview_half_width_m": 1.5949999999999998,
+        "recorded_steer": -0.012150571172615176,
+        "starter_steer": -0.817428,
+        "candidate_steer": -0.817428
+      }
+    }
+  },
+  "classification": {
+    "position": 2,
+    "status": "finished",
+    "laps": 4,
+    "total_time_s": 447.823,
+    "qualifying_position": 2
+  }
+}

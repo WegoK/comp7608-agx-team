@@ -1,0 +1,74 @@
+{
+  "kind": "approximate_grid_route_microbenchmark",
+  "seed": 1811,
+  "baseline_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "candidate_sha256": "85af41887ea9e19bdb6c01a66de1345cb155809032aa5e997e8c14a86ce320e3",
+  "pairs": 120,
+  "baseline_total_m": 9414.679826525462,
+  "candidate_total_m": 8665.051852494651,
+  "pct_shorter": 7.962331038797154,
+  "baseline_median_ms": 11.384354,
+  "candidate_median_ms": 11.501750000000001,
+  "by_map": [
+    {
+      "map": "borgo-r3-v54",
+      "map_sha256": "8ec6c47cebe58cf8553db11bc12d6049983f4dd0e356da13d3cb1b8a4e1499ca",
+      "pairs": 24,
+      "nodes": 9146,
+      "edges": 34381,
+      "baseline_total_m": 2173.150555720985,
+      "candidate_total_m": 2003.3378827344266,
+      "pct_shorter": 7.814123717269078,
+      "shorter": 23,
+      "longer": 0
+    },
+    {
+      "map": "dust2-cs2-v54",
+      "map_sha256": "f5f95917b598c1abc3f2a1bf061a6b0a1f968b0ee22472c3c947c1f80258b4d1",
+      "pairs": 24,
+      "nodes": 6663,
+      "edges": 23526,
+      "baseline_total_m": 2431.940931647818,
+      "candidate_total_m": 2220.7378443025545,
+      "pct_shorter": 8.684548403162,
+      "shorter": 24,
+      "longer": 0
+    },
+    {
+      "map": "mirage-cs2-v54",
+      "map_sha256": "8413d9cbf046b71e63ac39aabfcfc8b5696af1e9eb9502d6b4f7e8bfd419db3c",
+      "pairs": 24,
+      "nodes": 5315,
+      "edges": 17952,
+      "baseline_total_m": 881.6749768775351,
+      "candidate_total_m": 824.638983241707,
+      "pct_shorter": 6.4690498348747365,
+      "shorter": 18,
+      "longer": 0
+    },
+    {
+      "map": "molo-r3-v54",
+      "map_sha256": "33c45a56aaf95ecfd3cee4cbdbbbca68f68da3d88237ddee3691fc9089ca7bd8",
+      "pairs": 24,
+      "nodes": 9851,
+      "edges": 37453,
+      "baseline_total_m": 1584.273845251384,
+      "candidate_total_m": 1460.3659894920497,
+      "pct_shorter": 7.821113510819418,
+      "shorter": 20,
+      "longer": 0
+    },
+    {
+      "map": "nevaio-r3-v54",
+      "map_sha256": "ad8ed396d20c87394ad61a66321d1b7b8e5fa938f85ff24f014173065bcc26ad",
+      "pairs": 24,
+      "nodes": 10595,
+      "edges": 40001,
+      "baseline_total_m": 2343.6395170277397,
+      "candidate_total_m": 2155.9711527239124,
+      "pct_shorter": 8.00756101526368,
+      "shorter": 19,
+      "longer": 0
+    }
+  ]
+}

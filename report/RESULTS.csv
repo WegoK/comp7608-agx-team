@@ -1,1 +1,14 @@
 experiment_id,game,git_sha,platform_version,match_id,time_beijing,map,opponent_or_lobby,result,metric_name,metric_value,evidence,notes
+R01,FPS,,,,,borgo-r3-v54,local cpu seed 1811 / seat 0,win,round_score,13:11,../experiments/R01/fps/native_results/paired_scores.csv,baseline
+R01,FPS,,,,,borgo-r3-v54,local cpu seed 1811 / seat 0,win,round_score,13:11,../experiments/R01/fps/native_results/paired_scores.csv,candidate
+R01,FPS,,,,,borgo-r3-v54,local cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/native_results/paired_scores.csv,baseline
+R01,FPS,,,,,borgo-r3-v54,local cpu seed 1812 / seat 5,loss,round_score,7:13,../experiments/R01/fps/native_results/paired_scores.csv,candidate
+R01,FPS,,,,,molo-r3-v54,local cpu seed 1811 / seat 0,win,round_score,13:0,../experiments/R01/fps/native_results/paired_scores.csv,baseline
+R01,FPS,,,,,molo-r3-v54,local cpu seed 1811 / seat 0,win,round_score,13:0,../experiments/R01/fps/native_results/paired_scores.csv,candidate
+R01,FPS,,,,,molo-r3-v54,local cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/native_results/paired_scores.csv,baseline
+R01,FPS,,,,,molo-r3-v54,local cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/native_results/paired_scores.csv,candidate
+R01,FPS,,,,,nevaio-r3-v54,local cpu seed 1813 / seat 0,win,round_score,13:8,../experiments/R01/fps/nevaio/native_results/paired_scores.csv,baseline
+R01,FPS,,,,,nevaio-r3-v54,local cpu seed 1813 / seat 0,win,round_score,13:8,../experiments/R01/fps/nevaio/native_results/paired_scores.csv,candidate
+R01,Racing,,v1,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,measured,final_lateral_offset_m,-6.661,../experiments/R01/racing/live/launch.json,recorded
+R01,Racing,,v1,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,simulated,final_lateral_offset_m,-6.574,../experiments/R01/racing/live/launch.json,baseline
+R01,Racing,,,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,simulated,final_lateral_offset_m,-3.500,../experiments/R01/racing/live/launch.json,candidate

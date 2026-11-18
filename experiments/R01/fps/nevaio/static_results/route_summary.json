@@ -1,0 +1,26 @@
+{
+  "kind": "public_replay_nav_graph",
+  "seed": 1811,
+  "baseline_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "candidate_sha256": "85af41887ea9e19bdb6c01a66de1345cb155809032aa5e997e8c14a86ce320e3",
+  "pairs": 24,
+  "baseline_total_m": 2565.5021185775804,
+  "candidate_total_m": 2493.924101779456,
+  "pct_shorter": 2.790019789101171,
+  "baseline_median_ms": 0.0493125,
+  "candidate_median_ms": 0.053979,
+  "by_map": [
+    {
+      "map": "nevaio-r3-v54",
+      "map_sha256": "a9aa6cf15dab53182f274c998265f13274958c5efbf404b3dd5dbdcfb9f30386",
+      "pairs": 24,
+      "nodes": 38,
+      "edges": 44,
+      "baseline_total_m": 2565.5021185775804,
+      "candidate_total_m": 2493.924101779456,
+      "pct_shorter": 2.790019789101171,
+      "shorter": 2,
+      "longer": 0
+    }
+  ]
+}

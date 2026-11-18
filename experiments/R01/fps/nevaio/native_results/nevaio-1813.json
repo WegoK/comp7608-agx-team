@@ -1,0 +1,54 @@
+{
+  "map": "nevaio-r3-v54",
+  "seed": 1813,
+  "tested_seat": 0,
+  "results": [
+    {
+      "candidate_present": false,
+      "done": true,
+      "steps": 44804,
+      "score": [
+        13,
+        8
+      ],
+      "faults": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_s": 175.42
+    },
+    {
+      "candidate_present": true,
+      "done": true,
+      "steps": 44804,
+      "score": [
+        13,
+        8
+      ],
+      "faults": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_s": 174.97
+    }
+  ],
+  "static_sha256": "a9aa6cf15dab53182f274c998265f13274958c5efbf404b3dd5dbdcfb9f30386",
+  "baseline_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "candidate_sha256": "85af41887ea9e19bdb6c01a66de1345cb155809032aa5e997e8c14a86ce320e3"
+}

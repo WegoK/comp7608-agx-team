@@ -1,0 +1,54 @@
+{
+  "fit_gain": 0.08962746723932513,
+  "fit_pairs": 81,
+  "race_rows": 165,
+  "seconds": 5.466699999999946,
+  "recorded_final_n_m": -6.661,
+  "variants": [
+    {
+      "gain_scale": 0.75,
+      "baseline": {
+        "final_n_m": -6.08,
+        "max_abs_n_m": 6.08,
+        "max_departure_from_start_m": 2.58,
+        "second_half_vs_recorded_rmse_m": 0.317
+      },
+      "candidate": {
+        "final_n_m": -3.5,
+        "max_abs_n_m": 3.5,
+        "max_departure_from_start_m": 0.0,
+        "second_half_vs_recorded_rmse_m": 1.635
+      }
+    },
+    {
+      "gain_scale": 1.0,
+      "baseline": {
+        "final_n_m": -6.574,
+        "max_abs_n_m": 6.574,
+        "max_departure_from_start_m": 3.074,
+        "second_half_vs_recorded_rmse_m": 0.065
+      },
+      "candidate": {
+        "final_n_m": -3.5,
+        "max_abs_n_m": 3.5,
+        "max_departure_from_start_m": 0.0,
+        "second_half_vs_recorded_rmse_m": 1.635
+      }
+    },
+    {
+      "gain_scale": 1.25,
+      "baseline": {
+        "final_n_m": -6.973,
+        "max_abs_n_m": 6.973,
+        "max_departure_from_start_m": 3.473,
+        "second_half_vs_recorded_rmse_m": 0.146
+      },
+      "candidate": {
+        "final_n_m": -3.5,
+        "max_abs_n_m": 3.5,
+        "max_departure_from_start_m": 0.0,
+        "second_half_vs_recorded_rmse_m": 1.635
+      }
+    }
+  ]
+}
