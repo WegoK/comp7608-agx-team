@@ -15,3 +15,5 @@ AGX_Local_Lab/.venv/bin/python AGX_Competition/simulation/reproduce.py logs
 Borgo、Molo、Nevaio 的 CPU 整局使用真实回放场景。Dust2 与 Mirage 的导航数据足以测算路线，原生整局还需相应的碰撞网格和材质文件。五张官方 mapdata 均可作格点近似测试。
 
 线上赛车原版四个文件在 AGX_Local_Lab/racing_v1。当前候选在 strategies/racing，以 weights/ 存放两份原数值权重。quick 的单圈实验只比较老师示例与前视控制，logs 同时复现真实参赛版的逐帧对照与起步横向模型。
+
+首轮的短路线版本保存在 simulation/fps/variants/r01_shortest_path.py，quick 和 logs 的路径对照始终读取这份快照。matches 使用当前策略，logs 还会复现 Borgo 的终点片段及不同宽度的横障。整局复测及版本选择见 [FPS 复测](../experiments/R01/fps/recovery/README.md)。

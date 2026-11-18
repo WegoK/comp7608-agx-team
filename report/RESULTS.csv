@@ -12,3 +12,23 @@ R01,FPS,,,,,nevaio-r3-v54,local cpu seed 1813 / seat 0,win,round_score,13:8,../e
 R01,Racing,,v1,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,measured,final_lateral_offset_m,-6.661,../experiments/R01/racing/live/launch.json,recorded
 R01,Racing,,v1,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,simulated,final_lateral_offset_m,-6.574,../experiments/R01/racing/live/launch.json,baseline
 R01,Racing,,,7f617533-fe63-4b70-a2b4-c2f8c9c42ae5,2026-11-18 12:05,Crossover,fixed-progress wet launch,simulated,final_lateral_offset_m,-3.500,../experiments/R01/racing/live/launch.json,candidate
+R01-review,FPS,,,,,borgo,cpu seed 1811 / seat 0,win,round_score,13:11,../experiments/R01/fps/recovery/fixtures.csv,baseline
+R01-review,FPS,,,,,borgo,cpu seed 1811 / seat 0,win,round_score,13:11,../experiments/R01/fps/recovery/fixtures.csv,prior_local
+R01-review,FPS,,,,,borgo,cpu seed 1811 / seat 0,win,round_score,13:10,../experiments/R01/fps/recovery/fixtures.csv,stop_only
+R01-review,FPS,,,,,borgo,cpu seed 1811 / seat 0,loss,round_score,7:13,../experiments/R01/fps/recovery/fixtures.csv,candidate
+R01-review,FPS,,,,,borgo,cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/recovery/fixtures.csv,baseline
+R01-review,FPS,,,,,borgo,cpu seed 1812 / seat 5,loss,round_score,7:13,../experiments/R01/fps/recovery/fixtures.csv,prior_local
+R01-review,FPS,,,,,borgo,cpu seed 1812 / seat 5,loss,round_score,7:13,../experiments/R01/fps/recovery/fixtures.csv,stop_only
+R01-review,FPS,,,,,borgo,cpu seed 1812 / seat 5,win,round_score,13:10,../experiments/R01/fps/recovery/fixtures.csv,candidate
+R01-review,FPS,,,,,molo,cpu seed 1811 / seat 0,win,round_score,13:0,../experiments/R01/fps/recovery/fixtures.csv,baseline
+R01-review,FPS,,,,,molo,cpu seed 1811 / seat 0,win,round_score,13:0,../experiments/R01/fps/recovery/fixtures.csv,prior_local
+R01-review,FPS,,,,,molo,cpu seed 1811 / seat 0,draw,round_score,12:12,../experiments/R01/fps/recovery/fixtures.csv,stop_only
+R01-review,FPS,,,,,molo,cpu seed 1811 / seat 0,draw,round_score,12:12,../experiments/R01/fps/recovery/fixtures.csv,candidate
+R01-review,FPS,,,,,molo,cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/recovery/fixtures.csv,baseline
+R01-review,FPS,,,,,molo,cpu seed 1812 / seat 5,loss,round_score,10:13,../experiments/R01/fps/recovery/fixtures.csv,prior_local
+R01-review,FPS,,,,,molo,cpu seed 1812 / seat 5,draw,round_score,12:12,../experiments/R01/fps/recovery/fixtures.csv,stop_only
+R01-review,FPS,,,,,molo,cpu seed 1812 / seat 5,loss,round_score,9:13,../experiments/R01/fps/recovery/fixtures.csv,candidate
+R01-review,FPS,,,,,nevaio,cpu seed 1813 / seat 0,win,round_score,13:8,../experiments/R01/fps/recovery/fixtures.csv,baseline
+R01-review,FPS,,,,,nevaio,cpu seed 1813 / seat 0,win,round_score,13:8,../experiments/R01/fps/recovery/fixtures.csv,prior_local
+R01-review,FPS,,,,,nevaio,cpu seed 1813 / seat 0,loss,round_score,6:13,../experiments/R01/fps/recovery/fixtures.csv,stop_only
+R01-review,FPS,,,,,nevaio,cpu seed 1813 / seat 0,win,round_score,13:9,../experiments/R01/fps/recovery/fixtures.csv,candidate

@@ -37,3 +37,5 @@ python3 scripts/package.py fps
 生成文件在 `dist/`，不提交到 Git；工具同时生成包含 Git 提交号和文件校验值的清单。打包前先提交代码，保持工作区干净。基础检查覆盖语法、JSON、官方基线完整性；平台运行与策略效果需实战验证。
 
 课程比赛结束时间按现有说明为 **2026-12-15 23:59:59，北京时间**。报告提交渠道、格式与截止时间仍需核对最新课程通知。来源：[Assignment Instructions](sources/Assignment_Instructions.pdf)。不要上传密码、API 密钥或完整私人聊天。
+
+首轮可提交包见 [releases/R01](releases/R01/README.md)，分支上的包供组内复核与上传。

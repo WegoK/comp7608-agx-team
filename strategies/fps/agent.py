@@ -1,6 +1,6 @@
 """Rule-based player: public map, combat and bomb objectives."""
 import math
-import heapq
+from collections import deque
 
 
 def clip(value):
@@ -20,9 +20,10 @@ class Player:
         self.nodes, self.edges, self.sites = {}, {}, []
         self.path, self.goal = [], None
         self.round = None
-        self.last_position, self.stuck = None, 0
+        self.reset_movement()
 
     def load_map(self, row):
+        self.boxes = row.get("boxes", ())
         self.sites = row["sites"]
         self.nodes = {n["id"]: n["position"]
                       for n in row["nav"]["nodes"]}
@@ -40,28 +41,13 @@ class Player:
                     key=lambda k: distance(start, self.nodes[k]))
         last = min(self.nodes,
                    key=lambda k: distance(goal, self.nodes[k]))
-        # A* minimises the length of the route along the public graph.
-        # Straight-line distance is a lower bound on any remaining route.
-        target = self.nodes[last]
-        best = {first: 0.0}
-        parent = {first: None}
-        # The counter preserves insertion order for ties, independent of ID type.
-        sequence = 0
-        queue = [(math.dist(self.nodes[first], target), 0.0, sequence, first)]
-        while queue:
-            _, travelled, _, here = heapq.heappop(queue)
-            if travelled != best[here]:
-                continue
-            if here == last:
-                break
+        queue, parent = deque([first]), {first: None}
+        while queue and last not in parent:
+            here = queue.popleft()
             for there in self.edges[here]:
-                new_cost = travelled + math.dist(self.nodes[here], self.nodes[there])
-                if new_cost < best.get(there, math.inf):
-                    best[there] = new_cost
+                if there not in parent:
                     parent[there] = here
-                    estimate = new_cost + math.dist(self.nodes[there], target)
-                    sequence += 1
-                    heapq.heappush(queue, (estimate, new_cost, sequence, there))
+                    queue.append(there)
         if last not in parent:
             return [goal]
         path, cursor = [goal], last
@@ -110,33 +96,98 @@ class Player:
                       and abs(pitch) < 0.04)
         return action
 
+    def reset_movement(self):
+        self.progress_anchor = None
+        self.waypoint = None
+        self.recovery_start = None
+        self.recovery_count = 0
+        self.last_move_tick = None
+
+    def clear_space(self, pos, direction, reach=1.2):
+        """Approximate available distance using the map's public solid boxes."""
+        limit = reach
+        for box in getattr(self, "boxes", ()):
+            if box["z"] + box["h"] <= pos[2] + 0.45 or box["z"] > pos[2] + 1.7:
+                continue
+            # Intersect the short movement segment with an expanded rectangle.
+            near, far = 0.0, reach
+            for center, width, p, d in zip(
+                    (box["x"], box["y"]), (box["w"], box["d"]), pos, direction):
+                low, high = center - width / 2 - 0.28, center + width / 2 + 0.28
+                if abs(d) < 1e-8:
+                    if not low <= p <= high:
+                        break
+                else:
+                    left, right = (low-p)/d, (high-p)/d
+                    near, far = max(near, min(left, right)), min(far, max(left, right))
+                if far < near:
+                    break
+            else:
+                limit = min(limit, near)
+        return limit
+
     def move(self, o, goal, action):
-        m = o["me"]
-        pos = [m["x"], m["y"], m["z"]]
+        me = o["me"]
+        pos = [me["x"], me["y"], me["z"]]
+        tick = o["match_tick"]
+        # The final node has no successor. Stop here until the goal moves.
+        if distance(pos, goal) <= 0.5:
+            self.reset_movement()
+            self.path, self.goal = [], None
+            return action
         if self.goal != goal or not self.path:
             self.path, self.goal = self.route(pos, goal), list(goal)
-        while (len(self.path) > 1
-               and distance(pos, self.path[0]) < 1.0):
+        while len(self.path) > 1 and distance(pos, self.path[0]) < 1.0:
             self.path.pop(0)
         point = self.path[0]
+        if (self.waypoint != point or self.last_move_tick is None
+                or tick != self.last_move_tick + 3):
+            self.reset_movement()
+            self.waypoint = point
+            self.progress_anchor, self.anchor_tick = pos, tick
+        self.last_move_tick = tick
         dx, dy = point[0]-pos[0], point[1]-pos[1]
-        yaw = angle(math.atan2(-dy, dx) -m["yaw"])
-        moved = (self.last_position is None
-                 or distance(pos, self.last_position) > 0.01)
-        self.stuck = 0 if moved else self.stuck + 1
-        self.last_position = pos
-        action.update(move_forward=0.75 * math.cos(yaw),
-                      move_right=-0.75 * math.sin(yaw),
-                      yaw_rate=clip(yaw / 0.15),
-                      pitch_rate=clip(-m["pitch"] / 0.1), walk=True)
-        if self.stuck > 20:
-            # A public graph edge may be blocked; try to recover.
-            side = 0.7 if (o["match_tick"] // 30) % 2 else -0.7
-            jump = bool(m["grounded"] and self.stuck % 12 == 0)
-            action.update(move_forward=-0.2,
-                          move_right=side, jump=jump)
-            if self.stuck > 80:
-                self.path, self.stuck = [], 0
+        norm = math.hypot(dx, dy)
+        fx, fy = (dx/norm, dy/norm) if norm > 1e-6 else (math.cos(me["yaw"]), -math.sin(me["yaw"]))
+        heading = angle(math.atan2(-fy, fx) - me["yaw"])
+        action.update(yaw_rate=clip(heading / 0.15),
+                      pitch_rate=clip(-me["pitch"] / 0.1), walk=True)
+
+        if self.recovery_start is None:
+            if distance(pos, self.progress_anchor) >= 0.25:
+                self.progress_anchor, self.anchor_tick = pos, tick
+            elif tick - self.anchor_tick >= 45:
+                wall = self.clear_space(pos, (fx, fy)) < 1.0
+                # Teammate observations give a zone, not a body position.
+                # In open space wait briefly for possible traffic to clear.
+                waiting = not wall and any(t["alive"] for t in o["teammates"])
+                if waiting and tick - self.anchor_tick < 69:
+                    return action
+                self.recovery_start = tick
+                self.recovery_forward = fx, fy
+                right = (-fy, fx)
+                left_space = self.clear_space(pos, (-right[0], -right[1]))
+                right_space = self.clear_space(pos, right)
+                choose_right = right_space > left_space if abs(left_space-right_space) > 0.1 else self.recovery_count % 2 == 0
+                self.recovery_side = 1 if choose_right else -1
+                self.recovery_count += 1
+
+        if self.recovery_start is not None:
+            elapsed = tick - self.recovery_start
+            fx, fy = self.recovery_forward
+            if elapsed < 21:
+                fx, fy = -fx, -fy
+            elif elapsed < 63:
+                fx, fy = -fy*self.recovery_side, fx*self.recovery_side
+            else:
+                self.recovery_start = None
+                self.progress_anchor, self.anchor_tick = pos, tick
+                if self.recovery_count % 2 == 0:
+                    self.path = []
+        # Express a fixed world direction in the agent's local coordinates.
+        yaw = me["yaw"]
+        action["move_forward"] = 0.75 * (fx*math.cos(yaw) - fy*math.sin(yaw))
+        action["move_right"] = 0.75 * (fx*math.sin(yaw) + fy*math.cos(yaw))
         return action
 
     def act(self, o):
@@ -145,7 +196,7 @@ class Player:
         if self.round != o["round_index"]:
             self.round = o["round_index"]
             self.path, self.goal = [], None
-            self.last_position, self.stuck = None, 0
+            self.reset_movement()
         m = o["me"]
         if not m["alive"] or o["phase"] not in ("buy", "live"):
             return {}
