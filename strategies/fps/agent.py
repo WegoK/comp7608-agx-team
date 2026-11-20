@@ -1,4 +1,4 @@
-"""R08 game navigation. Positions and distances use the public map frame."""
+"""R08 navigation with objective-aware recovery of a legally located bomb."""
 import math
 from collections import deque
 
@@ -14,6 +14,20 @@ VIEWS = {
     "A": ((140.0, 139.0, 21.6), (153.0, 108.0, 24.0)),
     "B": ((153.0, 58.0, 21.62),),
 }
+
+
+def dropped_bomb_goal(observation):
+    """Recover a known dropped bomb; hidden/invalid locations have no target."""
+    if observation["side"] != "attack" or observation["me"]["carrying_bomb"]:
+        return None
+    bomb = observation["bomb"]
+    if bomb["state"] != "world":
+        return None
+    position = bomb.get("position")
+    if (not isinstance(position, (list, tuple)) or len(position) != 3
+            or any(type(v) not in (int, float) or not math.isfinite(v) for v in position)):
+        return None
+    return list(position)
 
 
 def hold_view(me, views, crouch, action):
@@ -76,6 +90,11 @@ class Candidate(NavigationMixin, Player):
         return action
 
     def move(self, observation, goal, action):
+        recovery_goal = dropped_bomb_goal(observation)
+        if recovery_goal is not None:
+            # The arena picks up a nearby visible bomb automatically. Keep
+            # combat/plant/defuse precedence in Player.act; only redirect travel.
+            goal = recovery_goal
         if observation["side"] == "defend" and self.map_id not in NAVIGATION_MAPS:
             return Player.move(self, observation, goal, action)
         if (observation["side"] == "defend" and self.map_id == DUST2

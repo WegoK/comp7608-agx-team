@@ -32,12 +32,19 @@ def reference_file(ref, name):
     return subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{ref}:{name}'])
 
 
-def load_agent(name, navigation):
+def load_agent(name, navigation, policy_ref=None):
     saved = {key: sys.modules.get(key) for key in ('waypoint_nav', 'starter_player')}
     try:
         sys.modules['waypoint_nav'] = navigation
-        sys.modules['starter_player'] = load_module(name + '_starter', ROOT / 'strategies/fps/starter_player.py')
-        return load_module(name, ROOT / 'strategies/fps/agent.py')
+        if policy_ref is None:
+            sys.modules['starter_player'] = load_module(name + '_starter', ROOT / 'strategies/fps/starter_player.py')
+            return load_module(name, ROOT / 'strategies/fps/agent.py')
+        starter = types.ModuleType(name + '_starter')
+        exec(compile(reference_file(policy_ref, 'strategies/fps/starter_player.py'), '<frozen-starter>', 'exec'), starter.__dict__)
+        sys.modules['starter_player'] = starter
+        agent = types.ModuleType(name)
+        exec(compile(reference_file(policy_ref, 'strategies/fps/agent.py'), '<frozen-control-policy>', 'exec'), agent.__dict__)
+        return agent
     finally:
         for key, value in saved.items():
             if value is None:
@@ -229,14 +236,15 @@ def main():
     exec(compile(reference_source, '<git-baseline-waypoint_nav>', 'exec'), reference.__dict__)
     candidate_path = ROOT / 'strategies/fps/waypoint_nav.py'
     candidate = load_module('fps_candidate_navigation', candidate_path)
-    # The control policy and starter must still be the same R08 files.
-    for name in ('agent.py', 'starter_player.py'):
-        assert (ROOT / 'strategies/fps' / name).read_bytes().replace(b'\r\n', b'\n') == reference_file(args.baseline_ref, 'strategies/fps/' + name)
+    # Freeze the R08 controller on both sides to isolate the navigation helper.
+    # Later objective changes have a separate evaluator and experiment record.
     result = dict(schema='fps-r08-anchor-scan-checks-v1', baseline_commit=args.baseline_ref,
                   candidate_navigation_lf_sha256=hashlib.sha256(candidate_path.read_bytes().replace(b'\r\n', b'\n')).hexdigest(),
                   evidence_kind='Synthetic regression checks and public geometry audit; no match simulation.',
                   regression=regression_checks(reference, candidate),
-                  actions=action_checks(load_agent('fps_reference_agent', reference), load_agent('fps_candidate_agent', candidate)),
+                  actions=action_checks(load_agent('fps_reference_agent', reference, args.baseline_ref),
+                                        load_agent('fps_candidate_agent', candidate, args.baseline_ref)),
+                  control_policy_scope='Frozen R08 controller on both sides; does not assess later objective changes.',
                   kit=audit_and_benchmark(args.kit_root.resolve(), reference, candidate),
                   platform_validation='not_run', competition_activation='not_run', formal_matches=0)
     if args.output:

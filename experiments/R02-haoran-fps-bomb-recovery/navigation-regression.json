@@ -1,0 +1,24 @@
+{
+  "scope": "Existing anchor optimisation with a frozen R08 controller; does not assess bomb recovery.",
+  "regression": {
+    "boundary_cases": [
+      "stable_equal_distance_tie",
+      "radius_inclusive",
+      "radius_exclusive",
+      "height_inclusive",
+      "height_exclusive",
+      "blocked_nearest",
+      "expired_blacklist",
+      "active_blacklist",
+      "empty_graph"
+    ],
+    "randomized_graph_cases": 500,
+    "seed": 7608,
+    "exact_route_and_cache_equivalence": true
+  },
+  "actions": {
+    "synthetic_callbacks": 2400,
+    "exact_action_equivalence": true,
+    "scope": "Small synthetic maps, stationary recovery, combat/defuse interruptions and round changes."
+  }
+}
