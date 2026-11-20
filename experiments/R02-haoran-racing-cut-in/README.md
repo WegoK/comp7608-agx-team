@@ -53,10 +53,14 @@ python3 scripts/evaluate_racing_strategy.py --output experiments/R02-haoran-raci
 
 按项目使用 `python3 scripts/check.py` 和 `python3 scripts/package.py racing`；Windows 使用保留原始 LF 的干净临时工作区和 Python UTF-8 模式，保持官方字节校验，不修改官方文件或检查脚本来绕过校验。
 
+上述命令已在代码提交 `41367f1bf548f71e6826a0f31b6b59e80c584483` 的干净 LF 工作区通过；当前会话的 `python3` 调用附带 Python 的 `-X utf8` 模式。输出 `dist/racing-41367f1bf548.zip`，SHA256 为 `4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621`。
+
+ZIP 仅含 `agent.py`、`preview_driver.py`、`design.json`、`weights/plan.npz`、`weights/mechanics.npz`，与该提交逐字节一致，归档完整性及必要大小检查通过。将五个文件实际物化后重新初始化、加载权重，三赛道两阶段入口和两帧切入决策检查均通过；这不是 AGX admission 或完整对局验证。详见 [包清单](package-manifest.json)。
+
 | 阶段 | 状态 |
 |---|---|
 | 实现、离线决策检查 | 已完成 |
-| 项目基础检查、打包、包内调用 | 执行后补录 |
+| 项目基础检查、打包、包内调用 | 已通过，真实加载两份权重、三赛道两阶段合成入口及切入决策通过 |
 | 人工交叉审阅 | 待完成 |
 | AGX validation / 激活 | 本轮未执行 |
 | 用户计分账号排队/赛果 | 截图为 0/10；详细状态未核实 |

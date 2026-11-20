@@ -1,0 +1,76 @@
+{
+  "game": "racing",
+  "git_sha": "41367f1bf548f71e6826a0f31b6b59e80c584483",
+  "zip_sha256": "4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621",
+  "files": {
+    "agent.py": "029d8597aa88995d5ba3b7054a19905542c3c0afa643fda41867176c9a3fcdb4",
+    "design.json": "e18e31487c5322c206dab4ef431556bde0bfc5ccb8d3514a83972ccfcb6faf0e",
+    "preview_driver.py": "6a579a440ec436f47dfa5b29c0bdeff3e4c20f3e1d4989a158d9fe3050662b06",
+    "weights/mechanics.npz": "af906af36c46fb08c8645db0c674c38e515366d57a84998820262f26ed23e26e",
+    "weights/plan.npz": "417c4730db6132e311438632d98b52cf6d109dc7a4824ccd976fadc763a683ed"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "local_bundle_integrity": "passed",
+  "packaged_initialization_dispatch": [
+    {
+      "track": "parkland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "parkland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "race",
+      "passed": true
+    }
+  ],
+  "packaged_cut_in_decision_check": {
+    "two_observation_cut_in": {
+      "baseline_action": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": 0.15,
+        "ers_mode": 1,
+        "aero_mode": 0,
+        "pit_request": false,
+        "pit_compound": "medium"
+      },
+      "candidate_action": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": 0.0,
+        "ers_mode": 1,
+        "aero_mode": 0,
+        "pit_request": false,
+        "pit_compound": "medium"
+      },
+      "baseline_commits": true,
+      "candidate_commits": false
+    },
+    "drifting_leader_lane_choice": [
+      3.8,
+      -3.8
+    ]
+  },
+  "local_check_scope": "Synthetic telemetry/control checks after materializing all five ZIP entries; not platform admission or a complete race."
+}
