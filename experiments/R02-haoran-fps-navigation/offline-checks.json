@@ -1,0 +1,324 @@
+{
+  "schema": "fps-r08-anchor-scan-checks-v1",
+  "baseline_commit": "6b549f690f47db3d8317e9bed67a226a6b13fc7a",
+  "candidate_navigation_lf_sha256": "55e687a8243ce5c9a046828ed5adffbc444b0b7f21e5ec8856f21ccbd4ded694",
+  "evidence_kind": "Synthetic regression checks and public geometry audit; no match simulation.",
+  "regression": {
+    "boundary_cases": [
+      "stable_equal_distance_tie",
+      "radius_inclusive",
+      "radius_exclusive",
+      "height_inclusive",
+      "height_exclusive",
+      "blocked_nearest",
+      "expired_blacklist",
+      "active_blacklist",
+      "empty_graph"
+    ],
+    "randomized_graph_cases": 500,
+    "seed": 7608,
+    "exact_route_and_cache_equivalence": true
+  },
+  "actions": {
+    "synthetic_callbacks": 2400,
+    "exact_action_equivalence": true,
+    "scope": "Small synthetic maps, stationary recovery, combat/defuse interruptions and round changes."
+  },
+  "kit": {
+    "archive_sha256": "98e6d977efcfb2a51683c555c96c7d25061c73531d13effe3c4f77d34297de5c",
+    "maps": [
+      {
+        "map_id": "borgo-r3-v54",
+        "json_npz_equal": true,
+        "floor_candidate_count": 9146,
+        "duplicate_xy_count": 0,
+        "routes": [
+          {
+            "side": "attack",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 126
+          },
+          {
+            "side": "attack",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 108
+          },
+          {
+            "side": "defend",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 82
+          },
+          {
+            "side": "defend",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 70
+          }
+        ],
+        "anchor_scan_wall_ms": {
+          "reference": 15.053975,
+          "candidate": 10.0477
+        },
+        "anchor_scan_samples_wall_ms": {
+          "reference": [
+            15.645595,
+            14.38255,
+            15.78867,
+            13.706275,
+            15.294485,
+            15.053975,
+            14.508705
+          ],
+          "candidate": [
+            10.0477,
+            8.822645,
+            9.916995,
+            8.92482,
+            16.410005,
+            15.47788,
+            10.06832
+          ]
+        },
+        "candidate_change_pct": -33.25550228428039
+      },
+      {
+        "map_id": "dust2-cs2-v54",
+        "json_npz_equal": true,
+        "floor_candidate_count": 7778,
+        "duplicate_xy_count": 1115,
+        "routes": [
+          {
+            "side": "attack",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 140
+          },
+          {
+            "side": "attack",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 125
+          },
+          {
+            "side": "defend",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 32
+          },
+          {
+            "side": "defend",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 59
+          }
+        ],
+        "anchor_scan_wall_ms": {
+          "reference": 11.22368,
+          "candidate": 8.89165
+        },
+        "anchor_scan_samples_wall_ms": {
+          "reference": [
+            11.22368,
+            10.669625,
+            10.177655,
+            15.70801,
+            13.077395,
+            17.485895,
+            10.799095
+          ],
+          "candidate": [
+            8.89165,
+            8.15975,
+            8.39212,
+            10.511035,
+            11.31051,
+            13.75883,
+            8.067495
+          ]
+        },
+        "candidate_change_pct": -20.777766294121
+      },
+      {
+        "map_id": "mirage-cs2-v54",
+        "json_npz_equal": true,
+        "floor_candidate_count": 9054,
+        "duplicate_xy_count": 3739,
+        "routes": [
+          {
+            "side": "attack",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 95
+          },
+          {
+            "side": "attack",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 121
+          },
+          {
+            "side": "defend",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 47
+          },
+          {
+            "side": "defend",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 73
+          }
+        ],
+        "anchor_scan_wall_ms": {
+          "reference": 14.25405,
+          "candidate": 9.6014
+        },
+        "anchor_scan_samples_wall_ms": {
+          "reference": [
+            17.410465,
+            14.33706,
+            14.25405,
+            14.21436,
+            16.516735,
+            13.2363,
+            13.531875
+          ],
+          "candidate": [
+            9.88429,
+            9.6014,
+            9.96735,
+            9.5174,
+            10.237705,
+            9.542795,
+            9.21175
+          ]
+        },
+        "candidate_change_pct": -32.64089855163971
+      },
+      {
+        "map_id": "molo-r3-v54",
+        "json_npz_equal": true,
+        "floor_candidate_count": 9851,
+        "duplicate_xy_count": 0,
+        "routes": [
+          {
+            "side": "attack",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 114
+          },
+          {
+            "side": "attack",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 120
+          },
+          {
+            "side": "defend",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 82
+          },
+          {
+            "side": "defend",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 72
+          }
+        ],
+        "anchor_scan_wall_ms": {
+          "reference": 29.071785,
+          "candidate": 16.802555
+        },
+        "anchor_scan_samples_wall_ms": {
+          "reference": [
+            19.82331,
+            23.248255,
+            29.071785,
+            39.817915,
+            23.85,
+            31.72703,
+            35.255165
+          ],
+          "candidate": [
+            11.032655,
+            14.39584,
+            16.802555,
+            28.180335,
+            23.527345,
+            23.45869,
+            15.02902
+          ]
+        },
+        "candidate_change_pct": -42.20322212757145
+      },
+      {
+        "map_id": "nevaio-r3-v54",
+        "json_npz_equal": true,
+        "floor_candidate_count": 10595,
+        "duplicate_xy_count": 0,
+        "routes": [
+          {
+            "side": "attack",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 116
+          },
+          {
+            "side": "attack",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 118
+          },
+          {
+            "side": "defend",
+            "site": "A",
+            "found_in_xy_approximation": true,
+            "grid_points": 78
+          },
+          {
+            "side": "defend",
+            "site": "B",
+            "found_in_xy_approximation": true,
+            "grid_points": 74
+          }
+        ],
+        "anchor_scan_wall_ms": {
+          "reference": 18.621485,
+          "candidate": 12.59845
+        },
+        "anchor_scan_samples_wall_ms": {
+          "reference": [
+            18.58881,
+            18.621485,
+            30.10261,
+            19.533925,
+            18.382405,
+            18.468405,
+            18.63359
+          ],
+          "candidate": [
+            12.59845,
+            11.672705,
+            16.215845,
+            15.82294,
+            12.6578,
+            11.788815,
+            11.993715
+          ]
+        },
+        "candidate_change_pct": -32.34454717225829
+      }
+    ],
+    "benchmark_batch": 20,
+    "benchmark_repeats": 7,
+    "benchmark_scope": "Public floor points with EMPTY synthetic adjacency; wall time of anchor scanning, not real routes or matches.",
+    "calibrated_simulation": "not_run_no_own_training_log"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "formal_matches": 0
+}

@@ -38,20 +38,28 @@ class NavigationMixin:
         self._failed_edges = {k: end for k, end in self._failed_edges.items() if end > tick}
         self._failed_anchors = {k: end for k, end in self._failed_anchors.items() if end > tick}
         blocked = self._node_at.get(tuple(target))
-        anchors = sorted(self.nodes, key=lambda k: math.dist(pos, self.nodes[k]))
-        nearest = anchors[0]
+        # We only need the nearest node and nearest eligible attachment, not a
+        # sorted copy of the whole graph. Strict comparisons preserve the old
+        # stable-sort tie order (the map's node insertion order).
+        nearest = start = None
+        nearest_distance = start_distance = math.inf
+        for node, point in self.nodes.items():
+            distance = math.dist(pos, point)
+            if distance < nearest_distance:
+                nearest, nearest_distance = node, distance
+            # The current blocked target is blacklisted immediately below.
+            if (node != blocked and node not in self._failed_anchors
+                    and abs(pos[2] - point[2]) <= 1.25
+                    and distance <= 5.0 and distance < start_distance):
+                start, start_distance = node, distance
         if blocked is not None:
             if nearest != blocked:
                 self._failed_edges[nearest, blocked] = tick + (7200 if getattr(self, "long_avoid", False) else 900)
             self._failed_anchors[blocked] = tick + (7200 if getattr(self, "long_avoid", False) else 900)
         # For an unreachable candidate segment, do not jump to another floor or
         # project ourselves across the map to satisfy the waypoint tolerance.
-        anchors = [k for k in anchors if k not in self._failed_anchors
-                   and abs(pos[2] - self.nodes[k][2]) <= 1.25
-                   and math.dist(pos, self.nodes[k]) <= 5.0]
-        if not anchors:
+        if start is None:
             return []
-        start = anchors[0]
         end = min(self.nodes, key=lambda k: math.dist(self.nodes[k], goal))
         cost = {start: 0.0}
         parent = {start: None}
