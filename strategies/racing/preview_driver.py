@@ -91,6 +91,28 @@ class Driver:
         self.wait_since = 0.0
         self.pass_seat = None
         self.pass_offset = 0.0
+        self.rival_positions = {}
+        self.rival_time = None
+
+    def observe_lateral_motion(self, o):
+        """Estimate rivals' road-relative motion from consecutive legal views."""
+        now = o.get("time", o.get("tick", 0) / 60.0)
+        dt = None if self.rival_time is None else now - self.rival_time
+        current, rivals = {}, []
+        for rival in o["rivals"]:
+            row = dict(rival)
+            if row["status"] == "racing":
+                position = o["self"]["n"] + row["dn"]
+                previous = self.rival_positions.get(row["seat"])
+                rate = 0.0
+                if previous is not None and dt is not None and 0 < dt <= 0.25:
+                    rate = clip((position - previous) / dt, -4.0, 4.0)
+                row["lateral_speed_mps"] = rate
+                current[row["seat"]] = position
+            rivals.append(row)
+        self.rival_positions, self.rival_time = current, now
+        # Keep the caller's observation and rival dictionaries untouched.
+        return dict(o, rivals=rivals)
 
     def passing_line(self, o, target):
         car = o["self"]
@@ -101,7 +123,9 @@ class Driver:
             if leader is not None and -12.0 < leader["gap_m"] < 50.0:
                 lane = self.safe_offset(o, self.pass_offset)
                 leader_n = n + leader["dn"]
-                squeezed = self.pass_side * (lane - leader_n) < 3.3
+                future_n = leader_n + 2.0 * leader.get("lateral_speed_mps", 0.0)
+                squeezed = min(self.pass_side * (lane - leader_n),
+                               self.pass_side * (lane - future_n)) < 3.3
                 if not squeezed and self.corridor_free(car, others, lane, self.pass_seat):
                     return lane
                 # A car has entered the planned lane, the leader is moving
@@ -141,6 +165,10 @@ class Driver:
         for lane in offsets:
             if self.safe_offset(o, lane) != lane:
                 continue
+            side = 1.0 if lane > leader_n else -1.0
+            future_n = leader_n + 2.0 * leader.get("lateral_speed_mps", 0.0)
+            if side * (lane - future_n) < 3.3:
+                continue
             if self.corridor_free(car, others, lane, leader["seat"]):
                 self.pass_seat, self.pass_offset = leader["seat"], lane
                 self.pass_side = 1.0 if lane > leader_n else -1.0
@@ -152,11 +180,16 @@ class Driver:
         n = car["n"]
         low, high = min(n, lane) - 2.7, max(n, lane) + 2.7
         for other in others:
-            if other["seat"] == leader_seat or not low < n + other["dn"] < high:
+            if other["seat"] == leader_seat:
+                continue
+            current_n = n + other["dn"]
+            future_n = current_n + 2.0 * other.get("lateral_speed_mps", 0.0)
+            lateral_low, lateral_high = min(current_n, future_n), max(current_n, future_n)
+            if not (lateral_low < high and lateral_high > low):
                 continue
             gap = other["gap_m"]
             relative = other["speed_mps"] - car["speed_mps"]
-            in_destination = abs(n + other["dn"] - lane) < 2.7
+            in_destination = lateral_low < lane + 2.7 and lateral_high > lane - 2.7
             if in_destination:
                 projected = gap + 2.0 * relative
                 rear, front = -18.0, 38.0
@@ -187,6 +220,8 @@ class Driver:
             self.wet_waiver = False
             self.waiting_for = self.pass_seat = None
             self.retry_at = 0.0
+            self.rival_positions, self.rival_time = {}, None
+        o = self.observe_lateral_motion(o)
         if o["phase"] == "race" and o["weather"]["track_wetness"] >= 0.5:
             self.wet_waiver = True
         station = car["s"]

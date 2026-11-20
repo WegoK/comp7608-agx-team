@@ -1,0 +1,161 @@
+{
+  "schema": "racing-lateral-cut-in-checks-v1",
+  "baseline_commit": "2b3c1c4a419325133c5b56fa79349ec47f51fa80",
+  "candidate_preview_lf_sha256": "6a579a440ec436f47dfa5b29c0bdeff3e4c20f3e1d4989a158d9fe3050662b06",
+  "corridor": {
+    "outside_lane_cut_in_veto": true,
+    "unchanged_stationary_cases": 1000,
+    "existing_veto_preserved_cases": 1000,
+    "seed": 7608
+  },
+  "estimator": [
+    "first_view_zero",
+    "two_view_estimate",
+    "own_lane_change_compensated",
+    "stale_history_reset",
+    "reappearing_rival_reset",
+    "caller_observation_unchanged"
+  ],
+  "passing": {
+    "two_observation_cut_in": {
+      "baseline_action": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": 0.15,
+        "ers_mode": 1,
+        "aero_mode": 0,
+        "pit_request": false,
+        "pit_compound": "medium"
+      },
+      "candidate_action": {
+        "throttle": 0.0,
+        "brake": 1.0,
+        "steer": 0.0,
+        "ers_mode": 1,
+        "aero_mode": 0,
+        "pit_request": false,
+        "pit_compound": "medium"
+      },
+      "baseline_commits": true,
+      "candidate_commits": false
+    },
+    "drifting_leader_lane_choice": [
+      3.8,
+      -3.8
+    ]
+  },
+  "regression": {
+    "unchanged_static_traffic_callbacks": 2400,
+    "tracks": [
+      "parkland",
+      "highland",
+      "crossover"
+    ],
+    "phases": [
+      "qualifying",
+      "race"
+    ],
+    "wetness": [
+      0.0,
+      0.7
+    ],
+    "phase_reset": true
+  },
+  "sources": {
+    "unchanged_files": [
+      "agent.py",
+      "design.json",
+      "weights/plan.npz",
+      "weights/mechanics.npz"
+    ],
+    "numeric_npz_readable": true,
+    "full_entry_init_and_dispatch": [
+      {
+        "track": "parkland",
+        "phase": "qualifying",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": -0.5692838697724565,
+          "ers_mode": 3,
+          "aero_mode": 1,
+          "override": false,
+          "aid": false,
+          "pit_request": false,
+          "pit_compound": null
+        }
+      },
+      {
+        "track": "parkland",
+        "phase": "race",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": -0.5692838697724565,
+          "ers_mode": 2,
+          "aero_mode": 1,
+          "override": false,
+          "aid": false,
+          "pit_request": false,
+          "pit_compound": null
+        }
+      },
+      {
+        "track": "highland",
+        "phase": "qualifying",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": 0.0,
+          "ers_mode": 2,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        }
+      },
+      {
+        "track": "highland",
+        "phase": "race",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": 0.0,
+          "ers_mode": 2,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        }
+      },
+      {
+        "track": "crossover",
+        "phase": "qualifying",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": 0.0,
+          "ers_mode": 2,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        }
+      },
+      {
+        "track": "crossover",
+        "phase": "race",
+        "action": {
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steer": 0.0,
+          "ers_mode": 2,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        }
+      }
+    ],
+    "scope": "Synthetic telemetry and straight preview, not a real run or platform resource-budget check."
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "formal_matches": 0
+}
