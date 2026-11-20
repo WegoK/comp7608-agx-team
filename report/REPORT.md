@@ -63,7 +63,7 @@ Borgo 的一场 FPS 比赛里，角色持续收到移动指令，连续 27.1 秒
 
 509 组边界及随机图对照、2,400 次合成观测调用中，路线、缓存与动作均与 R08 一致。五张工具包地图的 JSON/NPZ 核对通过，20 组 XY 路线诊断均能找到路径，但没有证明官方环境可通行。使用公开三维候选点和空邻接隔离节点筛选，五图本机批次中位耗时下降约 21%–42%；这不是完整寻路或整局提速，不能据此声称平台预算通过或胜率提高。
 
-本轮没有本人日志标定、平台验证、版本激活或正式比赛，未将其他分支的历史成绩计入本候选。数据、基线、工具包校验、复现命令与限制见 [R02 实验记录](../experiments/R02-haoran-fps-navigation/README.md) 和 [离线输出](../experiments/R02-haoran-fps-navigation/offline-checks.json)。
+项目基础检查及 FPS 打包已在保留原始 LF 换行、使用 Python UTF-8 模式的干净工作区通过。候选代码提交为 `2de04594295ac3842ebdb0470321b715dcac3f0b`，ZIP 仅含三份 FPS 源码，包内直接导入的 200 次合成调用通过。本轮没有本人日志标定、平台验证、版本激活或正式比赛，未将其他分支的历史成绩计入本候选。数据、基线、工具包校验、复现命令与限制见 [R02 实验记录](../experiments/R02-haoran-fps-navigation/README.md)、[离线输出](../experiments/R02-haoran-fps-navigation/offline-checks.json) 和 [包清单](../experiments/R02-haoran-fps-navigation/package-manifest.json)。
 
 ## 3　Racing：给三条赛道选对驾驶策略
 

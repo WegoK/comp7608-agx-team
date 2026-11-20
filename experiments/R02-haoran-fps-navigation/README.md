@@ -7,7 +7,7 @@
 - 个人分支：`codex/haoran-fps-navigation`。
 - 按仓库最新交接说明，从 `origin/codex/r01-local-evaluation` 的 R08 接手，完整基线提交为 `6b549f690f47db3d8317e9bed67a226a6b13fc7a`。
 - 本轮只改 `strategies/fps/waypoint_nav.py` 中 `_detour` 的节点筛选；R08 的主控策略、starter、交战、经济和赛车代码均沿用交接基线。此处 R08 不等于此前用户个人分支上的老师原版。
-- 候选代码提交、包与校验：打包后补录。本地工作区中的工具包 ZIP 和目录保留为用户下载的资料，不纳入提交包或 Git。
+- 候选代码提交：`2de04594295ac3842ebdb0470321b715dcac3f0b`。后续本记录补录的文档提交不改变包内代码来源。本地工作区中的工具包 ZIP 和目录保留为用户下载的资料，不纳入提交包或 Git。
 - 人员：用户发起任务，并确认暂无本人 `training.jsonl`，本轮先做地图和程序检查。实现、执行检查及本记录由 Codex 辅助完成；不将其写成人工已完成的策略设计或验证。
 
 ## 工具包核对
@@ -44,6 +44,14 @@ python3 scripts/evaluate_fps_navigation.py --kit-root agx-fps-kit --output exper
 
 详细输出见 [offline-checks.json](offline-checks.json)。
 
+### 仓库检查与本地打包
+
+主工作区仍采用 Windows 自动换行转换。为保持官方文件与来源清单的原始字节一致，从候选代码提交使用 `git -c core.autocrlf=false worktree add --detach <临时目录> <候选提交>` 建立干净 LF 工作区，执行 `python3 scripts/check.py` 与 `python3 scripts/package.py fps`，均通过。未修改官方基线或检查脚本来绕过哈希校验。
+
+在 LF 工作区首次运行时，Windows 默认 GBK 解码无法读取继承的 Racing 源码中的 UTF-8 字符。重试时在当前 PowerShell 会话将 `python3` 映射到 Codex 附带 Python，并附加 `-X utf8`；没有修改系统 Python 或全局编码设置。
+
+输出 `dist/fps-2de04594295a.zip`，SHA256 为 `a120215e7919f326d2cc25e63f2fb1a56c5d0206a2bf7c53ed2478ec0e271616`。ZIP 仅含 `agent.py`、`starter_player.py`、`waypoint_nav.py`，均与该 Git 提交逐字节一致，完整性与源码大小检查通过。直接从 ZIP 导入并执行 200 次合成观测调用通过；这不是 AGX validation。包与原始清单位于本地 `dist/`，可追溯摘要见 [package-manifest.json](package-manifest.json)。
+
 ## 局部耗时观察
 
 使用工具包全部三维候选点，刻意设置空邻接，隔离节点筛选开销。它们不是实战导航图；不存在整局模拟、真实路线长度或胜率。每图原版和候选各 7 批，每批 20 次，交替执行顺序，表中为每次调用墙钟耗时的批次中位数。数字只适用于这次本机测量，不代表平台 CPU 预算验证。
@@ -64,7 +72,7 @@ python3 scripts/evaluate_fps_navigation.py --kit-root agx-fps-kit --output exper
 |---|---|
 | 计划与实现 | 已记录，仅 FPS 节点筛选 |
 | 地图/程序对照 | 509 组回归和 2,400 次合成调用通过 |
-| 仓库基础检查/打包 | 待在原始 LF 的干净工作区执行并补录 |
+| 仓库基础检查/打包 | 原始 LF 干净工作区、Python UTF-8 模式通过；ZIP 内容核对及 200 次合成导入调用通过 |
 | 人工审阅 | 待其他组员审阅 |
 | AGX validation | 未执行 |
 | 计分版本激活 | 未执行 |
