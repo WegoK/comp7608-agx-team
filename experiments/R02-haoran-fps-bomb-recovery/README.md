@@ -42,10 +42,12 @@ python3 scripts/evaluate_fps_objectives.py --kit-root agx-fps-kit --output exper
 
 项目检查使用 `python3 scripts/check.py`，打包使用 `python3 scripts/package.py fps`。Windows 下需在保留原始 LF 的干净临时工作区、Python UTF-8 模式执行，避免自动换行导致官方文件哈希变化或默认 GBK 解码失败。工具包和本人资料不进入提交包。
 
+上述检查与打包已在候选提交 `4f5747cbde4296a235b042e60b7486a224f3dfd4` 的 LF 临时工作区通过，`python3` 在当前 PowerShell 会话调用附带 Python 的 `-X utf8` 模式。输出 `dist/fps-4f5747cbde42.zip`，SHA256 为 `2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1`。包内三份源码与该提交逐字节一致；直接从 ZIP 导入后，200 次合成调用覆盖掉包目标、注入已拾取观察、持续安放，均通过。这仍不是平台拾取裁定或 AGX validation。
+
 | 阶段 | 状态 |
 |---|---|
 | 策略假设、实现、离线决策检查 | 已完成 |
-| 本地基础检查、打包 | 执行后补录到本文件及包清单 |
+| 本地基础检查、打包 | 已通过；包内容校验与 200 次包内合成调用通过 |
 | 其他成员人工审阅 | 待进行 |
 | 平台 validation / 激活 | 未执行 |
 | 实际比赛 / 完整本人日志 | 无本候选数据 |
