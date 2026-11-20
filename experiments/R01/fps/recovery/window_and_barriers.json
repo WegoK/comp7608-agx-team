@@ -1,0 +1,149 @@
+{
+  "boundary_move_magnitude": {
+    "0.49": 0.0,
+    "0.5": 0.0,
+    "0.51": 0.75,
+    "4.5": 0.75,
+    "0.1": 0.0,
+    "3.0": 0.75
+  },
+  "source_hash": {
+    "baseline": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+    "candidate": "b7c998115d860b18b5c0227204d233d7707f98504abbcb53ca8c110f0b01077e"
+  },
+  "logged": {
+    "ticks": [
+      100872,
+      102498
+    ],
+    "n": 543,
+    "goal": [
+      32.0,
+      76.0,
+      0
+    ],
+    "final_only": 543,
+    "goal_variants": 1,
+    "distance_min_m": 0.006507661124338525,
+    "distance_max_m": 0.08437946140826075,
+    "nearest_box_xy_gap_m_at_first_tick": 3.866390780457385,
+    "alive_teammates": 0,
+    "baseline_matches_recorded_within_1e_8": 543,
+    "move_frames": {
+      "baseline": 543,
+      "candidate": 0
+    }
+  },
+  "local_motion_only": {
+    "baseline": {
+      "frames": 543,
+      "move_frames": 543,
+      "cumulative_path_m": 26.598,
+      "final_distance_to_goal_m": 0.074,
+      "reached_0_5_m": true,
+      "arrival_s": 0.0,
+      "xy_rmse_vs_recording_m": 0.0
+    },
+    "candidate": {
+      "frames": 543,
+      "move_frames": 0,
+      "cumulative_path_m": 0.114,
+      "final_distance_to_goal_m": 0.048,
+      "reached_0_5_m": true,
+      "arrival_s": 0.0,
+      "xy_rmse_vs_recording_m": 0.0755
+    }
+  },
+  "synthetic_box_width_m": {
+    "0": {
+      "baseline": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 21.679,
+        "final_distance_to_goal_m": 0.03,
+        "reached_0_5_m": true,
+        "arrival_s": 2.25
+      },
+      "candidate": {
+        "frames": 401,
+        "move_frames": 45,
+        "cumulative_path_m": 4.196,
+        "final_distance_to_goal_m": 0.305,
+        "reached_0_5_m": true,
+        "arrival_s": 2.25
+      }
+    },
+    "0.6": {
+      "baseline": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 2.727,
+        "final_distance_to_goal_m": 3.1,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      },
+      "candidate": {
+        "frames": 401,
+        "move_frames": 92,
+        "cumulative_path_m": 7.106,
+        "final_distance_to_goal_m": 0.371,
+        "reached_0_5_m": true,
+        "arrival_s": 4.6
+      }
+    },
+    "1": {
+      "baseline": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 2.727,
+        "final_distance_to_goal_m": 3.1,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      },
+      "candidate": {
+        "frames": 401,
+        "move_frames": 92,
+        "cumulative_path_m": 7.115,
+        "final_distance_to_goal_m": 0.374,
+        "reached_0_5_m": true,
+        "arrival_s": 4.6
+      }
+    },
+    "2": {
+      "baseline": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 2.727,
+        "final_distance_to_goal_m": 3.1,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      },
+      "candidate": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 25.608,
+        "final_distance_to_goal_m": 3.112,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      }
+    },
+    "4": {
+      "baseline": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 2.727,
+        "final_distance_to_goal_m": 3.1,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      },
+      "candidate": {
+        "frames": 401,
+        "move_frames": 401,
+        "cumulative_path_m": 25.608,
+        "final_distance_to_goal_m": 3.112,
+        "reached_0_5_m": false,
+        "arrival_s": null
+      }
+    }
+  }
+}

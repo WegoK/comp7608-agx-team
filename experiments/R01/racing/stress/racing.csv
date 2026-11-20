@@ -1,0 +1,13 @@
+track,scenario,driver,seconds,over_budget_s,p95_lateral,peak_lateral
+crossover,dry_weak_brake,baseline,167.705,18.3,11.857,37.865
+crossover,dry_weak_brake,candidate,171.867,13.4,10.173,15.574
+crossover,wet_slow_response,baseline,210.802,21.8,6.752,17.403
+crossover,wet_slow_response,candidate,219.4,14.8,5.984,7.14
+highland,dry_weak_brake,baseline,194.488,25.4,12.538,43.774
+highland,dry_weak_brake,candidate,197.031,15.8,10.085,14.164
+highland,wet_slow_response,baseline,238.486,35.4,7.545,20.896
+highland,wet_slow_response,candidate,249.408,18.7,6.007,7.6
+parkland,dry_weak_brake,baseline,154.27,13.6,12.079,49.555
+parkland,dry_weak_brake,candidate,157.135,6.3,9.68,14.189
+parkland,wet_slow_response,baseline,183.429,17.5,7.067,20.479
+parkland,wet_slow_response,candidate,193.143,7.5,5.814,7.096

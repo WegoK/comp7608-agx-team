@@ -1,0 +1,31 @@
+{
+  "scope": "synthetic graphs, route length only",
+  "fork_length": {
+    "course_v1": 26.0,
+    "candidate": 10.0,
+    "official_kit": 26.0
+  },
+  "random_graph_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "nodes_per_graph": 10,
+  "directed_pairs_excluding_self": 1080,
+  "results": {
+    "reachable": 576,
+    "unreachable": 504,
+    "shorter": 65,
+    "equal": 511,
+    "longer": 0
+  }
+}

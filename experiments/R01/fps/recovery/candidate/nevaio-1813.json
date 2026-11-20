@@ -1,0 +1,39 @@
+{
+  "map_id": "nevaio-r3-v54",
+  "seed": 1813,
+  "seat": 0,
+  "steps": 42184,
+  "done": true,
+  "team_scores": [
+    13,
+    9
+  ],
+  "seat_team_score": [
+    13,
+    9
+  ],
+  "faulty_actions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "motion": {
+    "moving_s": 1410.1,
+    "stuck_intervals": 0,
+    "stuck_s": 0.0,
+    "longest_stuck_s": 0.0
+  },
+  "agent_sha256": "b7c998115d860b18b5c0227204d233d7707f98504abbcb53ca8c110f0b01077e",
+  "opponent_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "static_sha256": "a9aa6cf15dab53182f274c998265f13274958c5efbf404b3dd5dbdcfb9f30386",
+  "peer_release_sha256": "87635c5f42df0ac9bd0dbcbc6592a2597146587901baf0b8aa7189fa468aaddb",
+  "python": "3.12.2",
+  "elapsed_s": 260.89
+}

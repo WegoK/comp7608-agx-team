@@ -1,0 +1,39 @@
+{
+  "map_id": "molo-r3-v54",
+  "seed": 1812,
+  "seat": 5,
+  "steps": 29151,
+  "done": true,
+  "team_scores": [
+    13,
+    10
+  ],
+  "seat_team_score": [
+    10,
+    13
+  ],
+  "faulty_actions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "motion": {
+    "moving_s": 1060.7,
+    "stuck_intervals": 35,
+    "stuck_s": 166.15,
+    "longest_stuck_s": 26.1
+  },
+  "agent_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "opponent_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "static_sha256": "d8ce573ea7cdc915d6cb297843c0f60984e671c8d17358301009ff93d387e9a9",
+  "peer_release_sha256": "87635c5f42df0ac9bd0dbcbc6592a2597146587901baf0b8aa7189fa468aaddb",
+  "python": "3.12.2",
+  "elapsed_s": 205.78
+}

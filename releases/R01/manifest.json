@@ -1,0 +1,26 @@
+{
+  "fps": {
+    "game": "fps",
+    "git_sha": "fc44b431f30fa1b481e62b845b5633ff6c20cd3e",
+    "zip_sha256": "53f000d6e0f5cb5dd552ed1241f1ddca1d5ee2a8a869fa99018a5090cbaec4dd",
+    "files": {
+      "agent.py": "b7c998115d860b18b5c0227204d233d7707f98504abbcb53ca8c110f0b01077e"
+    },
+    "platform_validation": "not_run",
+    "competition_activation": "not_run"
+  },
+  "racing": {
+    "game": "racing",
+    "git_sha": "fc44b431f30fa1b481e62b845b5633ff6c20cd3e",
+    "zip_sha256": "f09093980e920b9987aaef81fe9b1e37d73b53150b97e0625bda6b521a26aefc",
+    "files": {
+      "agent.py": "029d8597aa88995d5ba3b7054a19905542c3c0afa643fda41867176c9a3fcdb4",
+      "design.json": "e18e31487c5322c206dab4ef431556bde0bfc5ccb8d3514a83972ccfcb6faf0e",
+      "preview_driver.py": "aaf63bbf2d77faff8a80227a304ae588213f6f7ee5b5164a1c16344e48166d41",
+      "weights/mechanics.npz": "af906af36c46fb08c8645db0c674c38e515366d57a84998820262f26ed23e26e",
+      "weights/plan.npz": "417c4730db6132e311438632d98b52cf6d109dc7a4824ccd976fadc763a683ed"
+    },
+    "platform_validation": "not_run",
+    "competition_activation": "not_run"
+  }
+}

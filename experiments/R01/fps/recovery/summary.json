@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "draws": 0,
+    "rounds_for": 59,
+    "rounds_against": 45,
+    "moving_s": 6208.55,
+    "stuck_s": 1381.4,
+    "stuck_share_pct": 22.25,
+    "longest_stuck_s": 76.95,
+    "faults": 0
+  },
+  "prior_local": {
+    "matches": 5,
+    "wins": 3,
+    "losses": 2,
+    "draws": 0,
+    "rounds_for": 56,
+    "rounds_against": 45,
+    "moving_s": 5528.45,
+    "stuck_s": 1196.1,
+    "stuck_share_pct": 21.635,
+    "longest_stuck_s": 76.95,
+    "faults": 0
+  },
+  "stop_only": {
+    "matches": 5,
+    "wins": 1,
+    "losses": 2,
+    "draws": 2,
+    "rounds_for": 50,
+    "rounds_against": 60,
+    "moving_s": 5671.0,
+    "stuck_s": 467.65,
+    "stuck_share_pct": 8.246,
+    "longest_stuck_s": 12.7,
+    "faults": 0
+  },
+  "candidate": {
+    "matches": 5,
+    "wins": 2,
+    "losses": 2,
+    "draws": 1,
+    "rounds_for": 54,
+    "rounds_against": 57,
+    "moving_s": 5621.75,
+    "stuck_s": 0.0,
+    "stuck_share_pct": 0.0,
+    "longest_stuck_s": 0.0,
+    "faults": 0
+  }
+}

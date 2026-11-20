@@ -1,0 +1,54 @@
+{
+  "map": "molo-r3-v54",
+  "seed": 1811,
+  "tested_seat": 0,
+  "results": [
+    {
+      "candidate_present": false,
+      "done": true,
+      "steps": 16121,
+      "score": [
+        13,
+        0
+      ],
+      "faults": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_s": 71.98
+    },
+    {
+      "candidate_present": true,
+      "done": true,
+      "steps": 16121,
+      "score": [
+        13,
+        0
+      ],
+      "faults": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elapsed_s": 74.02
+    }
+  ],
+  "static_sha256": "d8ce573ea7cdc915d6cb297843c0f60984e671c8d17358301009ff93d387e9a9",
+  "baseline_sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+  "candidate_sha256": "85af41887ea9e19bdb6c01a66de1345cb155809032aa5e997e8c14a86ce320e3"
+}

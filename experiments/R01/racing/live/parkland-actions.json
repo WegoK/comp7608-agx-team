@@ -1,0 +1,24 @@
+{
+  "export_file_sha256": "714e2fbdf330b21d9e6b44014652d4501d7468870ca0ae5fbfb9d6337e64aff8",
+  "source_hash": "1029b9b56fde85e26ff4b0305a575c988d7897eae30936434985caf9c91a7c26",
+  "public_track_lengths": [
+    5795.843
+  ],
+  "plan_length": 5795.843091436305,
+  "counts": {
+    "qualifying": {
+      "total_rows": 3256,
+      "baseline_matches_recorded": 3256,
+      "candidate_matches_baseline": 3256,
+      "evaluated": 3256
+    },
+    "race": {
+      "total_rows": 13435,
+      "baseline_matches_recorded": 13435,
+      "candidate_matches_baseline": 13435,
+      "evaluated": 13435
+    }
+  },
+  "first_n_per_phase": null,
+  "comparison_tolerance": 1e-07
+}
