@@ -10,4 +10,4 @@
 
 生成 ZIP 不会自动上传或切换平台。若加入运行依赖或模型权重，先核对平台支持范围，再更新打包规则和检查；当前仅接受 .py、.json、.npz 文件。
 
-组员加入：仓库所有者在 GitHub Settings → Collaborators 中按准确用户名邀请；私有仓库链接本身不授予访问权。不要共享 GitHub 或 AGX 密码。
+仓库公开。需要推送分支的组员，由仓库所有者在 GitHub Settings → Collaborators 中邀请。

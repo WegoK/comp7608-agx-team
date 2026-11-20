@@ -5,4 +5,4 @@
 | 实验 | 作者 | PR / Git SHA | 状态 | 比赛证据 | 决定 | 报告章节 |
 |---|---|---|---|---|---|---|
 
-首轮四人实验尚未开始，待分配和填写。原版发布历史见 ../Submission_Record.md。
+按游戏查看已完成的实验与参赛结果：[FPS](https://github.com/WegoK/comp7608-agx-team/blob/codex/r01-local-evaluation/releases/FPS版本.md) · [赛车](https://github.com/WegoK/comp7608-agx-team/blob/codex/r01-local-evaluation/releases/赛车版本.md)。原版发布历史见[初次登记与参赛记录](../releases/history/Submission_Record.md)。

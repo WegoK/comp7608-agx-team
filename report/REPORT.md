@@ -1,6 +1,6 @@
 # AGX Assignment 持续报告
 
-状态：工作稿；尚无本仓库策略改进或实验结果。组员：吴懿高、成员 B、成员 C、成员 D（待完善）。
+这是建仓时的报告模板。小组已在[持续更新的报告](https://github.com/WegoK/comp7608-agx-team/blob/codex/r01-local-evaluation/report/REPORT.md)中记录策略和实验结果。
 
 本报告聚焦 Assignment 两项比赛。以下按现有说明评分项目组织：策略 20、迭代与 AI 使用 40、结果与反思 10、团队协作 10；比赛排名另计 20。最终格式、语言、页数和提交渠道待最新课程要求确认。
 
@@ -49,6 +49,6 @@
 
 ## 参考资料
 
-- 老师 Assignment Instructions：../sources/Assignment_Instructions.pdf
-- 原始代码来源与校验：../Source_Manifest.json
+- [老师的 Assignment Instructions](../sources/Assignment_Instructions.pdf)
+- [原始代码来源与校验](../sources/Source_Manifest.json)
 - 实验索引：../experiments/INDEX.md

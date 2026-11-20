@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 def check():
-    manifest = json.loads((ROOT / 'Source_Manifest.json').read_text())
+    manifest = json.loads((ROOT / 'sources' / 'Source_Manifest.json').read_text())
     for item in manifest['files'] + manifest['archives']:
         assert hashlib.sha256((ROOT / item['path']).read_bytes()).hexdigest() == item['sha256'], item['path']
     assert hashlib.sha256((ROOT / manifest['source_pdf']).read_bytes()).hexdigest() == manifest['source_sha256']
