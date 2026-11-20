@@ -59,7 +59,7 @@ def run(case, opts):
     block = opts.block
     lab = block / 'AGX_Local_Lab'
     project = block / 'AGX_Competition'
-    base = project / '01_Official_Starter/FPS/agent.py'
+    base = project / 'sources/01_Official_Starter/FPS/agent.py'
     static = lab / ('static_nevaio' if name == 'nevaio' else 'static')
     os.environ.update(FPS_STATIC_DIR=str(static), FPS_KIT_DIR=str(block / 'fps_maps'))
     sys.path[:0] = [str(project/'simulation/fps'), str(lab/'fpssim-release')]

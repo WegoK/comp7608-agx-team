@@ -12,12 +12,12 @@
 
 ## 分支与审阅
 
-`main` 保存可追溯的稳定版本。分支示例 `member-b/r02-fps-pathfinding`（Codex 创建的分支用 `codex/` 前缀）。从最新 main 开分支，提交小改动，再开 PR。PR 必须链接实验文件和报告改动，由至少一名其他成员审阅后合并；这是团队约定，尚未配置服务器强制保护。
+`main` 保存可追溯的稳定版本。分支示例 `member-b/r02-fps-pathfinding`（Codex 创建的分支用 `codex/` 前缀）。从[首页](../README.md)指定的开发分支开始。交接代码合入后，从最新的 `main` 开分支。PR 必须链接实验文件和报告改动，由至少一名其他成员审阅后合并；这是团队约定，尚未配置服务器强制保护。
 
 ```bash
-git switch main
-git pull --ff-only
-git switch -c member-b/r01-racing-braking
+# 本轮交接代码在 codex/r01-local-evaluation
+git fetch origin
+git switch -c member-b/racing-braking origin/codex/r01-local-evaluation
 # 编辑代码与实验记录后
 git add strategies experiments report
 git commit -m "R01: evaluate distance-aware braking"

@@ -16,7 +16,7 @@
 | 实验用代码 | 文件 |
 |---|---|
 | 仅改最短路 | [r01_shortest_path.py](../../../../simulation/fps/variants/r01_shortest_path.py) |
-| 当前参赛 v2 | [agent.py](../../../../01_Official_Starter/FPS/agent.py) |
+| 当前参赛 v2 | [agent.py](../../../../sources/01_Official_Starter/FPS/agent.py) |
 | 仅修到点停步 | [r01_stop_only.py](../../../../simulation/fps/variants/r01_stop_only.py) |
 | 停步和受阻恢复 | [agent.py](../../../../strategies/local/fps/R01-recovery/agent.py) |
 

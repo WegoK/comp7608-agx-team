@@ -115,28 +115,28 @@
   ],
   "files": [
     {
-      "path": "01_Official_Starter/Racing/design.json",
+      "path": "sources/01_Official_Starter/Racing/design.json",
       "lines": 19,
       "sha256": "8b6eea2a9a577dbbfbcf70de7453fb4e1d74b89b377dc97db3b9ca0389444059"
     },
     {
-      "path": "01_Official_Starter/Racing/agent.py",
+      "path": "sources/01_Official_Starter/Racing/agent.py",
       "lines": 129,
       "sha256": "e9900f55b48a8b2c941f832f8db26e75c1150b5c94efefcc31773b2291a3ffa2"
     },
     {
-      "path": "01_Official_Starter/FPS/agent.py",
+      "path": "sources/01_Official_Starter/FPS/agent.py",
       "lines": 177,
       "sha256": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7"
     }
   ],
   "archives": [
     {
-      "path": "02_Upload/FPS_Official_Starter.zip",
+      "path": "sources/02_Upload/FPS_Official_Starter.zip",
       "sha256": "8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad"
     },
     {
-      "path": "02_Upload/Racing_Official_Starter.zip",
+      "path": "sources/02_Upload/Racing_Official_Starter.zip",
       "sha256": "4636307570d444b61748490bafd280e1ac670a352db3da51e06808c5b1034e67"
     }
   ],

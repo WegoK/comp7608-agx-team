@@ -9,7 +9,7 @@ sim = Path(__file__).resolve().parent
 repo = sim.parent
 block = repo.parent
 lab = block / "AGX_Local_Lab"
-starter = repo / "01_Official_Starter"
+starter = repo / "sources/01_Official_Starter"
 candidate = repo / "strategies/local/fps/R01-recovery"
 
 
