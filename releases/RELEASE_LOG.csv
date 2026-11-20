@@ -1,1 +1,9 @@
 date_beijing,game,git_sha,zip_sha256,platform_version,validation,activation_time,operator,previous_stable_version,match_evidence,decision
+2026-11-12,FPS,,8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad,v1,,,Wego,,competition/fps/v1/FPS_Official_Starter.zip,初次定级截图、提交记录与本地示例包相符；缺平台逐版本完整指纹。
+,FPS,,8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad,v2,,,Wego,v1,competition/fps/v2/FPS_Official_Starter.zip,示例包完整指纹与本人比赛日志匹配。
+2026-11-18,FPS,,d7ecab804fc09e605d11e00cfadea6b71c42fa27c6a726029198dbb482e83e96,v3,passed,,Wego,v2,competition/fps/v3/FPS_Route_Mixed.zip,上传后已通过准入并确认为当时计分版本。
+2026-11-19,FPS,66171b6bedfb82fe728c601bf2e29d20f40fd3e7,94357aa70ceaa7311bf66fc91fede5d9d5024317aff2638b8279273cff3947b5,v4,passed,,Wego,v3,competition/fps/v4/FPS_R06_Dust2.zip,上传后已通过准入并确认为当时计分版本。
+2026-11-20,FPS,a3af1bbab4aeddc0bc0b0a43f7d03829968bbc57,7231baa0d8dbb05fc1df24079110cc085a881f21f8763a7dee9cd0c5b8a97471,v5,passed,,Wego,v4,competition/fps/v5/FPS_R08.zip,上传后已通过准入并确认为当时计分版本。
+,Racing,,1029b9b56fde85e26ff4b0305a575c988d7897eae30936434985caf9c91a7c26,v1,,,Wego,,competition/racing/v1/RACING_v1.zip,线上下载原包，与本人两份正式席位日志的完整指纹相同。
+2026-11-18,Racing,1338d206388d53caa02de20c04be10f31cd9e3c8,477e4e54674052bf5532623b4273b0968ea103253c971de5bf4f2ea7176430ab,v2,passed,,Wego,v1,competition/racing/v2/RACING_R03.zip,上传后已通过准入并确认为当时计分版本。
+2026-11-19,Racing,0b6d75a9a829d375c504b291c34bc0557667c003,9708d0db1a8753d0b7a7f8be51f174f9eefbcadd501dfbb1477f7728ef3c3643,v3,passed,,Wego,v2,competition/racing/v3/RACING_R07.zip,上传后已通过准入并确认为当时计分版本。

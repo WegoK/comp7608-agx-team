@@ -10,7 +10,7 @@ repo = sim.parent
 block = repo.parent
 lab = block / "AGX_Local_Lab"
 starter = repo / "01_Official_Starter"
-candidate = repo / "strategies"
+candidate = repo / "strategies/local/fps/R01-recovery"
 
 
 def run(script, *args):
@@ -25,7 +25,7 @@ def main():
     out = lab / "runs" / datetime.now().strftime("%Y%m%d-%H%M%S-%f")
     out.mkdir(parents=True)
     fps = sim / "fps"
-    versions = ["--baseline", starter / "FPS/agent.py", "--candidate", candidate / "fps/agent.py"]
+    versions = ["--baseline", starter / "FPS/agent.py", "--candidate", candidate / "agent.py"]
     path_version = [*versions[:3], fps / "variants/r01_shortest_path.py"]
     if args.mode in ("quick", "all"):
         run(fps / "check_routes.py", versions[1], path_version[3], "--official-kit", block / "agx-fps-kit/agent/agent.py", "--out", out / "synthetic.json")

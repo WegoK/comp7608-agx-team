@@ -18,7 +18,7 @@
 | 仅改最短路 | [r01_shortest_path.py](../../../../simulation/fps/variants/r01_shortest_path.py) |
 | 当前参赛 v2 | [agent.py](../../../../01_Official_Starter/FPS/agent.py) |
 | 仅修到点停步 | [r01_stop_only.py](../../../../simulation/fps/variants/r01_stop_only.py) |
-| 停步和受阻恢复 | [agent.py](../../../../strategies/fps/agent.py) |
+| 停步和受阻恢复 | [agent.py](../../../../strategies/local/fps/R01-recovery/agent.py) |
 
 从桌面 Block4 目录运行。将 AGENT 换为表中所需的策略路径，每组使用单独的输出目录。可选的 --workers 控制并发数。
 

@@ -12,7 +12,7 @@ HERE=Path(__file__).resolve().parent
 
 def policy(tag):
     repo = HERE.parents[1]
-    p = repo / 'strategies/racing' if tag == 'candidate' else repo.parent / 'AGX_Local_Lab/racing_v1'
+    p = repo / 'strategies/local/racing/R01' if tag == 'candidate' else repo.parent / 'AGX_Local_Lab/racing_v1'
     if tag=='candidate':
         sys.path.insert(0,str(p))
     spec=importlib.util.spec_from_file_location('racing_'+tag,p/'agent.py')
