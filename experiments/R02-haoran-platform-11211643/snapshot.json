@@ -1,0 +1,107 @@
+{
+  "schema": "agx-dashboard-snapshot-v1",
+  "recorded_on_beijing": "2026-11-21",
+  "captured_at_beijing": null,
+  "source": {
+    "path": "../11211643.JPG",
+    "sha256": "15a51f1a1896e9e1a173cd143c240463f735f66e6b92a3381949472b3d5adc74",
+    "kind": "user_provided_platform_screenshot"
+  },
+  "account_scope": "User-supplied personal account; kept separate from Wego historical results.",
+  "attribution": {
+    "metrics_scope": "Cumulative account dashboard across versions.",
+    "published_version_labels_are_not_frozen_version_ids": true,
+    "bundle_mapping_verified": false,
+    "per_match_frozen_version_verified": false
+  },
+  "games": {
+    "FPS": {
+      "panel": "left",
+      "published_code_label": "v2",
+      "platform_version_id": null,
+      "git_sha": null,
+      "zip_sha256": null,
+      "metrics": {
+        "platform_rank": 109,
+        "personal_rating": 1027.1,
+        "team_win_rate_pct": 54
+      },
+      "total_match_count": null,
+      "recent_visible_rank_labels_oldest_to_newest": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "recent_visible_rating_delta_labels_oldest_to_newest": [
+        52,
+        50,
+        42,
+        -45,
+        -43,
+        -33,
+        -47,
+        32,
+        32,
+        35
+      ]
+    },
+    "Racing": {
+      "panel": "right",
+      "published_code_label": "v2",
+      "platform_version_id": null,
+      "git_sha": null,
+      "zip_sha256": null,
+      "metrics": {
+        "platform_rank": 131,
+        "dashboard_score": 1538.1,
+        "formal_matches": 13,
+        "average_finish_position": 6.08,
+        "podium_rate_pct": 23.1
+      },
+      "recent_visible_positions_oldest_to_newest": [
+        6,
+        7,
+        10,
+        3,
+        6,
+        7,
+        10,
+        3,
+        2,
+        5
+      ]
+    }
+  },
+  "comparison_to_previous_snapshot": {
+    "source": "../R02-haoran-platform-20261121/snapshot.json",
+    "FPS": {
+      "personal_rating_change": 67.0,
+      "platform_rank_positions_improved": 41,
+      "team_win_rate_change_percentage_points": 9
+    },
+    "Racing": {
+      "dashboard_score_change": 30.2,
+      "platform_rank_positions_improved": 6,
+      "additional_formal_matches": 2,
+      "average_finish_position_change": -0.47,
+      "podium_rate_change_percentage_points": 4.9
+    },
+    "causal_effect_of_new_strategies_established": false
+  },
+  "decision": {
+    "FPS": "Keep currently effective competition version; no further strategy changes for now.",
+    "Racing": "Keep current effective version and gather more matches before another change.",
+    "candidate_version_mapping_from_this_screenshot": "Unknown; do not assume locally prepared bundles were uploaded or used.",
+    "new_strategy_changes": false,
+    "assistant_uploaded_or_activated": false,
+    "suggested_observation": "About 5-10 further same-version matches across available tracks and weather as an initial review batch, not a statistical proof."
+  },
+  "recorded_by": "Codex transcribed screenshot and recorded the user-requested hold-and-observe decision."
+}
