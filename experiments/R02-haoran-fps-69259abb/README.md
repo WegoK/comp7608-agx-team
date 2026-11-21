@@ -62,7 +62,17 @@ python3 scripts/evaluate_fps_objectives.py --kit-root agx-fps-kit --output exper
 - 四段中均会改选另一公开点，但角色位置仍取自旧版日志，不能把后续赶路次数换算成新轨迹或拆除率。
 - 掉包回收回归：100 个进攻目标变化、100 个防守动作不变及 19 项保护检查通过，见 [objective-regression.json](objective-regression.json)。
 
-没有整局反事实模拟，没有新候选的实际对局或胜率结论。项目基础检查和打包状态在完成后单独补录；基础检查不等于游戏环境测试。
+没有整局反事实模拟，没有新候选的实际对局或胜率结论。基础检查不等于游戏环境测试。
+
+## 本地检查与上传包
+
+候选源码提交 `e27acc998e08d5dc3f59bac6e0fa5e4a99329058`。使用不转换换行的干净 LF 临时工作区执行 `python3 scripts/check.py` 和 `python3 scripts/package.py fps`，均通过。当前 Windows 的 `python3` 是会话内函数，调用附带 Python 的 `-X utf8` 模式；未改原始 sources 或用户全局配置。
+
+- 下一轮包：`dist/fps-e27acc998e08.zip`。
+- 完整 ZIP SHA256：`06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f`。
+- 包根目录仅含 `agent.py`、`starter_player.py`、`waypoint_nav.py`，三份内容逐字节等于该提交的 Git blob。
+- 直接从 ZIP 导入运行 27 项状态/优先级检查，以及 51 次 `init/act` 入口回调，通过；47,731 次日志分析在 LF 工作区复算与已记录结果一致。
+- 包未包含日志、工具包、seed 或其他私有资料。跟踪信息见 [package-manifest.json](package-manifest.json) 和 [packaging-checks.json](packaging-checks.json)。后续文档提交与打包源码提交可能不同，以上述清单为准。
 
 ## 平台阶段与下一步
 
@@ -70,7 +80,7 @@ python3 scripts/evaluate_fps_objectives.py --kit-root agx-fps-kit --output exper
 |---|---|
 | 旧版实战与完整日志 | 上表已核实；9:13 负属于旧包 |
 | 新版策略实现、日志决策比较、保护检查 | 已完成 |
-| 新版本地基础检查、提交、打包 | 待本轮检查后补录 |
+| 新版本地基础检查、提交、打包 | 已通过；Git blob/包内导入检查与日志复算通过 |
 | 其他成员独立审阅 | 待进行 |
 | 新版平台 validation、激活、正式比赛 | 未执行 |
 

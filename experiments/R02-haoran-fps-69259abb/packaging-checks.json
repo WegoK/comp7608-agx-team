@@ -1,0 +1,15 @@
+{
+  "source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058",
+  "zip_sha256": "06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f",
+  "official_source_and_project_check": "passed_in_clean_lf_worktree",
+  "packaging_command": "python3 scripts/package.py fps",
+  "zip_files_equal_git_blobs": true,
+  "zip_file_count": 3,
+  "packaged_synthetic_guards": 27,
+  "packaged_init_act_callbacks": 51,
+  "committed_analysis_reproduced": true,
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "environment": "Bundled Python -X utf8, process-local python3 PowerShell function; clean LF worktree to preserve official hashes."
+}
