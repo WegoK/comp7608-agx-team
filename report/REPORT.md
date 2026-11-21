@@ -127,6 +127,8 @@ Borgo 的一场 FPS 比赛里，角色持续收到移动指令，连续 27.1 秒
 
 下一轮仅建议 Racing 尝试已准备的 `racing-41367f1bf548.zip`（小组 R07 加侧向切入预测，需审阅和平台验证）；FPS 继续目前的 `fps-4f5747cbde42.zip`，该包已是最新准备版本，无需重复上传。Racing 从老师 baseline 升到此候选包含多项改动，后续变化不能单独归因于侧向预测。本次仅做记录，没有新策略改动、上传或激活。
 
+用户随后确认 Racing 的 ZIP 指纹 `4a3466ba671b` 已上传并正在运行，对应源码 `41367f1bf548f71e6826a0f31b6b59e80c584483`；状态已记入 [运行事件](../experiments/R02-haoran-racing-cut-in/platform-status-20261121.json)，尚未收到完结成绩或独立准入/激活回执。用户也确认 FPS 有已结束对局并要求继续优化，下一轮先收集本人完整训练日志及回放，最低一场输局、建议两负一胜，按 [数据清单](../experiments/R02-haoran-fps-bomb-recovery/DATA_REQUEST.md) 定位问题。尚未实施新一轮 FPS 策略或声称收益。
+
 FPS 后续从新版本实际产生的对局中复核终点抖动、真正的障碍和目标完成情况。Racing 优先复查湿地退赛与干地完赛的差别。每轮保留一次代码改动、一张可复算的结果表和据此作出的选择，再更新对应章节。
 
 [首轮逐项数据](../experiments/R01/README.md) · [复现步骤](../simulation/README.md) · [组员贡献](CONTRIBUTIONS.md)

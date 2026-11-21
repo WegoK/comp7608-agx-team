@@ -1,0 +1,21 @@
+{
+  "schema": "agx-user-reported-platform-status-v1",
+  "reported_on_beijing": "2026-11-21",
+  "reported_at_beijing": null,
+  "source": "User message: 4a3466ba671b racing uploaded and currently running.",
+  "game": "Racing",
+  "git_sha": "41367f1bf548f71e6826a0f31b6b59e80c584483",
+  "zip_sha256": "4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621",
+  "zip_path": "dist/racing-41367f1bf548.zip",
+  "local_hash_verified": true,
+  "platform_upload": "user_reported_uploaded",
+  "competition_state": "user_reported_running",
+  "platform_version_id": null,
+  "match_id": null,
+  "admission_receipt": null,
+  "activation_time_beijing": null,
+  "completed_candidate_result_received": false,
+  "result_metrics": null,
+  "independently_verified_platform_state": false,
+  "assistant_uploaded_or_activated": false
+}

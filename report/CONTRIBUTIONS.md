@@ -11,3 +11,4 @@
 | 11/20 · R02 目标策略 | haoran（同上） | 指出前一版没有改变比赛决策。Codex 随后实现掉落炸弹回收目标并完成离线检查；人工理解、复核和实战贡献待补 | [掉包回收](../experiments/R02-haoran-fps-bomb-recovery/README.md) | 待其他组员审阅 |
 | 11/20 · R02 Racing | haoran（同上） | 要求 Racing 更新并提供 0/10 的平台状态截图。Codex 核对公开配置、实现旁车侧向切入预测并执行离线检查；人工审阅与比赛贡献待补 | [Racing 实验](../experiments/R02-haoran-racing-cut-in/README.md) | 待其他组员审阅 |
 | 11/21 · 平台结果补录 | haoran（同上） | 用户报告完成平台运行，提供两游戏成绩截图及使用包的指纹关联。Codex 核对 ZIP/源码映射、转录累计指标并记录下一轮方案；逐局冻结版本与人工审阅待补 | [平台快照](../experiments/R02-haoran-platform-20261121/README.md) | 待其他组员审阅 |
+| 11/21 · 候选运行与下一轮数据 | haoran（同上） | 确认 Racing 候选已上传且运行中，提出继续优化 FPS 并询问所需数据。Codex 记录用户报告状态、核对官方导出说明并准备本人日志清单；本轮未代为上传或实施新 FPS 策略 | [FPS 数据清单](../experiments/R02-haoran-fps-bomb-recovery/DATA_REQUEST.md) | 待其他组员审阅 |
