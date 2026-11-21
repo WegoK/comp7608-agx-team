@@ -1,0 +1,126 @@
+{
+  "schema": "agx-dashboard-snapshot-v1",
+  "recorded_on_beijing": "2026-11-21",
+  "captured_at_beijing": null,
+  "source": {
+    "path": "../racing_baseline_fps_navi.JPG",
+    "sha256": "532c868651f89582ffb3294957f2f95e6ed445c7cd3eba8f2e388d5b707242ef",
+    "kind": "user_provided_platform_screenshot"
+  },
+  "account": {
+    "agx_account_id": null,
+    "scope": "Account supplied by haoran; do not merge with Wego historical results."
+  },
+  "attribution": {
+    "bundle_mapping": "User reports these bundles were run; verified against local ZIP hashes and manifests.",
+    "metrics_scope": "Cumulative account dashboard; the screenshot states results span code versions.",
+    "per_match_frozen_version_verified": false,
+    "admission_receipt": null,
+    "activation_time": null
+  },
+  "games": {
+    "Racing": {
+      "panel": "right",
+      "bundle": {
+        "zip_path": "dist/racing-952e480a14ca.zip",
+        "git_sha": "952e480a14ca5e410ded2d8b162c7451e6334853",
+        "zip_sha256": "f5eb50075471fab7661607b55ce6537a48de69f7881d6c2b302d85d0b02977bd",
+        "user_supplied_prefix": "f5eb50075471",
+        "local_manifest_verified": true
+      },
+      "metrics": {
+        "platform_rank": 137,
+        "dashboard_score": 1507.9,
+        "formal_matches": 11,
+        "average_finish_position": 6.55,
+        "podium_rate_pct": 18.2
+      },
+      "recent_visible_positions_oldest_to_newest": [
+        10,
+        5,
+        6,
+        7,
+        10,
+        3,
+        6,
+        7,
+        10,
+        3
+      ],
+      "per_version_match_count": null,
+      "completion_rate": null,
+      "maps": null,
+      "match_ids": []
+    },
+    "FPS": {
+      "panel": "left",
+      "bundle": {
+        "zip_path": "dist/fps-4f5747cbde42.zip",
+        "git_sha": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+        "zip_sha256": "2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1",
+        "user_supplied_prefix": "2fb651073041",
+        "local_manifest_verified": true
+      },
+      "metrics": {
+        "platform_rank": 150,
+        "personal_rating": 960.1,
+        "team_win_rate_pct": 45
+      },
+      "total_match_count": null,
+      "recent_visible_rank_labels_oldest_to_newest": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "recent_visible_rating_delta_labels_oldest_to_newest": [
+        -45,
+        46,
+        52,
+        50,
+        42,
+        -45,
+        -43,
+        -33,
+        -47,
+        32
+      ],
+      "per_version_match_count": null,
+      "maps": null,
+      "match_ids": [],
+      "recent_win_draw_loss": null,
+      "recent_rank_note": "Record displayed labels only; do not infer draws or per-version win/loss counts without match details."
+    }
+  },
+  "next_actions": {
+    "Racing": {
+      "action": "test_prepared_candidate_after_review_and_platform_admission",
+      "bundle": {
+        "zip_path": "dist/racing-41367f1bf548.zip",
+        "git_sha": "41367f1bf548f71e6826a0f31b6b59e80c584483",
+        "zip_sha256": "4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621",
+        "user_supplied_prefix": "4a3466ba671b",
+        "local_manifest_verified": true
+      },
+      "note": "R07 plus lateral cut-in prediction; a multi-change upgrade from the classroom baseline, not an isolated cut-in ablation."
+    },
+    "FPS": {
+      "action": "keep_current_bundle_do_not_reupload_same_bytes",
+      "bundle": {
+        "zip_path": "dist/fps-4f5747cbde42.zip",
+        "git_sha": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+        "zip_sha256": "2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1",
+        "user_supplied_prefix": "2fb651073041",
+        "local_manifest_verified": true
+      },
+      "note": "Already includes navigation efficiency and dropped-bomb recovery; no newer local FPS code is prepared."
+    }
+  },
+  "platform_mutations_performed_by_assistant": false
+}

@@ -10,3 +10,4 @@
 | 11/20 · R02 | haoran（本地 Git 名，课程姓名待确认） | 发起个人 FPS 开发；确认无本人日志，本轮先做地图/程序检查。节点筛选实现、测试执行与记录由 Codex 辅助完成，人工代码理解、复核及实战贡献待后续填写 | [R02 实验](../experiments/R02-haoran-fps-navigation/README.md) | 待其他组员审阅 |
 | 11/20 · R02 目标策略 | haoran（同上） | 指出前一版没有改变比赛决策。Codex 随后实现掉落炸弹回收目标并完成离线检查；人工理解、复核和实战贡献待补 | [掉包回收](../experiments/R02-haoran-fps-bomb-recovery/README.md) | 待其他组员审阅 |
 | 11/20 · R02 Racing | haoran（同上） | 要求 Racing 更新并提供 0/10 的平台状态截图。Codex 核对公开配置、实现旁车侧向切入预测并执行离线检查；人工审阅与比赛贡献待补 | [Racing 实验](../experiments/R02-haoran-racing-cut-in/README.md) | 待其他组员审阅 |
+| 11/21 · 平台结果补录 | haoran（同上） | 用户报告完成平台运行，提供两游戏成绩截图及使用包的指纹关联。Codex 核对 ZIP/源码映射、转录累计指标并记录下一轮方案；逐局冻结版本与人工审阅待补 | [平台快照](../experiments/R02-haoran-platform-20261121/README.md) | 待其他组员审阅 |
