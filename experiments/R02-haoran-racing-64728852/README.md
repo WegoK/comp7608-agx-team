@@ -71,11 +71,17 @@ python3 scripts/evaluate_racing_recovery.py --log dist/racing-inputs/training-64
 |---|---|
 | 旧包实战、冻结版本与导出完整性 | 已核实；本场第 5 名属于旧包 `4a3466ba671b` |
 | 新版策略与离线检查 | 已完成 |
-| 新版本地基础检查、提交与打包 | 待本轮检查后补录 |
+| 新版本地基础检查、提交与打包 | 已通过；源码/ZIP 一致、权重加载和包内入口检查通过 |
 | 独立人工审阅 | 待进行 |
 | 新版平台 validation / 激活 / 正式赛 | 未执行 |
 
-按仓库要求执行 `python3 scripts/check.py` 与 `python3 scripts/package.py racing`。Windows 使用干净 LF 临时工作区和附带 Python 的 UTF-8 模式，保持老师原始资料字节不变；基础检查不等于游戏环境测试。最终候选源码、包指纹和包内检查在完成后补录，不因已有旧包赛果将新包状态写成通过。
+候选源码提交为 `d6268a7f50adcfec63b79ca706c627401ae2af2d`。已按仓库要求在干净 LF 临时工作区执行 `python3 scripts/check.py` 与 `python3 scripts/package.py racing`，通过。Windows 的 `python3` 为会话内函数，调用附带 Python 的 `-X utf8` 模式；没有修改老师原始资料、检查脚本或用户全局设置。基础检查不等于游戏环境测试。
+
+- 下一轮上传包：`dist/racing-d6268a7f50ad.zip`。
+- 完整 ZIP SHA256：`bfaeb741839032f0bffc0671592ac48860374ed44213f6a89aff3cd7d5a2e4a9`。
+- 包内仅五个原定文件，逐字节与源码提交的 Git blob 一致；设计、前视驾驶器和两份权重的指纹与旧包保持一致。
+- ZIP 实际物化、加载两份数值权重后，20 项受控检查、200 次真实日志观察入口回调（100 次排位、100 次正赛）以及三赛道两阶段 6 个合成入口通过。完整 20,136 次分析在 LF 工作区重算，与本记录 JSON 一致。
+- 详见 [package-manifest.json](package-manifest.json) 和 [packaging-checks.json](packaging-checks.json)。文档后续提交号可能不同，上传包追溯以上述源码提交为准。
 
 下一轮：保留 `racing-41367f1bf548.zip` 作对照/回退，新候选需审阅及平台准入后再测。优先补新版 Parkland 湿地比赛，比较完成状态、碰撞、圈时、胎温和能量；再补干地和另外两赛道的对照，避免只根据一场湿地比赛选择策略。此次未代为发布、激活、推送或邀请他人。
 

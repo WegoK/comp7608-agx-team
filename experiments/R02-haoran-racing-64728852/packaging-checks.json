@@ -1,0 +1,51 @@
+{
+  "source_commit": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+  "zip_sha256": "bfaeb741839032f0bffc0671592ac48860374ed44213f6a89aff3cd7d5a2e4a9",
+  "official_source_and_project_check": "passed_in_clean_lf_worktree",
+  "packaging_command": "python3 scripts/package.py racing",
+  "zip_files_equal_git_blobs": true,
+  "zip_file_count": 5,
+  "materialized_frozen_weights_loaded": true,
+  "packaged_controlled_guards": 20,
+  "packaged_recorded_observation_callbacks": {
+    "qualifying": 100,
+    "race": 100
+  },
+  "packaged_synthetic_dispatch": [
+    {
+      "track": "parkland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "parkland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "race",
+      "passed": true
+    }
+  ],
+  "committed_analysis_reproduced": true,
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "environment": "Bundled Python -X utf8; process-local python3 function; clean LF worktree preserving official hashes."
+}
