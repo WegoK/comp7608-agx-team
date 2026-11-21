@@ -80,6 +80,8 @@ ZIP 仅含 `agent.py`、`preview_driver.py`、`design.json`、`weights/plan.npz`
 
 ## AI 与实际贡献
 
+后续更新（2026-11-21）：已收到本包实际比赛 `64728852-3338-4886-8560-6778900beaad` 的完整导出。冻结版本和包指纹一致，Parkland 湿地第 5 名完赛，20,136 次动作重现、故障 0。本场走 Parkland 专用控制器，不能单独归因或评价前视驾驶器侧向预测。新的湿地参考制动实验在另一个分支进行，详见 [逐局证据与新候选](../R02-haoran-racing-64728852/README.md)。此前“正在运行、未收结果”的条目保留为历史状态。
+
 用户要求 Racing 更新、允许单独切分支并提供平台截图。Codex 检查公开规则和代码，实现侧向切入策略、离线检查与本记录；没有代为上传、切换 AGX 版本，也没有使用或索取凭证。人工理解、审阅和实战贡献待实际发生后记录。
 
 参考：[当前比赛规则](https://agx.cool/#/competitions/1eb91364-950b-5725-aa4b-3501b16860ec/rules)、[官方入门文档](https://agx.cool/#/docs/racing-starter)、[报告](../../report/REPORT.md)、[贡献记录](../../report/CONTRIBUTIONS.md)。

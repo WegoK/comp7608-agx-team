@@ -1063,12 +1063,17 @@ class Driver:
         never raise a speed limit, grip budget, road margin or collision cap.
         """
         c = self.c
+        # Wet traffic can leave LINE/DRAFT below the reference trajectory too.
+        # Only reconsider negative feed-forward while actually below the final
+        # capped target; the same arrival checks and safety vetoes still apply.
+        wet_recovery = (self.wet >= .5 and self.mode in ('LINE', 'DRAFT')
+                        and original < 0 and target > self.v+.5)
         if (self.o['phase'] != 'race' or c['lap'] < 1 or not self.gg_active
                 or c['pit_state'] or yielding or guard_braking or self.mode == 'DEFEND'
                 or c['front_sliding'] or c['rear_sliding']
                 or abs(self.goal-self.offset) > .25
                 or self.tracking_error() > .4
-                or not (self.mode == 'PASS' or self.chasing)):
+                or not (self.mode == 'PASS' or self.chasing or wet_recovery)):
             return original
         def feasible(acceleration):
             for t in (.1,.2,.3,.4):
@@ -1089,6 +1094,8 @@ class Driver:
             else:high=middle
         self.diagnostic['arrival_control'] = True
         self.diagnostic['arrival_acceleration'] = float(low)
+        if wet_recovery and not (self.mode == 'PASS' or self.chasing):
+            self.diagnostic['wet_reference_recovery'] = True
         return low
 
     def straight_attack(self, acceleration, target, speed_at, yielding, guard_braking):
