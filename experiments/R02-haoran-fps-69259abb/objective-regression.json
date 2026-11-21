@@ -1,0 +1,68 @@
+{
+  "schema": "fps-bomb-recovery-decisions-v1",
+  "baseline_commit": "4555a0a57521ffdc998992c93b6d7e567ebe3e74",
+  "candidate_agent_lf_sha256": "51c69ee9b179f352339c8fe25fda575c24574cf2368a51d0e4e27721fe7f2547",
+  "checks": {
+    "public_maps": [
+      {
+        "map_id": "borgo-r3-v54",
+        "synthetic_attack_cases": 20,
+        "synthetic_defend_cases": 20,
+        "public_geometry_sha256": "8ec6c47cebe58cf8553db11bc12d6049983f4dd0e356da13d3cb1b8a4e1499ca"
+      },
+      {
+        "map_id": "dust2-cs2-v54",
+        "synthetic_attack_cases": 20,
+        "synthetic_defend_cases": 20,
+        "public_geometry_sha256": "f5f95917b598c1abc3f2a1bf061a6b0a1f968b0ee22472c3c947c1f80258b4d1"
+      },
+      {
+        "map_id": "mirage-cs2-v54",
+        "synthetic_attack_cases": 20,
+        "synthetic_defend_cases": 20,
+        "public_geometry_sha256": "8413d9cbf046b71e63ac39aabfcfc8b5696af1e9eb9502d6b4f7e8bfd419db3c"
+      },
+      {
+        "map_id": "molo-r3-v54",
+        "synthetic_attack_cases": 20,
+        "synthetic_defend_cases": 20,
+        "public_geometry_sha256": "33c45a56aaf95ecfd3cee4cbdbbbca68f68da3d88237ddee3691fc9089ca7bd8"
+      },
+      {
+        "map_id": "nevaio-r3-v54",
+        "synthetic_attack_cases": 20,
+        "synthetic_defend_cases": 20,
+        "public_geometry_sha256": "ad8ed396d20c87394ad61a66321d1b7b8e5fa938f85ff24f014173065bcc26ad"
+      }
+    ],
+    "synthetic_attack_cases": 100,
+    "attack_goal_changes": 100,
+    "unchanged_defend_cases": 100,
+    "guard_cases": [
+      "carried_bomb",
+      "unknown_bomb",
+      "missing_position",
+      "null_position",
+      "empty_position",
+      "wrong_dimension",
+      "nonnumeric_position",
+      "boolean_position",
+      "nonfinite_position",
+      "stale_position_on_unknown_state",
+      "planted_bomb",
+      "phase_buy",
+      "phase_post",
+      "phase_finished",
+      "dead_player",
+      "visible_enemy_keeps_combat_priority",
+      "pickup_observation_resumes_site_and_continuous_plant",
+      "drop_switches_goal_and_clears_old_navigation_task",
+      "defuse_priority_preserved"
+    ],
+    "observed_pickup_transition_checked": true,
+    "scope": "Constructed nav graphs and observations; not collisions, automatic pickup adjudication, full matches or win rate."
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "formal_matches": 0
+}

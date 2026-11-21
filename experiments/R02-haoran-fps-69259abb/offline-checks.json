@@ -1,0 +1,408 @@
+{
+  "match_id": "69259abb-fcc8-4474-874f-b88d0562750a",
+  "map_id": "nevaio-r3-v54",
+  "rules_version": "rsi-fps-5.5",
+  "own_seat_zero_based": 8,
+  "own_team_zero_based": 1,
+  "platform_version_id": "8da30c44-e0c4-45de-86d1-c5c178c82888",
+  "bundle_sha256": "2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1",
+  "integrity": {
+    "complete": true,
+    "decision_rows": 47731,
+    "raw_decision_bytes": 139632649,
+    "decision_bytes_sha256": "3d0cf9b7491065ef1d62252db8f610326404e61852486e84f6521b68461df572",
+    "seat_calls": {
+      "8": 47731
+    }
+  },
+  "observed": {
+    "faults": 0,
+    "round_wins_team_order": [
+      13,
+      9
+    ],
+    "own_team_round_score": "9:13",
+    "own_requested_plant_or_defuse": 0,
+    "kills": 16,
+    "deaths": 17,
+    "hp_damage": 1784.591,
+    "wrong_site_full_fuse_alive_round_indices": [
+      0,
+      3,
+      8,
+      9
+    ]
+  },
+  "same_observation_comparison": {
+    "reference_action_agreement": 47731,
+    "candidate_changed_actions": 3200,
+    "unchanged_outside_retake": 44531,
+    "unchanged_retake_combat_calls": 0,
+    "unchanged_total_combat_calls": 617,
+    "scope": "Recorded legal observations only; new trajectories, visibility, collisions and match outcomes are NOT simulated."
+  },
+  "rounds": {
+    "0": {
+      "side": "defend",
+      "alive_live_calls": 2158,
+      "planted_unknown_alive_calls": 800,
+      "requested_uses": {},
+      "candidate_changes": 800,
+      "candidate_scan_calls": 50,
+      "candidate_target_switches": [
+        {
+          "tick": 4434,
+          "site": "A"
+        },
+        {
+          "tick": 4584,
+          "site": "B"
+        }
+      ],
+      "unknown_first_tick": 4434,
+      "unknown_last_tick": 6831,
+      "reference_assigned_site": "A",
+      "reference_last_goal_distance_m": 0.0835,
+      "public_replay_planted_site": "B",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 6834
+    },
+    "1": {
+      "side": "defend",
+      "alive_live_calls": 636,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "elimination",
+      "end_tick": 13792
+    },
+    "2": {
+      "side": "defend",
+      "alive_live_calls": 1052,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "elimination",
+      "end_tick": 17608
+    },
+    "3": {
+      "side": "defend",
+      "alive_live_calls": 2328,
+      "planted_unknown_alive_calls": 800,
+      "requested_uses": {},
+      "candidate_changes": 800,
+      "candidate_scan_calls": 50,
+      "candidate_target_switches": [
+        {
+          "tick": 22854,
+          "site": "B"
+        },
+        {
+          "tick": 23004,
+          "site": "A"
+        }
+      ],
+      "unknown_first_tick": 22854,
+      "unknown_last_tick": 25251,
+      "reference_assigned_site": "B",
+      "reference_last_goal_distance_m": 0.0326,
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 25254
+    },
+    "4": {
+      "side": "defend",
+      "alive_live_calls": 888,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 31713
+    },
+    "5": {
+      "side": "defend",
+      "alive_live_calls": 1250,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "timeout",
+      "end_tick": 39273
+    },
+    "6": {
+      "side": "defend",
+      "alive_live_calls": 887,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "elimination",
+      "end_tick": 46072
+    },
+    "7": {
+      "side": "defend",
+      "alive_live_calls": 755,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "elimination",
+      "end_tick": 51820
+    },
+    "8": {
+      "side": "defend",
+      "alive_live_calls": 1786,
+      "planted_unknown_alive_calls": 800,
+      "requested_uses": {},
+      "candidate_changes": 800,
+      "candidate_scan_calls": 95,
+      "candidate_target_switches": [
+        {
+          "tick": 55440,
+          "site": "A"
+        },
+        {
+          "tick": 55770,
+          "site": "B"
+        }
+      ],
+      "unknown_first_tick": 55440,
+      "unknown_last_tick": 57837,
+      "reference_assigned_site": "A",
+      "reference_last_goal_distance_m": 0.0326,
+      "public_replay_planted_site": "B",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 57840
+    },
+    "9": {
+      "side": "defend",
+      "alive_live_calls": 2152,
+      "planted_unknown_alive_calls": 800,
+      "requested_uses": {},
+      "candidate_changes": 800,
+      "candidate_scan_calls": 50,
+      "candidate_target_switches": [
+        {
+          "tick": 62556,
+          "site": "B"
+        },
+        {
+          "tick": 62706,
+          "site": "A"
+        }
+      ],
+      "unknown_first_tick": 62556,
+      "unknown_last_tick": 64953,
+      "reference_assigned_site": "B",
+      "reference_last_goal_distance_m": 0.0155,
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 64956
+    },
+    "10": {
+      "side": "defend",
+      "alive_live_calls": 691,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "elimination",
+      "end_tick": 71278
+    },
+    "11": {
+      "side": "defend",
+      "alive_live_calls": 708,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "B",
+      "winner_team_zero_based": 0,
+      "end_reason": "bomb_explode",
+      "end_tick": 77652
+    },
+    "12": {
+      "side": "attack",
+      "alive_live_calls": 389,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 1,
+      "end_reason": "bomb_explode",
+      "end_tick": 85965
+    },
+    "13": {
+      "side": "attack",
+      "alive_live_calls": 910,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "timeout",
+      "end_tick": 93525
+    },
+    "14": {
+      "side": "attack",
+      "alive_live_calls": 347,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "timeout",
+      "end_tick": 101085
+    },
+    "15": {
+      "side": "attack",
+      "alive_live_calls": 320,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 1,
+      "end_reason": "bomb_explode",
+      "end_tick": 109683
+    },
+    "16": {
+      "side": "attack",
+      "alive_live_calls": 722,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "elimination",
+      "end_tick": 113242
+    },
+    "17": {
+      "side": "attack",
+      "alive_live_calls": 394,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "timeout",
+      "end_tick": 120802
+    },
+    "18": {
+      "side": "attack",
+      "alive_live_calls": 355,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 1,
+      "end_reason": "elimination",
+      "end_tick": 124873
+    },
+    "19": {
+      "side": "attack",
+      "alive_live_calls": 381,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "winner_team_zero_based": 0,
+      "end_reason": "timeout",
+      "end_tick": 132433
+    },
+    "20": {
+      "side": "attack",
+      "alive_live_calls": 350,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "A",
+      "winner_team_zero_based": 1,
+      "end_reason": "bomb_explode",
+      "end_tick": 137727
+    },
+    "21": {
+      "side": "attack",
+      "alive_live_calls": 295,
+      "planted_unknown_alive_calls": 0,
+      "requested_uses": {},
+      "candidate_changes": 0,
+      "candidate_scan_calls": 0,
+      "candidate_target_switches": [],
+      "public_replay_planted_site": "B",
+      "winner_team_zero_based": 0,
+      "end_reason": "defuse",
+      "end_tick": 143193
+    }
+  },
+  "public_diagnosis_note": "Omniscient events explain actual planted sites after policy comparison; neither policy receives them.",
+  "schema": "fps-retake-log-analysis-v1",
+  "reference_commit": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+  "candidate_agent_lf_sha256": "51c69ee9b179f352339c8fe25fda575c24574cf2368a51d0e4e27721fe7f2547",
+  "synthetic_guard_cases": [
+    "scan_then_rotate_after_150_ticks",
+    "injected_arrival_and_repeated_site_search",
+    "continuous_scan_resets_on_combat",
+    "continuous_scan_resets_on_blind",
+    "continuous_scan_resets_on_airborne",
+    "continuous_scan_resets_on_left_site",
+    "continuous_scan_resets_on_callback_gap",
+    "search_state_resets_on_known_position",
+    "search_state_resets_on_round_change",
+    "search_state_resets_on_map_change",
+    "search_state_resets_on_fuse_change",
+    "search_state_resets_on_not_planted",
+    "search_state_resets_on_buy",
+    "search_state_resets_on_dead",
+    "search_state_resets_on_side_change",
+    "attack_priority_or_action_preserved",
+    "ordinary_defend_priority_or_action_preserved",
+    "combat_priority_or_action_preserved",
+    "defuse_priority_or_action_preserved",
+    "plant_priority_or_action_preserved",
+    "known_bomb_travel_runs",
+    "single_site_safe_cycle",
+    "search_routes_on_borgo-r3-v54",
+    "search_routes_on_dust2-cs2-v54",
+    "search_routes_on_mirage-cs2-v54",
+    "search_routes_on_molo-r3-v54",
+    "search_routes_on_nevaio-r3-v54"
+  ],
+  "candidate_platform_validation": "not_run",
+  "candidate_activation": "not_run",
+  "candidate_real_matches": 0
+}

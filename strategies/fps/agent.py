@@ -1,4 +1,4 @@
-"""R08 navigation with objective-aware recovery of a legally located bomb."""
+"""R08 navigation, dropped-bomb recovery and legal planted-bomb search."""
 import math
 from collections import deque
 
@@ -51,12 +51,14 @@ class Candidate(NavigationMixin, Player):
         self.hold_task = None
         self.live_stage = self.first_live = None
         self.reset_motion()
+        self.reset_retake()
 
     def load_map(self, row):
         if row["id"] != self.map_id:
             self.hold_task = None
             self.path, self.goal = [], None
             self.reset_motion()
+            self.reset_retake()
         super().load_map(row)
         self.map_id = row["id"]
 
@@ -71,6 +73,67 @@ class Candidate(NavigationMixin, Player):
         self.escape_count = 0
         self.last_escape_end = -1000
 
+    def reset_retake(self):
+        self.retake_key = None
+        self.retake_site = None
+        self.retake_searched = set()
+        self.reset_scan()
+
+    def reset_scan(self):
+        self.scan_start = self.scan_tick = None
+
+    def search_planted_bomb(self, obs, action):
+        """Inspect public sites while the planted bomb position is unknown.
+
+        A completed look is only a search attempt, not evidence of absence.
+        Cycle sites if necessary; no replay-only location enters the policy.
+        Player.act retains combat and known-bomb defuse precedence.
+        """
+        bomb = obs["bomb"]
+        if obs["side"] != "defend" or bomb["state"] != "planted" or bomb.get("position"):
+            return None, None
+        key = (self.map_id, obs["round_index"], bomb.get("fuse_end_tick"))
+        if self.retake_key != key:
+            self.reset_retake()
+            self.retake_key = key
+        me, tick = obs["me"], obs["match_tick"]
+        pos = (me["x"], me["y"], me["z"])
+        if self.retake_site is None:
+            self.retake_site = min(range(len(self.sites)),
+                                   key=lambda i: math.dist(pos, self.sites[i]["center"]))
+        goal = list(self.sites[self.retake_site]["center"])
+        if math.dist(pos, goal) > 1.0:
+            self.reset_scan()
+            return goal, None
+
+        # At 20 decisions/s, 150 ticks give 2.5s to look around the floor.
+        # Blindness or a combat interruption must not count as inspection.
+        if me["blind_ticks"] or not me["grounded"]:
+            self.reset_scan()
+        else:
+            if self.scan_tick != tick - 3:
+                self.scan_start = tick
+            self.scan_tick = tick
+            if tick - self.scan_start >= 150:
+                self.retake_searched.add(self.retake_site)
+                remaining = set(range(len(self.sites))) - self.retake_searched
+                if not remaining:
+                    self.retake_searched.clear()
+                    remaining = set(range(len(self.sites))) - {self.retake_site}
+                self.retake_site = min(remaining or {self.retake_site},
+                                       key=lambda i: (math.dist(pos, self.sites[i]["center"]), i))
+                self.reset_scan()
+                self.path, self.goal = [], None
+                self.last_position, self.stuck = None, 0
+                return list(self.sites[self.retake_site]["center"]), None
+
+        self.path, self.goal = [], goal
+        self.last_position, self.stuck = None, 0
+        self.reset_motion()
+        action.update(move_forward=0.0, move_right=0.0, yaw_rate=1.0,
+                      pitch_rate=clip((-0.65 - me["pitch"]) / 0.1), walk=False)
+        return goal, action
+
     def act(self, obs):
         tick = obs["match_tick"]
         stage = (obs.get("map_id"), obs["round_index"], obs["side"])
@@ -78,18 +141,33 @@ class Candidate(NavigationMixin, Player):
             self.live_stage = stage
             self.first_live = None
             self.reset_motion()
+            self.reset_retake()
+        if (obs["phase"] != "live" or not obs["me"]["alive"]
+                or obs["side"] != "defend" or obs["bomb"]["state"] != "planted"
+                or obs["bomb"].get("position")):
+            self.reset_retake()
         if obs["phase"] == "live" and self.first_live is None:
             self.first_live = tick
         action = super().act(obs)
+        # A higher-priority stationary decision interrupted any ongoing scan.
+        if self.scan_tick is not None and self.scan_tick != tick:
+            self.reset_scan()
         # Objective use, stationary holds and other non-navigation decisions
         # preempt locomotion. Never accumulate a stall across those pauses.
         if self.last_move_tick != tick and self.motion_task is not None:
             self.reset_motion()
-        if obs["side"] == "attack" and "walk" in action:
+        if "walk" in action and (obs["side"] == "attack" or (
+                obs["side"] == "defend" and obs["bomb"]["state"] == "planted"
+                and obs["phase"] == "live" and obs["me"]["alive"])):
             action["walk"] = False
         return action
 
     def move(self, observation, goal, action):
+        search_goal, scan_action = self.search_planted_bomb(observation, action)
+        if scan_action is not None:
+            return scan_action
+        if search_goal is not None:
+            goal = search_goal
         recovery_goal = dropped_bomb_goal(observation)
         if recovery_goal is not None:
             # The arena picks up a nearby visible bomb automatically. Keep
