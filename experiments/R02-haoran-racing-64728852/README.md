@@ -73,7 +73,7 @@ python3 scripts/evaluate_racing_recovery.py --log dist/racing-inputs/training-64
 | 新版策略与离线检查 | 已完成 |
 | 新版本地基础检查、提交与打包 | 已通过；源码/ZIP 一致、权重加载和包内入口检查通过 |
 | 独立人工审阅 | 待进行 |
-| 新版平台 validation / 激活 / 正式赛 | 未执行 |
+| 新版平台 validation / 激活 / 正式赛 | 11/22 已核实 `33d17cb4` 实际采用本包；独立准入回执与精确激活时间仍未取得 |
 
 候选源码提交为 `d6268a7f50adcfec63b79ca706c627401ae2af2d`。已按仓库要求在干净 LF 临时工作区执行 `python3 scripts/check.py` 与 `python3 scripts/package.py racing`，通过。Windows 的 `python3` 为会话内函数，调用附带 Python 的 `-X utf8` 模式；没有修改老师原始资料、检查脚本或用户全局设置。基础检查不等于游戏环境测试。
 
@@ -86,5 +86,7 @@ python3 scripts/evaluate_racing_recovery.py --log dist/racing-inputs/training-64
 下一轮：保留 `racing-41367f1bf548.zip` 作对照/回退，新候选需审阅及平台准入后再测。优先补新版 Parkland 湿地比赛，比较完成状态、碰撞、圈时、胎温和能量；再补干地和另外两赛道的对照，避免只根据一场湿地比赛选择策略。此次未代为发布、激活、推送或邀请他人。
 
 ## AI 与实际贡献
+
+后续实战更新（2026-11-22）：完整日志 `33d17cb4-a681-4db5-861a-3ecc34b80abf` 的 source_hash 已精确匹配本候选包 `bfaeb7418390…`，平台冻结版本为 `ea51330f-6cd0-45af-996c-4418641b97c6`。Parkland 第 5 名、4 圈 finished、455.691 s，故障 0，17,014 次动作重现。新入口在该场第二圈改变 30 次同观察决策，尚未建立因果圈时收益。独立准入回执与激活时间仍未取得；打包清单的 not_run 保留为当时状态。详见 [本场复盘](../R02-haoran-racing-33d17cb4/README.md)。本轮不继续改策略。
 
 用户提供日志和回放、要求继续优化 Racing。Codex 校验完整导出与冻结代码、读取公开事件、定位参考制动入口差异、实现受限修正、执行离线检查并整理记录。用户/组员独立理解、审阅以及新包平台运行待实际发生后登记。
