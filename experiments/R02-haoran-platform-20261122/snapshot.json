@@ -1,0 +1,116 @@
+{
+  "schema": "agx-dashboard-snapshot-v1",
+  "recorded_on_beijing": "2026-11-22",
+  "captured_at_beijing": null,
+  "source": {
+    "path": "../202611222121.JPG",
+    "sha256": "0fb6ee1775508269436a4363dbb5155a591230b45176246dc06ef3dab9eb8614",
+    "kind": "user_provided_platform_screenshot",
+    "capture_time_note": "Filename suggests a time; exact capture timestamp has not been independently confirmed."
+  },
+  "account_scope": "User-supplied personal account; kept separate from Wego historical results.",
+  "attribution": {
+    "metrics_scope": "Cumulative account dashboard across versions.",
+    "published_version_labels_are_not_frozen_version_ids": true,
+    "bundle_mapping_verified": false,
+    "per_match_frozen_version_verified": false,
+    "Racing_v3_to_d6268a7f50ad_mapping": "Not established by this screenshot."
+  },
+  "games": {
+    "FPS": {
+      "panel": "left",
+      "published_code_label": "v2",
+      "platform_version_id": null,
+      "git_sha": null,
+      "zip_sha256": null,
+      "metrics": {
+        "platform_rank": 93,
+        "personal_rating": 1125.1,
+        "team_win_rate_pct": 58
+      },
+      "total_match_count": null,
+      "recent_visible_rank_labels_oldest_to_newest": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        "平",
+        1,
+        2,
+        1,
+        2
+      ],
+      "recent_visible_rating_delta_labels_oldest_to_newest": [
+        31,
+        40,
+        0,
+        -30,
+        33,
+        -1,
+        30,
+        -31,
+        34,
+        -38
+      ]
+    },
+    "Racing": {
+      "panel": "right",
+      "published_code_label": "v3",
+      "platform_version_id": null,
+      "git_sha": null,
+      "zip_sha256": null,
+      "metrics": {
+        "platform_rank": 120,
+        "dashboard_score": 1627.4,
+        "formal_matches": 26,
+        "average_finish_position": 5.35,
+        "podium_rate_pct": 30.8
+      },
+      "recent_visible_positions_oldest_to_newest": [
+        2,
+        7,
+        2,
+        3,
+        5,
+        3,
+        4,
+        4,
+        3,
+        5
+      ],
+      "derived_recent_visible_metrics": {
+        "sample_size": 10,
+        "average_finish_position": 3.8,
+        "podium_count": 5,
+        "podium_rate_pct": 50,
+        "scope": "Only the ten displayed results; not verified as ten v3 matches.",
+        "finish_status_verified": false
+      }
+    }
+  },
+  "comparison_to_previous_snapshot": {
+    "source": "../R02-haoran-platform-11211643/snapshot.json",
+    "FPS": {
+      "personal_rating_change": 98.0,
+      "platform_rank_positions_improved": 16,
+      "team_win_rate_change_percentage_points": 4
+    },
+    "Racing": {
+      "dashboard_score_change": 89.3,
+      "platform_rank_positions_improved": 11,
+      "additional_formal_matches": 13,
+      "average_finish_position_change": -0.73,
+      "podium_rate_change_percentage_points": 7.7
+    },
+    "causal_effect_of_new_strategies_established": false
+  },
+  "decision": {
+    "FPS": "Continue keeping the effective competition version; no strategy change based on isolated recent losses.",
+    "Racing": "Keep the effective competition version while reviewing evidence; next optimization needs version-bound logs, prioritizing weaker v3 results.",
+    "observation_batch": "13 additional cumulative Racing matches are visible since the previous snapshot; their exact frozen versions are not established.",
+    "new_strategy_changes": false,
+    "assistant_uploaded_or_activated": false
+  },
+  "recorded_by": "Codex transcribed the screenshot, computed dashboard deltas and recent Racing summary, and maintained the hold-and-review decision."
+}
