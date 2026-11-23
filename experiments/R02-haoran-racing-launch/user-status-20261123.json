@@ -1,0 +1,29 @@
+{
+  "schema": "agx-user-reported-transition-v1",
+  "recorded_on_beijing": "2026-11-23",
+  "source": "User clarified that the reported 8th place was with the old package and intends to switch to the new package.",
+  "game": "Racing",
+  "previous_bundle": {
+    "git_sha": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+    "zip_sha256": "bfaeb741839032f0bffc0671592ac48860374ed44213f6a89aff3cd7d5a2e4a9",
+    "reported_position": 8,
+    "match_id": null,
+    "finish_status": null,
+    "per_match_frozen_version_verified": false,
+    "result_evidence": "user_report_only"
+  },
+  "next_candidate": {
+    "git_sha": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+    "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+    "zip_path": "dist/racing-ee12c93d76f6.zip",
+    "local_hash_reverified": true,
+    "user_intent": "test_new_package",
+    "upload_confirmed": false,
+    "activation_confirmed": false,
+    "platform_version_id": null,
+    "match_ids": []
+  },
+  "strategy_changes_this_update": false,
+  "assistant_uploaded_or_activated": false,
+  "attribution_note": "The reported 8th place is not a result of the new launch candidate; the new candidate has no supplied match result."
+}
