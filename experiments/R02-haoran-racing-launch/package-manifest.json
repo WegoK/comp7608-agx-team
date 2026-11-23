@@ -1,0 +1,14 @@
+{
+  "game": "racing",
+  "git_sha": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+  "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+  "files": {
+    "agent.py": "482f727bb94ce395f96ef4d5389f48d1779beee95e117bfc2cf976cc4691af50",
+    "design.json": "e18e31487c5322c206dab4ef431556bde0bfc5ccb8d3514a83972ccfcb6faf0e",
+    "preview_driver.py": "6a579a440ec436f47dfa5b29c0bdeff3e4c20f3e1d4989a158d9fe3050662b06",
+    "weights/mechanics.npz": "af906af36c46fb08c8645db0c674c38e515366d57a84998820262f26ed23e26e",
+    "weights/plan.npz": "417c4730db6132e311438632d98b52cf6d109dc7a4824ccd976fadc763a683ed"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run"
+}

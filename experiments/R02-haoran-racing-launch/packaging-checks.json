@@ -1,0 +1,54 @@
+{
+  "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+  "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+  "official_source_and_project_check": "passed_in_clean_lf_worktree",
+  "packaging_command": "python3 scripts/package.py racing",
+  "zip_files_equal_git_blobs": true,
+  "zip_file_count": 5,
+  "materialized_weights_loaded": true,
+  "packaged_launch_guards": 21,
+  "packaged_legacy_guards": 20,
+  "packaged_recorded_observation_callbacks": {
+    "qualifying": 100,
+    "race": 100
+  },
+  "packaged_actions_equal_source": true,
+  "packaged_synthetic_dispatch": [
+    {
+      "track": "parkland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "parkland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "highland",
+      "phase": "race",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "qualifying",
+      "passed": true
+    },
+    {
+      "track": "crossover",
+      "phase": "race",
+      "passed": true
+    }
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "scalar_regression_note": "72 hypothetical cases preserve both versions' 2 inherited overlap cases; no new overlap. Not a collision-free guarantee.",
+  "environment": "Bundled Python -X utf8; process-local python3 function; clean LF worktree.",
+  "committed_analysis_reproduced": true
+}

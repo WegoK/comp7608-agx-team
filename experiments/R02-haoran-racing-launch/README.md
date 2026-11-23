@@ -54,11 +54,18 @@ python3 scripts/evaluate_racing_launch.py --log dist/racing-inputs/training-33d1
 | 阶段 | 状态 |
 |---|---|
 | 实现、同观察对照、受控检查与模型记录 | 已完成；模型原有两组极端失败如上保留 |
-| 项目基础检查、提交与打包 | 待执行后补录 |
+| 项目基础检查、提交与打包 | 已通过；ZIP 源码/权重及包内入口检查通过 |
 | 独立人工审阅 | 待进行 |
 | 新候选平台 validation / 激活 / 实战 | 未执行 |
 
 按仓库要求使用 `python3 scripts/check.py` 和 `python3 scripts/package.py racing`。基础检查不是游戏环境测试。本轮不代为发布或激活版本。
+
+候选源码提交为 `ee12c93d76f6ecefc9569776b925139adbd7c860`。两条命令已在干净 LF 工作区、附带 Python 的 `-X utf8` 模式通过；`python3` 为当前 PowerShell 会话函数，未改全局配置或老师源文件。完整分析在该工作区重跑，与已提交 JSON 一致。
+
+- 上传候选：`dist/racing-ee12c93d76f6.zip`，完整 SHA256 `0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4`。
+- 包内五个文件逐字节对应提交；只有 `agent.py` 的指纹改变，其余四个文件与稳定对照包一致。
+- 实际物化包并加载两份权重后，21 项发车检查、20 项原入口检查、200 次真实观察入口回调与源码动作一致，三赛道两阶段 6 个合成入口通过。
+- 包、源码、阶段与检查记录见 [package-manifest.json](package-manifest.json)、[packaging-checks.json](packaging-checks.json)。后续文档提交不同于打包源码提交；平台阶段仍未执行，极端模型失败仍保留。
 
 下一轮优先比较新旧包在 Parkland 前十秒的进度、最小前车间距、滑胎和接触，再看第一圈及整场；记录天气/席位/冻结版本，不能以不同条件的总用时直接归因。第三圈仅在进一步证明前车/车道判定存在误差后另开实验。FPS 暂不改动。
 
