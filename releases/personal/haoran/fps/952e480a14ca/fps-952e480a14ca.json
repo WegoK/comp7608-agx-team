@@ -1,0 +1,10 @@
+{
+  "game": "fps",
+  "git_sha": "952e480a14ca5e410ded2d8b162c7451e6334853",
+  "zip_sha256": "6763b04a75ef94476ae67db6179cff53f408a46b8a8d2be7e4a755ff05a3a7d7",
+  "files": {
+    "agent.py": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run"
+}

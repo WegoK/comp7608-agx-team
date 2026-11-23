@@ -4,6 +4,7 @@
 
 | 实验 | 作者 | PR / Git SHA | 状态 | 比赛证据 | 决定 | 报告章节 |
 |---|---|---|---|---|---|---|
+| [11/23 版本索引与远端整理](R02-haoran-repository-sync/README.md) | 用户授权并提供版本截图；Codex 核对/整理 | [固定 commit、包与分支索引](../releases/VERSION_MAP.md) | 版本与归档核对完成；远端状态见记录 | 个人 FPS v1/v2、Racing v1–v5；v4/v5 同包 | 两个长期个人开发分支，历史分支保留 | 报告第 4 节版本整理 |
 | [R02 · FPS 脱困节点筛选](R02-haoran-fps-navigation/README.md) | haoran 发起；Codex 实现/离线检查 | 代码 `2de04594295ac3842ebdb0470321b715dcac3f0b`；分支 `codex/haoran-fps-navigation` | 本地检查、打包完成；人工/平台验证待完成 | 尚无本候选比赛 | 保留供审阅，不作胜率结论 | 报告第 2 节 R02 |
 | [R02 · FPS 掉包回收策略](R02-haoran-fps-bomb-recovery/README.md) | haoran 指出策略范围；Codex 实现/离线检查 | 代码 `4f5747cbde4296a235b042e60b7486a224f3dfd4`；FPS 个人分支 | 用户确认此包已运行；逐局冻结版本/准入回执待补 | [11/21 累计快照](R02-haoran-platform-20261121/README.md)：150 名，960.1 分，胜率 45% | 保留当前包观察，战术收益待逐局验证 | 报告第 2 节掉包回收及平台快照 |
 | [R02 · Racing 侧向切入预测](R02-haoran-racing-cut-in/README.md) | haoran 发起并提供截图；Codex 实现/检查 | 代码 `41367f1bf548f71e6826a0f31b6b59e80c584483`；分支 `codex/haoran-racing-strategy` | 11/21 用户确认包 `4a3466ba671b` 已上传、正在运行；独立回执待补 | [运行状态](R02-haoran-racing-cut-in/platform-status-20261121.json)，候选完结结果尚未提供 | 等待实际结果，不沿用 baseline 的 11 场成绩 | 报告第 3、4 节 R02 |

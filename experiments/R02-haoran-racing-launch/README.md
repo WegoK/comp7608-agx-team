@@ -56,7 +56,7 @@ python3 scripts/evaluate_racing_launch.py --log dist/racing-inputs/training-33d1
 | 实现、同观察对照、受控检查与模型记录 | 已完成；模型原有两组极端失败如上保留 |
 | 项目基础检查、提交与打包 | 已通过；ZIP 源码/权重及包内入口检查通过 |
 | 独立人工审阅 | 待进行 |
-| 新候选平台 validation / 激活 / 实战 | 未执行 |
+| 新候选平台 validation / 激活 / 实战 | 11/23 历史截图确认 v4/v5 上传且验证通过、指纹相同；精确激活和计分对局待核实 |
 
 按仓库要求使用 `python3 scripts/check.py` 和 `python3 scripts/package.py racing`。基础检查不是游戏环境测试。本轮不代为发布或激活版本。
 
@@ -74,3 +74,5 @@ python3 scripts/evaluate_racing_launch.py --log dist/racing-inputs/training-33d1
 ## 11/23 用户澄清与换包计划
 
 用户报告的一场第 8 名使用的是旧包 `bfaeb7418390…`，并明确计划下一轮改试新包 `0ce291ac5e30…`。该第 8 名仅为用户口头报告，尚无 match ID、完整日志或完赛状态，不写成新候选失败，也不覆盖此前已核实的两场比赛。新候选 ZIP 的完整 SHA256 已再次核对一致；上传、生效和新包赛果仍未确认。本次只补记录，不改策略或代为操作平台，见 [用户状态](user-status-20261123.json)。
+
+随后用户提供 [平台版本历史截图](../racing_record.JPG)，确认 v4、v5 都是 `0ce291ac5e30`，均显示包已通过验证。该证据更新上传/验证状态；激活与赛果仍分开核实。v5 只是同包重复上传，不是新代码，见 [历史补录](platform-history-20261123.json) 与 [统一版本索引](../../releases/VERSION_MAP.md)。

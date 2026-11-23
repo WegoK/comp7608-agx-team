@@ -1,0 +1,461 @@
+{
+  "schema": "agx-version-and-branch-index-v1",
+  "recorded_on_beijing": "2026-11-23",
+  "remote": "https://github.com/WegoK/comp7608-agx-team.git",
+  "long_term_branches": [
+    {
+      "name": "codex/haoran-fps",
+      "game": "FPS",
+      "current_game_source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058"
+    },
+    {
+      "name": "codex/haoran-racing",
+      "game": "Racing",
+      "current_game_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860"
+    }
+  ],
+  "branch_policy": "Two long-term personal development branches; preserve and push all historical local branches. Do not delete or rewrite remote branches. Both long-term branches initially share the latest complete repository history; each contains both strategy directories.",
+  "branch_snapshot_before_index_update": [
+    {
+      "name": "codex/haoran-baseline",
+      "head_before_index_update": "f519f78a9da414a1ab7e22d05a3e3a235c009b2f",
+      "ancestor_of_index_base": false
+    },
+    {
+      "name": "codex/haoran-fps-69259abb",
+      "head_before_index_update": "ae61f8b884210d753184280670e3b3d79d05c07e",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "codex/haoran-fps-navigation",
+      "head_before_index_update": "2b3c1c4a419325133c5b56fa79349ec47f51fa80",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "codex/haoran-racing-20261123",
+      "head_before_index_update": "265966424143d5c9a4dde4846ddce60a864b9b1b",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "codex/haoran-racing-64728852",
+      "head_before_index_update": "af7e677cc8bbbfb986c1d86ad5e03e95762b6160",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "codex/haoran-racing-strategy",
+      "head_before_index_update": "ee0bb869d99b8b9c8fd6b03874fed609e03396af",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "codex/haoran-results-20261121",
+      "head_before_index_update": "77a1132800f2bb8674877afcaff17d377dd9a86e",
+      "ancestor_of_index_base": true
+    },
+    {
+      "name": "main",
+      "head_before_index_update": "639d89028595162ed8738df29447c7e49b83dc0d",
+      "ancestor_of_index_base": true
+    }
+  ],
+  "archived_bundles": [
+    {
+      "game": "fps",
+      "source_commit": "952e480a14ca5e410ded2d8b162c7451e6334853",
+      "zip_sha256": "6763b04a75ef94476ae67db6179cff53f408a46b8a8d2be7e4a755ff05a3a7d7",
+      "zip_path": "releases/personal/haoran/fps/952e480a14ca/fps-952e480a14ca.zip",
+      "manifest_path": "releases/personal/haoran/fps/952e480a14ca/fps-952e480a14ca.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "fps",
+      "source_commit": "2de04594295ac3842ebdb0470321b715dcac3f0b",
+      "zip_sha256": "a120215e7919f326d2cc25e63f2fb1a56c5d0206a2bf7c53ed2478ec0e271616",
+      "zip_path": "releases/personal/haoran/fps/2de04594295a/fps-2de04594295a.zip",
+      "manifest_path": "releases/personal/haoran/fps/2de04594295a/fps-2de04594295a.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "fps",
+      "source_commit": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+      "zip_sha256": "2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1",
+      "zip_path": "releases/personal/haoran/fps/4f5747cbde42/fps-4f5747cbde42.zip",
+      "manifest_path": "releases/personal/haoran/fps/4f5747cbde42/fps-4f5747cbde42.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "fps",
+      "source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058",
+      "zip_sha256": "06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f",
+      "zip_path": "releases/personal/haoran/fps/e27acc998e08/fps-e27acc998e08.zip",
+      "manifest_path": "releases/personal/haoran/fps/e27acc998e08/fps-e27acc998e08.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "racing",
+      "source_commit": "952e480a14ca5e410ded2d8b162c7451e6334853",
+      "zip_sha256": "f5eb50075471fab7661607b55ce6537a48de69f7881d6c2b302d85d0b02977bd",
+      "zip_path": "releases/personal/haoran/racing/952e480a14ca/racing-952e480a14ca.zip",
+      "manifest_path": "releases/personal/haoran/racing/952e480a14ca/racing-952e480a14ca.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "racing",
+      "source_commit": "41367f1bf548f71e6826a0f31b6b59e80c584483",
+      "zip_sha256": "4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621",
+      "zip_path": "releases/personal/haoran/racing/41367f1bf548/racing-41367f1bf548.zip",
+      "manifest_path": "releases/personal/haoran/racing/41367f1bf548/racing-41367f1bf548.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "racing",
+      "source_commit": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+      "zip_sha256": "bfaeb741839032f0bffc0671592ac48860374ed44213f6a89aff3cd7d5a2e4a9",
+      "zip_path": "releases/personal/haoran/racing/d6268a7f50ad/racing-d6268a7f50ad.zip",
+      "manifest_path": "releases/personal/haoran/racing/d6268a7f50ad/racing-d6268a7f50ad.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "racing",
+      "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+      "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
+      "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
+      "source_files_match_git": true,
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    }
+  ],
+  "wego_versions": [
+    {
+      "account_scope": "Wego historical archive",
+      "game": "FPS",
+      "agx_version": "v1",
+      "zip_path": "releases/competition/fps/v1/FPS_Official_Starter.zip",
+      "zip_sha256": "8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad",
+      "restorable_commit": "952e480a14ca5e410ded2d8b162c7451e6334853",
+      "restorable_path": "strategies/fps",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": null,
+      "recorded_original_commit_available": null,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "FPS",
+      "agx_version": "v2",
+      "zip_path": "releases/competition/fps/v2/FPS_Official_Starter.zip",
+      "zip_sha256": "8c1145d1267275251c18ef21e86a9d5ff979cb0ddefc37c4418b01153116b6ad",
+      "restorable_commit": "952e480a14ca5e410ded2d8b162c7451e6334853",
+      "restorable_path": "strategies/fps",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": null,
+      "recorded_original_commit_available": null,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "FPS",
+      "agx_version": "v3",
+      "zip_path": "releases/competition/fps/v3/FPS_Route_Mixed.zip",
+      "zip_sha256": "d7ecab804fc09e605d11e00cfadea6b71c42fa27c6a726029198dbb482e83e96",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "strategies/local/fps/R01-route-mixed",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": null,
+      "recorded_original_commit_available": null,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "FPS",
+      "agx_version": "v4",
+      "zip_path": "releases/competition/fps/v4/FPS_R06_Dust2.zip",
+      "zip_sha256": "94357aa70ceaa7311bf66fc91fede5d9d5024317aff2638b8279273cff3947b5",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "strategies/local/fps/R06",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": "66171b6bedfb82fe728c601bf2e29d20f40fd3e7",
+      "recorded_original_commit_available": false,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "FPS",
+      "agx_version": "v5",
+      "zip_path": "releases/competition/fps/v5/FPS_R08.zip",
+      "zip_sha256": "7231baa0d8dbb05fc1df24079110cc085a881f21f8763a7dee9cd0c5b8a97471",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "strategies/local/fps/R08",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": "a3af1bbab4aeddc0bc0b0a43f7d03829968bbc57",
+      "recorded_original_commit_available": false,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "Racing",
+      "agx_version": "v1",
+      "zip_path": "releases/competition/racing/v1/RACING_v1.zip",
+      "zip_sha256": "1029b9b56fde85e26ff4b0305a575c988d7897eae30936434985caf9c91a7c26",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "releases/competition/racing/v1/RACING_v1.zip",
+      "restorable_kind": "original_zip",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": null,
+      "recorded_original_commit_available": null,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "Racing",
+      "agx_version": "v2",
+      "zip_path": "releases/competition/racing/v2/RACING_R03.zip",
+      "zip_sha256": "477e4e54674052bf5532623b4273b0968ea103253c971de5bf4f2ea7176430ab",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "strategies/local/racing/R03",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": "1338d206388d53caa02de20c04be10f31cd9e3c8",
+      "recorded_original_commit_available": false,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "Racing",
+      "agx_version": "v3",
+      "zip_path": "releases/competition/racing/v3/RACING_R07.zip",
+      "zip_sha256": "9708d0db1a8753d0b7a7f8be51f174f9eefbcadd501dfbb1477f7728ef3c3643",
+      "restorable_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "restorable_path": "strategies/local/racing/R07",
+      "restorable_kind": "source_directory",
+      "archive_commit": "6d73ed44f312c879d21406b5b08bdd74aa932253",
+      "recorded_original_commit": "0b6d75a9a829d375c504b291c34bc0557667c003",
+      "recorded_original_commit_available": false,
+      "verification": "Original ZIP and, where available, every source file match Git bytes. Restorable commit can be a later import, not the original authoring commit."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "Racing",
+      "agx_version": "v4",
+      "status": "no_record_available",
+      "note": "No such version is established by the current repository evidence."
+    },
+    {
+      "account_scope": "Wego historical archive",
+      "game": "Racing",
+      "agx_version": "v5",
+      "status": "no_record_available",
+      "note": "No such version is established by the current repository evidence."
+    }
+  ],
+  "personal_versions": [
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "FPS",
+      "agx_version": "v1",
+      "source_commit": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+      "zip_sha256": "2fb651073041be55b178e189c43631c96fc1ac0aae794ca0107a4959a60d6ba1",
+      "zip_path": "releases/personal/haoran/fps/4f5747cbde42/fps-4f5747cbde42.zip",
+      "manifest_path": "releases/personal/haoran/fps/4f5747cbde42/fps-4f5747cbde42.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": "8da30c44-e0c4-45de-86d1-c5c178c82888",
+      "evidence": [
+        "experiments/fps_record1123.JPG",
+        "experiments/racing_baseline_fps_navi.JPG",
+        "experiments/R02-haoran-fps-69259abb/offline-checks.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "2fb651073041",
+      "displayed_upload_timestamp": "2026/11/20 15:08:11",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "FPS",
+      "agx_version": "v2",
+      "source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058",
+      "zip_sha256": "06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f",
+      "zip_path": "releases/personal/haoran/fps/e27acc998e08/fps-e27acc998e08.zip",
+      "manifest_path": "releases/personal/haoran/fps/e27acc998e08/fps-e27acc998e08.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/fps_record1123.JPG",
+        "experiments/11211643.JPG",
+        "experiments/202611222121.JPG",
+        "experiments/20261123.JPG"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "06bcdcc4ae39",
+      "displayed_upload_timestamp": "2026/11/21 14:37:37",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "FPS",
+      "agx_version": "v3",
+      "status": "no_record_available"
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "FPS",
+      "agx_version": "v4",
+      "status": "no_record_available"
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "FPS",
+      "agx_version": "v5",
+      "status": "no_record_available"
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v1",
+      "source_commit": "952e480a14ca5e410ded2d8b162c7451e6334853",
+      "zip_sha256": "f5eb50075471fab7661607b55ce6537a48de69f7881d6c2b302d85d0b02977bd",
+      "zip_path": "releases/personal/haoran/racing/952e480a14ca/racing-952e480a14ca.zip",
+      "manifest_path": "releases/personal/haoran/racing/952e480a14ca/racing-952e480a14ca.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/racing_baseline_fps_navi.JPG",
+        "experiments/R02-haoran-platform-20261121/snapshot.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "f5eb50075471",
+      "displayed_upload_timestamp": "2026/11/20 14:18:45",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v2",
+      "source_commit": "41367f1bf548f71e6826a0f31b6b59e80c584483",
+      "zip_sha256": "4a3466ba671bd53c4c2b46b95b192fbf913b3f692ef79e705929f5da26f0a621",
+      "zip_path": "releases/personal/haoran/racing/41367f1bf548/racing-41367f1bf548.zip",
+      "manifest_path": "releases/personal/haoran/racing/41367f1bf548/racing-41367f1bf548.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": "4a65d5aa-3c71-409d-b54c-71cdcefdd288",
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/11211643.JPG",
+        "experiments/R02-haoran-racing-64728852/offline-checks.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "4a3466ba671b",
+      "displayed_upload_timestamp": "2026/11/21 12:34:10",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v3",
+      "source_commit": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+      "zip_sha256": "bfaeb741839032f0bffc0671592ac48860374ed44213f6a89aff3cd7d5a2e4a9",
+      "zip_path": "releases/personal/haoran/racing/d6268a7f50ad/racing-d6268a7f50ad.zip",
+      "manifest_path": "releases/personal/haoran/racing/d6268a7f50ad/racing-d6268a7f50ad.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": "ea51330f-6cd0-45af-996c-4418641b97c6",
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/202611222121.JPG",
+        "experiments/R02-haoran-racing-33d17cb4/review.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "bfaeb7418390",
+      "displayed_upload_timestamp": "2026/11/21 16:41:59",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v4",
+      "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+      "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
+      "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/20261123.JPG",
+        "experiments/R02-haoran-racing-launch/user-status-20261123.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "0ce291ac5e30",
+      "displayed_upload_timestamp": "2026/11/23 10:36:05",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v5",
+      "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+      "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
+      "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/20261123.JPG",
+        "experiments/R02-haoran-racing-launch/user-status-20261123.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "0ce291ac5e30",
+      "displayed_upload_timestamp": "2026/11/23 10:36:08",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false,
+      "same_package_as": "Racing v4"
+    }
+  ],
+  "latest_screenshot": {
+    "path": "experiments/20261123.JPG",
+    "sha256": "876da4a0157bde8d9d4526f7a8c9e9fe1d4b44ec9c02ae225e1df73263abe347",
+    "displayed_published_versions": {
+      "FPS": "v2",
+      "Racing": "v4"
+    },
+    "racing_v4_scored_result_shown": false,
+    "capture_timestamp_independently_verified": false,
+    "note": "Dashboard v4 screenshot predates or differs from submission history. The later supplied history establishes Racing uploads v1-v5; v4 and v5 have the same hash prefix."
+  },
+  "platform_mutations_performed": false,
+  "private_raw_logs_and_toolkit_archived": false,
+  "platform_history_screenshots": [
+    {
+      "path": "experiments/fps_record1123.JPG",
+      "sha256": "037c41e219cbebd2f8a5697233c12f7c3fb5ba60f83cdf318befac8863aa56c0"
+    },
+    {
+      "path": "experiments/racing_record.JPG",
+      "sha256": "64e3ebb57bf2855928561a7d1c4f1697444461818d39cb12466e2d63ae41ce84"
+    }
+  ]
+}

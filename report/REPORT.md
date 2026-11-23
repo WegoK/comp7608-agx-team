@@ -179,4 +179,10 @@ FPS 仍显示已发布 v2，Racing 显示已发布 v3。截图没有完整平台
 
 用户随后澄清新报告的第 8 名来自旧包 `bfaeb7418390…`，计划改试发车候选 `0ce291ac5e30…`。该结果缺比赛 ID/日志，仅按用户报告单列，不归入新候选赛果；计划换包也不标为已上传或已激活。ZIP 指纹已再次核实，事件见 [换包计划](../experiments/R02-haoran-racing-launch/user-status-20261123.json)。本次没有新策略或平台操作。
 
+### 2026-11-23 版本历史确认与分支整理
+
+用户随后明确要求全部本地分支推送远端，并提供个人账号版本历史截图。FPS v1/v2 分别对应 `4f5747cbde42`/`e27acc998e08`；Racing v1/v2/v3 对应 `952e480a14ca`/`41367f1bf548`/`d6268a7f50ad`，v4/v5 均对应同包 `0ce291ac5e30…`、源码 `ee12c93d76f6`。七项均显示包验证通过；激活和计分对局另核，v5 不构成新策略实验。此前未确认序号的推定由这次截图补齐，不改写打包时的旧状态。
+
+统一索引同时分列 Wego 历史账号，并给出缺失旧提交对象时可用的本库归档提交。八份个人原 ZIP 与清单归档，内容与固定 Git blob 核对。后续个人开发以 `codex/haoran-fps` 和 `codex/haoran-racing` 为两个长期入口，保留全部旧分支，拟按用户授权同步 Git 远端，完成结果在同步记录补录；不合入小组 main，不改策略或代为操作 AGX。映射与同步状态见 [版本索引](../releases/VERSION_MAP.md)、[仓库整理记录](../experiments/R02-haoran-repository-sync/README.md)。
+
 [首轮逐项数据](../experiments/R01/README.md) · [复现步骤](../simulation/README.md) · [组员贡献](CONTRIBUTIONS.md)

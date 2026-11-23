@@ -1,0 +1,56 @@
+{
+  "schema": "agx-user-platform-history-v1",
+  "recorded_on_beijing": "2026-11-23",
+  "source": "experiments/racing_record.JPG",
+  "versions": [
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v4",
+      "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+      "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
+      "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/20261123.JPG",
+        "experiments/R02-haoran-racing-launch/user-status-20261123.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "0ce291ac5e30",
+      "displayed_upload_timestamp": "2026/11/23 10:36:05",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false
+    },
+    {
+      "account_scope": "haoran user-provided account",
+      "game": "Racing",
+      "agx_version": "v5",
+      "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "zip_sha256": "0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4",
+      "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
+      "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
+      "ordinal_mapping_status": "verified_by_user_platform_history_prefix_and_local_package",
+      "verified_frozen_version_id": null,
+      "evidence": [
+        "experiments/racing_record.JPG",
+        "experiments/20261123.JPG",
+        "experiments/R02-haoran-racing-launch/user-status-20261123.json"
+      ],
+      "note": "Version label and 12-character hash prefix are visible in user-provided platform history; matched to locally verified full ZIP SHA256. Activation and scored matches are separate evidence. Display timestamp timezone was not independently confirmed.",
+      "displayed_hash_prefix": "0ce291ac5e30",
+      "displayed_upload_timestamp": "2026/11/23 10:36:08",
+      "upload_confirmed": true,
+      "platform_validation": "passed_in_user_screenshot",
+      "activation_confirmed": false,
+      "same_package_as": "Racing v4"
+    }
+  ],
+  "both_versions_same_package": true,
+  "activation_receipt_received": false,
+  "scored_match_evidence_received": false,
+  "assistant_uploaded_or_activated": false
+}

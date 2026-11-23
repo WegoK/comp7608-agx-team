@@ -12,6 +12,10 @@
 
 ## 分支与审阅
 
+2026-11-23 个人分支整理：haoran 后续主要使用 `codex/haoran-fps` 和 `codex/haoran-racing`，旧实验分支继续作为远端归档保留。两个长期分支初始共享完整仓库历史，各自主要维护对应游戏目录和实验记录；整合到小组 `main` 仍按审阅约定。平台版本与固定源码提交的对应关系见 [版本索引](../releases/VERSION_MAP.md)。
+
+已有长期分支时，后续从对应分支继续；新克隆可先执行 `git fetch origin`，然后 `git switch --track origin/codex/haoran-racing`（FPS 换成对应名称）。不为消除分支名称而删除历史，不把 Git 推送当作 AGX 激活。
+
 `main` 保存可追溯的稳定版本。分支示例 `member-b/r02-fps-pathfinding`（Codex 创建的分支用 `codex/` 前缀）。从[首页](../README.md)指定的开发分支开始。交接代码合入后，从最新的 `main` 开分支。PR 必须链接实验文件和报告改动，由至少一名其他成员审阅后合并；这是团队约定，尚未配置服务器强制保护。
 
 ```bash

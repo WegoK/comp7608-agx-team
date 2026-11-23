@@ -1,0 +1,11 @@
+{
+  "game": "racing",
+  "git_sha": "952e480a14ca5e410ded2d8b162c7451e6334853",
+  "zip_sha256": "f5eb50075471fab7661607b55ce6537a48de69f7881d6c2b302d85d0b02977bd",
+  "files": {
+    "agent.py": "e9900f55b48a8b2c941f832f8db26e75c1150b5c94efefcc31773b2291a3ffa2",
+    "design.json": "8b6eea2a9a577dbbfbcf70de7453fb4e1d74b89b377dc97db3b9ca0389444059"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run"
+}
