@@ -127,6 +127,7 @@ class Driver:
         self.energy_floor = .04
         self.pursuit_until, self.pursuit_car = -1., None
         self.power_commit_until = -1
+        self.launch_tick, self.launch_distance = o['tick'], c['distance']
 
     def perceive(self, o):
         self.cached_braking = None
@@ -1053,7 +1054,7 @@ class Driver:
                 return True
         return False
 
-    def trajectory_acceleration(self, original, target, speed_at, yielding, guard_braking):
+    def trajectory_acceleration(self, original, target, speed_at, yielding, guard_braking, launch_goal=None):
         """Choose acceleration against arrival positions, not a reference's clock.
 
         Traffic can put a car below the reference speed. Reusing the reference
@@ -1068,12 +1069,19 @@ class Driver:
         # capped target; the same arrival checks and safety vetoes still apply.
         wet_recovery = (self.wet >= .5 and self.mode in ('LINE', 'DRAFT')
                         and original < 0 and target > self.v+.5)
-        if (self.o['phase'] != 'race' or c['lap'] < 1 or not self.gg_active
+        launch = (self.o['phase'] == 'race' and c['lap'] == 0 and launch_goal is not None
+                  and 0 <= self.o['tick']-self.launch_tick <= 480
+                  and 0 <= self.s-self.launch_distance <= 100. and self.v < 20.
+                  and self.mode in ('LINE', 'DRAFT') and original > 0
+                  and target > self.v+.5 and abs(c['heading_error']) <= .08
+                  and max(abs(row[1]) for row in self.o['preview']['rows'][:4]) < .002)
+        actual_goal = launch_goal if launch else self.goal
+        if (self.o['phase'] != 'race' or (c['lap'] < 1 and not launch) or not self.gg_active
                 or c['pit_state'] or yielding or guard_braking or self.mode == 'DEFEND'
                 or c['front_sliding'] or c['rear_sliding']
-                or abs(self.goal-self.offset) > .25
+                or abs(actual_goal-self.offset) > .25
                 or self.tracking_error() > .4
-                or not (self.mode == 'PASS' or self.chasing or wet_recovery)):
+                or not (self.mode == 'PASS' or self.chasing or wet_recovery or launch)):
             return original
         def feasible(acceleration):
             for t in (.1,.2,.3,.4):
@@ -1085,15 +1093,24 @@ class Driver:
                 if velocity > cap:
                     return False
             return True
-        low,high=-70.,40.
-        if not feasible(low):
-            return min(original,low)
+        if launch:
+            # Only accelerate an already feasible launch request, by at most
+            # 35%. Current traffic/stopping caps remain the rollout ceiling.
+            if not feasible(original):
+                return original
+            low,high=original,min(40.,original*1.35)
+        else:
+            low,high=-70.,40.
+            if not feasible(low):
+                return min(original,low)
         for _ in range(12):
             middle=(low+high)*.5
             if feasible(middle):low=middle
             else:high=middle
         self.diagnostic['arrival_control'] = True
         self.diagnostic['arrival_acceleration'] = float(low)
+        if launch and low > original+1e-8:
+            self.diagnostic['launch_response'] = True
         if wet_recovery and not (self.mode == 'PASS' or self.chasing):
             self.diagnostic['wet_reference_recovery'] = True
         return low
@@ -1468,7 +1485,8 @@ class Driver:
         target = min(target, entry_cap)
         self.diagnostic['pit_entry_cap'] = float(target)
         acceleration = clip(feedforward+self.ctrl['kv']*(target-v), -70, 40)
-        acceleration = self.trajectory_acceleration(acceleration, target, speed_at, yielding, guard_braking)
+        acceleration = self.trajectory_acceleration(acceleration, target, speed_at, yielding, guard_braking,
+                                                    launch_goal=goal)
         if guard_braking > 0:
             acceleration = min(acceleration, -guard_braking)
         contest = (self.mode in ('PASS', 'PASS_PIT_EXIT', 'DEFEND') and target > v+.3) or any(0 < r['gap_m'] < 65 and r['speed_mps'] < target for r in self.rivals)
