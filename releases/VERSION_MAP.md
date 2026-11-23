@@ -92,6 +92,6 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 
 若重打包，在该干净工作区使用 `python3 scripts/check.py`、`python3 scripts/package.py racing`。Windows 应保留 LF、使用 UTF-8 Python；基础检查不等于游戏环境测试。同步 Git 仓库与 AGX 上传/激活是两个独立步骤。
 
-## 未上传的单项候选（2026-11-23）
+## 单项候选与上传反馈（2026-11-23）
 
-`codex/haoran-racing` 最新策略是 `cb01eb0460ac`：只新增湿地提前准备独立车道的受限入口。候选 [ZIP](personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip) 指纹 `fc2cf8296811`，详见 [实验](../experiments/R02-haoran-racing-wet-preparation/README.md)。它比平台 v4/v5 的源码新，尚无平台版本号、验证、激活或赛果；不能当作已发布 v6。FPS 分支源码未改。
+`codex/haoran-racing` 最新策略是 `cb01eb0460ac`：只新增湿地提前准备独立车道的受限入口。候选 [ZIP](personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip) 指纹 `fc2cf8296811`，详见 [实验](../experiments/R02-haoran-racing-wet-preparation/README.md)。用户已在聊天确认上传，等待比赛；平台指纹、版本号、验证回执、激活及赛果尚待核对，不推定为 v6。它比平台已独立核实的 v4/v5 源码新。FPS 分支源码未改。

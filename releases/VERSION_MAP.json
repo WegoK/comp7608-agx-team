@@ -12,7 +12,7 @@
       "name": "codex/haoran-racing",
       "game": "Racing",
       "current_game_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
-      "current_source_status": "local_candidate_not_uploaded",
+      "current_source_status": "user_reported_uploaded_awaiting_match_evidence",
       "latest_verified_platform_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860"
     }
   ],
@@ -148,7 +148,17 @@
       "manifest_path": "releases/personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.json",
       "source_files_match_git": true,
       "note": "Bounded wet passing preparation; local checks only. Not assigned a platform version; no upload or activation.",
-      "experiment": "experiments/R02-haoran-racing-wet-preparation/README.md"
+      "experiment": "experiments/R02-haoran-racing-wet-preparation/README.md",
+      "upload_feedback": {
+        "recorded_on_beijing": "2026-11-23",
+        "evidence": "User confirmed upload in chat after receiving this candidate ZIP.",
+        "status": "user_reported_uploaded",
+        "platform_hash_independently_verified": false,
+        "platform_version": null,
+        "platform_validation": "unknown",
+        "competition_activation": "unknown",
+        "real_match_evidence": "pending"
+      }
     }
   ],
   "wego_versions": [
