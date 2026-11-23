@@ -1,0 +1,44 @@
+{
+  "source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+  "zip_sha256": "fc2cf829681145f14b372980fa506839b2118869474599793dec8ab60b79a6cd",
+  "project_check": "passed_clean_lf_checkout",
+  "package_files_match_git": true,
+  "zip_integrity": "passed",
+  "packaged_eligibility_checks": [
+    "wet_early_proposal_when_baseline_cannot_catch_in_six_seconds",
+    "no_grip_preserved",
+    "first_lap_preserved",
+    "merging_preserved",
+    "near_boundary_preserved",
+    "far_boundary_preserved",
+    "not_closing_preserved",
+    "tracking_preserved",
+    "lane_change_preserved",
+    "heading_preserved",
+    "front_slide_preserved",
+    "rear_slide_preserved",
+    "pit_preserved",
+    "not_racing_preserved",
+    "defending_preserved",
+    "qualifying_preserved",
+    "no_upcoming_braking_preserved",
+    "dry_preserved"
+  ],
+  "packaged_callbacks_equal_source": {
+    "qualifying": 100,
+    "race": 100
+  },
+  "packaged_synthetic_entries": [
+    "parkland_qualifying",
+    "parkland_race",
+    "highland_qualifying",
+    "highland_race",
+    "crossover_qualifying",
+    "crossover_race"
+  ],
+  "full_recorded_input_recheck": "passed_clean_lf_checkout_exact_json_agreement",
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "note": "Entry checks and recorded inputs do not simulate new trajectories or game-environment races."
+}

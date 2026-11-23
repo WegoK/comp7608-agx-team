@@ -40,7 +40,7 @@ python3 scripts/evaluate_wet_preparation.py --log dist/racing-inputs/training-08
 | 阶段 | 状态 |
 |---|---|
 | 单项实现、保护检查、历史观察对照 | 已完成 |
-| 项目基础检查、提交与打包 | 待完成后补录 |
+| 项目基础检查、提交与打包 | 清洁 LF 检出中 `python3 scripts/check.py`、`python3 scripts/package.py racing` 均通过；完整离线复算与已存 JSON 一致 |
 | 独立人工审阅 | 待进行 |
 | 新候选平台验证、激活、比赛 | 未执行，不分配平台 v6 序号 |
 
@@ -49,3 +49,7 @@ python3 scripts/evaluate_wet_preparation.py --log dist/racing-inputs/training-08
 平台验证后，优先比较 Parkland 湿地后两圈的车流间距、实际换线完成/取消、接触、圈时及完赛；同时留原包回退。新日志应核对 source_hash，不能将不同赛道、天气、发车位或对手的总用时差单独归为策略收益。
 
 用户提出问题；Codex 实现入口、编写检查、复算日志并记录。人工审阅和新策略实战尚未发生，不补造贡献或结果。
+
+## 固定候选包
+
+源码 `cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78`；[ZIP](../../releases/personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip)，指纹 `fc2cf829681145f14b372980fa506839b2118869474599793dec8ab60b79a6cd`。包内五个文件逐字节匹配该 Git 提交；打包后 18 项入口检查、200 次真实观察回调与源码一致、三赛道×排位/正赛的 6 项入口检查通过，见 [清单](package-manifest.json)、[打包检查](packaging-checks.json)。这些仍是本地检查，不代表 AGX 已验证、激活或实战有效。旧包 `0ce291ac5e30…` 保留作对照和回退；未创建平台 v6 记录。

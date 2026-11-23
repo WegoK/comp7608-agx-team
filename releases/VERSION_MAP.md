@@ -37,7 +37,7 @@ Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；
 | 长期分支 | 主要维护目录 | 当前该游戏源码 | 用途 |
 |---|---|---|---|
 | `codex/haoran-fps` | `strategies/fps/` | `e27acc998e08`，个人 FPS v2 | FPS 后续开发、实验和报告 |
-| `codex/haoran-racing` | `strategies/racing/` | `ee12c93d76f6`，个人 Racing v4/v5 | Racing 后续开发、实验和报告 |
+| `codex/haoran-racing` | `strategies/racing/` | `cb01eb0460ac`，湿地提前选线本地候选 | Racing 后续开发；平台最新已核实源码仍为 `ee12c93d76f6`（v4/v5） |
 
 这两个分支从整理后的最新完整历史开始。Git 分支是**整份仓库**，因此两边都会看到 FPS、Racing 和报告；“两个开发分支”是工作分工，不是把文件拆成两个仓库。新实验主要改对应游戏目录，完成后再按团队审阅约定整合。`main` 保持原来的小组稳定交接状态，本次没有合入策略。
 
@@ -91,3 +91,7 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 ```
 
 若重打包，在该干净工作区使用 `python3 scripts/check.py`、`python3 scripts/package.py racing`。Windows 应保留 LF、使用 UTF-8 Python；基础检查不等于游戏环境测试。同步 Git 仓库与 AGX 上传/激活是两个独立步骤。
+
+## 未上传的单项候选（2026-11-23）
+
+`codex/haoran-racing` 最新策略是 `cb01eb0460ac`：只新增湿地提前准备独立车道的受限入口。候选 [ZIP](personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip) 指纹 `fc2cf8296811`，详见 [实验](../experiments/R02-haoran-racing-wet-preparation/README.md)。它比平台 v4/v5 的源码新，尚无平台版本号、验证、激活或赛果；不能当作已发布 v6。FPS 分支源码未改。

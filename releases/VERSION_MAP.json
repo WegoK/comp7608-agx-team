@@ -11,7 +11,9 @@
     {
       "name": "codex/haoran-racing",
       "game": "Racing",
-      "current_game_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860"
+      "current_game_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+      "current_source_status": "local_candidate_not_uploaded",
+      "latest_verified_platform_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860"
     }
   ],
   "branch_policy": "Two long-term personal development branches; preserve and push all historical local branches. Do not delete or rewrite remote branches. Both long-term branches initially share the latest complete repository history; each contains both strategy directories.",
@@ -137,6 +139,16 @@
           "version_ordinal_note": "Shared v4/v5 package; exact ordinal not distinguished by source hash."
         }
       ]
+    },
+    {
+      "game": "racing",
+      "source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+      "zip_sha256": "fc2cf829681145f14b372980fa506839b2118869474599793dec8ab60b79a6cd",
+      "zip_path": "releases/personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip",
+      "manifest_path": "releases/personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.json",
+      "source_files_match_git": true,
+      "note": "Bounded wet passing preparation; local checks only. Not assigned a platform version; no upload or activation.",
+      "experiment": "experiments/R02-haoran-racing-wet-preparation/README.md"
     }
   ],
   "wego_versions": [
