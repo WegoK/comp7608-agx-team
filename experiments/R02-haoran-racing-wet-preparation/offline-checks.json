@@ -1,0 +1,207 @@
+{
+  "schema": "wet-preparation-candidate-v1",
+  "baseline_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+  "source_invariants": {
+    "changed_driver_methods": [
+      "approach_conflict",
+      "tactics"
+    ],
+    "all_other_driver_methods_byte_equivalent": true,
+    "preview_design_and_weights_unchanged": true
+  },
+  "eligibility_guards": [
+    "wet_early_proposal_when_baseline_cannot_catch_in_six_seconds",
+    "no_grip_preserved",
+    "first_lap_preserved",
+    "merging_preserved",
+    "near_boundary_preserved",
+    "far_boundary_preserved",
+    "not_closing_preserved",
+    "tracking_preserved",
+    "lane_change_preserved",
+    "heading_preserved",
+    "front_slide_preserved",
+    "rear_slide_preserved",
+    "pit_preserved",
+    "not_racing_preserved",
+    "defending_preserved",
+    "qualifying_preserved",
+    "no_upcoming_braking_preserved",
+    "dry_preserved"
+  ],
+  "candidate_agent_lf_sha256": "b47a9b76476eab8603b45ffb406967de73ba3c8dad5da60e87635876da10f5e8",
+  "logged_comparisons": [
+    {
+      "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+      "actual_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "rows": 20832,
+      "actual_frozen_action_agreement": 20832,
+      "decision_bytes_sha256": "bb78c83bfff230415a199dd12130bd3b8f2f6e413fa94ec237ef689626e11b07",
+      "changed_actions": 860,
+      "unchanged_actions": 19972,
+      "proposals": 276,
+      "model_preparation_commits": 53,
+      "phases": {
+        "qualifying": {
+          "rows": 4236,
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "race": {
+          "rows": 16596,
+          "changed": 860,
+          "wet_commits": 53
+        }
+      },
+      "race_laps": {
+        "0": {
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "1": {
+          "changed": 456,
+          "wet_commits": 6
+        },
+        "2": {
+          "changed": 105,
+          "wet_commits": 28
+        },
+        "3": {
+          "changed": 299,
+          "wet_commits": 19
+        }
+      },
+      "changed_fields": {
+        "throttle": 133,
+        "brake": 296,
+        "steer": 860,
+        "ers_mode": 104,
+        "aero_mode": 0,
+        "override": 0,
+        "aid": 0,
+        "pit_request": 0,
+        "pit_compound": 0
+      },
+      "examples": [
+        {
+          "global_time_s": 1505.0333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "PASS",
+          "baseline_goal": 0.0,
+          "candidate_goal": -4.491579686120193,
+          "baseline_steer": 0.0004889173306264268,
+          "candidate_steer": -0.002821914864433977
+        },
+        {
+          "global_time_s": 1532.2333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "DRAFT",
+          "baseline_goal": 0.0,
+          "candidate_goal": 0.02150904194871739,
+          "baseline_steer": -0.010115600762517675,
+          "candidate_steer": -0.009067952316078496
+        },
+        {
+          "global_time_s": 1535.2333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "LINE",
+          "baseline_goal": 0.0,
+          "candidate_goal": 0.0,
+          "baseline_steer": 0.0010931400401285754,
+          "candidate_steer": 0.047101291564350306
+        },
+        {
+          "global_time_s": 1548.0333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "DRAFT",
+          "baseline_goal": 0.0,
+          "candidate_goal": -0.028159972170344716,
+          "baseline_steer": -0.0006968333747585464,
+          "candidate_steer": -0.003948913207799308
+        },
+        {
+          "global_time_s": 1556.6333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "DRAFT",
+          "baseline_goal": 0.0,
+          "candidate_goal": -1.5775482992542003,
+          "baseline_steer": -0.017943381793276026,
+          "candidate_steer": -0.025921544541143846
+        },
+        {
+          "global_time_s": 1573.8333,
+          "lap_zero_based": 1,
+          "baseline_mode": "LINE",
+          "candidate_mode": "DRAFT",
+          "baseline_goal": 0.0,
+          "candidate_goal": 0.012687585195101825,
+          "baseline_steer": 0.0007265431362415882,
+          "candidate_steer": 0.001202857707913091
+        }
+      ],
+      "note": "Historical own positions stay fixed: repeated model commits are not actual lane changes or overtakes. No new collisions, lap times or match result simulated."
+    },
+    {
+      "match_id": "33d17cb4-a681-4db5-861a-3ecc34b80abf",
+      "actual_source_commit": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+      "rows": 17014,
+      "actual_frozen_action_agreement": 17014,
+      "decision_bytes_sha256": "97d1a4b663b4bc56fbded06021e503cf8ef21c4d54c2c5ed04b3481eda327b76",
+      "changed_actions": 0,
+      "unchanged_actions": 17014,
+      "proposals": 30,
+      "model_preparation_commits": 0,
+      "phases": {
+        "qualifying": {
+          "rows": 3343,
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "race": {
+          "rows": 13671,
+          "changed": 0,
+          "wet_commits": 0
+        }
+      },
+      "race_laps": {
+        "0": {
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "1": {
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "2": {
+          "changed": 0,
+          "wet_commits": 0
+        },
+        "3": {
+          "changed": 0,
+          "wet_commits": 0
+        }
+      },
+      "changed_fields": {},
+      "examples": [],
+      "note": "Historical own positions stay fixed: repeated model commits are not actual lane changes or overtakes. No new collisions, lap times or match result simulated."
+    }
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "blocked_options_fixture": {
+    "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+    "fixture_time_s": 1505.0333,
+    "synthetic_vetoes": [
+      "occupied_alternatives_veto_preserved",
+      "narrow_corridor_veto_preserved",
+      "negative_progress_value_veto_preserved"
+    ],
+    "note": "Injected decision constraints, not simulated physical blockers or collisions."
+  }
+}

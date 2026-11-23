@@ -738,6 +738,8 @@ class Driver:
         tactics() still compares every side with staying before commitment;
         this is a proposal, never official detection/activation eligibility.
         """
+        if self.diagnostic.get('wet_preparation_front') == front['seat']:
+            self.diagnostic.pop('wet_preparation_front')
         if self.gg_active and self.pursuit_zone(front) is not None:
             self.diagnostic['detector_staging'] = True
             return True
@@ -756,9 +758,17 @@ class Driver:
         capture = (self.wet < .5 and self.defender is None
                    and not self.c['front_sliding'] and not self.c['rear_sliding']
                    and front['gap_m'] < 240. and braking)
+        wet_capture = (self.wet >= .5 and self.defender is None and not self.c['pit_state']
+                       and self.o['phase'] == 'race' and self.c['status'] == 'racing'
+                       and not self.c['front_sliding'] and not self.c['rear_sliding']
+                       and front['gap_m'] < 180. and self.v > front['speed_mps']+2.
+                       and abs(self.goal-self.offset) <= .25 and self.tracking_error() <= .4
+                       and abs(self.c['heading_error']) <= .1 and braking)
+        if wet_capture:
+            self.diagnostic['wet_preparation_front'] = front['seat']
         if capture:
             self.diagnostic['braking_capture_staging'] = True
-        return capture
+        return capture or wet_capture
 
     def approach_loss(self, front, goal):
         """Rank progress using the same GGV path and unchanged stopping guard.
@@ -899,6 +909,7 @@ class Driver:
         if front and o['tick'] >= self.cooldown:
             advantage, window, reachable = self.opportunity(front)
             staging = self.approach_conflict(front)
+            wet_staging = self.diagnostic.get('wet_preparation_front') == front['seat']
             self.diagnostic['approach_staging'] = staging
             possible = c['lap'] < 1 or staging or self.catch_window(front) is not None
             self.diagnostic['pass_reachable'] = possible
@@ -919,16 +930,16 @@ class Driver:
                         continue
                     cap, score, risk = self.path_value(offset)
                     if risk < 10:
-                        loss=self.approach_loss(front,offset) if projected else 0.
+                        loss=self.approach_loss(front,offset) if projected or wet_staging else 0.
                         score-=loss/max(self.v,20.)
                         options.append((score, cap, offset, risk, loss))
                 if options:
                     score, cap, offset, risk, loss = max(options)
                     self.diagnostic['approach_progress_deficit_m'] = float(loss)
                     worthwhile=True
-                    if projected:
+                    if projected or wet_staging:
                         stay=current[1]-self.approach_loss(front,0.)/max(self.v,20.)
-                        worthwhile=score>stay
+                        worthwhile=score>stay+(.05 if wet_staging else 0.)
                         self.diagnostic.update(approach_stay_utility=float(stay),
                             approach_selected_utility=float(score),
                             staging_rejected_no_progress_gain=not worthwhile)
@@ -938,6 +949,8 @@ class Driver:
                         # Start changing lane before the same-lane stopping cap
                         # forces a queue; waiting for a cap advantage is circular.
                         self.target_car, self.goal, self.mode = front['seat'], offset, 'PASS'
+                        if wet_staging:
+                            self.diagnostic['wet_preparation_commit'] = True
                         self.attack_window = window
                         self.pass_gap, self.pass_progress_tick = front['gap_m'], o['tick']
                         zone = self.pursuit_zone(front)
