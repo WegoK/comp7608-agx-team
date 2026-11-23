@@ -13,6 +13,10 @@
 
 ## 同步阶段
 
-文档与归档提交后执行非 force 的全部分支推送，再逐项比较本地和远端 HEAD。完成结果将在本节补录。Git 推送仅同步仓库，不代为上传、激活 AGX 版本或邀请他人。
+已执行 `git push --atomic --all --set-upstream origin`，首次同步后的 **10 个本地分支逐一与远端 HEAD 一致**；远端共有 11 个分支，包含原先仅在远端的 `codex/r01-local-evaluation`。原 `main` 仍为 `639d89028595`，原交接分支仍为 `6b549f690f47`，无删除、强制改写或策略合入 main。
+
+长期分支对应的游戏目录与固定源码提交核对通过：FPS 为 `e27acc998e08`，Racing 为 `ee12c93d76f6`。首次推送记录见 [first-push-verification.json](first-push-verification.json)；同步记录的后续文档提交仅快进两个长期分支，再推送核对。当前工作分支使用 `codex/haoran-racing`。
+
+索引链接、JSON、CSV、8 份个人及 8 份 Wego 原 ZIP、截图 SHA256 已核验。只做文档/归档/分支操作，没有策略改动或新游戏测试；Git 推送不代替 AGX 上传、激活或邀请。
 
 用户提供版本截图并授权 Git 同步；Codex 完成指纹、提交和归档核验及索引整理。截图中的“已通过验证”与是否实际生效、对局结果分开记录，没有新增比赛或策略收益结论。
