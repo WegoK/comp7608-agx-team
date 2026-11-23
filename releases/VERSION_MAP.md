@@ -28,7 +28,7 @@
 | v4 | `0ce291ac5e30` | `ee12c93d76f6` | 有上限的发车响应候选 | [原 ZIP](personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip)；`codex/haoran-racing-20261123` |
 | v5 | `0ce291ac5e30` | `ee12c93d76f6` | **与 v4 同一个包，没有新策略改动** | 同上；今后用 `codex/haoran-racing` |
 
-Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；不能把这次重复上传当成新的实验。此前完整本人日志已分别核实 v2 对应包（比赛 `64728852…`）和 v3 对应包（比赛 `33d17cb4…`）的采用；尚未取得 v4/v5 的计分对局日志。
+Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；不能把这次重复上传当成新的实验。完整本人日志已核实 v2 对应包（比赛 `64728852…`）、v3 对应包（`33d17cb4…`）及 v4/v5 同包（`0853449c…`）的采用。最后一场冻结 ID 为 `bdafbeee-028d-4a9c-bb92-474ec0f465f8`，但仅凭相同 source_hash 仍不能分辨 v4/v5 序号，见 [该场复盘](../experiments/R02-haoran-racing-0853449c/README.md)。
 
 原始打包 JSON 中的 `not_run` 保留为打包时状态；当前截图验证通过证据记录在本索引和 [平台历史补录](../experiments/R02-haoran-racing-launch/platform-history-20261123.json)，不改写旧事件。
 

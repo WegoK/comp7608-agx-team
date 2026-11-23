@@ -37,7 +37,7 @@ def group():
                 wetness_min=1., wetness_max=0., wetness_sum=0., min_tyre_temp_c=999.,
                 max_tyre_wear=0., min_fuel_kg=999., speed_sum=0., cap_sums=Counter(),
                 incremental_cap_reductions_gt_3mps=Counter(), active_guard_braking_calls=0,
-                wet_recovery_model_calls=0, changed_vs_control_calls=0)
+                wet_recovery_model_calls=0, launch_response_model_calls=0, changed_vs_control_calls=0)
 
 
 def update(q, obs, player, changed):
@@ -54,6 +54,7 @@ def update(q, obs, player, changed):
     q['min_fuel_kg'] = min(q['min_fuel_kg'], c['fuel_kg'])
     q['speed_sum'] += c['speed_mps']
     q['wet_recovery_model_calls'] += bool(d.get('wet_reference_recovery'))
+    q['launch_response_model_calls'] += bool(d.get('launch_response'))
     q['changed_vs_control_calls'] += changed
     for name in CAPS:
         q['cap_sums'][name] += d[name]
@@ -118,7 +119,7 @@ def review(path, manifest, control_ref):
                 for name in CAPS:
                     assert equal(player.diagnostic[name], control.main._driver.diagnostic[name]), name
                 if changed:
-                    assert player.diagnostic.get('wet_reference_recovery')
+                    assert player.diagnostic.get('wet_reference_recovery') or player.diagnostic.get('launch_response')
                     for key in proposed.keys() | before.keys():
                         fields[key] += not equal(proposed.get(key), before.get(key))
                     if len(samples) < 5 and (not samples or obs['time'] - samples[-1]['global_time_s'] > 5):
@@ -161,7 +162,7 @@ def review(path, manifest, control_ref):
             end = race_start + result['total_time_s']
         if start is not None and end is not None:
             q['estimated_lap_time_s'] = round(end-start, 4)
-    return dict(schema='racing-frozen-match-review-v1', match_id=header['job_id'],
+    return dict(schema='racing-frozen-match-review-v2', match_id=header['job_id'],
         rules_version=header['rules_version'], own_seat_zero_based=seat,
         platform_version_id=own['version_id'], bundle_sha256=own['source_hash'],
         source_commit=manifest['git_sha'], track='parkland', race_start_global_s=race_start,

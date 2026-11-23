@@ -128,7 +128,15 @@
       "zip_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.zip",
       "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
       "source_files_match_git": true,
-      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+      "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status.",
+      "verified_match_evidence": [
+        {
+          "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+          "platform_version_id": "bdafbeee-028d-4a9c-bb92-474ec0f465f8",
+          "evidence": "experiments/R02-haoran-racing-0853449c/review.json",
+          "version_ordinal_note": "Shared v4/v5 package; exact ordinal not distinguished by source hash."
+        }
+      ]
     }
   ],
   "wego_versions": [

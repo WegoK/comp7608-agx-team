@@ -19,3 +19,4 @@
 | 11/22 · 新 Racing 包实战复盘 | haoran（同上） | 提供本人日志及回放。Codex 核实新包冻结版本、17,014 次动作与第 5 名完赛，整理发车/第三圈限速线索和旧源码同观察比较；仅新增分析与记录，无策略或平台操作 | [33d17cb4 复盘](../experiments/R02-haoran-racing-33d17cb4/README.md) | 待其他组员审阅 |
 | 11/23 · Racing 发车响应 | haoran（同上） | 要求继续提升。Codex 核对限速线索、实现有上限的发车响应、运行两日志对照及受控/简化模型检查、保留两组模型原有失败并整理实验；独立人工审阅与候选实战待补 | [发车实验](../experiments/R02-haoran-racing-launch/README.md) | 待其他组员审阅 |
 | 11/23 · 版本与分支整理 | haoran（同上） | 明确授权全部分支推远端，提供两项平台历史截图。Codex 核对七个个人版本及 Wego 历史归档、保存原包、建立两个长期开发入口和可追溯索引；不新增策略或平台操作 | [索引](../releases/VERSION_MAP.md) · [同步记录](../experiments/R02-haoran-repository-sync/README.md) | 待其他组员审阅 |
+| 11/23 · 最新 Racing 湿地复盘 | haoran（同上） | 提供完整日志与回放。Codex 核实 20,832 次动作、发车入口零触发、末圈慢车/停车限速与低温线索，准备后续选线假设；未改策略或操作平台 | [0853449c](../experiments/R02-haoran-racing-0853449c/README.md) | 待其他组员审阅 |

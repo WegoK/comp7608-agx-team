@@ -1,0 +1,116 @@
+{
+  "schema": "racing-constraint-audit-v1",
+  "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+  "source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+  "recorded_action_agreement": 20832,
+  "decision_sha256": "bb78c83bfff230415a199dd12130bd3b8f2f6e413fa94ec237ef689626e11b07",
+  "launch_window": {
+    "calls": 241,
+    "overlapping_rejection_counts": {
+      "mode": 155,
+      "lane_transition": 121,
+      "tracking": 155,
+      "near_target": 141,
+      "no_positive_request": 9,
+      "emergency_brake": 21,
+      "slide": 65,
+      "yielding": 7,
+      "turning": 37,
+      "speed": 17
+    },
+    "only_mode_rejected": 0,
+    "all_listed_gates_clear": 0
+  },
+  "fourth_lap": {
+    "incremental_stopping_reductions_gt_3mps": 3357,
+    "limiting_visible_rival_seat_counts": {
+      "7": 2233,
+      "6": 52,
+      "4": 1039,
+      "9": 33
+    },
+    "samples": [
+      {
+        "global_time_s": 1754.8333,
+        "station_m": 507.719,
+        "own_speed_mps": 86.7496,
+        "model_own_deceleration_mps2": 10.379774369905766,
+        "follow_cap_mps": 92.78609365287774,
+        "stopping_cap_mps": 89.64920128161887,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 7,
+            "gap_m": 318.649,
+            "lateral_separation_m": 1.431,
+            "speed_mps": 59.845
+          }
+        ]
+      },
+      {
+        "global_time_s": 1793.9333,
+        "station_m": 1986.653,
+        "own_speed_mps": 37.6276,
+        "model_own_deceleration_mps2": 5.374956580142136,
+        "follow_cap_mps": 79.49053605695025,
+        "stopping_cap_mps": 37.38267668103101,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 7,
+            "gap_m": 107.929,
+            "lateral_separation_m": -2.652,
+            "speed_mps": 35.697
+          }
+        ]
+      },
+      {
+        "global_time_s": 1832.1667,
+        "station_m": 2945.563,
+        "own_speed_mps": 23.8124,
+        "model_own_deceleration_mps2": 4.710115784459754,
+        "follow_cap_mps": 40.33965481332705,
+        "stopping_cap_mps": 23.852503833572214,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 7,
+            "gap_m": 66.388,
+            "lateral_separation_m": -3.244,
+            "speed_mps": 20.282
+          }
+        ]
+      },
+      {
+        "global_time_s": 1858.2333,
+        "station_m": 3905.39,
+        "own_speed_mps": 43.3005,
+        "model_own_deceleration_mps2": 5.544876671754137,
+        "follow_cap_mps": 62.84781489517709,
+        "stopping_cap_mps": 42.490733138322064,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 4,
+            "gap_m": 165.141,
+            "lateral_separation_m": 5.313,
+            "speed_mps": 23.487
+          }
+        ]
+      },
+      {
+        "global_time_s": 1883.4,
+        "station_m": 4561.356,
+        "own_speed_mps": 34.6755,
+        "model_own_deceleration_mps2": 5.275619425081296,
+        "follow_cap_mps": 62.9754456510799,
+        "stopping_cap_mps": 35.72413504292253,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 4,
+            "gap_m": 85.617,
+            "lateral_separation_m": 2.701,
+            "speed_mps": 43.493
+          }
+        ]
+      }
+    ]
+  },
+  "note": "Own recorded legal rival observations only. A triggered guard is not proof of unnecessary braking; no policy change or new race simulated."
+}
