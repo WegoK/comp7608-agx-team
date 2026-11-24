@@ -55,6 +55,7 @@ python3 scripts/review_fps_export.py --log dist/fps-inputs/training-8cf9d8f9-bf7
 | 阶段 | 状态 |
 |---|---|
 | 本场实际版本、完整性、动作重现、公开事件核对 | 已完成 |
+| 项目基础检查与可重现性 | 清洁 LF 检出中 `python3 scripts/check.py` 通过；完整复盘脚本再次运行，JSON 与归档逐项一致；基础检查不等于游戏环境测试 |
 | 优化计划 | 优先短暂失去视野时的瞄准/姿态保持；搜点预算另做单项实验 |
 | 新策略实现、打包、平台验证、激活、新策略实战 | 均未进行 |
 
