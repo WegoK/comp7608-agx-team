@@ -9,7 +9,7 @@
 | 后续开发 | 长期分支 | 当前该游戏源码 |
 |---|---|---|
 | FPS | [codex/haoran-fps](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-fps) | `e27acc998e08`，个人 v2 |
-| Racing | [codex/haoran-racing](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-racing) | `cb01eb0460ac`，湿地提前选线本地候选；平台 v4/v5 仍为 `ee12c93d76f6` |
+| Racing | [codex/haoran-racing](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-racing) | `9c58b2da29a7`，Crossover提前选线候选（待上传）；实战已核实包 `fc2cf8296811` |
 
 旧实验分支保留作归档。个人版本包及清单见 [releases/personal/haoran](releases/personal/haoran/)，按固定源码提交存放；分支包含整份仓库，后续主要修改对应游戏目录。
 

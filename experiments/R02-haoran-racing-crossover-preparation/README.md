@@ -34,8 +34,12 @@ python3 scripts/evaluate_crossover_preparation.py --log dist/racing-inputs/train
 |---|---|
 | 实现、16项保护用例、原侧向切入检查 | 已完成 |
 | 三日志完整复算 | 共58,855次；各自冻结实战动作全部重现；Crossover相对对照164次变化，两场Parkland均0变化；排位不变 |
-| 项目基础检查与固定提交打包 | 待补录 |
+| 项目基础检查与固定提交打包 | 清洁LF检出 check.py / package.py racing通过；包内五文件与提交一致；包导入16保护及三赛道×双阶段6入口检查通过 |
 | 独立人工审阅 | 待进行 |
 | 平台验证、激活、新候选实战 | 未进行 |
 
 用户提供实战证据、确认优化方向；Codex实现、编写并执行检查，维护记录和报告。未补造其他成员审阅、平台验证或实战收益。
+
+## 上传包
+
+源码 `9c58b2da29a7d90949ece7aadfc2413301e7929f`，包 [ZIP](../../releases/personal/haoran/racing/9c58b2da29a7/racing-9c58b2da29a7.zip)，SHA256 `b0957ee4e8625a1e46cf622afc54d2362d3eb560a6bbc141f54f5b71203cacba`。见[清单](package-manifest.json)与[包检查](packaging-checks.json)。旧包fc2cf8296811保留回退；尚未上传或分配平台新版本号。

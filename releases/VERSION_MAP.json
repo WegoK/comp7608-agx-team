@@ -11,8 +11,8 @@
     {
       "name": "codex/haoran-racing",
       "game": "Racing",
-      "current_game_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
-      "current_source_status": "verified_adopted_in_crossover_match",
+      "current_game_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+      "current_source_status": "crossover_preparation_candidate_not_uploaded",
       "latest_verified_platform_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78"
     }
   ],
@@ -168,6 +168,16 @@
           "version_ordinal_note": "Fingerprint verifies actual adoption, not platform vN ordinal."
         }
       ]
+    },
+    {
+      "game": "racing",
+      "source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+      "zip_sha256": "b0957ee4e8625a1e46cf622afc54d2362d3eb560a6bbc141f54f5b71203cacba",
+      "zip_path": "releases/personal/haoran/racing/9c58b2da29a7/racing-9c58b2da29a7.zip",
+      "manifest_path": "releases/personal/haoran/racing/9c58b2da29a7/racing-9c58b2da29a7.json",
+      "source_files_match_git": true,
+      "note": "Bounded Crossover preparation candidate; local checks only, no platform ordinal or activation.",
+      "experiment": "experiments/R02-haoran-racing-crossover-preparation/README.md"
     }
   ],
   "wego_versions": [

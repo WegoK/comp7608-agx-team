@@ -210,3 +210,5 @@ FPS 仍显示已发布 v2，Racing 显示已发布 v3。截图没有完整平台
 ### 2026-11-24 Crossover提前准备车道候选
 
 按用户要求在codex/haoran-racing实现单项候选：无原近距候选时，仅27–60米、实际追近、前车独立造成原中线限速>3m/s、无滑胎才提出较早选线；保留1.5秒等待及原道路/占道/切入检查，准备最多6秒，跟车公式不改。16项保护、原侧向回归通过，三场58855条冻结动作全部重现；相对cb01对照仅Crossover164次动作变化，两场Parkland0变化。提案早5.4秒但目标正在进站，仅说明触发，不是超车或圈时收益。见[实验](../experiments/R02-haoran-racing-crossover-preparation/README.md)。基础检查、固定包与平台实测待补。
+
+Crossover候选固定源码`9c58b2da29a7d90949ece7aadfc2413301e7929f`、ZIP SHA256`b0957ee4e8625a1e46cf622afc54d2362d3eb560a6bbc141f54f5b71203cacba`。清洁LF检出中的项目基础检查和package.py racing通过；ZIP五文件与提交逐字节一致、包中16项保护和6项入口检查通过。平台验证、激活与新候选实战未进行。

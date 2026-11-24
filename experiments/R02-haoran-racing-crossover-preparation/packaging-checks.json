@@ -1,0 +1,37 @@
+{
+  "source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+  "zip_sha256": "b0957ee4e8625a1e46cf622afc54d2362d3eb560a6bbc141f54f5b71203cacba",
+  "project_check": "passed_clean_lf_checkout",
+  "package_files_match_git": true,
+  "package_preview_hash_matches_checked_source": true,
+  "packaged_guard_cases": [
+    "far_leader_proposal_when_baseline_cannot_enter",
+    "far_boundary_veto",
+    "not_closing_veto",
+    "no_traffic_loss_veto",
+    "sliding_veto",
+    "heading_veto",
+    "curve_veto",
+    "narrow_veto",
+    "occupied_veto",
+    "cut_in_veto",
+    "waiting_veto",
+    "cooldown_veto",
+    "wrong_track_veto",
+    "six_second_expiry_and_cooldown",
+    "close_gap_transfers_to_original_pass",
+    "phase_reset"
+  ],
+  "packaged_entry_dispatch": [
+    "parkland_qualifying",
+    "parkland_race",
+    "highland_qualifying",
+    "highland_race",
+    "crossover_qualifying",
+    "crossover_race"
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "note": "Local checks, not game-environment races."
+}
