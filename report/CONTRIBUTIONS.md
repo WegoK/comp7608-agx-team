@@ -21,3 +21,5 @@
 | 11/23 · 版本与分支整理 | haoran（同上） | 明确授权全部分支推远端，提供两项平台历史截图。Codex 核对七个个人版本及 Wego 历史归档、保存原包、建立两个长期开发入口和可追溯索引；不新增策略或平台操作 | [索引](../releases/VERSION_MAP.md) · [同步记录](../experiments/R02-haoran-repository-sync/README.md) | 待其他组员审阅 |
 | 11/23 · 最新 Racing 湿地复盘 | haoran（同上） | 提供完整日志与回放。Codex 核实 20,832 次动作、发车入口零触发、末圈慢车/停车限速与低温线索，准备后续选线假设；未改策略或操作平台 | [0853449c](../experiments/R02-haoran-racing-0853449c/README.md) | 待其他组员审阅 |
 | 11/23 · 湿地选线候选 | haoran（同上） | 询问如何做小范围候选。Codex 固定对照并实现湿地提前选线入口，检查门槛、占道/窄路/无收益拒绝，复算两场日志；独立人工审阅与平台测试待补 | [候选实验](../experiments/R02-haoran-racing-wet-preparation/README.md) | 待其他组员审阅 |
+
+2026-11-24 Racing efc468c6：用户提供本人日志与回放；Codex在codex/haoran-racing核实新包采用、21009条动作、Crossover分派及交通入口距离问题，更新实验和报告。无新策略实现、人工审阅或新候选比赛。

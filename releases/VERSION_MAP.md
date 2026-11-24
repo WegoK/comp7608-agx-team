@@ -95,3 +95,5 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 ## 单项候选与上传反馈（2026-11-23）
 
 `codex/haoran-racing` 最新策略是 `cb01eb0460ac`：只新增湿地提前准备独立车道的受限入口。候选 [ZIP](personal/haoran/racing/cb01eb0460ac/racing-cb01eb0460ac.zip) 指纹 `fc2cf8296811`，详见 [实验](../experiments/R02-haoran-racing-wet-preparation/README.md)。用户已在聊天确认上传，等待比赛；平台指纹、版本号、验证回执、激活及赛果尚待核对，不推定为 v6。它比平台已独立核实的 v4/v5 源码新。FPS 分支源码未改。
+
+2026-11-24：完整本人日志[efc468c6复盘](../experiments/R02-haoran-racing-efc468c6/README.md)已核实候选cb01eb0460ac/fc2cf8296811实际采用，冻结版本ad59420d-987d-4bf0-b46e-924f5d3bb98a。Crossover最终第3；此前上传待核对事件获得实战证据，平台vN序号仍不单凭指纹推定。该赛道未执行Parkland湿地入口。
