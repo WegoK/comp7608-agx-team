@@ -51,6 +51,6 @@ python3 scripts/review_racing_preview_export.py --log dist/racing-inputs/trainin
 |---|---|
 | 新包采用、完整性、冻结动作、旧版对照与事件复盘 | 完成 |
 | 新优化 | 仅计划；未实现、打包、验证、激活或实战 |
-| 项目基础检查与清洁检出复现 | 待补录 |
+| 项目基础检查与清洁检出复现 | 清洁 LF 检出中 `python3 scripts/check.py` 通过；完整复盘再次运行，JSON 与归档完全一致；基础检查不等于游戏环境测试 |
 
 用户提供实战证据；Codex编写复盘脚本、执行核验并更新报告。未补造人工审阅或新候选成绩。
