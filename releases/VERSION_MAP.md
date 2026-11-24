@@ -36,7 +36,7 @@ Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；
 
 | 长期分支 | 主要维护目录 | 当前该游戏源码 | 用途 |
 |---|---|---|---|
-| `codex/haoran-fps` | `strategies/fps/` | `e27acc998e08`，个人 FPS v2 | FPS 后续开发、实验和报告 |
+| `codex/haoran-fps` | `strategies/fps/` | `65652c51f1ef`，第三版开发候选；平台已核实仍为 v2 | FPS 后续开发、实验和报告 |
 | `codex/haoran-racing` | `strategies/racing/` | `ee12c93d76f6`，个人 Racing v4/v5 | Racing 后续开发、实验和报告 |
 
 这两个分支从整理后的最新完整历史开始。Git 分支是**整份仓库**，因此两边都会看到 FPS、Racing 和报告；“两个开发分支”是工作分工，不是把文件拆成两个仓库。新实验主要改对应游戏目录，完成后再按团队审阅约定整合。`main` 保持原来的小组稳定交接状态，本次没有合入策略。
@@ -91,3 +91,7 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 ```
 
 若重打包，在该干净工作区使用 `python3 scripts/check.py`、`python3 scripts/package.py racing`。Windows 应保留 LF、使用 UTF-8 Python；基础检查不等于游戏环境测试。同步 Git 仓库与 AGX 上传/激活是两个独立步骤。
+
+## FPS 第三版开发候选（2026-11-24）
+
+源码 `65652c51f1ef`，指纹 `67e64a8436fe`，[原 ZIP](personal/haoran/fps/65652c51f1ef/fps-65652c51f1ef.zip)。短暂不可见时最长0.3秒保持瞄准与蹲姿，隐藏帧不开火；详见[实验](../experiments/R02-haoran-fps-v3-aim-hold/README.md)。检查、打包完成；没有平台上传、验证、激活或新策略赛果，平台 v3 序号待用户上传确认，不改写上方历史 v1/v2。长期分支表为本分支文档快照，Racing 后续记录见其独立开发分支。

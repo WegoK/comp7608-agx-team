@@ -1,12 +1,14 @@
 {
   "schema": "agx-version-and-branch-index-v1",
-  "recorded_on_beijing": "2026-11-23",
+  "recorded_on_beijing": "2026-11-24",
   "remote": "https://github.com/WegoK/comp7608-agx-team.git",
   "long_term_branches": [
     {
       "name": "codex/haoran-fps",
       "game": "FPS",
-      "current_game_source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058"
+      "current_game_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+      "current_source_status": "third_development_candidate_not_uploaded",
+      "latest_verified_platform_source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058"
     },
     {
       "name": "codex/haoran-racing",
@@ -129,6 +131,16 @@
       "manifest_path": "releases/personal/haoran/racing/ee12c93d76f6/racing-ee12c93d76f6.json",
       "source_files_match_git": true,
       "note": "Archive is the original locally prepared package. Manifest validation fields preserve packaging-time status."
+    },
+    {
+      "game": "fps",
+      "source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+      "zip_sha256": "67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b",
+      "zip_path": "releases/personal/haoran/fps/65652c51f1ef/fps-65652c51f1ef.zip",
+      "manifest_path": "releases/personal/haoran/fps/65652c51f1ef/fps-65652c51f1ef.json",
+      "source_files_match_git": true,
+      "note": "FPS third development candidate; platform version unconfirmed; no upload or activation.",
+      "experiment": "experiments/R02-haoran-fps-v3-aim-hold/README.md"
     }
   ],
   "wego_versions": [
@@ -456,6 +468,17 @@
     {
       "path": "experiments/racing_record.JPG",
       "sha256": "64e3ebb57bf2855928561a7d1c4f1697444461818d39cb12466e2d63ae41ce84"
+    }
+  ],
+  "local_candidates": [
+    {
+      "game": "FPS",
+      "development_name": "第三版：短暂丢失视野瞄准保持",
+      "source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+      "zip_sha256": "67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b",
+      "platform_version": null,
+      "platform_validation": "not_run",
+      "competition_activation": "not_run"
     }
   ]
 }

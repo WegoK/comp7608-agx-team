@@ -36,8 +36,12 @@ python3 scripts/evaluate_fps_objectives.py --kit-root dist/fps-kit-map-check --o
 | 阶段 | 状态 |
 |---|---|
 | 单项实现、历史观察对照、保护检查 | 完成 |
-| 项目基础检查、固定提交与打包 | 待补录 |
+| 项目基础检查、固定提交与打包 | 清洁 LF 检出中 check.py、package.py fps 通过；两场完整复算与归档 JSON 一致；ZIP 三文件逐字节匹配 Git |
 | 独立人工审阅 | 待进行 |
 | 平台验证、激活、新候选实战 | 未进行；没有自动操作 AGX |
 
 用户提供实战数据并确定优化方向；Codex 完成实现、用例、执行与文档。未补造人工审阅或实战贡献。下次日志应先核对 source_hash，再检查长时间无开火的交替状态是否减少、实际命中/击杀/死亡、目标暂停及拆包是否受影响；不同对手或地图的总比分不单独作为因果证据。
+
+## 可上传包
+
+源码 `65652c51f1ef60fb1f365b45bfff3eaa947c7f40`，包 [fps-65652c51f1ef.zip](../../releases/personal/haoran/fps/65652c51f1ef/fps-65652c51f1ef.zip)，SHA256 `67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b`。见[清单](package-manifest.json)与[打包检查](packaging-checks.json)。平台版本号仍待上传后确认；旧包 v2 `06bcdcc4ae39…` 保留回退。

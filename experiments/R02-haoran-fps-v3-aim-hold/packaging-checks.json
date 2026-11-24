@@ -1,0 +1,12 @@
+{
+  "source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+  "zip_sha256": "67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b",
+  "project_check": "passed_clean_lf_checkout",
+  "zip_integrity": "passed",
+  "files_match_git": true,
+  "complete_two_log_recheck": "exact_json_match",
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "note": "Basic checks and recorded inputs do not constitute game-environment testing."
+}
