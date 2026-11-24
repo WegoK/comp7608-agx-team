@@ -91,6 +91,7 @@ class Driver:
         self.wait_since = 0.0
         self.pass_seat = None
         self.pass_offset = 0.0
+        self.pass_early_until = 0.0
         self.rival_positions = {}
         self.rival_time = None
 
@@ -120,7 +121,16 @@ class Driver:
         others = [r for r in o["rivals"] if r["status"] == "racing"]
         if self.pass_seat is not None:
             leader = next((r for r in others if r["seat"] == self.pass_seat), None)
-            if leader is not None and -12.0 < leader["gap_m"] < 50.0:
+            if leader is not None and self.pass_early_until:
+                if leader['gap_m'] < 27.0:
+                    self.pass_early_until = 0.0  # Continue as an ordinary pass.
+                elif o['time'] >= self.pass_early_until:
+                    self.pass_seat = self.waiting_for = None
+                    self.pass_early_until = 0.0
+                    self.retry_at = o['time'] + 2.0
+                    return 0.0
+            limit = 65.0 if self.pass_early_until else 50.0
+            if leader is not None and -12.0 < leader["gap_m"] < limit:
                 lane = self.safe_offset(o, self.pass_offset)
                 leader_n = n + leader["dn"]
                 future_n = leader_n + 2.0 * leader.get("lateral_speed_mps", 0.0)
@@ -140,11 +150,20 @@ class Driver:
                 return self.safe_offset(o, self.pass_offset)
             self.pass_seat = None
             self.waiting_for = None
+            self.pass_early_until = 0.0
 
         if o["time"] < self.retry_at:
             return 0.0
         leaders = [r for r in others if 5.0 < r["gap_m"] < 27.0
                    and abs(r["dn"]) < 2.7 and target - r["speed_mps"] > 6.0]
+        if (not leaders and abs(o['track_length_m'] - 5803.167) < .5
+                and not car['front_sliding'] and not car['rear_sliding']):
+            # Prepare a lane only when this observed leader already limits
+            # the original centre-line traffic plan. Keep the stopping rule.
+            leaders = [r for r in others if 27.0 <= r['gap_m'] < 60.0
+                       and abs(r['dn']) < 2.7 and target-r['speed_mps'] > 6.0
+                       and car['speed_mps']-r['speed_mps'] > 1.0
+                       and traffic_plan(dict(o, rivals=[r]), target, 0.0, reserve=True)[0] < target-3.0]
         if not leaders:
             self.waiting_for = None
             return 0.0
@@ -171,6 +190,7 @@ class Driver:
                 continue
             if self.corridor_free(car, others, lane, leader["seat"]):
                 self.pass_seat, self.pass_offset = leader["seat"], lane
+                self.pass_early_until = o['time'] + 6.0 if leader['gap_m'] >= 27.0 else 0.0
                 self.pass_side = 1.0 if lane > leader_n else -1.0
                 return lane
         return 0.0
@@ -219,6 +239,7 @@ class Driver:
             self.hairpin_preview = {}
             self.wet_waiver = False
             self.waiting_for = self.pass_seat = None
+            self.pass_early_until = 0.0
             self.retry_at = 0.0
             self.rival_positions, self.rival_time = {}, None
         o = self.observe_lateral_motion(o)
@@ -258,6 +279,7 @@ class Driver:
                 offset = self.passing_line(o, target)
             else:
                 self.pass_seat = self.waiting_for = None
+                self.pass_early_until = 0.0
         target, offset = traffic_plan(o, target, offset, reserve=passing_enabled)
         if o["phase"] == "race" and (travelled < 150.0 or self.pass_seat is not None):
             lateral_error = abs(car["n"] - offset)

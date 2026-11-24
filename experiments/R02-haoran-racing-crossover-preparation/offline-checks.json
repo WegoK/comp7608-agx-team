@@ -1,0 +1,140 @@
+{
+  "schema": "crossover-preparation-candidate-v1",
+  "baseline_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+  "unchanged_speed_traffic_pit_functions_and_other_bundle_files": true,
+  "candidate_preview_lf_sha256": "07caeb857c3a231a542befc14bbef9d0ae724fc7ddf0c887f58d09f7d1a5feed",
+  "checks": {
+    "guards": [
+      "far_leader_proposal_when_baseline_cannot_enter",
+      "far_boundary_veto",
+      "not_closing_veto",
+      "no_traffic_loss_veto",
+      "sliding_veto",
+      "heading_veto",
+      "curve_veto",
+      "narrow_veto",
+      "occupied_veto",
+      "cut_in_veto",
+      "waiting_veto",
+      "cooldown_veto",
+      "wrong_track_veto",
+      "six_second_expiry_and_cooldown",
+      "close_gap_transfers_to_original_pass",
+      "phase_reset"
+    ],
+    "estimator": [
+      "first_view_zero",
+      "two_view_estimate",
+      "own_lane_change_compensated",
+      "stale_history_reset",
+      "reappearing_rival_reset",
+      "caller_observation_unchanged"
+    ],
+    "regression": {
+      "unchanged_static_traffic_callbacks": 2400,
+      "tracks": [
+        "parkland",
+        "highland",
+        "crossover"
+      ],
+      "phases": [
+        "qualifying",
+        "race"
+      ],
+      "wetness": [
+        0.0,
+        0.7
+      ],
+      "phase_reset": true
+    },
+    "corridors": {
+      "outside_lane_cut_in_veto": true,
+      "unchanged_stationary_cases": 1000,
+      "existing_veto_preserved_cases": 1000,
+      "seed": 7608
+    },
+    "passing": {
+      "two_observation_cut_in": {
+        "baseline_action": {
+          "throttle": 0.0,
+          "brake": 1.0,
+          "steer": 0.15,
+          "ers_mode": 1,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        },
+        "candidate_action": {
+          "throttle": 0.0,
+          "brake": 1.0,
+          "steer": 0.0,
+          "ers_mode": 1,
+          "aero_mode": 0,
+          "pit_request": false,
+          "pit_compound": "medium"
+        },
+        "baseline_commits": true,
+        "candidate_commits": false
+      },
+      "drifting_leader_lane_choice": [
+        3.8,
+        -3.8
+      ]
+    }
+  },
+  "logs": [
+    {
+      "match_id": "efc468c6-cbdf-4284-9723-54ed553ebd2d",
+      "actual_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+      "rows": 21009,
+      "action_reproduction": 21009,
+      "decision_sha256": "ab65f2ebee796e1a6606121105430acb802b381af61ff4bffb51f70981408168",
+      "changed_vs_control": 164,
+      "changes_by_phase": {
+        "qualifying": 0,
+        "race": 164
+      },
+      "recorded_pose_proposals": [
+        {
+          "global_s": 1613.3667,
+          "lap": 2,
+          "seat": 9,
+          "gap_m": 29.865,
+          "early": true
+        }
+      ],
+      "note": "Fixed recorded own poses and rival responses; proposals do not establish real overtakes or lap-time gains."
+    },
+    {
+      "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+      "actual_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "rows": 20832,
+      "action_reproduction": 20832,
+      "decision_sha256": "bb78c83bfff230415a199dd12130bd3b8f2f6e413fa94ec237ef689626e11b07",
+      "changed_vs_control": 0,
+      "changes_by_phase": {
+        "qualifying": 0,
+        "race": 0
+      },
+      "recorded_pose_proposals": [],
+      "note": "Fixed recorded own poses and rival responses; proposals do not establish real overtakes or lap-time gains."
+    },
+    {
+      "match_id": "33d17cb4-a681-4db5-861a-3ecc34b80abf",
+      "actual_source_commit": "d6268a7f50adcfec63b79ca706c627401ae2af2d",
+      "rows": 17014,
+      "action_reproduction": 17014,
+      "decision_sha256": "97d1a4b663b4bc56fbded06021e503cf8ef21c4d54c2c5ed04b3481eda327b76",
+      "changed_vs_control": 0,
+      "changes_by_phase": {
+        "qualifying": 0,
+        "race": 0
+      },
+      "recorded_pose_proposals": [],
+      "note": "Fixed recorded own poses and rival responses; proposals do not establish real overtakes or lap-time gains."
+    }
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0
+}

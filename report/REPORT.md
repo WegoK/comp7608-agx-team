@@ -206,3 +206,7 @@ FPS 仍显示已发布 v2，Racing 显示已发布 v3。截图没有完整平台
 ### 2026-11-24 Racing新包Crossover实战（efc468c6）
 
 实际采用cb01eb0460ac/fc2cf8296811，排位5、正赛最终3，四圈562.661秒、落后冠军98.143秒；21009条动作全部重现，fault0、公开本车incident0。赛道Crossover走未改变的preview_driver，主Parkland Driver调用0；与ee12旧包在本场输出全部一致，因此不作为Parkland湿地入口的收益证据。第二圈978/4080次交通限速>3m/s，其中946次最近同列前车≥27m，尚未进入超车近距入口；建议下一单项针对Crossover提前选线提案，保留道路、切入和跟车保护。进站42.334秒跨第三/四圈，不等于净损失42秒；本次未改策略。见[复盘](../experiments/R02-haoran-racing-efc468c6/README.md)。
+
+### 2026-11-24 Crossover提前准备车道候选
+
+按用户要求在codex/haoran-racing实现单项候选：无原近距候选时，仅27–60米、实际追近、前车独立造成原中线限速>3m/s、无滑胎才提出较早选线；保留1.5秒等待及原道路/占道/切入检查，准备最多6秒，跟车公式不改。16项保护、原侧向回归通过，三场58855条冻结动作全部重现；相对cb01对照仅Crossover164次动作变化，两场Parkland0变化。提案早5.4秒但目标正在进站，仅说明触发，不是超车或圈时收益。见[实验](../experiments/R02-haoran-racing-crossover-preparation/README.md)。基础检查、固定包与平台实测待补。
