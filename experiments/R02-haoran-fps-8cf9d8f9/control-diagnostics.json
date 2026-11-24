@@ -1,0 +1,230 @@
+{
+  "combat_by_round": {
+    "0": {
+      "calls": 4,
+      "yaw_gate_fail": 2,
+      "pitch_gate_fail": 0,
+      "ready": 4,
+      "fire": 0
+    },
+    "1": {
+      "calls": 33,
+      "yaw_gate_fail": 32,
+      "pitch_gate_fail": 31,
+      "ready": 33,
+      "fire": 1
+    },
+    "3": {
+      "calls": 28,
+      "yaw_gate_fail": 12,
+      "pitch_gate_fail": 7,
+      "ready": 28,
+      "fire": 15
+    },
+    "4": {
+      "calls": 9,
+      "yaw_gate_fail": 7,
+      "pitch_gate_fail": 4,
+      "ready": 9,
+      "fire": 1
+    },
+    "5": {
+      "calls": 3,
+      "yaw_gate_fail": 3,
+      "pitch_gate_fail": 0,
+      "ready": 3,
+      "fire": 0
+    },
+    "6": {
+      "calls": 5,
+      "yaw_gate_fail": 1,
+      "pitch_gate_fail": 0,
+      "ready": 5,
+      "fire": 4
+    },
+    "7": {
+      "calls": 18,
+      "yaw_gate_fail": 15,
+      "pitch_gate_fail": 5,
+      "ready": 18,
+      "fire": 3
+    },
+    "8": {
+      "calls": 5,
+      "yaw_gate_fail": 5,
+      "pitch_gate_fail": 0,
+      "ready": 5,
+      "fire": 0
+    },
+    "9": {
+      "calls": 401,
+      "yaw_gate_fail": 400,
+      "pitch_gate_fail": 0,
+      "ready": 401,
+      "fire": 1
+    },
+    "10": {
+      "calls": 7,
+      "yaw_gate_fail": 6,
+      "pitch_gate_fail": 2,
+      "ready": 7,
+      "fire": 1
+    },
+    "11": {
+      "calls": 29,
+      "yaw_gate_fail": 13,
+      "pitch_gate_fail": 7,
+      "ready": 29,
+      "fire": 16
+    },
+    "13": {
+      "calls": 8,
+      "yaw_gate_fail": 5,
+      "pitch_gate_fail": 1,
+      "ready": 8,
+      "fire": 3
+    },
+    "15": {
+      "calls": 65,
+      "yaw_gate_fail": 64,
+      "pitch_gate_fail": 61,
+      "ready": 65,
+      "fire": 1
+    },
+    "19": {
+      "calls": 23,
+      "yaw_gate_fail": 2,
+      "pitch_gate_fail": 1,
+      "ready": 23,
+      "fire": 21
+    },
+    "21": {
+      "calls": 912,
+      "yaw_gate_fail": 912,
+      "pitch_gate_fail": 912,
+      "ready": 912,
+      "fire": 0
+    }
+  },
+  "retakes": {
+    "13": {
+      "first_tick": 63906,
+      "last_tick": 66303,
+      "min_site_distance": {
+        "A": 0.10938910440305352,
+        "B": 13.472625621789717
+      },
+      "known_calls": 0
+    },
+    "15": {
+      "first_tick": 74946,
+      "last_tick": 77343,
+      "min_site_distance": {
+        "A": 0.1093891044166773,
+        "B": 11.973987129674455
+      },
+      "known_calls": 0
+    },
+    "19": {
+      "first_tick": 101544,
+      "last_tick": 103941,
+      "min_site_distance": {
+        "A": 0.109389023455072,
+        "B": 17.26421340444317
+      },
+      "known_calls": 0
+    }
+  },
+  "plants": [
+    {
+      "round_index": 1,
+      "match_tick": 5157,
+      "site": "A"
+    },
+    {
+      "round_index": 5,
+      "match_tick": 28446,
+      "site": "A"
+    },
+    {
+      "round_index": 6,
+      "match_tick": 34335,
+      "site": "B"
+    },
+    {
+      "round_index": 7,
+      "match_tick": 37266,
+      "site": "B"
+    },
+    {
+      "round_index": 9,
+      "match_tick": 48369,
+      "site": "B"
+    },
+    {
+      "round_index": 10,
+      "match_tick": 53817,
+      "site": "B"
+    },
+    {
+      "round_index": 13,
+      "match_tick": 63906,
+      "site": "B"
+    },
+    {
+      "round_index": 14,
+      "match_tick": 69750,
+      "site": "B"
+    },
+    {
+      "round_index": 15,
+      "match_tick": 74946,
+      "site": "B"
+    },
+    {
+      "round_index": 17,
+      "match_tick": 88071,
+      "site": "A"
+    },
+    {
+      "round_index": 18,
+      "match_tick": 95570,
+      "site": "A"
+    },
+    {
+      "round_index": 19,
+      "match_tick": 101544,
+      "site": "B"
+    },
+    {
+      "round_index": 22,
+      "match_tick": 119928,
+      "site": "A"
+    }
+  ],
+  "own_actual_fire_by_round": {
+    "1": 1,
+    "3": 9,
+    "4": 1,
+    "6": 2,
+    "7": 2,
+    "9": 1,
+    "10": 1,
+    "11": 9,
+    "13": 2,
+    "15": 1,
+    "19": 11
+  },
+  "yaw_response": {
+    "samples": 14565,
+    "median": 0.15,
+    "q10": 0.14999999999999947,
+    "q90": 0.15000000000000036
+  },
+  "pitch_response": {
+    "samples": 2942,
+    "median": 0.1
+  },
+  "round22_examples": [],
+  "note": "Observed response ratios describe this match at 3-tick intervals, not an independently verified engine contract."
+}
