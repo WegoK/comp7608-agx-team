@@ -39,7 +39,7 @@ def fixture():
                         carrying_bomb=False, weapons=[None, dict(ammo=12, reserve=24, reload_until=0), None]))
 
 
-def synthetic_checks(old, new):
+def synthetic_checks(old, new, combat_hold_ticks=0):
     cases = []
 
     def call(player, obs, tick):
@@ -80,10 +80,11 @@ def synthetic_checks(old, new):
             paused['me']['x'] = 2
         if interruption != 'callback_gap':
             call(player, paused, 75)
-        for t in range(78, 228, 3):
+        resume = 78 + (combat_hold_ticks if interruption == 'combat' else 0)
+        for t in range(78, resume + 150, 3):
             call(player, obs, t)
             assert player.retake_site == 0
-        call(player, obs, 228)
+        call(player, obs, resume + 150)
         assert player.retake_site == 1
         cases.append('continuous_scan_resets_on_' + interruption)
 

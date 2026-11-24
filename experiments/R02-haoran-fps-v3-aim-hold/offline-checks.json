@@ -1,0 +1,326 @@
+{
+  "schema": "fps-aim-hold-candidate-v1",
+  "baseline_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058",
+  "candidate_agent_lf_sha256": "87fd2fb66147e509e09ef946077645cb8f689f0d9bde5e3396bb4db69cc0e861",
+  "unchanged_starter_and_navigation": true,
+  "guards": {
+    "cases": [
+      "visible_combat_preserved",
+      "bounded_18_tick_hold_without_fire_or_motion",
+      "hidden_frames_do_not_refresh_memory",
+      "expiry_returns_to_objective",
+      "round_clears_memory",
+      "map_clears_memory",
+      "side_clears_memory",
+      "buy_clears_memory",
+      "dead_clears_memory",
+      "blind_clears_memory",
+      "airborne_clears_memory",
+      "backwards_tick_clears_memory",
+      "large_gap_clears_memory",
+      "plant_preempts_memory",
+      "defuse_preempts_memory",
+      "new_visible_target_replaces_memory"
+    ],
+    "alternating_visibility_aim_model": {
+      "baseline": {
+        "visible_fire_requests": 0,
+        "hidden_fire_requests": 0,
+        "pose_switches": 39
+      },
+      "candidate": {
+        "visible_fire_requests": 9,
+        "hidden_fire_requests": 0,
+        "pose_switches": 0
+      },
+      "limitation": "Only angle/pose integration with prescribed alternating visibility; no real hits or wins simulated."
+    }
+  },
+  "existing_retake_guards": [
+    "scan_then_rotate_after_150_ticks",
+    "injected_arrival_and_repeated_site_search",
+    "continuous_scan_resets_on_combat",
+    "continuous_scan_resets_on_blind",
+    "continuous_scan_resets_on_airborne",
+    "continuous_scan_resets_on_left_site",
+    "continuous_scan_resets_on_callback_gap",
+    "search_state_resets_on_known_position",
+    "search_state_resets_on_round_change",
+    "search_state_resets_on_map_change",
+    "search_state_resets_on_fuse_change",
+    "search_state_resets_on_not_planted",
+    "search_state_resets_on_buy",
+    "search_state_resets_on_dead",
+    "search_state_resets_on_side_change",
+    "attack_priority_or_action_preserved",
+    "ordinary_defend_priority_or_action_preserved",
+    "combat_priority_or_action_preserved",
+    "defuse_priority_or_action_preserved",
+    "plant_priority_or_action_preserved",
+    "known_bomb_travel_runs",
+    "single_site_safe_cycle",
+    "search_routes_on_borgo-r3-v54",
+    "search_routes_on_dust2-cs2-v54",
+    "search_routes_on_mirage-cs2-v54",
+    "search_routes_on_molo-r3-v54",
+    "search_routes_on_nevaio-r3-v54"
+  ],
+  "logs": [
+    {
+      "match_id": "8cf9d8f9-bf77-41ba-92cd-25b865de8d41",
+      "actual_source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058",
+      "rows": 40776,
+      "reproduced_requested_actions": 40776,
+      "raw_bytes": 127676134,
+      "decision_sha256": "2132b18031017458f2f23bbb299f0e8771e49da9b8c0144ac4e1dd1cdfa0f756",
+      "faults": 0,
+      "changed_actions_vs_v2": 1504,
+      "hidden_hold_callbacks": 1503,
+      "rounds": {
+        "0": {
+          "rows": 857,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "1": {
+          "rows": 1762,
+          "changed": 34,
+          "hidden_hold": 34
+        },
+        "2": {
+          "rows": 2520,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "3": {
+          "rows": 2068,
+          "changed": 12,
+          "hidden_hold": 12
+        },
+        "4": {
+          "rows": 823,
+          "changed": 12,
+          "hidden_hold": 12
+        },
+        "5": {
+          "rows": 2352,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "6": {
+          "rows": 1220,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "7": {
+          "rows": 1452,
+          "changed": 27,
+          "hidden_hold": 27
+        },
+        "8": {
+          "rows": 2319,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "9": {
+          "rows": 1650,
+          "changed": 402,
+          "hidden_hold": 402
+        },
+        "10": {
+          "rows": 1415,
+          "changed": 1,
+          "hidden_hold": 1
+        },
+        "11": {
+          "rows": 827,
+          "changed": 27,
+          "hidden_hold": 26
+        },
+        "12": {
+          "rows": 1166,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "13": {
+          "rows": 1771,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "14": {
+          "rows": 1652,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "15": {
+          "rows": 2028,
+          "changed": 66,
+          "hidden_hold": 66
+        },
+        "16": {
+          "rows": 2520,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "17": {
+          "rows": 1653,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "18": {
+          "rows": 2702,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "19": {
+          "rows": 1991,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "20": {
+          "rows": 1237,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "21": {
+          "rows": 2520,
+          "changed": 911,
+          "hidden_hold": 911
+        },
+        "22": {
+          "rows": 2271,
+          "changed": 0,
+          "hidden_hold": 0
+        }
+      },
+      "limitation": "Recorded own positions and visibility remain old; no candidate hits, kill count, trajectories or result inferred."
+    },
+    {
+      "match_id": "69259abb-fcc8-4474-874f-b88d0562750a",
+      "actual_source_commit": "4f5747cbde4296a235b042e60b7486a224f3dfd4",
+      "rows": 47731,
+      "reproduced_requested_actions": 47731,
+      "raw_bytes": 139632649,
+      "decision_sha256": "3d0cf9b7491065ef1d62252db8f610326404e61852486e84f6521b68461df572",
+      "faults": 0,
+      "changed_actions_vs_v2": 250,
+      "hidden_hold_callbacks": 250,
+      "rounds": {
+        "0": {
+          "rows": 2378,
+          "changed": 35,
+          "hidden_hold": 35
+        },
+        "1": {
+          "rows": 2320,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "2": {
+          "rows": 1272,
+          "changed": 44,
+          "hidden_hold": 44
+        },
+        "3": {
+          "rows": 2548,
+          "changed": 13,
+          "hidden_hold": 13
+        },
+        "4": {
+          "rows": 2153,
+          "changed": 8,
+          "hidden_hold": 8
+        },
+        "5": {
+          "rows": 2520,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "6": {
+          "rows": 2267,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "7": {
+          "rows": 1916,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "8": {
+          "rows": 2006,
+          "changed": 25,
+          "hidden_hold": 25
+        },
+        "9": {
+          "rows": 2372,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "10": {
+          "rows": 2108,
+          "changed": 7,
+          "hidden_hold": 7
+        },
+        "11": {
+          "rows": 2124,
+          "changed": 6,
+          "hidden_hold": 6
+        },
+        "12": {
+          "rows": 2771,
+          "changed": 31,
+          "hidden_hold": 31
+        },
+        "13": {
+          "rows": 2520,
+          "changed": 18,
+          "hidden_hold": 18
+        },
+        "14": {
+          "rows": 2520,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "15": {
+          "rows": 2866,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "16": {
+          "rows": 1187,
+          "changed": 24,
+          "hidden_hold": 24
+        },
+        "17": {
+          "rows": 2520,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "18": {
+          "rows": 1357,
+          "changed": 7,
+          "hidden_hold": 7
+        },
+        "19": {
+          "rows": 2520,
+          "changed": 0,
+          "hidden_hold": 0
+        },
+        "20": {
+          "rows": 1764,
+          "changed": 14,
+          "hidden_hold": 14
+        },
+        "21": {
+          "rows": 1722,
+          "changed": 0,
+          "hidden_hold": 0
+        }
+      },
+      "limitation": "Recorded own positions and visibility remain old; no candidate hits, kill count, trajectories or result inferred."
+    }
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0
+}

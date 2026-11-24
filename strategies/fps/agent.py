@@ -1,4 +1,4 @@
-"""R08 navigation, dropped-bomb recovery and legal planted-bomb search."""
+"""R08 objectives and navigation with bounded last-seen aim retention."""
 import math
 from collections import deque
 
@@ -8,6 +8,7 @@ from waypoint_nav import NavigationMixin
 
 DUST2 = "dust2-cs2-v54"
 NAVIGATION_MAPS = {DUST2, "mirage-cs2-v54"}
+AIM_HOLD_TICKS = 18  # 0.3 seconds; last-seen position is never a firing permit.
 # Public map coordinates, in platform metres. A uses the ground beside the car.
 CAR_GROUND = (151.8827, 145.0278, 20.1524)
 VIEWS = {
@@ -52,6 +53,21 @@ class Candidate(NavigationMixin, Player):
         self.live_stage = self.first_live = None
         self.reset_motion()
         self.reset_retake()
+        self.reset_aim()
+
+    def reset_aim(self):
+        self.aim_target = None
+        self.aim_seen_tick = None
+
+    def combat(self, obs, action, gun):
+        if obs['me']['grounded'] and not obs['me']['blind_ticks']:
+            me = obs['me']
+            enemy = min(obs['visible'], key=lambda e:
+                        (e['x']-me['x'])**2 + (e['y']-me['y'])**2)
+            self.aim_target = {k: enemy[k] for k in ('x', 'y', 'z', 'crouch')}
+            self.aim_target['parts'] = list(enemy['parts'])
+            self.aim_seen_tick = obs['match_tick']
+        return super().combat(obs, action, gun)
 
     def load_map(self, row):
         if row["id"] != self.map_id:
@@ -59,6 +75,7 @@ class Candidate(NavigationMixin, Player):
             self.path, self.goal = [], None
             self.reset_motion()
             self.reset_retake()
+            self.reset_aim()
         super().load_map(row)
         self.map_id = row["id"]
 
@@ -142,6 +159,12 @@ class Candidate(NavigationMixin, Player):
             self.first_live = None
             self.reset_motion()
             self.reset_retake()
+            self.reset_aim()
+        if (obs['phase'] != 'live' or not obs['me']['alive']
+                or obs['me']['blind_ticks'] or not obs['me']['grounded']
+                or (self.aim_seen_tick is not None
+                    and not 0 <= tick-self.aim_seen_tick <= AIM_HOLD_TICKS)):
+            self.reset_aim()
         if (obs["phase"] != "live" or not obs["me"]["alive"]
                 or obs["side"] != "defend" or obs["bomb"]["state"] != "planted"
                 or obs["bomb"].get("position")):
@@ -149,6 +172,20 @@ class Candidate(NavigationMixin, Player):
         if obs["phase"] == "live" and self.first_live is None:
             self.first_live = tick
         action = super().act(obs)
+        if action.get('use'):
+            self.reset_aim()
+        elif (self.aim_target is not None and not obs['visible']
+              and obs['phase'] == 'live' and obs['me']['alive']
+              and not obs['me']['blind_ticks'] and obs['me']['grounded']):
+            # Aim at a short-lived memory, not a newly observed enemy. Reuse
+            # the same recoil compensation but categorically forbid gunfire.
+            remembered = dict(obs, visible=[self.aim_target])
+            slot = action['weapon_slot']
+            held = {k: action[k] for k in ('weapon_slot', 'reload') if k in action}
+            action = Player.combat(self, remembered, held, obs['me']['weapons'][slot])
+            action['fire'] = False
+            self.reset_scan()
+            self.reset_motion()
         # A higher-priority stationary decision interrupted any ongoing scan.
         if self.scan_tick is not None and self.scan_tick != tick:
             self.reset_scan()
