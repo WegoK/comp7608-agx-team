@@ -235,6 +235,7 @@ class Candidate(NavigationMixin, Player):
         pos = (me["x"], me["y"], me["z"])
         tick = obs["match_tick"]
         attack = obs["side"] == "attack"
+        self.horizontal_recovery = self.map_id == 'mirage-cs2-v54'
         task = (tuple(goal), obs["bomb"]["state"] == "planted")
         if self.motion_task != task or self.last_move_tick != tick - 3:
             self.reset_motion()
@@ -245,6 +246,8 @@ class Candidate(NavigationMixin, Player):
             start, bearing, sign, blocked = self.escape
             elapsed = tick - start
             if elapsed < 42:
+                return self.escape_step(action, me, elapsed, bearing, sign)
+            if self.horizontal_recovery and not me['grounded']:
                 return self.escape_step(action, me, elapsed, bearing, sign)
             route = self._detour(pos, goal, blocked, tick)
             if route:
@@ -271,7 +274,9 @@ class Candidate(NavigationMixin, Player):
         bearing = math.atan2(pos[1] - point[1], point[0] - pos[0])
         if (full_window and tick - self.last_escape_end >= window
                 and math.dist(pos, goal) > 1.0
-                and max(math.dist(p, pos) for _, p in self.samples) < 0.65):
+                and (not self.horizontal_recovery or me['grounded'])
+                and max(math.dist(p[:2], pos[:2]) if self.horizontal_recovery else math.dist(p, pos)
+                        for _, p in self.samples) < 0.65):
             if (attack and self.map_id == DUST2 and me["grounded"]
                     and 0.25 < point[2] - pos[2] < 1.9
                     and self.step_attempt.get(tuple(point), 0) <= tick):

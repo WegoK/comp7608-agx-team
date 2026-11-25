@@ -17,7 +17,13 @@ class NavigationMixin:
         self._failed_edges = {}
         self._failed_anchors = {}
         self._jump_tried = False
+        self._jump_cooldowns = {}
         self.recovery_count = 0
+
+    def _progress_distance(self, pos, point):
+        if getattr(self, 'horizontal_recovery', False):
+            return math.dist(pos[:2], point[:2])
+        return math.dist(pos, point)
 
     def load_map(self, row):
         rebuild = self.map_id != row["id"] or not hasattr(self, "_node_at")
@@ -29,7 +35,7 @@ class NavigationMixin:
     def _reset_window(self, tick, point, pos):
         self._window_point = tuple(point)
         self._window_tick = tick
-        self._best_distance = math.dist(pos, point)
+        self._best_distance = self._progress_distance(pos, point)
 
     def _detour(self, pos, goal, target, tick):
         """Avoid the failed incoming link. Reattach on the same elevation when possible."""
@@ -118,14 +124,22 @@ class NavigationMixin:
             result.update(move_forward=0.0, move_right=0.0)
             self._reset_window(tick, point, pos)
             return result
-        if self._best_distance - distance >= 0.3:
+        if self._best_distance - self._progress_distance(pos, point) >= 0.3:
             self._reset_window(tick, point, pos)
             self._jump_tried = False
         if tick - self._window_tick < 90:
             return result
+        horizontal = getattr(self, 'horizontal_recovery', False)
+        if horizontal and not me['grounded']:
+            # Landing, not an airborne height, determines graph attachment.
+            return result
         self._reset_window(tick, point, pos)
-        if not self._jump_tried and me["grounded"] and 0.25 < point[2] - pos[2] <= 1.8:
+        self._jump_cooldowns = {p: end for p, end in self._jump_cooldowns.items() if end > tick}
+        jump_ready = not horizontal or self._jump_cooldowns.get(tuple(point), 0) <= tick
+        if not self._jump_tried and jump_ready and me["grounded"] and 0.25 < point[2] - pos[2] <= 1.8:
             self._jump_tried = True
+            if horizontal:
+                self._jump_cooldowns[tuple(point)] = tick + 900
             result["jump"] = True
             return result
         route = self._detour(pos, goal, point, tick)
