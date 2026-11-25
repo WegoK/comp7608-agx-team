@@ -55,6 +55,33 @@ class Candidate(NavigationMixin, Player):
         self.reset_retake()
         self.reset_aim()
 
+    def buy(self, obs):
+        me = obs['me']
+        if obs['phase'] != 'buy' or not me['alive']:
+            return {}
+        context = (obs.get('map_id'), obs['round_index'], obs['side'])
+        if getattr(self, 'buy_context', None) != context:
+            self.buy_context = context
+            self.buy_rejected = set()
+            self.buy_pending = None
+        if self.buy_pending is not None:
+            if any(r.get('action') == 'buy' and r.get('ok') is False
+                   for r in obs.get('receipts', ())):
+                self.buy_rejected.add(self.buy_pending)
+            self.buy_pending = None
+        rifle, price = ('ak47', 2700) if obs['side'] == 'attack' else ('m4a1', 2900)
+        # Keep the main weapon affordable, then protect the player before kit.
+        # Only request the observed 350 helmet upgrade with full body armour.
+        choices = ((rifle, price, me['weapons'][0] is None),
+                   ('armor', 650, me['armor'] < 50),
+                   ('helmet', 350, me['armor'] >= 100 and not me.get('helmet', False)),
+                   ('defusekit', 400, obs['side'] == 'defend' and not me['has_kit']))
+        for kind, cost, needed in choices:
+            if needed and me['cash'] >= cost and kind not in self.buy_rejected:
+                self.buy_pending = kind
+                return {'buy': kind}
+        return {}
+
     def reset_aim(self):
         self.aim_target = None
         self.aim_seen_tick = None
