@@ -1,6 +1,6 @@
 {
   "schema": "agx-version-and-branch-index-v1",
-  "recorded_on_beijing": "2026-11-24",
+  "recorded_on_beijing": "2026-11-25",
   "remote": "https://github.com/WegoK/comp7608-agx-team.git",
   "long_term_branches": [
     {
@@ -12,8 +12,8 @@
       "name": "codex/haoran-racing",
       "game": "Racing",
       "current_game_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
-      "current_source_status": "crossover_preparation_candidate_not_uploaded",
-      "latest_verified_platform_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78"
+      "current_source_status": "verified_adopted_in_parkland_match",
+      "latest_verified_platform_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f"
     }
   ],
   "branch_policy": "Two long-term personal development branches; preserve and push all historical local branches. Do not delete or rewrite remote branches. Both long-term branches initially share the latest complete repository history; each contains both strategy directories.",
@@ -177,7 +177,16 @@
       "manifest_path": "releases/personal/haoran/racing/9c58b2da29a7/racing-9c58b2da29a7.json",
       "source_files_match_git": true,
       "note": "Bounded Crossover preparation candidate; local checks only, no platform ordinal or activation.",
-      "experiment": "experiments/R02-haoran-racing-crossover-preparation/README.md"
+      "experiment": "experiments/R02-haoran-racing-crossover-preparation/README.md",
+      "verified_match_evidence": [
+        {
+          "match_id": "f151ad84-7597-4f65-8cb7-5b8fc12a5e84",
+          "platform_version_id": "9c068b47-f0e1-4217-890c-459a1ac37622",
+          "evidence": "experiments/R02-haoran-racing-f151ad84/review.json",
+          "track": "parkland",
+          "version_ordinal_note": "Actual bundle adoption verified, platform ordinal not inferred."
+        }
+      ]
     }
   ],
   "wego_versions": [

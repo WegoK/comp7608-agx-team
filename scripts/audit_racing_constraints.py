@@ -15,11 +15,11 @@ REF = 'ee12c93d76f6ecefc9569776b925139adbd7c860'
 PACKAGE = '0ce291ac5e307cb97bb8f04666adbcb286d0abcdaa18c0a20acef31a2a941ee4'
 
 
-def audit(path):
-    policy = Policy('constraint_audit', REF)
+def audit(path, ref=REF, package=PACKAGE, laps=(3,)):
+    policy = Policy('constraint_audit', ref)
     original_guard = policy.main.Driver.longitudinal_guard
     original_arrival = policy.main.Driver.trajectory_acceleration
-    gates, limiters, launch_calls, reductions = Counter(), Counter(), [], []
+    gates, launch_calls, reductions = Counter(), [], []
 
     def arrival(self, original, target, speed_at, yielding, braking, launch_goal=None):
         if self.o['phase'] == 'race' and 0 <= self.o['tick']-self.launch_tick <= 480:
@@ -37,7 +37,7 @@ def audit(path):
 
     def guard(self, goal):
         cap, braking = original_guard(self, goal)
-        if self.o['phase'] != 'race' or self.c['lap'] != 3 or cap >= self.diagnostic['follow_cap']-3:
+        if self.o['phase'] != 'race' or self.c['lap'] not in laps or cap >= self.diagnostic['follow_cap']-3:
             return cap, braking
         saved = dict(self.diagnostic)
         response = .45 if self.queue_context() else .25
@@ -53,10 +53,9 @@ def audit(path):
                 safe = max(0., math.sqrt((decel*response)**2 + 2*decel*(
                     max(0., rival['gap_m']-7.2) + rival['speed_mps']**2/(2*other_decel))) - decel*response)
                 if abs(safe-cap) < 1e-6:
-                    limiters[rival['seat']] += 1
                     reasons.append(dict(observed_rival_seat=rival['seat'], gap_m=rival['gap_m'],
                                         lateral_separation_m=rival['dn'], speed_mps=rival['speed_mps']))
-            reductions.append(dict(global_time_s=self.o['time'], station_m=self.c['s'],
+            reductions.append(dict(global_time_s=self.o['time'], lap_zero_based=self.c['lap'], station_m=self.c['s'],
                 own_speed_mps=self.v, model_own_deceleration_mps2=decel,
                 follow_cap_mps=saved['follow_cap'], stopping_cap_mps=cap, limiting_visible_rivals=reasons))
         finally:
@@ -70,7 +69,7 @@ def audit(path):
     digest = hashlib.sha256()
     with path.open('rb') as source:
         header = json.loads(next(source))
-        assert len(header['participants']) == 1 and header['participants'][0]['source_hash'] == PACKAGE
+        assert len(header['participants']) == 1 and header['participants'][0]['source_hash'] == package
         footer = None
         for line in source:
             row = json.loads(line)
@@ -83,13 +82,18 @@ def audit(path):
             agreement += equal(policy.act(row['observation']), row['action'])
     assert footer and footer['complete'] and (count, byte_count, digest.hexdigest()) == (footer['rows'], footer['raw_bytes'], footer['sha256'])
     assert agreement == count
-    selected = reductions[::max(1, len(reductions)//5)][:5]
-    return dict(schema='racing-constraint-audit-v1', match_id=header['job_id'], source_commit=REF,
+    by_lap={}
+    for lap in laps:
+        entries=[r for r in reductions if r['lap_zero_based']==lap]
+        rivals=Counter(r['observed_rival_seat'] for e in entries for r in e['limiting_visible_rivals'])
+        by_lap[str(lap)]=dict(incremental_stopping_reductions_gt_3mps=len(entries),limiting_visible_rival_seat_counts=rivals,
+            samples=entries[::max(1,len(entries)//4)][:4])
+    return dict(schema='racing-constraint-audit-v2', match_id=header['job_id'], source_commit=ref,
         recorded_action_agreement=agreement, decision_sha256=digest.hexdigest(),
         launch_window=dict(calls=len(launch_calls), overlapping_rejection_counts=gates,
                            only_mode_rejected=sum(v == ['mode'] for v in launch_calls), all_listed_gates_clear=sum(not v for v in launch_calls)),
-        fourth_lap=dict(incremental_stopping_reductions_gt_3mps=len(reductions),
-                        limiting_visible_rival_seat_counts=limiters, samples=selected),
+        tracked_laps_zero_based=list(laps),by_lap=by_lap,
+        fourth_lap=by_lap.get('3'),
         note='Own recorded legal rival observations only. A triggered guard is not proof of unnecessary braking; no policy change or new race simulated.')
 
 
@@ -97,8 +101,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--log', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--source-ref', default=REF)
+    p.add_argument('--bundle-sha256', default=PACKAGE)
+    p.add_argument('--laps', default='3', help='Zero-based lap indices, separated by commas')
     args = p.parse_args()
-    result = audit(args.log)
+    result = audit(args.log, args.source_ref, args.bundle_sha256, tuple(int(v) for v in args.laps.split(',')))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({k: result[k] for k in ('recorded_action_agreement', 'launch_window')}))

@@ -1,0 +1,319 @@
+{
+  "schema": "racing-constraint-audit-v2",
+  "match_id": "f151ad84-7597-4f65-8cb7-5b8fc12a5e84",
+  "source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+  "recorded_action_agreement": 16628,
+  "decision_sha256": "4e12a1975b709ffe89e655f9692ba51a4bc3f5e89f74547bf36d22a0b66b9687",
+  "launch_window": {
+    "calls": 241,
+    "overlapping_rejection_counts": {
+      "mode": 241,
+      "lane_transition": 79,
+      "tracking": 69,
+      "turning": 53,
+      "speed": 141
+    },
+    "only_mode_rejected": 10,
+    "all_listed_gates_clear": 0
+  },
+  "tracked_laps_zero_based": [
+    0,
+    1,
+    3
+  ],
+  "by_lap": {
+    "0": {
+      "incremental_stopping_reductions_gt_3mps": 1481,
+      "limiting_visible_rival_seat_counts": {
+        "1": 22,
+        "9": 1323
+      },
+      "samples": [
+        {
+          "global_time_s": 1099.3667,
+          "lap_zero_based": 0,
+          "station_m": 5764.495,
+          "own_speed_mps": 4.2927,
+          "model_own_deceleration_mps2": 14.158085315257019,
+          "follow_cap_mps": 16.82854471320968,
+          "stopping_cap_mps": 13.529312881159411,
+          "limiting_visible_rivals": []
+        },
+        {
+          "global_time_s": 1111.7,
+          "lap_zero_based": 0,
+          "station_m": 607.834,
+          "own_speed_mps": 87.4053,
+          "model_own_deceleration_mps2": 18.285623,
+          "follow_cap_mps": 94.19932851612877,
+          "stopping_cap_mps": 88.42637225402079,
+          "limiting_visible_rivals": []
+        },
+        {
+          "global_time_s": 1134.6333,
+          "lap_zero_based": 0,
+          "station_m": 1724.948,
+          "own_speed_mps": 77.7614,
+          "model_own_deceleration_mps2": 17.425628,
+          "follow_cap_mps": 89.15455375067073,
+          "stopping_cap_mps": 77.29361343071584,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 9,
+              "gap_m": 90.945,
+              "lateral_separation_m": -0.411,
+              "speed_mps": 74.791
+            }
+          ]
+        },
+        {
+          "global_time_s": 1168.4,
+          "lap_zero_based": 0,
+          "station_m": 3364.369,
+          "own_speed_mps": 69.361,
+          "model_own_deceleration_mps2": 17.726249,
+          "follow_cap_mps": 82.84230174377772,
+          "stopping_cap_mps": 73.6910241080456,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 9,
+              "gap_m": 77.386,
+              "lateral_separation_m": -1.116,
+              "speed_mps": 73.436
+            }
+          ]
+        }
+      ]
+    },
+    "1": {
+      "incremental_stopping_reductions_gt_3mps": 1476,
+      "limiting_visible_rival_seat_counts": {
+        "9": 263,
+        "1": 1213
+      },
+      "samples": [
+        {
+          "global_time_s": 1206.7333,
+          "lap_zero_based": 1,
+          "station_m": 0.344,
+          "own_speed_mps": 72.9662,
+          "model_own_deceleration_mps2": 18.30125,
+          "follow_cap_mps": 87.09818950821449,
+          "stopping_cap_mps": 77.3424651623568,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 9,
+              "gap_m": 75.796,
+              "lateral_separation_m": -1.716,
+              "speed_mps": 79.172
+            }
+          ]
+        },
+        {
+          "global_time_s": 1233.7,
+          "lap_zero_based": 1,
+          "station_m": 1461.558,
+          "own_speed_mps": 65.6041,
+          "model_own_deceleration_mps2": 18.705746,
+          "follow_cap_mps": 80.68665964765705,
+          "stopping_cap_mps": 76.11446860658485,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 88.458,
+              "lateral_separation_m": -3.751,
+              "speed_mps": 72.097
+            }
+          ]
+        },
+        {
+          "global_time_s": 1261.8333,
+          "lap_zero_based": 1,
+          "station_m": 2934.857,
+          "own_speed_mps": 60.405,
+          "model_own_deceleration_mps2": 18.955628,
+          "follow_cap_mps": 73.91680875329419,
+          "stopping_cap_mps": 59.36540656235955,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 92.005,
+              "lateral_separation_m": -5.784,
+              "speed_mps": 36.163
+            }
+          ]
+        },
+        {
+          "global_time_s": 1292.3667,
+          "lap_zero_based": 1,
+          "station_m": 4821.54,
+          "own_speed_mps": 91.2272,
+          "model_own_deceleration_mps2": 17.810621,
+          "follow_cap_mps": 95.499267578125,
+          "stopping_cap_mps": 91.67422204651898,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 120.689,
+              "lateral_separation_m": 2.161,
+              "speed_mps": 88.13
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "incremental_stopping_reductions_gt_3mps": 454,
+      "limiting_visible_rival_seat_counts": {
+        "1": 454
+      },
+      "samples": [
+        {
+          "global_time_s": 1439.8333,
+          "lap_zero_based": 3,
+          "station_m": 17.829,
+          "own_speed_mps": 74.3921,
+          "model_own_deceleration_mps2": 17.668146663814014,
+          "follow_cap_mps": 95.25770043591459,
+          "stopping_cap_mps": 87.31935185199926,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 123.83,
+              "lateral_separation_m": -4.212,
+              "speed_mps": 82.266
+            }
+          ]
+        },
+        {
+          "global_time_s": 1452.4,
+          "lap_zero_based": 3,
+          "station_m": 1030.278,
+          "own_speed_mps": 44.1255,
+          "model_own_deceleration_mps2": 13.978231488566886,
+          "follow_cap_mps": 41.239522951794214,
+          "stopping_cap_mps": 29.246084784273616,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 40.604,
+              "lateral_separation_m": 2.476,
+              "speed_mps": 23.715
+            }
+          ]
+        },
+        {
+          "global_time_s": 1474.0,
+          "lap_zero_based": 3,
+          "station_m": 2045.819,
+          "own_speed_mps": 77.816,
+          "model_own_deceleration_mps2": 17.299376,
+          "follow_cap_mps": 95.5157470703125,
+          "stopping_cap_mps": 79.3936568648885,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 144.295,
+              "lateral_separation_m": -7.433,
+              "speed_mps": 58.053
+            }
+          ]
+        },
+        {
+          "global_time_s": 1491.6667,
+          "lap_zero_based": 3,
+          "station_m": 2734.99,
+          "own_speed_mps": 34.0748,
+          "model_own_deceleration_mps2": 2.0516585045028557,
+          "follow_cap_mps": 33.145529109788434,
+          "stopping_cap_mps": 28.857258707922966,
+          "limiting_visible_rivals": [
+            {
+              "observed_rival_seat": 1,
+              "gap_m": 155.949,
+              "lateral_separation_m": 9.844,
+              "speed_mps": 55.362
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fourth_lap": {
+    "incremental_stopping_reductions_gt_3mps": 454,
+    "limiting_visible_rival_seat_counts": {
+      "1": 454
+    },
+    "samples": [
+      {
+        "global_time_s": 1439.8333,
+        "lap_zero_based": 3,
+        "station_m": 17.829,
+        "own_speed_mps": 74.3921,
+        "model_own_deceleration_mps2": 17.668146663814014,
+        "follow_cap_mps": 95.25770043591459,
+        "stopping_cap_mps": 87.31935185199926,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 1,
+            "gap_m": 123.83,
+            "lateral_separation_m": -4.212,
+            "speed_mps": 82.266
+          }
+        ]
+      },
+      {
+        "global_time_s": 1452.4,
+        "lap_zero_based": 3,
+        "station_m": 1030.278,
+        "own_speed_mps": 44.1255,
+        "model_own_deceleration_mps2": 13.978231488566886,
+        "follow_cap_mps": 41.239522951794214,
+        "stopping_cap_mps": 29.246084784273616,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 1,
+            "gap_m": 40.604,
+            "lateral_separation_m": 2.476,
+            "speed_mps": 23.715
+          }
+        ]
+      },
+      {
+        "global_time_s": 1474.0,
+        "lap_zero_based": 3,
+        "station_m": 2045.819,
+        "own_speed_mps": 77.816,
+        "model_own_deceleration_mps2": 17.299376,
+        "follow_cap_mps": 95.5157470703125,
+        "stopping_cap_mps": 79.3936568648885,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 1,
+            "gap_m": 144.295,
+            "lateral_separation_m": -7.433,
+            "speed_mps": 58.053
+          }
+        ]
+      },
+      {
+        "global_time_s": 1491.6667,
+        "lap_zero_based": 3,
+        "station_m": 2734.99,
+        "own_speed_mps": 34.0748,
+        "model_own_deceleration_mps2": 2.0516585045028557,
+        "follow_cap_mps": 33.145529109788434,
+        "stopping_cap_mps": 28.857258707922966,
+        "limiting_visible_rivals": [
+          {
+            "observed_rival_seat": 1,
+            "gap_m": 155.949,
+            "lateral_separation_m": 9.844,
+            "speed_mps": 55.362
+          }
+        ]
+      }
+    ]
+  },
+  "note": "Own recorded legal rival observations only. A triggered guard is not proof of unnecessary braking; no policy change or new race simulated."
+}

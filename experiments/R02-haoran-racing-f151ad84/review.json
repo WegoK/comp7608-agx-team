@@ -1,0 +1,495 @@
+{
+  "schema": "racing-frozen-match-review-v2",
+  "match_id": "f151ad84-7597-4f65-8cb7-5b8fc12a5e84",
+  "rules_version": "rsi-racing-4.4",
+  "own_seat_zero_based": 5,
+  "platform_version_id": "9c068b47-f0e1-4217-890c-459a1ac37622",
+  "bundle_sha256": "b0957ee4e8625a1e46cf622afc54d2362d3eb560a6bbc141f54f5b71203cacba",
+  "source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+  "track": "parkland",
+  "race_start_global_s": 1098.5333,
+  "integrity": {
+    "complete": true,
+    "decision_rows": 16628,
+    "raw_decision_bytes": 58022698,
+    "decision_bytes_sha256": "4e12a1975b709ffe89e655f9692ba51a4bc3f5e89f74547bf36d22a0b66b9687",
+    "seat_calls": {
+      "5": 16628
+    }
+  },
+  "observed": {
+    "faults": 0,
+    "final_classification": {
+      "seat": 5,
+      "position": 5,
+      "status": "finished",
+      "laps": 4,
+      "total_time_s": 445.755,
+      "gap_to_winner_s": 17.026,
+      "laps_behind": 0,
+      "fastest_lap": {
+        "time_s": 104.699,
+        "lap": 4
+      },
+      "pit_stops": 1,
+      "tyre_stints": [
+        {
+          "compound": "soft",
+          "laps": 2
+        },
+        {
+          "compound": "medium",
+          "laps": 2
+        }
+      ],
+      "qualifying_position": 5,
+      "display_points": 10
+    },
+    "match_end_reason": "all_terminal"
+  },
+  "frozen_policy_replay": {
+    "action_agreement": 16628,
+    "tolerance_absolute": 1e-08
+  },
+  "same_observation_previous_control": {
+    "source_commit": null,
+    "changed_actions": 0,
+    "changed_fields": {},
+    "all_model_caps_identical": null,
+    "examples": [],
+    "scope": "Decision comparison on this version's historical legal observations; NOT a paired full race or simulated outcome."
+  },
+  "phases": {
+    "qualifying": {
+      "rows": 3255,
+      "modes": {
+        "LINE": 3255
+      },
+      "weather_conditions": {
+        "dry": 3255
+      },
+      "wetness_min": 0.0,
+      "wetness_max": 0.0,
+      "min_tyre_temp_c": 63.94,
+      "max_tyre_wear": 0.05164,
+      "min_fuel_kg": 10.7857,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 330,
+        "following": 0,
+        "stopping_guard": 0,
+        "pit_merge": 0,
+        "pit_entry": 0
+      },
+      "active_guard_braking_calls": 0,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.0,
+      "mean_speed_mps": 57.196656,
+      "mean_model_caps_mps": {
+        "target": 62.329076,
+        "free": 63.283301,
+        "traffic_cap": 62.330405,
+        "follow_cap": 62.330405,
+        "stopping_cap": 62.330405,
+        "merge_cap": 62.330405,
+        "pit_entry_cap": 62.329076
+      }
+    },
+    "race": {
+      "rows": 13373,
+      "modes": {
+        "PASS": 5129,
+        "RESET_ATTACK": 30,
+        "LINE": 4906,
+        "DRAFT": 2226,
+        "CLEAR": 9,
+        "PIT": 1006,
+        "YIELD": 30,
+        "CLEAR_BOTTLENECK": 37
+      },
+      "weather_conditions": {
+        "damp": 13373
+      },
+      "wetness_min": 0.100028,
+      "wetness_max": 0.399972,
+      "min_tyre_temp_c": 54.21,
+      "max_tyre_wear": 0.08063,
+      "min_fuel_kg": 7.1335,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 2226,
+        "following": 673,
+        "stopping_guard": 4054,
+        "pit_merge": 162,
+        "pit_entry": 912
+      },
+      "active_guard_braking_calls": 1295,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.244393,
+      "mean_speed_mps": 52.014693,
+      "mean_model_caps_mps": {
+        "target": 58.904207,
+        "free": 68.307751,
+        "traffic_cap": 66.619687,
+        "follow_cap": 64.717462,
+        "stopping_cap": 60.639327,
+        "merge_cap": 59.967049,
+        "pit_entry_cap": 58.904207
+      }
+    }
+  },
+  "race_laps_zero_based": {
+    "0": {
+      "rows": 3246,
+      "modes": {
+        "PASS": 2529,
+        "RESET_ATTACK": 24,
+        "LINE": 582,
+        "DRAFT": 108,
+        "CLEAR": 3
+      },
+      "weather_conditions": {
+        "damp": 3246
+      },
+      "wetness_min": 0.127292,
+      "wetness_max": 0.299972,
+      "min_tyre_temp_c": 63.33,
+      "max_tyre_wear": 0.04567,
+      "min_fuel_kg": 10.7762,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 534,
+        "following": 292,
+        "stopping_guard": 1481,
+        "pit_merge": 0,
+        "pit_entry": 0
+      },
+      "active_guard_braking_calls": 303,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.232594,
+      "mean_speed_mps": 53.755796,
+      "mean_model_caps_mps": {
+        "target": 57.522509,
+        "free": 69.406868,
+        "traffic_cap": 68.0462,
+        "follow_cap": 65.126041,
+        "stopping_cap": 57.617902,
+        "merge_cap": 57.617902,
+        "pit_entry_cap": 57.522509
+      },
+      "estimated_lap_time_s": 108.1953
+    },
+    "1": {
+      "rows": 3158,
+      "modes": {
+        "PASS": 1394,
+        "RESET_ATTACK": 6,
+        "LINE": 792,
+        "DRAFT": 858,
+        "PIT": 108
+      },
+      "weather_conditions": {
+        "damp": 3158
+      },
+      "wetness_min": 0.100028,
+      "wetness_max": 0.316597,
+      "min_tyre_temp_c": 59.44,
+      "max_tyre_wear": 0.08063,
+      "min_fuel_kg": 9.5537,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 551,
+        "following": 129,
+        "stopping_guard": 1476,
+        "pit_merge": 0,
+        "pit_entry": 87
+      },
+      "active_guard_braking_calls": 432,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.175976,
+      "mean_speed_mps": 55.030539,
+      "mean_model_caps_mps": {
+        "target": 59.989884,
+        "free": 68.452137,
+        "traffic_cap": 66.709382,
+        "follow_cap": 65.348292,
+        "stopping_cap": 60.298648,
+        "merge_cap": 60.298648,
+        "pit_entry_cap": 59.989884
+      },
+      "estimated_lap_time_s": 105.2653
+    },
+    "2": {
+      "rows": 3828,
+      "modes": {
+        "PIT": 898,
+        "YIELD": 30,
+        "CLEAR_BOTTLENECK": 37,
+        "DRAFT": 756,
+        "PASS": 623,
+        "LINE": 1483,
+        "CLEAR": 1
+      },
+      "weather_conditions": {
+        "damp": 3828
+      },
+      "wetness_min": 0.150694,
+      "wetness_max": 0.349972,
+      "min_tyre_temp_c": 58.57,
+      "max_tyre_wear": 0.08063,
+      "min_fuel_kg": 8.3798,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 586,
+        "following": 252,
+        "stopping_guard": 643,
+        "pit_merge": 162,
+        "pit_entry": 825
+      },
+      "active_guard_braking_calls": 254,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.255537,
+      "mean_speed_mps": 45.390293,
+      "mean_model_caps_mps": {
+        "target": 58.480325,
+        "free": 72.228421,
+        "traffic_cap": 69.711223,
+        "follow_cap": 66.673968,
+        "stopping_cap": 64.174718,
+        "merge_cap": 61.826136,
+        "pit_entry_cap": 58.480325
+      },
+      "estimated_lap_time_s": 127.596
+    },
+    "3": {
+      "rows": 3141,
+      "modes": {
+        "LINE": 2049,
+        "DRAFT": 504,
+        "PASS": 583,
+        "CLEAR": 5
+      },
+      "weather_conditions": {
+        "damp": 3141
+      },
+      "wetness_min": 0.150028,
+      "wetness_max": 0.399972,
+      "min_tyre_temp_c": 54.21,
+      "max_tyre_wear": 0.05883,
+      "min_fuel_kg": 7.1335,
+      "incremental_cap_reductions_gt_3mps": {
+        "traffic": 555,
+        "following": 0,
+        "stopping_guard": 454,
+        "pit_merge": 0,
+        "pit_entry": 0
+      },
+      "active_guard_braking_calls": 306,
+      "wet_recovery_model_calls": 0,
+      "launch_response_model_calls": 0,
+      "changed_vs_control_calls": 0,
+      "mean_wetness": 0.311793,
+      "mean_speed_mps": 55.256507,
+      "mean_model_caps_mps": {
+        "target": 59.757135,
+        "free": 62.248525,
+        "traffic_cap": 61.287589,
+        "follow_cap": 61.276548,
+        "stopping_cap": 59.795626,
+        "merge_cap": 59.795626,
+        "pit_entry_cap": 59.757135
+      },
+      "estimated_lap_time_s": 104.6984
+    }
+  },
+  "launch_samples": [
+    {
+      "global_time_s": 1098.5333,
+      "elapsed_s": 0.0,
+      "live_position": 5,
+      "distance_m": -32.913,
+      "speed_mps": 0.0,
+      "throttle": 0.36928966594377644,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 5.2352448162452,
+      "free_mps": 86.04378747628728,
+      "stopping_cap_mps": 5.263680212522549
+    },
+    {
+      "global_time_s": 1099.5333,
+      "elapsed_s": 1.0,
+      "live_position": 5,
+      "distance_m": -30.544,
+      "speed_mps": 5.328,
+      "throttle": 0.37184912789539504,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 14.566689041136442,
+      "free_mps": 86.1678124115182,
+      "stopping_cap_mps": 14.646805054717628
+    },
+    {
+      "global_time_s": 1100.5333,
+      "elapsed_s": 2.0,
+      "live_position": 5,
+      "distance_m": -22.167,
+      "speed_mps": 11.513,
+      "throttle": 0.16368125105354828,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 15.525632246665886,
+      "free_mps": 86.56439441433375,
+      "stopping_cap_mps": 15.669969619638625
+    },
+    {
+      "global_time_s": 1101.5333,
+      "elapsed_s": 3.0,
+      "live_position": 5,
+      "distance_m": -8.3,
+      "speed_mps": 17.5926,
+      "throttle": 0.22657000346661205,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 22.505753639184565,
+      "free_mps": 87.17173351014432,
+      "stopping_cap_mps": 22.567589332922218
+    },
+    {
+      "global_time_s": 1102.5333,
+      "elapsed_s": 4.0,
+      "live_position": 5,
+      "distance_m": 13.308,
+      "speed_mps": 25.6331,
+      "throttle": 0.3879370260107154,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 32.100278958548145,
+      "free_mps": 88.0352124475834,
+      "stopping_cap_mps": 32.17721827560932
+    },
+    {
+      "global_time_s": 1103.5333,
+      "elapsed_s": 5.0,
+      "live_position": 5,
+      "distance_m": 43.87,
+      "speed_mps": 35.3894,
+      "throttle": 0.503228996673778,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 41.74443795592589,
+      "free_mps": 89.10297628380319,
+      "stopping_cap_mps": 41.829647870628555
+    },
+    {
+      "global_time_s": 1104.5333,
+      "elapsed_s": 6.0,
+      "live_position": 5,
+      "distance_m": 83.822,
+      "speed_mps": 44.7418,
+      "throttle": 0.8560015989415427,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 53.54125954873873,
+      "free_mps": 90.25755268563339,
+      "stopping_cap_mps": 53.62656326803416
+    },
+    {
+      "global_time_s": 1105.5333,
+      "elapsed_s": 7.0,
+      "live_position": 5,
+      "distance_m": 134.8,
+      "speed_mps": 56.3941,
+      "throttle": 1.0,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 63.483862279805656,
+      "free_mps": 91.40844690356296,
+      "stopping_cap_mps": 63.554397625918504
+    },
+    {
+      "global_time_s": 1106.5333,
+      "elapsed_s": 8.0,
+      "live_position": 5,
+      "distance_m": 196.702,
+      "speed_mps": 66.0722,
+      "throttle": 0.870615160922555,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 70.68486425301693,
+      "free_mps": 92.42344043460086,
+      "stopping_cap_mps": 70.72898784528364
+    },
+    {
+      "global_time_s": 1107.5333,
+      "elapsed_s": 9.0,
+      "live_position": 5,
+      "distance_m": 266.611,
+      "speed_mps": 73.1552,
+      "throttle": 0.7471881926479702,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 76.21242403244565,
+      "free_mps": 93.28908666595134,
+      "stopping_cap_mps": 76.23233325818063
+    },
+    {
+      "global_time_s": 1108.5333,
+      "elapsed_s": 10.0,
+      "live_position": 5,
+      "distance_m": 342.329,
+      "speed_mps": 78.0097,
+      "throttle": 0.752579697913454,
+      "brake": 0.0,
+      "mode": "PASS",
+      "target_mps": 80.91607745475393,
+      "free_mps": 93.84356835905511,
+      "stopping_cap_mps": 80.91705312086815
+    }
+  ],
+  "lap_time_note": "Estimated from linear interpolation of recorded distance crossings, with observed finish total for the last boundary; not all official lap timing. Lap 1 includes the grid start.",
+  "strategy_changes": false,
+  "assistant_uploaded_or_activated": false,
+  "public_event_review": {
+    "own_event_counts": {
+      "qualifying:energy_mode": 330,
+      "qualifying:qualifying_lap": 1,
+      "qualifying:grid": 1,
+      "race:lights_out": 1,
+      "race:energy_mode": 649,
+      "race:pit_entry": 1,
+      "race:pit_exit": 1,
+      "race:finished": 1
+    },
+    "selected_events": [
+      {
+        "kind": "qualifying_lap",
+        "global_time_s": 664.5333,
+        "phase": "qualifying",
+        "payload": {
+          "valid": true,
+          "lap_time_s": 101.146689,
+          "reason": null
+        }
+      },
+      {
+        "kind": "finished",
+        "global_time_s": 1544.3,
+        "phase": "race",
+        "elapsed_s": 445.7667,
+        "payload": {
+          "position": 5,
+          "total_time_s": 445.755,
+          "lap": 4
+        }
+      }
+    ],
+    "classification_note": "Final outcome classification is authoritative. A finished event position may differ from final ranking by completed laps.",
+    "policy_input": false
+  }
+}

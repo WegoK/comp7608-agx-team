@@ -37,7 +37,7 @@ Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；
 | 长期分支 | 主要维护目录 | 当前该游戏源码 | 用途 |
 |---|---|---|---|
 | `codex/haoran-fps` | `strategies/fps/` | `e27acc998e08`，个人 FPS v2 | FPS 后续开发、实验和报告 |
-| `codex/haoran-racing` | `strategies/racing/` | `9c58b2da29a7`，Crossover提前选线候选 | 未上传；最近已核实实战包为 `cb01eb0460ac` / `fc2cf8296811` |
+| `codex/haoran-racing` | `strategies/racing/` | `9c58b2da29a7`，已由Parkland本人日志核实采用 | Crossover入口需对应赛道继续验证；平台序号待历史回执 |
 
 这两个分支从整理后的最新完整历史开始。Git 分支是**整份仓库**，因此两边都会看到 FPS、Racing 和报告；“两个开发分支”是工作分工，不是把文件拆成两个仓库。新实验主要改对应游戏目录，完成后再按团队审阅约定整合。`main` 保持原来的小组稳定交接状态，本次没有合入策略。
 
@@ -101,3 +101,5 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 ## Crossover提前选线候选（2026-11-24）
 
 源码 `9c58b2da29a7`，指纹 `b0957ee4e862`，[ZIP](personal/haoran/racing/9c58b2da29a7/racing-9c58b2da29a7.zip)。仅Crossover新增受车流限速时27–60m的准备入口及6秒期限；Parkland源码不变。见[实验](../experiments/R02-haoran-racing-crossover-preparation/README.md)。本地检查和打包完成，未上传、验证、激活或取得新候选赛果；不预分配v7。两长期分支独立演进，以各自分支文档为准。
+
+2026-11-25：9c58b2da29a7/b0957ee4e862已由[f151ad84完整Racing日志](../experiments/R02-haoran-racing-f151ad84/README.md)核实采用，冻结版本9c068b47-f0e1-4217-890c-459a1ac37622，Parkland第5。候选打包时未上传等文字保留为历史事件，平台vN仍不推定；本场没有执行Crossover新入口。
