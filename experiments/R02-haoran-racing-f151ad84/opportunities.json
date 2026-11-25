@@ -1,0 +1,1850 @@
+{
+  "schema": "racing-parkland-opportunity-audit-v1",
+  "match_id": "f151ad84-7597-4f65-8cb7-5b8fc12a5e84",
+  "source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+  "recorded_action_agreement": 16628,
+  "decision_sha256": "4e12a1975b709ffe89e655f9692ba51a4bc3f5e89f74547bf36d22a0b66b9687",
+  "laps_zero_based": {
+    "0": {
+      "rows": 3246,
+      "driving_rows": 3246,
+      "flags": {
+        "soc_ge3point8": 0,
+        "soc_lt_point1": 960,
+        "ers_ge2_outside_long_straight": 811,
+        "aid_available": 0,
+        "override_available": 0,
+        "aid_requested": 0,
+        "override_requested": 0,
+        "power_substitution": 0,
+        "guard_deceleration_requested": 303,
+        "actual_brake_with_guard": 302,
+        "brake_while_below_target": 363,
+        "arrival_probe_attempted": 0,
+        "arrival_probe_nonnegative_instead_of_actual_brake": 0,
+        "pass_target_gap_gt60": 1804,
+        "pass_target_gap_gt100": 294,
+        "pass_lane_tracking_error_gt1": 448
+      },
+      "modes": {
+        "PASS": 2529,
+        "RESET_ATTACK": 24,
+        "LINE": 582,
+        "DRAFT": 108,
+        "CLEAR": 3
+      },
+      "ers_modes": {
+        "3": 1144,
+        "1": 1222,
+        "2": 15,
+        "0": 865
+      },
+      "energy_vetoes": {},
+      "min_soc": 0.029,
+      "max_soc": 3.0,
+      "min_pu_temp": 71.56,
+      "max_pu_temp": 88.0,
+      "tyre_by_compound": {
+        "soft": {
+          "calls": 3246,
+          "below_optimum_gt20_calls": 125,
+          "public_plan_optimum_c": 88.0,
+          "mean_temp_c": 74.60845117067163
+        }
+      },
+      "probe_samples": [],
+      "pass_forecast_samples": [
+        {
+          "global_s": 1098.5333,
+          "gap_m": 8.0,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -10.533213545701141,
+          "catch_window_s": 0.2
+        },
+        {
+          "global_s": 1099.5333,
+          "gap_m": 11.128,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -9.03321354570112,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1100.5333,
+          "gap_m": 18.104,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -7.533213545701107,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1101.5333,
+          "gap_m": 25.15,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": 3.4000000000000004
+        },
+        {
+          "global_s": 1102.5333,
+          "gap_m": 33.153,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1103.5333,
+          "gap_m": 43.618,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1104.5333,
+          "gap_m": 52.661,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1105.5333,
+          "gap_m": 59.788,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1106.5333,
+          "gap_m": 65.846,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1107.5333,
+          "gap_m": 71.671,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1108.5333,
+          "gap_m": 77.49,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1109.5333,
+          "gap_m": 83.451,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.211934227736145,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1110.5333,
+          "gap_m": 88.063,
+          "target_seat": 9,
+          "goal_m": -6.375959586459276,
+          "offset_m": -6.375959586459276,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1114.9333,
+          "gap_m": 88.557,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": -0.025959586459289946,
+          "catch_window_s": 3.2
+        },
+        {
+          "global_s": 1115.9333,
+          "gap_m": 73.814,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": 0.3242057665594258,
+          "catch_window_s": 3.0
+        },
+        {
+          "global_s": 1116.9333,
+          "gap_m": 59.103,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": 0.3242057665594258,
+          "catch_window_s": 2.6
+        },
+        {
+          "global_s": 1117.9333,
+          "gap_m": 45.537,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": 0.17673878247443486,
+          "catch_window_s": 5.800000000000001
+        },
+        {
+          "global_s": 1118.9333,
+          "gap_m": 37.715,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": 0.0037209630936869686,
+          "catch_window_s": 5.6000000000000005
+        },
+        {
+          "global_s": 1119.9333,
+          "gap_m": 30.697,
+          "target_seat": 9,
+          "goal_m": 0.3242057665594258,
+          "offset_m": -0.0019457887222218417,
+          "catch_window_s": 5.0
+        },
+        {
+          "global_s": 1122.9333,
+          "gap_m": 27.534,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 0.05,
+          "catch_window_s": 5.6000000000000005
+        },
+        {
+          "global_s": 1123.9333,
+          "gap_m": 27.419,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 1.5500000000000007,
+          "catch_window_s": 5.4
+        },
+        {
+          "global_s": 1124.9333,
+          "gap_m": 42.988,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 3.049999999999997,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1125.9333,
+          "gap_m": 69.246,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1126.9333,
+          "gap_m": 94.937,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1127.9333,
+          "gap_m": 110.897,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1128.9333,
+          "gap_m": 117.688,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1129.9333,
+          "gap_m": 119.525,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1130.9333,
+          "gap_m": 114.149,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1131.9333,
+          "gap_m": 103.868,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1132.9333,
+          "gap_m": 97.563,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1133.9333,
+          "gap_m": 93.165,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1134.9333,
+          "gap_m": 90.066,
+          "target_seat": 9,
+          "goal_m": 4.090229023393972,
+          "offset_m": 4.090229023393972,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1137.1333,
+          "gap_m": 87.55,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": 1.0402290233939784,
+          "catch_window_s": 4.6000000000000005
+        },
+        {
+          "global_s": 1138.1333,
+          "gap_m": 84.927,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.45977097660602195,
+          "catch_window_s": 4.2
+        },
+        {
+          "global_s": 1139.1333,
+          "gap_m": 85.52,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -1.9597709766060232,
+          "catch_window_s": 3.4000000000000004
+        },
+        {
+          "global_s": 1140.1333,
+          "gap_m": 82.21,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": 3.2
+        },
+        {
+          "global_s": 1141.1333,
+          "gap_m": 71.492,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -1.7981341989505781,
+          "catch_window_s": 2.8000000000000003
+        },
+        {
+          "global_s": 1142.1333,
+          "gap_m": 60.405,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.32586208224562974,
+          "catch_window_s": 3.6
+        },
+        {
+          "global_s": 1143.1333,
+          "gap_m": 48.702,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.004606547907810565,
+          "catch_window_s": 3.8000000000000003
+        },
+        {
+          "global_s": 1144.1333,
+          "gap_m": 38.51,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.002848498866130811,
+          "catch_window_s": 4.6000000000000005
+        },
+        {
+          "global_s": 1145.1333,
+          "gap_m": 34.845,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.35079476834815626,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1146.1333,
+          "gap_m": 39.534,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -1.8381680681444814,
+          "catch_window_s": 5.2
+        },
+        {
+          "global_s": 1147.1333,
+          "gap_m": 39.141,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1148.1333,
+          "gap_m": 50.997,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1149.1333,
+          "gap_m": 77.326,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1150.1333,
+          "gap_m": 97.741,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1151.1333,
+          "gap_m": 109.765,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1152.1333,
+          "gap_m": 117.528,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1153.1333,
+          "gap_m": 104.321,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.698134198950576,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1154.1333,
+          "gap_m": 82.541,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -2.6981341989505756,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1155.1333,
+          "gap_m": 76.809,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -1.1981341989505772,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1156.1333,
+          "gap_m": 83.43,
+          "target_seat": 9,
+          "goal_m": -2.698134198950576,
+          "offset_m": -0.00015874964444506645,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1159.3333,
+          "gap_m": 88.412,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -0.05012936300000011,
+          "catch_window_s": 4.2
+        },
+        {
+          "global_s": 1160.3333,
+          "gap_m": 60.25,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431831,
+          "catch_window_s": 2.4000000000000004
+        },
+        {
+          "global_s": 1161.3333,
+          "gap_m": 37.937,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": 3.0
+        },
+        {
+          "global_s": 1162.3333,
+          "gap_m": 40.837,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431822,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1163.3333,
+          "gap_m": 49.534,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1164.3333,
+          "gap_m": 58.733,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431831,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1165.3333,
+          "gap_m": 64.247,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431822,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1166.3333,
+          "gap_m": 69.322,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431831,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1167.3333,
+          "gap_m": 73.131,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1168.3333,
+          "gap_m": 77.097,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1169.3333,
+          "gap_m": 81.193,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431831,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1170.3333,
+          "gap_m": 84.128,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1171.3333,
+          "gap_m": 87.217,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1172.3333,
+          "gap_m": 90.171,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431827,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1173.3333,
+          "gap_m": 92.947,
+          "target_seat": 9,
+          "goal_m": -1.4604470598431827,
+          "offset_m": -1.4604470598431822,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1175.5333,
+          "gap_m": 86.676,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 0.05,
+          "catch_window_s": 4.6000000000000005
+        },
+        {
+          "global_s": 1176.5333,
+          "gap_m": 80.358,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 1.5500000000000007,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1177.5333,
+          "gap_m": 71.076,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.049999999999997,
+          "catch_window_s": 5.800000000000001
+        },
+        {
+          "global_s": 1178.5333,
+          "gap_m": 60.53,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.586598062147901,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1179.5333,
+          "gap_m": 64.904,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.293419101599737,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1180.5333,
+          "gap_m": 77.202,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.586598062147901,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1181.5333,
+          "gap_m": 82.486,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.586598062147901,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1182.5333,
+          "gap_m": 80.84,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.586598062147901,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1183.5333,
+          "gap_m": 82.494,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.0865980621479028,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1184.5333,
+          "gap_m": 93.011,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.08720261795383,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1185.5333,
+          "gap_m": 108.916,
+          "target_seat": 9,
+          "goal_m": 3.586598062147901,
+          "offset_m": 3.586598062147901,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1197.3333,
+          "gap_m": 79.122,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.05,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1198.3333,
+          "gap_m": 66.423,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698306,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1199.3333,
+          "gap_m": 62.623,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698306,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1200.3333,
+          "gap_m": 65.365,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698217,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1201.3333,
+          "gap_m": 71.68,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698306,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1202.3333,
+          "gap_m": 73.392,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698306,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1203.3333,
+          "gap_m": 72.124,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1204.3333,
+          "gap_m": 69.99,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1205.3333,
+          "gap_m": 70.875,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.0025132695086762524,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1206.3333,
+          "gap_m": 73.539,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.0005766156554321,
+          "catch_window_s": null
+        }
+      ],
+      "first_soc_under_point1": {
+        "global_s": 1131.0333,
+        "station_m": 1446.722,
+        "soc_mj": 0.0883
+      },
+      "straight_entries": [
+        {
+          "zone": 0,
+          "global_s": 1101.9667,
+          "station_m": 0.085,
+          "soc_mj": 2.9223
+        },
+        {
+          "zone": 1,
+          "global_s": 1137.9,
+          "station_m": 1965.706,
+          "soc_mj": 0.3378
+        },
+        {
+          "zone": 2,
+          "global_s": 1164.0333,
+          "station_m": 3104.323,
+          "soc_mj": 0.097
+        },
+        {
+          "zone": 3,
+          "global_s": 1185.3333,
+          "station_m": 4369.074,
+          "soc_mj": 0.0343
+        }
+      ],
+      "pass_sample_count": 88,
+      "pass_sample_no_six_second_catch": 64,
+      "mean_soc": 0.6652929451632488
+    },
+    "1": {
+      "rows": 3158,
+      "driving_rows": 3050,
+      "flags": {
+        "soc_ge3point8": 0,
+        "soc_lt_point1": 250,
+        "ers_ge2_outside_long_straight": 26,
+        "aid_available": 0,
+        "override_available": 0,
+        "aid_requested": 0,
+        "override_requested": 0,
+        "power_substitution": 5,
+        "guard_deceleration_requested": 432,
+        "actual_brake_with_guard": 432,
+        "brake_while_below_target": 194,
+        "arrival_probe_attempted": 0,
+        "arrival_probe_nonnegative_instead_of_actual_brake": 0,
+        "pass_target_gap_gt60": 966,
+        "pass_target_gap_gt100": 253,
+        "pass_lane_tracking_error_gt1": 412
+      },
+      "modes": {
+        "PASS": 1394,
+        "RESET_ATTACK": 6,
+        "LINE": 792,
+        "DRAFT": 858
+      },
+      "ers_modes": {
+        "1": 1782,
+        "0": 963,
+        "3": 303,
+        "2": 2
+      },
+      "energy_vetoes": {
+        "PREDICTED_BRAKE_QUEUE": 80,
+        "STORE_FOR_STRAIGHT": 1154,
+        "FUTURE_STRAIGHT_RESERVE": 207
+      },
+      "min_soc": 0.0354,
+      "max_soc": 2.149,
+      "min_pu_temp": 69.87,
+      "max_pu_temp": 76.36,
+      "tyre_by_compound": {
+        "soft": {
+          "calls": 3050,
+          "below_optimum_gt20_calls": 2950,
+          "public_plan_optimum_c": 88.0,
+          "mean_temp_c": 64.20648524590165
+        }
+      },
+      "probe_samples": [],
+      "pass_forecast_samples": [
+        {
+          "global_s": 1206.7333,
+          "gap_m": 75.796,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1207.7333,
+          "gap_m": 81.545,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1208.7333,
+          "gap_m": 87.205,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1209.7333,
+          "gap_m": 92.186,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1210.7333,
+          "gap_m": 96.555,
+          "target_seat": 9,
+          "goal_m": 0.06886154917698262,
+          "offset_m": 0.06886154917698262,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1217.3333,
+          "gap_m": 95.477,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 0.65,
+          "catch_window_s": 3.0
+        },
+        {
+          "global_s": 1218.3333,
+          "gap_m": 86.64,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 2.1500000000000004,
+          "catch_window_s": 2.8000000000000003
+        },
+        {
+          "global_s": 1219.3333,
+          "gap_m": 76.485,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 3.649999999999995,
+          "catch_window_s": 6.0
+        },
+        {
+          "global_s": 1220.3333,
+          "gap_m": 60.809,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1221.3333,
+          "gap_m": 40.67,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1222.3333,
+          "gap_m": 31.24,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1223.3333,
+          "gap_m": 33.194,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1224.3333,
+          "gap_m": 36.048,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1225.3333,
+          "gap_m": 40.644,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1226.3333,
+          "gap_m": 58.407,
+          "target_seat": 9,
+          "goal_m": 5.055296524254521,
+          "offset_m": 5.055296524254521,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1240.7333,
+          "gap_m": 99.421,
+          "target_seat": 1,
+          "goal_m": 3.407144563410805,
+          "offset_m": -0.5499999999999998,
+          "catch_window_s": 3.8000000000000003
+        },
+        {
+          "global_s": 1241.7333,
+          "gap_m": 87.776,
+          "target_seat": 1,
+          "goal_m": 3.407144563410805,
+          "offset_m": 0.9500000000000005,
+          "catch_window_s": 2.8000000000000003
+        },
+        {
+          "global_s": 1242.7333,
+          "gap_m": 65.023,
+          "target_seat": 1,
+          "goal_m": 3.407144563410805,
+          "offset_m": 2.4499999999999997,
+          "catch_window_s": 2.2
+        },
+        {
+          "global_s": 1245.9333,
+          "gap_m": 34.183,
+          "target_seat": 1,
+          "goal_m": 4.068700793097674,
+          "offset_m": 0.15714456341080857,
+          "catch_window_s": 5.0
+        },
+        {
+          "global_s": 1246.9333,
+          "gap_m": 38.8,
+          "target_seat": 1,
+          "goal_m": 4.068700793097674,
+          "offset_m": 1.6571445634108095,
+          "catch_window_s": 6.0
+        },
+        {
+          "global_s": 1247.9333,
+          "gap_m": 48.878,
+          "target_seat": 1,
+          "goal_m": 4.068700793097674,
+          "offset_m": 3.1571445634108057,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1248.9333,
+          "gap_m": 54.44,
+          "target_seat": 1,
+          "goal_m": 4.068700793097674,
+          "offset_m": 4.068700793097674,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1255.9333,
+          "gap_m": 94.081,
+          "target_seat": 1,
+          "goal_m": 4.526305471090968,
+          "offset_m": 0.05,
+          "catch_window_s": 6.0
+        },
+        {
+          "global_s": 1256.9333,
+          "gap_m": 80.687,
+          "target_seat": 1,
+          "goal_m": 4.526305471090968,
+          "offset_m": 1.5500000000000007,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1257.9333,
+          "gap_m": 82.627,
+          "target_seat": 1,
+          "goal_m": 4.526305471090968,
+          "offset_m": 3.049999999999997,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1260.9333,
+          "gap_m": 107.653,
+          "target_seat": 1,
+          "goal_m": -4.2000477736796356,
+          "offset_m": 0.8499999999999999,
+          "catch_window_s": 5.0
+        },
+        {
+          "global_s": 1261.9333,
+          "gap_m": 89.532,
+          "target_seat": 1,
+          "goal_m": -4.2000477736796356,
+          "offset_m": -0.6500000000000005,
+          "catch_window_s": 4.2
+        },
+        {
+          "global_s": 1262.9333,
+          "gap_m": 74.555,
+          "target_seat": 1,
+          "goal_m": -4.2000477736796356,
+          "offset_m": -2.150000000000001,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1273.7333,
+          "gap_m": 174.56,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 0.05,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1274.7333,
+          "gap_m": 172.693,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 1.5500000000000007,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1275.7333,
+          "gap_m": 157.357,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 2.8174741856702066,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1276.7333,
+          "gap_m": 134.259,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 2.8174741856702066,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1277.7333,
+          "gap_m": 109.147,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 2.8174741856702066,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1278.7333,
+          "gap_m": 85.569,
+          "target_seat": 1,
+          "goal_m": 2.8174741856702066,
+          "offset_m": 2.8174741856702066,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1292.5333,
+          "gap_m": 120.182,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": -0.09858921869402364,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1293.5333,
+          "gap_m": 117.806,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 1.401410781305977,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1294.5333,
+          "gap_m": 113.791,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 2.9014107813059744,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1295.5333,
+          "gap_m": 105.423,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1296.5333,
+          "gap_m": 93.257,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1297.5333,
+          "gap_m": 79.473,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1298.5333,
+          "gap_m": 67.599,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1299.5333,
+          "gap_m": 59.11,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": 5.2
+        },
+        {
+          "global_s": 1300.5333,
+          "gap_m": 53.831,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": 4.6000000000000005
+        },
+        {
+          "global_s": 1301.5333,
+          "gap_m": 55.361,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1302.5333,
+          "gap_m": 60.106,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1303.5333,
+          "gap_m": 65.835,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1304.5333,
+          "gap_m": 70.483,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1305.5333,
+          "gap_m": 75.173,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1306.5333,
+          "gap_m": 81.564,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": null
+        },
+        {
+          "global_s": 1307.5333,
+          "gap_m": 54.878,
+          "target_seat": 1,
+          "goal_m": 3.168308231548668,
+          "offset_m": 3.168308231548668,
+          "catch_window_s": 1.8
+        }
+      ],
+      "first_soc_under_point1": {
+        "global_s": 1206.7333,
+        "station_m": 0.344,
+        "soc_mj": 0.038
+      },
+      "straight_entries": [
+        {
+          "zone": 0,
+          "global_s": 1206.7333,
+          "station_m": 0.344,
+          "soc_mj": 0.038
+        },
+        {
+          "zone": 1,
+          "global_s": 1240.4,
+          "station_m": 1966.295,
+          "soc_mj": 0.9077
+        },
+        {
+          "zone": 2,
+          "global_s": 1266.1333,
+          "station_m": 3103.952,
+          "soc_mj": 2.149
+        },
+        {
+          "zone": 3,
+          "global_s": 1286.4,
+          "station_m": 4368.829,
+          "soc_mj": 1.8009
+        }
+      ],
+      "pass_sample_count": 50,
+      "pass_sample_no_six_second_catch": 36,
+      "mean_soc": 1.0598648524590026
+    },
+    "2": {
+      "rows": 3828,
+      "driving_rows": 2863,
+      "flags": {
+        "soc_ge3point8": 0,
+        "soc_lt_point1": 79,
+        "ers_ge2_outside_long_straight": 29,
+        "aid_available": 0,
+        "override_available": 0,
+        "aid_requested": 0,
+        "override_requested": 0,
+        "power_substitution": 0,
+        "guard_deceleration_requested": 254,
+        "actual_brake_with_guard": 252,
+        "brake_while_below_target": 198,
+        "arrival_probe_attempted": 32,
+        "arrival_probe_nonnegative_instead_of_actual_brake": 16,
+        "pass_target_gap_gt60": 623,
+        "pass_target_gap_gt100": 318,
+        "pass_lane_tracking_error_gt1": 152
+      },
+      "modes": {
+        "DRAFT": 756,
+        "PASS": 623,
+        "LINE": 1483,
+        "CLEAR": 1
+      },
+      "ers_modes": {
+        "3": 371,
+        "1": 1630,
+        "2": 24,
+        "0": 838
+      },
+      "energy_vetoes": {
+        "FUTURE_STRAIGHT_RESERVE": 289,
+        "STORE_FOR_STRAIGHT": 1205
+      },
+      "min_soc": 0.0384,
+      "max_soc": 2.2402,
+      "min_pu_temp": 67.85,
+      "max_pu_temp": 73.72,
+      "tyre_by_compound": {
+        "medium": {
+          "calls": 2863,
+          "below_optimum_gt20_calls": 2820,
+          "public_plan_optimum_c": 92.0,
+          "mean_temp_c": 65.46630282920009
+        }
+      },
+      "probe_samples": [
+        {
+          "global_s": 1353.0,
+          "station_m": 1057.544,
+          "mode": "LINE",
+          "speed_mps": 28.4227,
+          "target_mps": 36.89083771496565,
+          "actual_brake": 0.03321966917653349,
+          "actual_acceleration": -2.9068460541996064,
+          "alternative_model_acceleration": 11.02294921875
+        },
+        {
+          "global_s": 1376.2333,
+          "station_m": 2244.679,
+          "mode": "DRAFT",
+          "speed_mps": 44.9595,
+          "target_mps": 45.529727185389554,
+          "actual_brake": 0.27253986942796377,
+          "actual_acceleration": -19.93017071911754,
+          "alternative_model_acceleration": 1.40869140625
+        }
+      ],
+      "pass_forecast_samples": [],
+      "first_soc_under_point1": {
+        "global_s": 1423.5667,
+        "station_m": 4795.827,
+        "soc_mj": 0.0998
+      },
+      "straight_entries": [
+        {
+          "zone": 0,
+          "global_s": 1344.1667,
+          "station_m": 661.992,
+          "soc_mj": 1.1538
+        },
+        {
+          "zone": 1,
+          "global_s": 1372.1667,
+          "station_m": 1964.452,
+          "soc_mj": 1.221
+        },
+        {
+          "zone": 2,
+          "global_s": 1397.5667,
+          "station_m": 3104.262,
+          "soc_mj": 2.2402
+        },
+        {
+          "zone": 3,
+          "global_s": 1417.8333,
+          "station_m": 4368.691,
+          "soc_mj": 1.7983
+        }
+      ],
+      "pass_sample_count": 0,
+      "pass_sample_no_six_second_catch": 0,
+      "mean_soc": 1.2617433461404124
+    },
+    "3": {
+      "rows": 3141,
+      "driving_rows": 3141,
+      "flags": {
+        "soc_ge3point8": 0,
+        "soc_lt_point1": 134,
+        "ers_ge2_outside_long_straight": 66,
+        "aid_available": 0,
+        "override_available": 0,
+        "aid_requested": 0,
+        "override_requested": 0,
+        "power_substitution": 27,
+        "guard_deceleration_requested": 306,
+        "actual_brake_with_guard": 295,
+        "brake_while_below_target": 108,
+        "arrival_probe_attempted": 0,
+        "arrival_probe_nonnegative_instead_of_actual_brake": 0,
+        "pass_target_gap_gt60": 346,
+        "pass_target_gap_gt100": 261,
+        "pass_lane_tracking_error_gt1": 178
+      },
+      "modes": {
+        "LINE": 2049,
+        "DRAFT": 504,
+        "PASS": 583,
+        "CLEAR": 5
+      },
+      "ers_modes": {
+        "3": 400,
+        "1": 1790,
+        "0": 933,
+        "2": 18
+      },
+      "energy_vetoes": {
+        "FUTURE_STRAIGHT_RESERVE": 389,
+        "STORE_FOR_STRAIGHT": 1175
+      },
+      "min_soc": 0.0348,
+      "max_soc": 2.1697,
+      "min_pu_temp": 68.26,
+      "max_pu_temp": 74.41,
+      "tyre_by_compound": {
+        "medium": {
+          "calls": 3141,
+          "below_optimum_gt20_calls": 3141,
+          "public_plan_optimum_c": 92.0,
+          "mean_temp_c": 59.67453756765373
+        }
+      },
+      "probe_samples": [],
+      "pass_forecast_samples": [],
+      "first_soc_under_point1": {
+        "global_s": 1527.5,
+        "station_m": 4731.851,
+        "soc_mj": 0.0951
+      },
+      "straight_entries": [
+        {
+          "zone": 0,
+          "global_s": 1439.6,
+          "station_m": 0.73,
+          "soc_mj": 0.7824
+        },
+        {
+          "zone": 1,
+          "global_s": 1473.0,
+          "station_m": 1964.717,
+          "soc_mj": 1.2238
+        },
+        {
+          "zone": 2,
+          "global_s": 1500.7,
+          "station_m": 3104.909,
+          "soc_mj": 2.1208
+        },
+        {
+          "zone": 3,
+          "global_s": 1522.1667,
+          "station_m": 4368.281,
+          "soc_mj": 1.6907
+        }
+      ],
+      "pass_sample_count": 0,
+      "pass_sample_no_six_second_catch": 0,
+      "mean_soc": 1.1926149633874679
+    }
+  },
+  "pass_episodes": [
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1098.5333,
+      "end_s": 1110.7,
+      "start_gap_m": 8.0,
+      "end_gap_m": 88.761,
+      "min_gap_m": 8.0,
+      "max_gap_m": 88.761,
+      "calls": 366,
+      "brake_calls": 0,
+      "duration_s": 12.166699999999992,
+      "mean_abs_goal_m": 6.37595958645927
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1114.9333,
+      "end_s": 1120.5,
+      "start_gap_m": 88.557,
+      "end_gap_m": 27.413,
+      "min_gap_m": 27.413,
+      "max_gap_m": 88.557,
+      "calls": 168,
+      "brake_calls": 123,
+      "duration_s": 5.566700000000083,
+      "mean_abs_goal_m": 0.32420576655942507
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1122.9333,
+      "end_s": 1135.1,
+      "start_gap_m": 27.534,
+      "end_gap_m": 89.629,
+      "min_gap_m": 26.354,
+      "max_gap_m": 119.917,
+      "calls": 366,
+      "brake_calls": 26,
+      "duration_s": 12.166699999999992,
+      "mean_abs_goal_m": 4.090229023393947
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1137.1333,
+      "end_s": 1156.9,
+      "start_gap_m": 87.55,
+      "end_gap_m": 90.886,
+      "min_gap_m": 34.39,
+      "max_gap_m": 117.55,
+      "calls": 594,
+      "brake_calls": 246,
+      "duration_s": 19.766700000000128,
+      "mean_abs_goal_m": 2.6981341989505823
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1159.3333,
+      "end_s": 1173.5,
+      "start_gap_m": 88.412,
+      "end_gap_m": 93.38,
+      "min_gap_m": 37.231,
+      "max_gap_m": 93.38,
+      "calls": 426,
+      "brake_calls": 60,
+      "duration_s": 14.166699999999992,
+      "mean_abs_goal_m": 1.4604470598431936
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1175.5333,
+      "end_s": 1186.4,
+      "start_gap_m": 86.676,
+      "end_gap_m": 119.777,
+      "min_gap_m": 59.726,
+      "max_gap_m": 119.777,
+      "calls": 327,
+      "brake_calls": 150,
+      "duration_s": 10.866700000000037,
+      "mean_abs_goal_m": 3.5865980621479117
+    },
+    {
+      "key": [
+        9,
+        0
+      ],
+      "start_s": 1197.3333,
+      "end_s": 1206.7,
+      "start_gap_m": 79.122,
+      "end_gap_m": 75.595,
+      "min_gap_m": 62.616,
+      "max_gap_m": 79.122,
+      "calls": 282,
+      "brake_calls": 52,
+      "duration_s": 9.366700000000037,
+      "mean_abs_goal_m": 0.06886154917698296
+    },
+    {
+      "key": [
+        9,
+        1
+      ],
+      "start_s": 1206.7333,
+      "end_s": 1210.9,
+      "start_gap_m": 75.796,
+      "end_gap_m": 97.239,
+      "min_gap_m": 75.796,
+      "max_gap_m": 97.239,
+      "calls": 126,
+      "brake_calls": 0,
+      "duration_s": 4.166699999999992,
+      "mean_abs_goal_m": 0.06886154917698285
+    },
+    {
+      "key": [
+        9,
+        1
+      ],
+      "start_s": 1217.3333,
+      "end_s": 1226.5,
+      "start_gap_m": 95.477,
+      "end_gap_m": 62.727,
+      "min_gap_m": 31.218,
+      "max_gap_m": 95.477,
+      "calls": 276,
+      "brake_calls": 159,
+      "duration_s": 9.166699999999992,
+      "mean_abs_goal_m": 5.055296524254552
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1240.7333,
+      "end_s": 1243.7,
+      "start_gap_m": 99.421,
+      "end_gap_m": 45.057,
+      "min_gap_m": 45.057,
+      "max_gap_m": 99.421,
+      "calls": 90,
+      "brake_calls": 51,
+      "duration_s": 2.966699999999946,
+      "mean_abs_goal_m": 3.407144563410804
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1245.9333,
+      "end_s": 1249.3,
+      "start_gap_m": 34.183,
+      "end_gap_m": 61.094,
+      "min_gap_m": 34.183,
+      "max_gap_m": 61.094,
+      "calls": 102,
+      "brake_calls": 51,
+      "duration_s": 3.366700000000037,
+      "mean_abs_goal_m": 4.068700793097666
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1255.9333,
+      "end_s": 1258.7,
+      "start_gap_m": 94.081,
+      "end_gap_m": 89.766,
+      "min_gap_m": 79.707,
+      "max_gap_m": 94.081,
+      "calls": 84,
+      "brake_calls": 56,
+      "duration_s": 2.766700000000128,
+      "mean_abs_goal_m": 4.526305471090965
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1260.9333,
+      "end_s": 1263.3,
+      "start_gap_m": 107.653,
+      "end_gap_m": 71.533,
+      "min_gap_m": 71.533,
+      "max_gap_m": 107.653,
+      "calls": 72,
+      "brake_calls": 46,
+      "duration_s": 2.366700000000037,
+      "mean_abs_goal_m": 4.200047773679636
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1273.7333,
+      "end_s": 1279.3,
+      "start_gap_m": 174.56,
+      "end_gap_m": 77.917,
+      "min_gap_m": 77.917,
+      "max_gap_m": 175.878,
+      "calls": 168,
+      "brake_calls": 79,
+      "duration_s": 5.566699999999855,
+      "mean_abs_goal_m": 2.8174741856702097
+    },
+    {
+      "key": [
+        1,
+        1
+      ],
+      "start_s": 1292.5333,
+      "end_s": 1308.3667,
+      "start_gap_m": 120.182,
+      "end_gap_m": 40.734,
+      "min_gap_m": 40.734,
+      "max_gap_m": 120.182,
+      "calls": 476,
+      "brake_calls": 193,
+      "duration_s": 15.833399999999983,
+      "mean_abs_goal_m": 3.1683082315486764
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "start_s": 1346.1667,
+      "end_s": 1351.5333,
+      "start_gap_m": 81.788,
+      "end_gap_m": 62.054,
+      "min_gap_m": 62.054,
+      "max_gap_m": 103.981,
+      "calls": 162,
+      "brake_calls": 61,
+      "duration_s": 5.366600000000062,
+      "mean_abs_goal_m": 1.672099140346296
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "start_s": 1405.9667,
+      "end_s": 1409.3,
+      "start_gap_m": 236.086,
+      "end_gap_m": 129.414,
+      "min_gap_m": 129.414,
+      "max_gap_m": 236.086,
+      "calls": 101,
+      "brake_calls": 34,
+      "duration_s": 3.3333000000000084,
+      "mean_abs_goal_m": 3.799596373790337
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "start_s": 1409.3667,
+      "end_s": 1410.5333,
+      "start_gap_m": 127.352,
+      "end_gap_m": 102.989,
+      "min_gap_m": 102.989,
+      "max_gap_m": 127.352,
+      "calls": 36,
+      "brake_calls": 36,
+      "duration_s": 1.1666000000000167,
+      "mean_abs_goal_m": 5.508667796975318
+    },
+    {
+      "key": [
+        1,
+        2
+      ],
+      "start_s": 1423.9667,
+      "end_s": 1434.7333,
+      "start_gap_m": 182.848,
+      "end_gap_m": 91.065,
+      "min_gap_m": 69.38,
+      "max_gap_m": 182.848,
+      "calls": 324,
+      "brake_calls": 123,
+      "duration_s": 10.766600000000153,
+      "mean_abs_goal_m": 3.050894987550948
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "start_s": 1447.3667,
+      "end_s": 1459.5333,
+      "start_gap_m": 148.654,
+      "end_gap_m": 61.891,
+      "min_gap_m": 16.178,
+      "max_gap_m": 148.654,
+      "calls": 366,
+      "brake_calls": 160,
+      "duration_s": 12.166600000000017,
+      "mean_abs_goal_m": 3.381849962607271
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "start_s": 1476.3667,
+      "end_s": 1477.7333,
+      "start_gap_m": 91.923,
+      "end_gap_m": 68.439,
+      "min_gap_m": 68.439,
+      "max_gap_m": 91.923,
+      "calls": 42,
+      "brake_calls": 31,
+      "duration_s": 1.3666000000000622,
+      "mean_abs_goal_m": 0.7621121349086541
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "start_s": 1494.5667,
+      "end_s": 1497.1667,
+      "start_gap_m": 179.12,
+      "end_gap_m": 127.145,
+      "min_gap_m": 127.145,
+      "max_gap_m": 179.12,
+      "calls": 79,
+      "brake_calls": 33,
+      "duration_s": 2.599999999999909,
+      "mean_abs_goal_m": 4.213725586402061
+    },
+    {
+      "key": [
+        1,
+        3
+      ],
+      "start_s": 1530.9667,
+      "end_s": 1534.1333,
+      "start_gap_m": 234.976,
+      "end_gap_m": 112.212,
+      "min_gap_m": 112.212,
+      "max_gap_m": 234.976,
+      "calls": 96,
+      "brake_calls": 75,
+      "duration_s": 3.1666000000000167,
+      "mean_abs_goal_m": 3.4008484967438335
+    }
+  ],
+  "note": "Recorded observations only. Activation probe temporarily labels LINE/DRAFT as PASS solely to exercise the unchanged arrival solver, then restores mode and diagnostics before actual action. All recorded actions reproduced. No new trajectory, tyre evolution, overtake or lap time simulated."
+}
