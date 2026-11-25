@@ -88,3 +88,5 @@ python3 scripts/audit_racing_opportunities.py --log dist/fps-inputs/training-f15
 ```
 
 本次贡献：用户提出继续检查；Codex增加电量窗口、PASS片段、轮胎温度和受限激活探针审计。所有方案仍是计划，没有实现、打包、平台验证或实战结果。
+
+追加审计校验：完整16628次冻结动作重现；清洁LF检出中的项目check.py通过，见opportunity-verification.json。未进行新策略或官方环境测试。

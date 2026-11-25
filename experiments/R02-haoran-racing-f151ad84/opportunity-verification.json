@@ -1,0 +1,9 @@
+{
+  "project_check": "passed_clean_lf_checkout",
+  "recorded_action_agreement": 16628,
+  "temporary_probe_restored_before_actual_action": true,
+  "strategy_changed": false,
+  "platform_actions": false,
+  "new_race_simulated": false,
+  "note": "Full source audit executed once; core project check completed in clean LF checkout. Does not establish candidate performance."
+}
