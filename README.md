@@ -9,7 +9,7 @@
 | 后续开发 | 长期分支 | 当前该游戏源码 |
 |---|---|---|
 | FPS | [codex/haoran-fps](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-fps) | `e27acc998e08`，个人 v2 |
-| Racing | [codex/haoran-racing](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-racing) | `9c58b2da29a7`，包b0957ee4e862已在Parkland实战核实采用；Crossover新入口待对应赛道验证 |
+| Racing | [codex/haoran-racing](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-racing) | `da1bb61e97f1`，Parkland低湿首圈电量候选（待上传）；最近已核实包b0957ee4e862 |
 
 旧实验分支保留作归档。个人版本包及清单见 [releases/personal/haoran](releases/personal/haoran/)，按固定源码提交存放；分支包含整份仓库，后续主要修改对应游戏目录。
 

@@ -32,7 +32,7 @@ python3 scripts/evaluate_racing_first_lap_energy.py --log dist/fps-inputs/traini
 |---|---|
 | 单项实现、24项预算/保护用例、72项后续圈启用条件对照 | 完成 |
 | 三场完整日志对照 | 共58,469次，各自冻结动作全部重现；f151ad84低湿首圈584次电驱档位降低，后续圈及起步边界内不变；湿地Parkland/Crossover对照均0变化 |
-| 项目基础检查、固定源码与打包 | 待补录 |
+| 项目基础检查、固定源码与打包 | 清洁LF检出check.py / package.py racing通过；包内五文件匹配提交、代码哈希匹配完整日志检查版本；包中24预算保护、72后续圈谓词和三赛道×两阶段6项入口检查通过 |
 | 独立人工审阅 | 待进行 |
 | 平台验证、激活、新候选实战 | 未执行 |
 
@@ -43,3 +43,7 @@ python3 scripts/evaluate_racing_first_lap_energy.py --log dist/fps-inputs/traini
 用户选择电量预算这一单项并要求出包；Codex实现、编写执行检查、维护记录和包。未补造人工审阅、平台验证或新策略实战收益。
 
 完整输出见[offline-checks.json](offline-checks.json)。在所有相同历史观察上，全部模型速度上限、战术/目标车/偏移目标以及转向、刹车、aero、进站和辅助请求均与固定对照一致。电驱请求变化584次不等于实际省下584次电量或获得新电池曲线。
+
+## 上传包
+
+源码 `da1bb61e97f1e979f933c6bada217942c3d2cdf4`，[ZIP](../../releases/personal/haoran/racing/da1bb61e97f1/racing-da1bb61e97f1.zip)，SHA256 `d7e3067a1e7b25781010afbe233ee33b493df7f4ba067cbed28ede05ae31c3f4`。见[包清单](package-manifest.json)和[打包检查](packaging-checks.json)。旧包b0957ee4e862保留回退，平台版本序号待用户上传确认。

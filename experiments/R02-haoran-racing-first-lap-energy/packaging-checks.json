@@ -1,0 +1,49 @@
+{
+  "source_commit": "da1bb61e97f1e979f933c6bada217942c3d2cdf4",
+  "zip_sha256": "d7e3067a1e7b25781010afbe233ee33b493df7f4ba067cbed28ede05ae31c3f4",
+  "project_check": "passed_clean_lf_checkout",
+  "files_match_git": true,
+  "package_source_hash_matches_full_log_checked_source": true,
+  "packaged_energy_guards": {
+    "cases": [
+      "first_lap_after_both_protected_boundaries",
+      "time_before600_preserved",
+      "distance_before300_preserved",
+      "speed_below20_preserved",
+      "wet_boundary_preserved",
+      "not_racing_preserved",
+      "qualifying_preserved",
+      "pit_preserved",
+      "defend_preserved",
+      "yielding_preserved",
+      "guard_preserved",
+      "aid_preserved",
+      "override_preserved",
+      "front_slide_preserved",
+      "rear_slide_preserved",
+      "no_fuel_preserved",
+      "overheat_preserved",
+      "no_windows_preserved",
+      "outside_straight_reserves_energy",
+      "fixed_entry_floor_not_geometrically_recomputed",
+      "floor_stops_deployment",
+      "next_straight_releases_its_share",
+      "predicted_queue_veto_preserved",
+      "next_lap_resets_floor"
+    ],
+    "unchanged_later_lap_predicate_cases": 72,
+    "scope": "Budget/state checks only. No battery regeneration, vehicle dynamics or lap time simulated."
+  },
+  "packaged_dispatch_entries": [
+    "parkland_qualifying",
+    "parkland_race",
+    "highland_qualifying",
+    "highland_race",
+    "crossover_qualifying",
+    "crossover_race"
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "note": "Budget and entry checks, not a new battery/vehicle simulation or official game-environment result."
+}

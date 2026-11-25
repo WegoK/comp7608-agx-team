@@ -11,8 +11,8 @@
     {
       "name": "codex/haoran-racing",
       "game": "Racing",
-      "current_game_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
-      "current_source_status": "verified_adopted_in_parkland_match",
+      "current_game_source_commit": "da1bb61e97f1e979f933c6bada217942c3d2cdf4",
+      "current_source_status": "first_lap_energy_candidate_not_uploaded",
       "latest_verified_platform_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f"
     }
   ],
@@ -187,6 +187,16 @@
           "version_ordinal_note": "Actual bundle adoption verified, platform ordinal not inferred."
         }
       ]
+    },
+    {
+      "game": "racing",
+      "source_commit": "da1bb61e97f1e979f933c6bada217942c3d2cdf4",
+      "zip_sha256": "d7e3067a1e7b25781010afbe233ee33b493df7f4ba067cbed28ede05ae31c3f4",
+      "zip_path": "releases/personal/haoran/racing/da1bb61e97f1/racing-da1bb61e97f1.zip",
+      "manifest_path": "releases/personal/haoran/racing/da1bb61e97f1/racing-da1bb61e97f1.json",
+      "source_files_match_git": true,
+      "note": "Parkland low-wetness first-lap energy budget after protected launch; local checks only, no AGX ordinal or activation.",
+      "experiment": "experiments/R02-haoran-racing-first-lap-energy/README.md"
     }
   ],
   "wego_versions": [
@@ -514,6 +524,17 @@
     {
       "path": "experiments/racing_record.JPG",
       "sha256": "64e3ebb57bf2855928561a7d1c4f1697444461818d39cb12466e2d63ae41ce84"
+    }
+  ],
+  "local_candidates": [
+    {
+      "game": "Racing",
+      "development_name": "Parkland低湿首圈电量分段预算",
+      "source_commit": "da1bb61e97f1e979f933c6bada217942c3d2cdf4",
+      "zip_sha256": "d7e3067a1e7b25781010afbe233ee33b493df7f4ba067cbed28ede05ae31c3f4",
+      "platform_version": null,
+      "platform_validation": "not_run",
+      "competition_activation": "not_run"
     }
   ]
 }
