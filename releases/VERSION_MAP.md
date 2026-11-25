@@ -36,7 +36,7 @@ Racing v4/v5 的平台显示上传时间分别为 11/23 10:36:05 和 10:36:08；
 
 | 长期分支 | 主要维护目录 | 当前该游戏源码 | 用途 |
 |---|---|---|---|
-| `codex/haoran-fps` | `strategies/fps/` | `c979ee08a85e`，第四版候选（待上传）；最近实战已核实包67e64a8436fe | FPS后续开发、实验和报告 |
+| `codex/haoran-fps` | `strategies/fps/` | `c979ee08a85e`，第四版包已在Borgo实战核实采用；平台序号待历史回执 | FPS后续开发、实验和报告 |
 | `codex/haoran-racing` | `strategies/racing/` | `ee12c93d76f6`，个人 Racing v4/v5 | Racing 后续开发、实验和报告 |
 
 这两个分支从整理后的最新完整历史开始。Git 分支是**整份仓库**，因此两边都会看到 FPS、Racing 和报告；“两个开发分支”是工作分工，不是把文件拆成两个仓库。新实验主要改对应游戏目录，完成后再按团队审阅约定整合。`main` 保持原来的小组稳定交接状态，本次没有合入策略。
@@ -101,3 +101,5 @@ git -c core.autocrlf=false worktree add --detach ../agx-racing-v3 d6268a7f50ad
 ## FPS第四版开发候选（2026-11-25）
 
 源码 `c979ee08a85e`，指纹 `179919156da8`，[ZIP](personal/haoran/fps/c979ee08a85e/fps-c979ee08a85e.zip)。仅Mirage修复纯Z起伏重置恢复、同目标跳跃冷却和空中重接；保留第三版瞄准。见[实验](../experiments/R02-haoran-fps-v4-horizontal-recovery/README.md)。本地检查/打包完成，未上传、验证、激活或取得新候选赛果，不预分配平台v4。
+
+2026-11-25：第四版开发包c979ee08a85e/179919156da8已由[4f66f223完整本人日志](../experiments/R02-haoran-fps-4f66f223/README.md)核实采用；Borgo2:13，冻结版本c1325814-e1b0-45df-9089-bb67761c64dd。此前候选未上传等文字为打包时事件，不据此推定平台v4序号。

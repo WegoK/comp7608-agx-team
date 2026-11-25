@@ -1,0 +1,4154 @@
+{
+  "schema": "fps-own-export-review-v1",
+  "match_id": "4f66f223-50b8-4d95-b8f1-3e32e0149479",
+  "map_id": "borgo-r3-v54",
+  "rules_version": "rsi-fps-5.5",
+  "source_commit": "c979ee08a85eb8da54f0c49f6f834a77af3f3dd5",
+  "zip_sha256": "179919156da8b2506834a5b176e1ca6258a439a8b9d01f5c72dff0a09f0e58f2",
+  "frozen_version_id": "c1325814-e1b0-45df-9089-bb67761c64dd",
+  "own_seat_zero_based": 3,
+  "own_team_zero_based": 0,
+  "integrity": {
+    "rows": 25088,
+    "raw_bytes": 69534729,
+    "sha256": "ba0e24826c8efabf63f321109939467bfd5c53793e406c456dfbe76a392b1c88",
+    "faults": 0,
+    "reproduced_requested_actions": 25088
+  },
+  "outcome": {
+    "type": "outcome",
+    "winner": 1,
+    "reason": "round_wins",
+    "ranks": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "teams": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "round_wins": [
+      2,
+      13
+    ]
+  },
+  "rounds": {
+    "0": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 508,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 8,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 468,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 32,
+        "combat_after_not_visible": 2,
+        "visibility_lost_after_combat": 1,
+        "pose_switches_live": 3,
+        "combat_calls": 34,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 8,
+        "combat_moving_calls": 14,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 8,
+        "own_hit_events": 1
+      },
+      "visible_targets": {
+        "8": 34
+      },
+      "weapon_combat": {
+        "pistol": 34
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 508
+      },
+      "ammo_spent": 8,
+      "damage_taken": 57.84683920431842,
+      "position_start": [
+        61.1,
+        12,
+        0
+      ],
+      "position_last": [
+        31.666193447605036,
+        76.00333608104165,
+        -0.001890000094994952
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 1647,
+      "first_combat_frame_trace": [
+        {
+          "tick": 1647,
+          "visible": true,
+          "yaw": 0.011802394913263382,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.7897782379789398,
+            "pitch_rate": 0.21447734661931173,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1650,
+          "visible": true,
+          "yaw": -0.10666434078357759,
+          "pitch": 0.021447734661931173,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.017887374483335588,
+            "pitch_rate": 0.07403609957437082,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1653,
+          "visible": true,
+          "yaw": -0.10398123461107726,
+          "pitch": 0.028851344619368252,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.018458940245524857,
+            "pitch_rate": 0.0006560224003477125,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1656,
+          "visible": true,
+          "yaw": -0.10121239357424854,
+          "pitch": 0.02891694685940302,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.01888935945528895,
+            "pitch_rate": 0.0005222104939734545,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 1659,
+          "visible": true,
+          "yaw": -0.09837898965595519,
+          "pitch": 0.028969167908800362,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.022880604939610194,
+            "pitch_rate": -0.08576817976547434,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1662,
+          "visible": true,
+          "yaw": -0.09494689891501366,
+          "pitch": 0.02039234993225293,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0187162326478596,
+            "pitch_rate": 0.018999399778177363,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1665,
+          "visible": true,
+          "yaw": -0.09213946401783472,
+          "pitch": 0.022292289910070665,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.019152132446246622,
+            "pitch_rate": 0.015134693411838172,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1668,
+          "visible": true,
+          "yaw": -0.08926664415089774,
+          "pitch": 0.023805759251254485,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.01624879731190928,
+            "pitch_rate": -0.009628290995235857,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 1671,
+          "visible": true,
+          "yaw": -0.08682932455411134,
+          "pitch": 0.022842930151730896,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.0006951077120772217,
+            "pitch_rate": -0.10067480493705437,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1674,
+          "visible": true,
+          "yaw": -0.08693359071092294,
+          "pitch": 0.012775449658025458,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.008272482072291254,
+            "pitch_rate": 0.04938838399984432,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1677,
+          "visible": true,
+          "yaw": -0.08569271840007925,
+          "pitch": 0.01771428805800989,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0017872653821774758,
+            "pitch_rate": 0.03822793062940408,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 1680,
+          "visible": true,
+          "yaw": -0.08542462859275264,
+          "pitch": 0.021537081120950295,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.004274860112246278,
+            "pitch_rate": 0.016637752343274526,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 1884,
+      "death_position": [
+        31.666193447605036,
+        76.00333608104165,
+        -0.001890000094994948
+      ],
+      "own_damage": 4.447433219506323,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:106",
+          "match_tick": 1882,
+          "round_index": 0,
+          "target": 3,
+          "killer": 8,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:308",
+          "match_tick": 7260,
+          "round_index": 0,
+          "round_winner": 1,
+          "reason": "timeout",
+          "round_wins": [
+            0,
+            1
+          ],
+          "post_end_tick": 7560,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "1": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1738,
+        "alive_live_calls": 368,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 5,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 333,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 22,
+        "combat_after_not_visible": 7,
+        "visibility_lost_after_combat": 6,
+        "pose_switches_live": 1,
+        "combat_calls": 29,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 5,
+        "combat_moving_calls": 4,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 5
+      },
+      "visible_targets": {
+        "5": 29,
+        "7": 5
+      },
+      "weapon_combat": {
+        "pistol": 29
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 368
+      },
+      "ammo_spent": 5,
+      "damage_taken": 95.16416598129618,
+      "position_start": [
+        63.8,
+        12,
+        0
+      ],
+      "position_last": [
+        110.06085147745988,
+        25.76381374322296,
+        -0.001890000094994902
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 8919,
+      "first_combat_frame_trace": [
+        {
+          "tick": 8919,
+          "visible": true,
+          "yaw": -1.5735326252513933,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.05218721010840237,
+            "pitch_rate": 0.18691891298884103,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8922,
+          "visible": false,
+          "yaw": -1.5813607067676534,
+          "pitch": 0.0186918912988841,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.00018613264632705295,
+            "pitch_rate": 0.0942775783681848,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8925,
+          "visible": true,
+          "yaw": -1.5813886266646024,
+          "pitch": 0.028119649135702578,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.010246771290033745,
+            "pitch_rate": 0.03641508524988318,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8928,
+          "visible": false,
+          "yaw": -1.5798516109710976,
+          "pitch": 0.031761157660690896,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -8.821651124553873e-05,
+            "pitch_rate": 0.0006640711797270549,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8931,
+          "visible": true,
+          "yaw": -1.5798648434477847,
+          "pitch": 0.03182756477866361,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.010850587431878722,
+            "pitch_rate": 0.002236831677474016,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8934,
+          "visible": false,
+          "yaw": -1.5782372553330029,
+          "pitch": 0.03205124794641101,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -3.539654421125249e-05,
+            "pitch_rate": 0.00036104772780050365,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8937,
+          "visible": true,
+          "yaw": -1.5782425648146345,
+          "pitch": 0.03208735271919106,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.011306629047718175,
+            "pitch_rate": 0.03611775846177313,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8940,
+          "visible": false,
+          "yaw": -1.5765465704574768,
+          "pitch": 0.03569912856536838,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -3.7647440927675766e-06,
+            "pitch_rate": 6.670974330387491e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8943,
+          "visible": true,
+          "yaw": -1.576547135169091,
+          "pitch": 0.035705799539698775,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.011533430658641208,
+            "pitch_rate": -0.030039099683020695,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8946,
+          "visible": false,
+          "yaw": -1.5748171205702948,
+          "pitch": 0.032701889571396706,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8949,
+          "visible": true,
+          "yaw": -1.5748171205702948,
+          "pitch": 0.032701889571396706,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.014455335429997737,
+            "pitch_rate": 0.0012280537231642435,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 8952,
+          "visible": false,
+          "yaw": -1.5726488202557949,
+          "pitch": 0.03282469494371313,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 3,
+      "death_tick": 9024,
+      "death_position": [
+        110.06085147745988,
+        25.76381374322296,
+        -0.0018900000949948982
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:383",
+          "match_tick": 9022,
+          "round_index": 1,
+          "target": 3,
+          "killer": 5,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:480",
+          "match_tick": 11442,
+          "round_index": 1,
+          "player": 0,
+          "item_id": "r1:bomb",
+          "site": "B",
+          "position": [
+            31.305054773656995,
+            75.9897385714661,
+            -0.001890000094994958
+          ],
+          "views": {
+            "0": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:480",
+              "match_tick": 11442,
+              "round_index": 1,
+              "player": 0,
+              "item_id": "r1:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1755110642:564",
+          "match_tick": 13134,
+          "round_index": 1,
+          "item_id": "r1:bomb",
+          "fuse_end_tick": 13842,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:583",
+          "match_tick": 13134,
+          "round_index": 1,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            0,
+            2
+          ],
+          "post_end_tick": 13434,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "2": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 900,
+        "alive_live_calls": 523,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 523,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 523
+      },
+      "ammo_spent": 0,
+      "damage_taken": 85.71004268563445,
+      "position_start": [
+        62.9,
+        12,
+        0
+      ],
+      "position_last": [
+        29.67209077316138,
+        75.99262179613505,
+        -0.0018900000949949051
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 15363,
+      "death_position": [
+        29.763106982679655,
+        75.99291026803367,
+        -0.0018900000949949012
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:705",
+          "match_tick": 15361,
+          "round_index": 2,
+          "target": 3,
+          "killer": 7,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:790",
+          "match_tick": 16492,
+          "round_index": 2,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            0,
+            3
+          ],
+          "post_end_tick": 16792,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "3": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 476,
+        "hidden_aim_hold_calls": 10,
+        "blind_calls": 0,
+        "fire_requested": 10,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 451,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 9,
+        "combat_after_not_visible": 6,
+        "visibility_lost_after_combat": 5,
+        "pose_switches_live": 3,
+        "combat_calls": 15,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 10,
+        "combat_moving_calls": 11,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 7,
+        "own_hit_events": 2
+      },
+      "visible_targets": {
+        "5": 8,
+        "8": 7,
+        "9": 1
+      },
+      "weapon_combat": {
+        "ak47": 15
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 428,
+        "world": 48
+      },
+      "ammo_spent": 7,
+      "damage_taken": 0,
+      "position_start": [
+        61.1,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        110.04797897446423,
+        78.16501404393654,
+        2.400110095367432
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 18039,
+      "first_combat_frame_trace": [
+        {
+          "tick": 18039,
+          "visible": true,
+          "yaw": -1.5737072586747014,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.05118316518054537,
+            "pitch_rate": 0.28360128393094614,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18042,
+          "visible": false,
+          "yaw": -1.581384733451783,
+          "pitch": 0.02836012839309461,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.03530996846950944,
+            "pitch_rate": 0.018560622434024843,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18045,
+          "visible": true,
+          "yaw": -1.5760882381813568,
+          "pitch": 0.030216190636497095,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.005772658832977248,
+            "pitch_rate": 0.07478011660008228,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18048,
+          "visible": true,
+          "yaw": -1.57522233935641,
+          "pitch": 0.037694202296505316,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.003391962981975638,
+            "pitch_rate": -0.1469413398569689,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18051,
+          "visible": true,
+          "yaw": -1.5757311338037063,
+          "pitch": 0.023000068310808426,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.012520557089343853,
+            "pitch_rate": -0.03997779973212025,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18054,
+          "visible": true,
+          "yaw": -1.5738530502403048,
+          "pitch": 0.019002288337596405,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.022488797620449457,
+            "pitch_rate": -0.12160603678338273,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18057,
+          "visible": false,
+          "yaw": -1.5704797305972376,
+          "pitch": 0.006841684659258131,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.005925360368763677,
+            "pitch_rate": -0.08598079979373799,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18060,
+          "visible": true,
+          "yaw": -1.569590926541923,
+          "pitch": -0.0017563953201156666,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.019197923694778872,
+            "pitch_rate": 0.006326575813522459,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18063,
+          "visible": false,
+          "yaw": -1.566711237987706,
+          "pitch": -0.0011237377387634205,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0007666880234088088,
+            "pitch_rate": -0.12966021114018308,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18066,
+          "visible": true,
+          "yaw": -1.5665962347841944,
+          "pitch": -0.01408975885278173,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.029145312451953252,
+            "pitch_rate": -0.05910643821716917,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18069,
+          "visible": false,
+          "yaw": -1.5622244379164012,
+          "pitch": -0.020000402674498645,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.03700851610304905,
+            "pitch_rate": -0.19449489431478179,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18072,
+          "visible": true,
+          "yaw": -1.5677757153318583,
+          "pitch": -0.039449892105976825,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011290462434354609,
+            "pitch_rate": -0.06287893657016028,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 18582,
+      "death_position": [
+        110.04495628831306,
+        78.16478991799885,
+        2.4001100953674315
+      ],
+      "own_damage": 127.14116106199621,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:868",
+          "match_tick": 18073,
+          "round_index": 3,
+          "target": 5,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:896",
+          "match_tick": 18580,
+          "round_index": 3,
+          "target": 3,
+          "killer": 8,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:1048",
+          "match_tick": 24052,
+          "round_index": 3,
+          "round_winner": 1,
+          "reason": "timeout",
+          "round_wins": [
+            0,
+            4
+          ],
+          "post_end_tick": 24352,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "4": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2073,
+        "alive_live_calls": 547,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 7,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 529,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 11,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 1,
+        "pose_switches_live": 2,
+        "combat_calls": 12,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 7,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 4,
+        "own_hit_events": 4
+      },
+      "visible_targets": {
+        "8": 12
+      },
+      "weapon_combat": {
+        "ak47": 12
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 547
+      },
+      "ammo_spent": 4,
+      "damage_taken": 85.73719046188074,
+      "position_start": [
+        62.9,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        31.032438995746887,
+        76.00013396147168,
+        -0.0018900000949949494
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 25830,
+      "first_combat_frame_trace": [
+        {
+          "tick": 25830,
+          "visible": true,
+          "yaw": -1.5707621178985811,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.12205676446361456,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 25833,
+          "visible": true,
+          "yaw": -1.420762117898581,
+          "pitch": -0.012205676446361457,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.05430430101495979,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 25836,
+          "visible": true,
+          "yaw": -1.2707621178985808,
+          "pitch": -0.006775246344865479,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.00047604284389254903,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 25839,
+          "visible": true,
+          "yaw": -1.1207621178985807,
+          "pitch": -0.006822850629254734,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.00036517433033051057,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 25842,
+          "visible": true,
+          "yaw": -0.9707621178985806,
+          "pitch": -0.0068593680622877845,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.00027134972298719674,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 25845,
+          "visible": true,
+          "yaw": -0.8207621178985804,
+          "pitch": -0.006886503034586503,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.041547436523516154,
+            "pitch_rate": -0.00017778773814639513,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25848,
+          "visible": true,
+          "yaw": -0.8145300024200529,
+          "pitch": -0.006904281808401143,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.04312148621796297,
+            "pitch_rate": -0.10317891724620727,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25851,
+          "visible": true,
+          "yaw": -0.8080617794873585,
+          "pitch": -0.01722217353302187,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.013242195166697595,
+            "pitch_rate": 0.16130296177499617,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25854,
+          "visible": true,
+          "yaw": -0.8100481087623631,
+          "pitch": -0.0010918773555222538,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0224875571013398,
+            "pitch_rate": -0.1501261361809745,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25857,
+          "visible": true,
+          "yaw": -0.8134212423275642,
+          "pitch": -0.016104490973619705,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.012747432614078255,
+            "pitch_rate": -0.043080836550239525,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25860,
+          "visible": true,
+          "yaw": -0.8153333572196758,
+          "pitch": -0.020412574628643654,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.008212020741768338,
+            "pitch_rate": -0.16904253339812345,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 25863,
+          "visible": true,
+          "yaw": -0.8165651603309412,
+          "pitch": -0.037316827968456,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.017982733238041487,
+            "pitch_rate": -0.08657429548504451,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 26355,
+      "death_position": [
+        31.123455661541204,
+        76.00012136002539,
+        -0.0018900000949949455
+      ],
+      "own_damage": 100.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:1131",
+          "match_tick": 25864,
+          "round_index": 4,
+          "target": 8,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:1183",
+          "match_tick": 26353,
+          "round_index": 4,
+          "target": 3,
+          "killer": 7,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:1307",
+          "match_tick": 29520,
+          "round_index": 4,
+          "player": 1,
+          "item_id": "r4:bomb",
+          "site": "A",
+          "position": [
+            110.07331822186657,
+            86.03987838590575,
+            2.400110095367432
+          ],
+          "views": {
+            "1": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:1307",
+              "match_tick": 29520,
+              "round_index": 4,
+              "player": 1,
+              "item_id": "r4:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1755110642:1323",
+          "match_tick": 30933,
+          "round_index": 4,
+          "item_id": "r4:bomb",
+          "fuse_end_tick": 31920,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:1342",
+          "match_tick": 30933,
+          "round_index": 4,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            0,
+            5
+          ],
+          "post_end_tick": 31233,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "5": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1726,
+        "alive_live_calls": 463,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 3,
+        "reload_requested": 0,
+        "plant_carrier_calls": 463,
+        "navigation_calls": 444,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 3,
+        "combat_after_not_visible": 4,
+        "visibility_lost_after_combat": 3,
+        "pose_switches_live": 3,
+        "combat_calls": 7,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 3,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 3
+      },
+      "visible_targets": {
+        "5": 3,
+        "8": 4,
+        "9": 4
+      },
+      "weapon_combat": {
+        "ak47": 7
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 463
+      },
+      "ammo_spent": 3,
+      "damage_taken": 0,
+      "position_start": [
+        62.9,
+        12,
+        0
+      ],
+      "position_last": [
+        110.23982133020361,
+        78.1792059672545,
+        2.4001100953674315
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 32406,
+      "first_combat_frame_trace": [
+        {
+          "tick": 32406,
+          "visible": true,
+          "yaw": -1.5690859619360003,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.07979802217918201,
+            "pitch_rate": 0.2211020665690747,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 32409,
+          "visible": false,
+          "yaw": -1.5810556652628773,
+          "pitch": 0.02211020665690747,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.035218996276504086,
+            "pitch_rate": 0.008474420518157708,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32412,
+          "visible": false,
+          "yaw": -1.575772815821402,
+          "pitch": 0.022957648708723244,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.009371251732233077,
+            "pitch_rate": 0.027487809306411745,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32415,
+          "visible": false,
+          "yaw": -1.577178503581237,
+          "pitch": 0.02570642963936442,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.005895902019702841,
+            "pitch_rate": 0.017333294529748716,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32418,
+          "visible": true,
+          "yaw": -1.578062888884192,
+          "pitch": 0.02743975909233929,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.021824551407547688,
+            "pitch_rate": 0.09947245225757073,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 32421,
+          "visible": false,
+          "yaw": -1.57478920617306,
+          "pitch": 0.03738700431809636,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.013301323291659747,
+            "pitch_rate": -0.13263757291228062,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32424,
+          "visible": false,
+          "yaw": -1.5767844046668091,
+          "pitch": 0.0241232470268683,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 2.2495513979000258e-05,
+            "pitch_rate": -0.003073191144827986,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32427,
+          "visible": false,
+          "yaw": -1.576781030339712,
+          "pitch": 0.023815927912385505,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.001045476243435317,
+            "pitch_rate": 0.06569623626255357,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32430,
+          "visible": true,
+          "yaw": -1.5769378517762274,
+          "pitch": 0.030385551538640858,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0191966704212021,
+            "pitch_rate": 0.0925933381970577,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 32433,
+          "visible": false,
+          "yaw": -1.574058351213047,
+          "pitch": 0.03964488535834662,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.010543863093464742,
+            "pitch_rate": -0.15782642813991393,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32436,
+          "visible": false,
+          "yaw": -1.5724767717490271,
+          "pitch": 0.023862242544355226,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.002212802402340823,
+            "pitch_rate": -0.043161978623594,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 32439,
+          "visible": false,
+          "yaw": -1.5721448513886762,
+          "pitch": 0.01954604468199583,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00256230406906847,
+            "pitch_rate": 0.049979208870743336,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 32982,
+      "death_position": [
+        110.20386837220467,
+        78.17654612254023,
+        2.400110095367432
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:1510",
+          "match_tick": 32980,
+          "round_index": 5,
+          "target": 3,
+          "killer": 9,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:1630",
+          "match_tick": 35928,
+          "round_index": 5,
+          "player": 2,
+          "item_id": "r5:bomb",
+          "site": "B",
+          "position": [
+            33.84052347320359,
+            76.00048937393873,
+            -0.0018900000949948622
+          ],
+          "views": {
+            "2": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:1630",
+              "match_tick": 35928,
+              "round_index": 5,
+              "player": 2,
+              "item_id": "r5:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1755110642:1654",
+          "match_tick": 36771,
+          "round_index": 5,
+          "item_id": "r5:bomb",
+          "fuse_end_tick": 38328,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:1673",
+          "match_tick": 36771,
+          "round_index": 5,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            0,
+            6
+          ],
+          "post_end_tick": 37071,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "6": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 961,
+        "alive_live_calls": 531,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 531,
+        "navigation_calls": 524,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {
+        "plant": 7
+      },
+      "bomb_states": {
+        "held": 531
+      },
+      "ammo_spent": 0,
+      "damage_taken": 83.72137996811851,
+      "position_start": [
+        62.9,
+        12,
+        0
+      ],
+      "position_last": [
+        30.218188030271474,
+        75.99435262738733,
+        -0.0018900000949948817
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 39024,
+      "death_position": [
+        30.218188030271474,
+        75.99435262738733,
+        -0.0018900000949948817
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:1818",
+          "match_tick": 39022,
+          "round_index": 6,
+          "target": 3,
+          "killer": 5,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:1970",
+          "match_tick": 40312,
+          "round_index": 6,
+          "round_winner": 0,
+          "reason": "elimination",
+          "round_wins": [
+            1,
+            6
+          ],
+          "post_end_tick": 40612,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "7": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1701,
+        "alive_live_calls": 567,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 560,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 1,
+        "pose_switches_live": 2,
+        "combat_calls": 1,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 1,
+        "combat_airborne_calls": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "5": 1
+      },
+      "weapon_combat": {
+        "ak47": 1
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 430,
+        "world": 137
+      },
+      "ammo_spent": 0,
+      "damage_taken": 85.42953868890842,
+      "position_start": [
+        62.0,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        111.80682695379866,
+        47.86453038892885,
+        -0.001890000094994925
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 42027,
+          "end_tick": 42636,
+          "position": [
+            113.03141388091379,
+            51.127828680838114,
+            -0.0018900000949948787
+          ]
+        }
+      ],
+      "first_combat_tick": 41988,
+      "first_combat_frame_trace": [
+        {
+          "tick": 41988,
+          "visible": true,
+          "yaw": -1.5667596493863618,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.5198133715134645,
+            "pitch_rate": 0.3343196195457138,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 41991,
+          "visible": false,
+          "yaw": -1.6447316551133815,
+          "pitch": 0.03343196195457138,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0066209373498615776,
+            "pitch_rate": 0.14330814693046554,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 41994,
+          "visible": false,
+          "yaw": -1.6457247957158607,
+          "pitch": 0.047762776647617945,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.005080044358779882,
+            "pitch_rate": 0.0014580406659778222,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 41997,
+          "visible": false,
+          "yaw": -1.6464868023696775,
+          "pitch": 0.04790858071421572,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0038690266152811388,
+            "pitch_rate": 0.0011102624251420334,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42000,
+          "visible": false,
+          "yaw": -1.6470671563619694,
+          "pitch": 0.04801960695672993,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00274042539315289,
+            "pitch_rate": 0.0007862922668959438,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42003,
+          "visible": false,
+          "yaw": -1.6474782201709424,
+          "pitch": 0.04809823618341953,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0016006316375616336,
+            "pitch_rate": 0.0004592184429321605,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42006,
+          "visible": false,
+          "yaw": -1.6477183149165766,
+          "pitch": 0.04814415802771275,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00045427594432527013,
+            "pitch_rate": 0.00013032556399963924,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42009,
+          "visible": false,
+          "yaw": -1.6477864563082252,
+          "pitch": 0.048157190584112705,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9971054766622313,
+            "move_right": -0.07603070702146955,
+            "yaw_rate": 0.507360997419859,
+            "pitch_rate": -0.481571905841127,
+            "walk": false
+          }
+        },
+        {
+          "tick": 42012,
+          "visible": false,
+          "yaw": -1.5716823066952463,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999980294588,
+            "move_right": 6.27780400309178e-05,
+            "yaw_rate": -0.0004185202671476892,
+            "pitch_rate": -0.0,
+            "walk": false
+          }
+        },
+        {
+          "tick": 42015,
+          "visible": false,
+          "yaw": -1.5717450847353187,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999972951019,
+            "move_right": 7.355131601401734e-05,
+            "yaw_rate": -0.000490342107202224,
+            "pitch_rate": -0.0,
+            "walk": false
+          }
+        },
+        {
+          "tick": 42018,
+          "visible": false,
+          "yaw": -1.571818636051399,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999987389587,
+            "move_right": 5.0220340601854016e-05,
+            "yaw_rate": -0.00033480227081975994,
+            "pitch_rate": -0.0,
+            "walk": false
+          }
+        },
+        {
+          "tick": 42021,
+          "visible": false,
+          "yaw": -1.5718688563920218,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999992668804,
+            "move_right": 3.829150126263457e-05,
+            "yaw_rate": -0.0002552766751466133,
+            "pitch_rate": -0.0,
+            "walk": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 42675,
+      "death_position": [
+        111.72498745286777,
+        47.84711156539211,
+        -0.0018900000949949212
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:2144",
+          "match_tick": 42673,
+          "round_index": 7,
+          "target": 3,
+          "killer": 9,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:2167",
+          "match_tick": 43785,
+          "round_index": 7,
+          "player": 0,
+          "item_id": "r7:bomb",
+          "site": "B",
+          "position": [
+            31.3125900887889,
+            75.98980576556538,
+            -0.0018900000949948735
+          ],
+          "views": {
+            "0": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:2167",
+              "match_tick": 43785,
+              "round_index": 7,
+              "player": 0,
+              "item_id": "r7:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1755110642:2262",
+          "match_tick": 46077,
+          "round_index": 7,
+          "item_id": "r7:bomb",
+          "fuse_end_tick": 46185,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:2281",
+          "match_tick": 46077,
+          "round_index": 7,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            1,
+            7
+          ],
+          "post_end_tick": 46377,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "8": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 838,
+        "alive_live_calls": 588,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 38,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 530,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 44,
+        "combat_after_not_visible": 2,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 4,
+        "combat_calls": 46,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 38,
+        "combat_moving_calls": 12,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 20,
+        "own_hit_events": 5
+      },
+      "visible_targets": {
+        "8": 14,
+        "7": 32
+      },
+      "weapon_combat": {
+        "ak47": 46
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 547,
+        "world": 41
+      },
+      "ammo_spent": 20,
+      "damage_taken": 77.68925460150538,
+      "position_start": [
+        61.1,
+        12,
+        0
+      ],
+      "position_last": [
+        30.77614339786945,
+        76.04575128341746,
+        -0.0018900000949949034
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 48009,
+      "first_combat_frame_trace": [
+        {
+          "tick": 48009,
+          "visible": true,
+          "yaw": -1.270606174727094,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.1740774244937756,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48012,
+          "visible": true,
+          "yaw": -1.120606174727094,
+          "pitch": -0.01740774244937756,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.2654969662232246,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48015,
+          "visible": true,
+          "yaw": -0.9706061747270939,
+          "pitch": 0.009141954172944899,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.00034051297632170865,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48018,
+          "visible": true,
+          "yaw": -0.8206061747270937,
+          "pitch": 0.009176005470577068,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.0002828706192775296,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48021,
+          "visible": true,
+          "yaw": -0.6706061747270937,
+          "pitch": 0.009204292532504823,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.0002371730918855966,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48024,
+          "visible": true,
+          "yaw": -0.5206061747270936,
+          "pitch": 0.009228009841693384,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.00019465471308903123,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48027,
+          "visible": true,
+          "yaw": -0.3706061747270936,
+          "pitch": 0.009247475313002289,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.7345586681393594,
+            "pitch_rate": 0.00015402152071701883,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 48030,
+          "visible": true,
+          "yaw": -0.2604223745061897,
+          "pitch": 0.009262877465073989,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.030981390541686693,
+            "pitch_rate": 0.00011892256551754993,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 48033,
+          "visible": true,
+          "yaw": -0.2557751659249367,
+          "pitch": 0.009274769721625744,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.06557591846003241,
+            "pitch_rate": -0.10298255505906045,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 48036,
+          "visible": true,
+          "yaw": -0.24593877815593185,
+          "pitch": -0.0010234857842803006,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.020988109902679852,
+            "pitch_rate": 0.026639653890134004,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 48039,
+          "visible": true,
+          "yaw": -0.2427905616705299,
+          "pitch": 0.0016404796047330998,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.017689951690128918,
+            "pitch_rate": -0.14989521181468277,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 48042,
+          "visible": true,
+          "yaw": -0.24013706891701053,
+          "pitch": -0.01334904157673518,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.032896548539559,
+            "pitch_rate": -0.042786372359147166,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 48501,
+      "death_position": [
+        30.709593034009583,
+        76.05224175240127,
+        -0.0018900000949948995
+      ],
+      "own_damage": 123.89794047400034,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:2415",
+          "match_tick": 48049,
+          "round_index": 8,
+          "target": 8,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:2466",
+          "match_tick": 48499,
+          "round_index": 8,
+          "target": 3,
+          "killer": 5,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:2564",
+          "match_tick": 49249,
+          "round_index": 8,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            1,
+            8
+          ],
+          "post_end_tick": 49549,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "9": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 925,
+        "alive_live_calls": 516,
+        "hidden_aim_hold_calls": 45,
+        "blind_calls": 0,
+        "fire_requested": 6,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 457,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 4,
+        "combat_after_not_visible": 10,
+        "visibility_lost_after_combat": 9,
+        "pose_switches_live": 15,
+        "combat_calls": 14,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 6,
+        "combat_moving_calls": 11,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 4,
+        "own_hit_events": 3
+      },
+      "visible_targets": {
+        "5": 1,
+        "7": 4,
+        "9": 9
+      },
+      "weapon_combat": {
+        "ak47": 14
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 445,
+        "world": 71
+      },
+      "ammo_spent": 3,
+      "damage_taken": 22.118253560026773,
+      "position_start": [
+        62.9,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        109.95219014842083,
+        80.37704704857879,
+        2.400110095367432
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 50919,
+      "first_combat_frame_trace": [
+        {
+          "tick": 50919,
+          "visible": true,
+          "yaw": -1.5721111561317955,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.504480733437515,
+            "pitch_rate": 0.40529461794245325,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50922,
+          "visible": false,
+          "yaw": -1.6477832661474225,
+          "pitch": 0.040529461794245325,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0033216659336243737,
+            "pitch_rate": 0.15158632086053295,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50925,
+          "visible": false,
+          "yaw": -1.6482815160374662,
+          "pitch": 0.05568809388029863,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0025534840752013586,
+            "pitch_rate": 0.0021616762641956527,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50928,
+          "visible": false,
+          "yaw": -1.6486645386487466,
+          "pitch": 0.05590426150671819,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00195882697508587,
+            "pitch_rate": 0.0016581727384341882,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50931,
+          "visible": false,
+          "yaw": -1.6489583626950095,
+          "pitch": 0.056070078780561604,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0014665859506142929,
+            "pitch_rate": 0.001241432437540796,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50934,
+          "visible": false,
+          "yaw": -1.6491783505876019,
+          "pitch": 0.05619422202431568,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.000979911536086083,
+            "pitch_rate": 0.0008294485731201451,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50937,
+          "visible": false,
+          "yaw": -1.649325337318015,
+          "pitch": 0.05627716688162769,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0004888905665782299,
+            "pitch_rate": 0.0004138152107831944,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 50940,
+          "visible": false,
+          "yaw": -1.6493986709030015,
+          "pitch": 0.05631854840270601,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9970811473633783,
+            "move_right": -0.07634910328569124,
+            "yaw_rate": 0.5094898270066869,
+            "pitch_rate": -0.56318548402706,
+            "walk": false
+          }
+        },
+        {
+          "tick": 50943,
+          "visible": false,
+          "yaw": -1.5729751968519983,
+          "pitch": 6.938893903907228e-18,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999977018005,
+            "move_right": 6.77967486977454e-05,
+            "yaw_rate": -0.0004519783249978815,
+            "pitch_rate": -6.938893903907228e-17,
+            "walk": false
+          }
+        },
+        {
+          "tick": 50946,
+          "visible": false,
+          "yaw": -1.573042993600748,
+          "pitch": 7.703719777548943e-34,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999968438432,
+            "move_right": 7.945006973732211e-05,
+            "yaw_rate": -0.000529667132139385,
+            "pitch_rate": -7.703719777548943e-33,
+            "walk": false
+          }
+        },
+        {
+          "tick": 50949,
+          "visible": false,
+          "yaw": -1.573122443670569,
+          "pitch": 8.552847072295026e-50,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.999999998527219,
+            "move_right": 5.4273032223496475e-05,
+            "yaw_rate": -0.0003618202150009372,
+            "pitch_rate": -8.552847072295026e-49,
+            "walk": false
+          }
+        },
+        {
+          "tick": 50952,
+          "visible": false,
+          "yaw": -1.5731767167028194,
+          "pitch": 9.495567745759799e-66,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999991426619,
+            "move_right": 4.14086490733613e-05,
+            "yaw_rate": -0.00027605766056796693,
+            "pitch_rate": -9.495567745759799e-65,
+            "walk": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 51459,
+      "death_position": [
+        109.95219014842083,
+        80.37704704857879,
+        2.4001100953674315
+      ],
+      "own_damage": 200.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:2705",
+          "match_tick": 51301,
+          "round_index": 9,
+          "target": 7,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:2720",
+          "match_tick": 51457,
+          "round_index": 9,
+          "target": 3,
+          "killer": 9,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:2721",
+          "match_tick": 51457,
+          "round_index": 9,
+          "target": 9,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:2853",
+          "match_tick": 52684,
+          "round_index": 9,
+          "round_winner": 0,
+          "reason": "elimination",
+          "round_wins": [
+            2,
+            8
+          ],
+          "post_end_tick": 52984,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "10": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1143,
+        "alive_live_calls": 536,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 9,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 516,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 13,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 1,
+        "pose_switches_live": 2,
+        "combat_calls": 14,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 9,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 5,
+        "own_hit_events": 4
+      },
+      "visible_targets": {
+        "5": 14
+      },
+      "weapon_combat": {
+        "ak47": 14
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 536
+      },
+      "ammo_spent": 5,
+      "damage_taken": 90.21245130268467,
+      "position_start": [
+        62.9,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        27.482687294546555,
+        76.00072326496316,
+        -0.0018900000949948561
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 54444,
+      "first_combat_frame_trace": [
+        {
+          "tick": 54444,
+          "visible": true,
+          "yaw": -1.572028592386268,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.11290225429682735,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 54447,
+          "visible": true,
+          "yaw": -1.4220285923862679,
+          "pitch": -0.011290225429682735,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.05025785355305144,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 54450,
+          "visible": true,
+          "yaw": -1.2720285923862678,
+          "pitch": -0.00626444007437759,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.00042272446530127426,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 54453,
+          "visible": true,
+          "yaw": -1.1220285923862676,
+          "pitch": -0.006306712520907718,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.00032591350631441633,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 54456,
+          "visible": true,
+          "yaw": -0.9720285923862675,
+          "pitch": -0.0063393038715391595,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.7517660614429585,
+            "pitch_rate": -0.0002459032278298145,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 54459,
+          "visible": true,
+          "yaw": -0.8592636831698238,
+          "pitch": -0.006363894194322142,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0007453945579438681,
+            "pitch_rate": -0.00016651728224337942,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54462,
+          "visible": true,
+          "yaw": -0.8593754923535153,
+          "pitch": -0.006380545922546479,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.03488381697880942,
+            "pitch_rate": -0.1031813824915163,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54465,
+          "visible": true,
+          "yaw": -0.8541429198066937,
+          "pitch": -0.01669868417169811,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00949161904755691,
+            "pitch_rate": 0.02651610705259797,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54468,
+          "visible": true,
+          "yaw": -0.8555666626638272,
+          "pitch": -0.014047073466438312,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.012509921750029445,
+            "pitch_rate": -0.1500049066676815,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54471,
+          "visible": true,
+          "yaw": -0.8574431509263317,
+          "pitch": -0.029047564133206458,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0026259458347451434,
+            "pitch_rate": -0.04289440739241369,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54474,
+          "visible": true,
+          "yaw": -0.8570492590511201,
+          "pitch": -0.033337004872447826,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011992663219168403,
+            "pitch_rate": -0.16879867190508005,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 54477,
+          "visible": true,
+          "yaw": -0.8552503595682446,
+          "pitch": -0.050216872062955824,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0059295951926359915,
+            "pitch_rate": -0.08628802325082965,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 54954,
+      "death_position": [
+        27.573703960046696,
+        76.00070869283951,
+        -0.0018900000949948522
+      ],
+      "own_damage": 100.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:2990",
+          "match_tick": 54484,
+          "round_index": 10,
+          "target": 5,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:2999",
+          "match_tick": 54952,
+          "round_index": 10,
+          "target": 3,
+          "killer": 7,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:3125",
+          "match_tick": 56773,
+          "round_index": 10,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            2,
+            9
+          ],
+          "post_end_tick": 57073,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "11": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1321,
+        "alive_live_calls": 490,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 17,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 451,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 24,
+        "combat_after_not_visible": 3,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 5,
+        "combat_calls": 27,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 17,
+        "combat_moving_calls": 13,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 10,
+        "own_hit_events": 9
+      },
+      "visible_targets": {
+        "5": 1,
+        "8": 10,
+        "9": 12,
+        "7": 4
+      },
+      "weapon_combat": {
+        "ak47": 27
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 490
+      },
+      "ammo_spent": 9,
+      "damage_taken": 22.041710343850696,
+      "position_start": [
+        62.0,
+        12.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        110.07993253990266,
+        78.17236085756635,
+        2.4001100953674315
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 58452,
+      "first_combat_frame_trace": [
+        {
+          "tick": 58452,
+          "visible": true,
+          "yaw": -1.5721060243907072,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.5043292930993342,
+            "pitch_rate": 0.4053787390770007,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58455,
+          "visible": false,
+          "yaw": -1.6477554183556071,
+          "pitch": 0.04053787390770007,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.00332097361573247,
+            "pitch_rate": 0.15161826860115246,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58458,
+          "visible": false,
+          "yaw": -1.648253564397967,
+          "pitch": 0.055699700767815316,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0025529567204607417,
+            "pitch_rate": 0.0021625861537259705,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58461,
+          "visible": false,
+          "yaw": -1.648636507906036,
+          "pitch": 0.05591595938318792,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0019584252916911757,
+            "pitch_rate": 0.0016588731293652043,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58464,
+          "visible": false,
+          "yaw": -1.64893027169979,
+          "pitch": 0.05608184669612444,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.001466286699590332,
+            "pitch_rate": 0.0012419580732198066,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58467,
+          "visible": false,
+          "yaw": -1.6491502147047288,
+          "pitch": 0.056206042503446414,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0009797121179389023,
+            "pitch_rate": 0.0008298002216954037,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58470,
+          "visible": false,
+          "yaw": -1.6492971715224196,
+          "pitch": 0.05628902252561595,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0004887909351580788,
+            "pitch_rate": 0.00041399053280780085,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 58473,
+          "visible": false,
+          "yaw": -1.6493704901626933,
+          "pitch": 0.05633042157889673,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9970828522682657,
+            "move_right": -0.07632683481305788,
+            "yaw_rate": 0.5093409360586569,
+            "pitch_rate": -0.5633042157889673,
+            "walk": false
+          }
+        },
+        {
+          "tick": 58476,
+          "visible": false,
+          "yaw": -1.572969349753895,
+          "pitch": -6.938893903907228e-18,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999977031578,
+            "move_right": 6.777672481790388e-05,
+            "yaw_rate": -0.00045184483246529794,
+            "pitch_rate": 6.938893903907228e-17,
+            "walk": false
+          }
+        },
+        {
+          "tick": 58479,
+          "visible": false,
+          "yaw": -1.5730371264787648,
+          "pitch": -7.703719777548943e-34,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999968457061,
+            "move_right": 7.942661924651363e-05,
+            "yaw_rate": -0.0005295107955335018,
+            "pitch_rate": 7.703719777548943e-33,
+            "walk": false
+          }
+        },
+        {
+          "tick": 58482,
+          "visible": false,
+          "yaw": -1.573116553098095,
+          "pitch": -8.552847072295026e-50,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.999999998528088,
+            "move_right": 5.42570195216889e-05,
+            "yaw_rate": -0.00036171346365539614,
+            "pitch_rate": 8.552847072295026e-49,
+            "walk": false
+          }
+        },
+        {
+          "tick": 58485,
+          "visible": false,
+          "yaw": -1.5731708101176436,
+          "pitch": -9.495567745759799e-66,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.9999999991431677,
+            "move_right": 4.1396432017116235e-05,
+            "yaw_rate": -0.00027597621352626334,
+            "pitch_rate": 9.495567745759799e-65,
+            "walk": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 58905,
+      "death_position": [
+        110.07993253990266,
+        78.17236085756635,
+        2.400110095367432
+      ],
+      "own_damage": 227.05458077092928,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:3249",
+          "match_tick": 58762,
+          "round_index": 11,
+          "target": 8,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:3265",
+          "match_tick": 58891,
+          "round_index": 11,
+          "target": 9,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1755110642:3279",
+          "match_tick": 58903,
+          "round_index": 11,
+          "target": 3,
+          "killer": 7,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:3304",
+          "match_tick": 59904,
+          "round_index": 11,
+          "player": 2,
+          "item_id": "r11:bomb",
+          "site": "B",
+          "position": [
+            33.94365129380747,
+            75.92443190453301,
+            -0.0018900000949949138
+          ],
+          "views": {
+            "0": true,
+            "2": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:3304",
+              "match_tick": 59904,
+              "round_index": 11,
+              "player": 2,
+              "item_id": "r11:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1755110642:3349",
+          "match_tick": 61398,
+          "round_index": 11,
+          "item_id": "r11:bomb",
+          "fuse_end_tick": 62304,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:3368",
+          "match_tick": 61398,
+          "round_index": 11,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            2,
+            10
+          ],
+          "post_end_tick": 61698,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "12": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1726,
+        "alive_live_calls": 479,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 7,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 448,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 30,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "combat_calls": 31,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 7,
+        "combat_moving_calls": 7,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 7,
+        "own_hit_events": 3
+      },
+      "visible_targets": {
+        "7": 31,
+        "9": 30
+      },
+      "weapon_combat": {
+        "usp": 31
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 479
+      },
+      "ammo_spent": 6,
+      "damage_taken": 90.85744196131265,
+      "position_start": [
+        58.2,
+        118,
+        0
+      ],
+      "position_last": [
+        32.66140463531791,
+        102.78281596234366,
+        -0.001890000094994851
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 63402,
+      "first_combat_frame_trace": [
+        {
+          "tick": 63402,
+          "visible": true,
+          "yaw": 2.2943091524279597,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.061429336191426896,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63405,
+          "visible": true,
+          "yaw": 2.1443091524279603,
+          "pitch": 0.00614293361914269,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.14224324704007077,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63408,
+          "visible": true,
+          "yaw": 1.9943091524279606,
+          "pitch": 0.020367258323149767,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.00020565550074482658,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63411,
+          "visible": true,
+          "yaw": 1.8443091524279605,
+          "pitch": 0.020387823873224253,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 6.468202503741999e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63414,
+          "visible": true,
+          "yaw": 1.6943091524279603,
+          "pitch": 0.020394292075727995,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63417,
+          "visible": true,
+          "yaw": 1.5443091524279602,
+          "pitch": 0.020394292075727995,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63420,
+          "visible": true,
+          "yaw": 1.39430915242796,
+          "pitch": 0.020394292075727995,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -0.19026420783983275,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 63423,
+          "visible": true,
+          "yaw": 1.365769521251985,
+          "pitch": 0.020394292075727995,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": -0.12106479176234232,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63426,
+          "visible": true,
+          "yaw": 1.365769521251985,
+          "pitch": 0.008287812899493766,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": 0.032816080262396095,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63429,
+          "visible": true,
+          "yaw": 1.365769521251985,
+          "pitch": 0.011569420925733378,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": 0.01909939234712832,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 63432,
+          "visible": true,
+          "yaw": 1.365769521251985,
+          "pitch": 0.013479360160446208,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": 0.015251174557630726,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 63435,
+          "visible": true,
+          "yaw": 1.365769521251985,
+          "pitch": 0.01500447761620928,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.0,
+            "pitch_rate": -0.16096138101024093,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "death_tick": 63495,
+      "death_position": [
+        32.66140463531791,
+        102.78281596234366,
+        -0.001890000094994847
+      ],
+      "own_damage": 43.44992264844525,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:3518",
+          "match_tick": 63493,
+          "round_index": 12,
+          "target": 3,
+          "killer": 7,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:3682",
+          "match_tick": 64836,
+          "round_index": 12,
+          "player": 9,
+          "item_id": "r12:bomb",
+          "site": "B",
+          "position": [
+            30.604592439576297,
+            75.99303042047767,
+            -0.0018900000949949281
+          ],
+          "views": {
+            "5": true,
+            "6": true,
+            "9": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:3682",
+              "match_tick": 64836,
+              "round_index": 12,
+              "player": 9,
+              "item_id": "r12:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1755110642:3744",
+          "match_tick": 67236,
+          "round_index": 12,
+          "item_id": "r12:bomb",
+          "fuse_end_tick": 67236,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:3757",
+          "match_tick": 67236,
+          "round_index": 12,
+          "round_winner": 1,
+          "reason": "bomb_explode",
+          "round_wins": [
+            2,
+            11
+          ],
+          "post_end_tick": 67536,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "13": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 880,
+        "alive_live_calls": 800,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 800,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 800
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        58.2,
+        118,
+        0
+      ],
+      "position_last": [
+        109.78120270608707,
+        92.44966350336738,
+        2.400110095367432
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 70296,
+      "death_position": [
+        109.78288676727091,
+        92.41541488240345,
+        2.400110095367432
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:3919",
+          "match_tick": 70294,
+          "round_index": 13,
+          "target": 3,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1755110642:3973",
+          "match_tick": 70534,
+          "round_index": 13,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            2,
+            12
+          ],
+          "post_end_tick": 70834,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "14": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1356,
+        "alive_live_calls": 534,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 534,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 534
+      },
+      "ammo_spent": 0,
+      "damage_taken": 99.35816995208653,
+      "position_start": [
+        61.8,
+        118.0,
+        -0.0018900000949948856
+      ],
+      "position_last": [
+        33.112563335706646,
+        104.00315806962435,
+        -0.0018900000949949086
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 72798,
+      "death_position": [
+        33.08041659021567,
+        104.00306681939436,
+        -0.0018900000949949047
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1755110642:4137",
+          "match_tick": 72796,
+          "round_index": 14,
+          "target": 3,
+          "killer": 9,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1755110642:4194",
+          "match_tick": 73707,
+          "round_index": 14,
+          "player": 9,
+          "item_id": "r14:bomb",
+          "site": "B",
+          "position": [
+            30.18664365512754,
+            73.82120045007979,
+            -0.0018900000949948587
+          ],
+          "views": {
+            "5": true,
+            "8": true,
+            "9": {
+              "type": "plant_complete_detail",
+              "event_id": "1755110642:4194",
+              "match_tick": 73707,
+              "round_index": 14,
+              "player": 9,
+              "item_id": "r14:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1755110642:4356",
+          "match_tick": 75262,
+          "round_index": 14,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            2,
+            13
+          ],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    }
+  },
+  "note": "Real logged match only. Full action reproduction uses legal own observations; public replay is read afterwards. No candidate or counterfactual result.",
+  "public_replay": {
+    "event_counts": {
+      "item_create": 341,
+      "cash": 840,
+      "economy_round_start": 15,
+      "buy": 257,
+      "round_start": 15,
+      "fire": 1217,
+      "hit": 509,
+      "kill": 100,
+      "drop": 341,
+      "kill_reward": 100,
+      "reload_start": 24,
+      "reload_commit": 21,
+      "reload_finish": 20,
+      "pickup": 12,
+      "round_economy": 15,
+      "round_end": 15,
+      "item_destroy": 306,
+      "draw": 167,
+      "plant_start": 8,
+      "plant_complete": 7,
+      "plant_complete_detail": 7,
+      "defuse_start": 5,
+      "defuse_complete": 5,
+      "defuse_complete_detail": 5,
+      "plant_cancel": 1,
+      "side_swap": 1,
+      "bomb_explode": 1,
+      "bomb_explode_detail": 1,
+      "match_end": 1
+    },
+    "event_samples": {
+      "fire": {
+        "type": "fire",
+        "event_id": "1755110642:54",
+        "match_tick": 1378,
+        "round_index": 0,
+        "player": 8,
+        "weapon": "usp",
+        "pellet": 0,
+        "materials": [],
+        "from": [
+          109.81026738068219,
+          95.65512791384593,
+          2.7501099523162846
+        ],
+        "to": [
+          109.60311723258638,
+          4.0,
+          1.7712230123843624
+        ],
+        "views": {
+          "4": {
+            "type": "fire",
+            "event_id": "1755110642:54",
+            "match_tick": 1378,
+            "round_index": 0,
+            "pellet": 0,
+            "to": [
+              109.60311723258638,
+              4.0,
+              1.7712230123843624
+            ]
+          },
+          "6": {
+            "type": "fire",
+            "event_id": "1755110642:54",
+            "match_tick": 1378,
+            "round_index": 0,
+            "player": 8,
+            "weapon": "usp",
+            "pellet": 0,
+            "from": [
+              109.81026738068219,
+              95.65512791384593,
+              2.7501099523162846
+            ]
+          },
+          "8": true
+        }
+      },
+      "hit": {
+        "type": "hit",
+        "event_id": "1755110642:57",
+        "match_tick": 1429,
+        "round_index": 0,
+        "player": 2,
+        "target": 8,
+        "part": "head",
+        "kind": "bullet",
+        "amount": 45.087930704238616,
+        "hp_damage": 45.087930704238616,
+        "armor_absorbed": 0.0,
+        "views": {
+          "2": {
+            "type": "hit",
+            "event_id": "1755110642:57",
+            "match_tick": 1429,
+            "round_index": 0,
+            "player": 2,
+            "target": 8,
+            "part": "head",
+            "kind": "bullet"
+          },
+          "8": true,
+          "9": {
+            "type": "hit",
+            "event_id": "1755110642:57",
+            "match_tick": 1429,
+            "round_index": 0,
+            "target": 8,
+            "part": "head",
+            "kind": "bullet"
+          }
+        }
+      },
+      "kill": {
+        "type": "kill",
+        "event_id": "1755110642:80",
+        "match_tick": 1729,
+        "round_index": 0,
+        "target": 2,
+        "killer": 6,
+        "assists": [],
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "round_end": {
+        "type": "round_end",
+        "event_id": "1755110642:308",
+        "match_tick": 7260,
+        "round_index": 0,
+        "round_winner": 1,
+        "reason": "timeout",
+        "round_wins": [
+          0,
+          1
+        ],
+        "post_end_tick": 7560,
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "plant_complete_detail": {
+        "type": "plant_complete_detail",
+        "event_id": "1755110642:480",
+        "match_tick": 11442,
+        "round_index": 1,
+        "player": 0,
+        "item_id": "r1:bomb",
+        "site": "B",
+        "position": [
+          31.305054773656995,
+          75.9897385714661,
+          -0.001890000094994958
+        ],
+        "views": {
+          "0": {
+            "type": "plant_complete_detail",
+            "event_id": "1755110642:480",
+            "match_tick": 11442,
+            "round_index": 1,
+            "player": 0,
+            "item_id": "r1:bomb",
+            "site": "B"
+          }
+        }
+      },
+      "defuse_complete": {
+        "type": "defuse_complete",
+        "event_id": "1755110642:564",
+        "match_tick": 13134,
+        "round_index": 1,
+        "item_id": "r1:bomb",
+        "fuse_end_tick": 13842,
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "match_end": {
+        "type": "match_end",
+        "event_id": "1755110642:4357",
+        "match_tick": 75262,
+        "round_index": 14,
+        "match_winner": 1,
+        "reason": "round_wins",
+        "round_wins": [
+          2,
+          13
+        ],
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      }
+    },
+    "kills": 8,
+    "deaths": 15,
+    "hp_damage": 925.9910381748775,
+    "hit_targets": {
+      "8": 14,
+      "5": 5,
+      "7": 7,
+      "9": 5
+    },
+    "events_sha256": "2b377dc7d276e20a7107889ef0aa6117fda858d26acb256b82416ba9e5693e82"
+  }
+}

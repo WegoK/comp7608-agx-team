@@ -16,6 +16,7 @@ from evaluate_fps_retake import equal
 POLICIES = {
     '06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f': 'e27acc998e08d5dc3f59bac6e0fa5e4a99329058',
     '67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b': '65652c51f1ef60fb1f365b45bfff3eaa947c7f40',
+    '179919156da8b2506834a5b176e1ca6258a439a8b9d01f5c72dff0a09f0e58f2': 'c979ee08a85eb8da54f0c49f6f834a77af3f3dd5',
 }
 
 

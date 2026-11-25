@@ -1,0 +1,1136 @@
+{
+  "schema": "fps-recorded-survival-audit-v1",
+  "match_id": "4f66f223-50b8-4d95-b8f1-3e32e0149479",
+  "own_seat_zero_based": 3,
+  "integrity": {
+    "rows": 25088,
+    "raw_bytes": 69534729,
+    "sha256": "ba0e24826c8efabf63f321109939467bfd5c53793e406c456dfbe76a392b1c88"
+  },
+  "public_helmet_price": 350.0,
+  "helmet_purchase_events_all_players": {
+    "1000": 19,
+    "350": 22
+  },
+  "all_buy_kinds": {
+    "armor": 85,
+    "defusekit": 43,
+    "m4a1": 32,
+    "m4a4": 4,
+    "helmet": 41,
+    "ak47": 49,
+    "tec9": 1,
+    "mp9": 2
+  },
+  "unhelmeted_first_live_rounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "body_armor_plus_affordable_helmet_first_live_rounds": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14
+  ],
+  "received_hit_parts": {
+    "upper": 48,
+    "head": 7,
+    "lower": 2
+  },
+  "fatal_tick_with_head_hit_rounds": [
+    1,
+    4,
+    6,
+    10,
+    12,
+    14
+  ],
+  "died_without_any_unblinded_visible_combat_rounds": [
+    3,
+    7,
+    14,
+    15
+  ],
+  "died_without_fire_requested_rounds": [
+    3,
+    7,
+    8,
+    14,
+    15
+  ],
+  "attack_defused_rounds": [
+    {
+      "round_1based": 2,
+      "plant_tick": 11442,
+      "own_death_tick": 9022,
+      "own_died_before_plant": true
+    },
+    {
+      "round_1based": 5,
+      "plant_tick": 29520,
+      "own_death_tick": 26353,
+      "own_died_before_plant": true
+    },
+    {
+      "round_1based": 6,
+      "plant_tick": 35928,
+      "own_death_tick": 32980,
+      "own_died_before_plant": true
+    },
+    {
+      "round_1based": 8,
+      "plant_tick": 43785,
+      "own_death_tick": 42673,
+      "own_died_before_plant": true
+    },
+    {
+      "round_1based": 12,
+      "plant_tick": 59904,
+      "own_death_tick": 58903,
+      "own_died_before_plant": true
+    }
+  ],
+  "rounds": {
+    "0": {
+      "side": "attack",
+      "first_live": {
+        "tick": 360,
+        "cash": 150,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          null,
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 1881,
+        "hp": 42.15316079568158,
+        "visible_seats": [
+          8
+        ],
+        "alive_by_team": [
+          4,
+          5
+        ]
+      },
+      "first_contact": {
+        "tick": 1647,
+        "target": 8,
+        "distance_m": 91.495704505011
+      },
+      "counts": {
+        "visible_combat": 34,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 8
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 1,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 1882,
+          "killer": 8
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 1882,
+          "player": 8,
+          "amount": 78.53727603944563,
+          "hp_damage": 42.15316079568158,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 7260,
+          "round_winner": 1,
+          "reason": "timeout"
+        }
+      ]
+    },
+    "1": {
+      "side": "attack",
+      "first_live": {
+        "tick": 7920,
+        "cash": 1400,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          null,
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 9021,
+        "hp": 4.835834018703821,
+        "visible_seats": [
+          5,
+          7
+        ],
+        "alive_by_team": [
+          5,
+          5
+        ]
+      },
+      "first_contact": {
+        "tick": 8919,
+        "target": 5,
+        "distance_m": 71.79965072428334
+      },
+      "counts": {
+        "visible_combat": 29,
+        "multiple_visible": 5,
+        "ads_requested": 0,
+        "fire_requested": 5
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 7561,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 9022,
+          "killer": 5
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 11442,
+          "site": "B",
+          "player": 0
+        },
+        {
+          "type": "defuse_complete_detail",
+          "match_tick": 13134,
+          "player": 5
+        },
+        {
+          "type": "round_end",
+          "match_tick": 13134,
+          "round_winner": 1,
+          "reason": "defuse"
+        }
+      ]
+    },
+    "2": {
+      "side": "attack",
+      "first_live": {
+        "tick": 13794,
+        "cash": 1050,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 15360,
+        "hp": 14.289957314365559,
+        "visible_seats": [],
+        "alive_by_team": [
+          4,
+          5
+        ]
+      },
+      "first_contact": null,
+      "counts": {},
+      "own_buy_events": [
+        {
+          "match_tick": 13435,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 13438,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 15361,
+          "killer": 7
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 16492,
+          "round_winner": 1,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "3": {
+      "side": "attack",
+      "first_live": {
+        "tick": 17154,
+        "cash": 600,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 18579,
+        "hp": 100.0,
+        "visible_seats": [
+          8
+        ],
+        "alive_by_team": [
+          4,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 18039,
+        "target": 5,
+        "distance_m": 55.78945288682962
+      },
+      "counts": {
+        "visible_combat": 15,
+        "multiple_visible": 1,
+        "ads_requested": 0,
+        "fire_requested": 10
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 16795,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 16798,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 18580,
+          "killer": 8
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 18580,
+          "player": 8,
+          "amount": 121.38268392855629,
+          "hp_damage": 100.0,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 24052,
+          "round_winner": 1,
+          "reason": "timeout"
+        }
+      ]
+    },
+    "4": {
+      "side": "attack",
+      "first_live": {
+        "tick": 24714,
+        "cash": 950,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 26352,
+        "hp": 14.26280953811925,
+        "visible_seats": [],
+        "alive_by_team": [
+          4,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 25830,
+        "target": 8,
+        "distance_m": 36.047010711040095
+      },
+      "counts": {
+        "visible_combat": 12,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 7
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 24355,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 24358,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 26353,
+          "killer": 7
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 29520,
+          "site": "A",
+          "player": 1
+        },
+        {
+          "type": "defuse_complete_detail",
+          "match_tick": 30933,
+          "player": 5
+        },
+        {
+          "type": "round_end",
+          "match_tick": 30933,
+          "round_winner": 1,
+          "reason": "defuse"
+        }
+      ]
+    },
+    "5": {
+      "side": "attack",
+      "first_live": {
+        "tick": 31593,
+        "cash": 1900,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 32979,
+        "hp": 100.0,
+        "visible_seats": [
+          8,
+          9
+        ],
+        "alive_by_team": [
+          4,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 32406,
+        "target": 5,
+        "distance_m": 60.700459202568425
+      },
+      "counts": {
+        "visible_combat": 7,
+        "multiple_visible": 4,
+        "ads_requested": 0,
+        "fire_requested": 3
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 31234,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 31237,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 32980,
+          "killer": 9
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 32980,
+          "player": 9,
+          "amount": 121.56972096003,
+          "hp_damage": 100.0,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 35928,
+          "site": "B",
+          "player": 2
+        },
+        {
+          "type": "defuse_complete_detail",
+          "match_tick": 36771,
+          "player": 7
+        },
+        {
+          "type": "round_end",
+          "match_tick": 36771,
+          "round_winner": 1,
+          "reason": "defuse"
+        }
+      ]
+    },
+    "6": {
+      "side": "attack",
+      "first_live": {
+        "tick": 37431,
+        "cash": 2550,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 39021,
+        "hp": 16.278620031881484,
+        "visible_seats": [],
+        "alive_by_team": [
+          5,
+          5
+        ]
+      },
+      "first_contact": null,
+      "counts": {},
+      "own_buy_events": [
+        {
+          "match_tick": 37072,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 37075,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 39022,
+          "killer": 5
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 40312,
+          "round_winner": 0,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "7": {
+      "side": "attack",
+      "first_live": {
+        "tick": 40974,
+        "cash": 2450,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 42672,
+        "hp": 14.570461311091563,
+        "visible_seats": [],
+        "alive_by_team": [
+          3,
+          5
+        ]
+      },
+      "first_contact": {
+        "tick": 41988,
+        "target": 5,
+        "distance_m": 47.32813688913061
+      },
+      "counts": {
+        "visible_combat": 1,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 0
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 40615,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 40618,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 42673,
+          "killer": 9
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 43785,
+          "site": "B",
+          "player": 0
+        },
+        {
+          "type": "defuse_complete_detail",
+          "match_tick": 46077,
+          "player": 9
+        },
+        {
+          "type": "round_end",
+          "match_tick": 46077,
+          "round_winner": 1,
+          "reason": "defuse"
+        }
+      ]
+    },
+    "8": {
+      "side": "attack",
+      "first_live": {
+        "tick": 46737,
+        "cash": 2600,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 48498,
+        "hp": 22.310745398494625,
+        "visible_seats": [],
+        "alive_by_team": [
+          3,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 48009,
+        "target": 8,
+        "distance_m": 25.273556065944035
+      },
+      "counts": {
+        "visible_combat": 46,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 38
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 46378,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 46381,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 48499,
+          "killer": 5
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 49249,
+          "round_winner": 1,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "9": {
+      "side": "attack",
+      "first_live": {
+        "tick": 49911,
+        "cash": 2950,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 51456,
+        "hp": 77.88174643997323,
+        "visible_seats": [
+          9
+        ],
+        "alive_by_team": [
+          4,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 50919,
+        "target": 5,
+        "distance_m": 44.966454468673305
+      },
+      "counts": {
+        "visible_combat": 14,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 6
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 49552,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 49555,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 51457,
+          "killer": 9
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 51457,
+          "player": 9,
+          "amount": 121.22741249552745,
+          "hp_damage": 77.88174643997323,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 52684,
+          "round_winner": 0,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "10": {
+      "side": "attack",
+      "first_live": {
+        "tick": 53346,
+        "cash": 3450,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 54951,
+        "hp": 9.78754869731533,
+        "visible_seats": [],
+        "alive_by_team": [
+          5,
+          4
+        ]
+      },
+      "first_contact": {
+        "tick": 54444,
+        "target": 5,
+        "distance_m": 38.970108001842775
+      },
+      "counts": {
+        "visible_combat": 14,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 9
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 52987,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 52990,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 54952,
+          "killer": 7
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 56773,
+          "round_winner": 1,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "11": {
+      "side": "attack",
+      "first_live": {
+        "tick": 57435,
+        "cash": 3300,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": false,
+        "weapons": [
+          "ak47",
+          "pistol",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 58902,
+        "hp": 77.9582896561493,
+        "visible_seats": [
+          7
+        ],
+        "alive_by_team": [
+          4,
+          3
+        ]
+      },
+      "first_contact": {
+        "tick": 58452,
+        "target": 5,
+        "distance_m": 44.95712814558457
+      },
+      "counts": {
+        "visible_combat": 27,
+        "multiple_visible": 0,
+        "ads_requested": 0,
+        "fire_requested": 17
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 57076,
+          "kind": "ak47",
+          "price": 2700
+        },
+        {
+          "match_tick": 57079,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 58903,
+          "killer": 7
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 58903,
+          "player": 7,
+          "amount": 126.02615619983904,
+          "hp_damage": 77.9582896561493,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 59904,
+          "site": "B",
+          "player": 2
+        },
+        {
+          "type": "defuse_complete_detail",
+          "match_tick": 61398,
+          "player": 5
+        },
+        {
+          "type": "round_end",
+          "match_tick": 61398,
+          "round_winner": 1,
+          "reason": "defuse"
+        }
+      ]
+    },
+    "12": {
+      "side": "defend",
+      "first_live": {
+        "tick": 62058,
+        "cash": 400,
+        "armor": 0.0,
+        "helmet": false,
+        "kit": true,
+        "weapons": [
+          null,
+          "usp",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 63492,
+        "hp": 9.142558038687362,
+        "visible_seats": [
+          7,
+          9
+        ],
+        "alive_by_team": [
+          4,
+          5
+        ]
+      },
+      "first_contact": {
+        "tick": 63402,
+        "target": 7,
+        "distance_m": 47.223428567646785
+      },
+      "counts": {
+        "visible_combat": 31,
+        "multiple_visible": 30,
+        "ads_requested": 0,
+        "fire_requested": 7
+      },
+      "own_buy_events": [
+        {
+          "match_tick": 61699,
+          "kind": "defusekit",
+          "price": 400
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 63493,
+          "killer": 7
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 63478,
+          "player": 9,
+          "amount": 60.24816283459898,
+          "hp_damage": 60.24816283459898,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 64836,
+          "site": "B",
+          "player": 9
+        },
+        {
+          "type": "round_end",
+          "match_tick": 67236,
+          "round_winner": 1,
+          "reason": "bomb_explode"
+        }
+      ]
+    },
+    "13": {
+      "side": "defend",
+      "first_live": {
+        "tick": 67896,
+        "cash": 1300,
+        "armor": 100.0,
+        "helmet": false,
+        "kit": true,
+        "weapons": [
+          null,
+          "usp",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 70293,
+        "hp": 100.0,
+        "visible_seats": [],
+        "alive_by_team": [
+          2,
+          4
+        ]
+      },
+      "first_contact": null,
+      "counts": {},
+      "own_buy_events": [
+        {
+          "match_tick": 67537,
+          "kind": "defusekit",
+          "price": 400
+        },
+        {
+          "match_tick": 67540,
+          "kind": "armor",
+          "price": 650
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 70294,
+          "killer": 6
+        }
+      ],
+      "received_head_hits": [
+        {
+          "match_tick": 70294,
+          "player": 6,
+          "amount": 139.932697082452,
+          "hp_damage": 100.0,
+          "armor_absorbed": 0.0
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "match_tick": 70534,
+          "round_winner": 1,
+          "reason": "elimination"
+        }
+      ]
+    },
+    "14": {
+      "side": "defend",
+      "first_live": {
+        "tick": 71196,
+        "cash": 500,
+        "armor": 0.0,
+        "helmet": false,
+        "kit": true,
+        "weapons": [
+          "m4a1",
+          "usp",
+          "knife"
+        ]
+      },
+      "last_alive": {
+        "tick": 72795,
+        "hp": 0.6418300479134729,
+        "visible_seats": [],
+        "alive_by_team": [
+          5,
+          4
+        ]
+      },
+      "first_contact": null,
+      "counts": {},
+      "own_buy_events": [
+        {
+          "match_tick": 70837,
+          "kind": "defusekit",
+          "price": 400
+        },
+        {
+          "match_tick": 70840,
+          "kind": "m4a1",
+          "price": 2900
+        }
+      ],
+      "death_events": [
+        {
+          "match_tick": 72796,
+          "killer": 9
+        }
+      ],
+      "received_head_hits": [],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "match_tick": 73707,
+          "site": "B",
+          "player": 9
+        },
+        {
+          "type": "round_end",
+          "match_tick": 75262,
+          "round_winner": 1,
+          "reason": "elimination"
+        }
+      ]
+    }
+  },
+  "note": "Equipment and deaths are actual recorded facts. Affordability screens only full body armour and the observed 350 helmet upgrade tier; the stream also has 1000 bundle buys. Purchase eligibility and mitigation need candidate checks. No saved deaths or score improvement inferred."
+}

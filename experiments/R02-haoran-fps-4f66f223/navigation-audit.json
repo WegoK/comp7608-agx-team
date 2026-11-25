@@ -1,0 +1,569 @@
+{
+  "schema": "fps-actual-navigation-audit-v2",
+  "match_id": "4f66f223-50b8-4d95-b8f1-3e32e0149479",
+  "source_commit": "c979ee08a85eb8da54f0c49f6f834a77af3f3dd5",
+  "control_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+  "rows": 25088,
+  "reproduced_requested_actions": 25088,
+  "rounds": {
+    "0": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 26,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 360,
+        "end_tick": 1881,
+        "x_range": [
+          7.962783806590021,
+          61.1
+        ],
+        "y_range": [
+          12,
+          76.2212291667647
+        ],
+        "horizontal_travel_m": 140.26980925437886
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "1": {
+      "side": "attack",
+      "detour_calls": 3,
+      "blocked_target_counts": {
+        "62.000,12.000,0.000": 2,
+        "75.000,12.000,0.000": 1
+      },
+      "first_detours": [
+        {
+          "tick": 8010,
+          "pos": [
+            58.64003590955942,
+            14.052991497678304,
+            -0.0018900000949948752
+          ],
+          "goal": [
+            110.0,
+            88.0,
+            2.4
+          ],
+          "target": [
+            62,
+            12,
+            0
+          ],
+          "chosen_anchor": null,
+          "route_points": 0,
+          "long_avoid": false
+        },
+        {
+          "tick": 8148,
+          "pos": [
+            59.445448845014546,
+            11.298089234035388,
+            -0.0018900000949949433
+          ],
+          "goal": [
+            110.0,
+            88.0,
+            2.4
+          ],
+          "target": [
+            62,
+            12,
+            0
+          ],
+          "chosen_anchor": null,
+          "route_points": 0,
+          "long_avoid": false
+        },
+        {
+          "tick": 8289,
+          "pos": [
+            59.98396343459036,
+            13.459804075704032,
+            -0.0018900000949948726
+          ],
+          "goal": [
+            110.0,
+            88.0,
+            2.4
+          ],
+          "target": [
+            75,
+            12,
+            0
+          ],
+          "chosen_anchor": null,
+          "route_points": 0,
+          "long_avoid": false
+        }
+      ],
+      "jump_requests": 0,
+      "visible_no_fire": 24,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 1,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 7920,
+        "end_tick": 9021,
+        "x_range": [
+          58.46544203961883,
+          110.07973805408818
+        ],
+        "y_range": [
+          10.904685936047859,
+          25.76381374322296
+        ],
+        "horizontal_travel_m": 81.08383216509434
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "2": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 0,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 13794,
+        "end_tick": 15360,
+        "x_range": [
+          7.993546433427139,
+          62.9
+        ],
+        "y_range": [
+          12,
+          75.99262179613505
+        ],
+        "horizontal_travel_m": 139.48372056252302
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "3": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 5,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 17154,
+        "end_tick": 18579,
+        "x_range": [
+          61.1,
+          113.05150412308886
+        ],
+        "y_range": [
+          8.960476615893509,
+          78.23282684351194
+        ],
+        "horizontal_travel_m": 121.10986002138846
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "4": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 5,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 24714,
+        "end_tick": 26352,
+        "x_range": [
+          7.880358032736688,
+          62.9
+        ],
+        "y_range": [
+          12.0,
+          76.00201525214415
+        ],
+        "horizontal_travel_m": 140.93406334168992
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "5": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 4,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 31593,
+        "end_tick": 32979,
+        "x_range": [
+          62.9,
+          113.05067900054352
+        ],
+        "y_range": [
+          8.96527941602582,
+          78.23266153844139
+        ],
+        "horizontal_travel_m": 119.01521538782117
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "6": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 0,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 37431,
+        "end_tick": 39021,
+        "x_range": [
+          7.993546433427139,
+          62.9
+        ],
+        "y_range": [
+          12,
+          75.99435262738733
+        ],
+        "horizontal_travel_m": 140.02982056252299
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "7": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 1,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 40974,
+        "end_tick": 42672,
+        "x_range": [
+          62.0,
+          113.42489937410666
+        ],
+        "y_range": [
+          9.955064715769918,
+          77.40134378257792
+        ],
+        "horizontal_travel_m": 146.3667181065125
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "8": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 8,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 46737,
+        "end_tick": 48498,
+        "x_range": [
+          7.99143007549479,
+          61.1
+        ],
+        "y_range": [
+          12,
+          76.04575128341746
+        ],
+        "horizontal_travel_m": 140.18244567017263
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "9": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 8,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 49911,
+        "end_tick": 51456,
+        "x_range": [
+          62.9,
+          113.06330356828212
+        ],
+        "y_range": [
+          8.96527941602582,
+          80.37704704857879
+        ],
+        "horizontal_travel_m": 121.0382924076247
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "10": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 5,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 53346,
+        "end_tick": 54951,
+        "x_range": [
+          7.890241830555533,
+          62.9
+        ],
+        "y_range": [
+          12.0,
+          76.00235573980893
+        ],
+        "horizontal_travel_m": 137.38389688004142
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "11": {
+      "side": "attack",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 0,
+      "visible_no_fire": 10,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 57435,
+        "end_tick": 58902,
+        "x_range": [
+          62.0,
+          113.06315218748635
+        ],
+        "y_range": [
+          8.962688969800759,
+          78.25091080278031
+        ],
+        "horizontal_travel_m": 120.01612497096484
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "12": {
+      "side": "defend",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 1,
+      "visible_no_fire": 24,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [
+        {
+          "tick": 63237,
+          "pos": [
+            36.661893092184975,
+            104.21087611666843,
+            -0.001890000094994922
+          ],
+          "target": [
+            32,
+            104,
+            0
+          ],
+          "grounded": true,
+          "jump_tried": false,
+          "progress_window_tick": 58851,
+          "escape": null
+        }
+      ],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 62058,
+        "end_tick": 63492,
+        "x_range": [
+          32.66140463531791,
+          59.08017297272328
+        ],
+        "y_range": [
+          102.38359236341165,
+          118.25227511255905
+        ],
+        "horizontal_travel_m": 42.13808397593966
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "13": {
+      "side": "defend",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 2,
+      "visible_no_fire": 0,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [
+        {
+          "tick": 67977,
+          "pos": [
+            58.400252793673666,
+            118.01881082647188,
+            -0.0018900000949948626
+          ],
+          "target": [
+            60,
+            118,
+            0
+          ],
+          "grounded": true,
+          "jump_tried": false,
+          "progress_window_tick": 58851,
+          "escape": null
+        },
+        {
+          "tick": 68115,
+          "pos": [
+            59.68079185292981,
+            118.62298166820811,
+            -0.0018900000949949175
+          ],
+          "target": [
+            72,
+            118,
+            0
+          ],
+          "grounded": true,
+          "jump_tried": false,
+          "progress_window_tick": 58851,
+          "escape": null
+        }
+      ],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 67896,
+        "end_tick": 70293,
+        "x_range": [
+          58.2,
+          109.78120270608707
+        ],
+        "y_range": [
+          92.44966350336738,
+          119.79991690801208
+        ],
+        "horizontal_travel_m": 76.1676428389959
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    },
+    "14": {
+      "side": "defend",
+      "detour_calls": 0,
+      "blocked_target_counts": {},
+      "first_detours": [],
+      "jump_requests": 1,
+      "visible_no_fire": 0,
+      "longest_stationary_xy_calls": 0,
+      "known_bomb_seen": false,
+      "scan_site_changes": [],
+      "jump_samples": [
+        {
+          "tick": 72213,
+          "pos": [
+            48.08356927652274,
+            105.17279801106399,
+            -0.001890000094994946
+          ],
+          "target": [
+            48,
+            104,
+            0
+          ],
+          "grounded": true,
+          "jump_tried": false,
+          "progress_window_tick": 58851,
+          "escape": null
+        }
+      ],
+      "detours_to_still_blacklisted_target": 0,
+      "changed_vs_v3": 0,
+      "last_alive_60s_region": {
+        "start_tick": 71196,
+        "end_tick": 72795,
+        "x_range": [
+          33.112563335706646,
+          61.8
+        ],
+        "y_range": [
+          104.00315806962435,
+          118.2465390485118
+        ],
+        "horizontal_travel_m": 42.33039644701922
+      },
+      "stationary_xy_seconds_after_initial_2s": 0.0
+    }
+  },
+  "note": "Actual recorded motion only. Stationary means commanded navigation with all XY samples in a 2s window within 0.2m; excludes first 2s. Tail regions are descriptive, not proof every command was blocked. Control comparison keeps actual historical positions and visibility."
+}
