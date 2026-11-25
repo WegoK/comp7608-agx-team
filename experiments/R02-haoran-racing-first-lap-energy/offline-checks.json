@@ -1,0 +1,233 @@
+{
+  "schema": "racing-first-lap-energy-candidate-v1",
+  "baseline_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+  "candidate_agent_lf_sha256": "432791e93c3721b32abac2f62f0b0c6b6c4ee5426c258b4bc0605cee5754405c",
+  "unchanged_other_methods_and_bundle_files": true,
+  "guards": {
+    "cases": [
+      "first_lap_after_both_protected_boundaries",
+      "time_before600_preserved",
+      "distance_before300_preserved",
+      "speed_below20_preserved",
+      "wet_boundary_preserved",
+      "not_racing_preserved",
+      "qualifying_preserved",
+      "pit_preserved",
+      "defend_preserved",
+      "yielding_preserved",
+      "guard_preserved",
+      "aid_preserved",
+      "override_preserved",
+      "front_slide_preserved",
+      "rear_slide_preserved",
+      "no_fuel_preserved",
+      "overheat_preserved",
+      "no_windows_preserved",
+      "outside_straight_reserves_energy",
+      "fixed_entry_floor_not_geometrically_recomputed",
+      "floor_stops_deployment",
+      "next_straight_releases_its_share",
+      "predicted_queue_veto_preserved",
+      "next_lap_resets_floor"
+    ],
+    "unchanged_later_lap_predicate_cases": 72,
+    "scope": "Budget/state checks only. No battery regeneration, vehicle dynamics or lap time simulated."
+  },
+  "logs": [
+    {
+      "match_id": "f151ad84-7597-4f65-8cb7-5b8fc12a5e84",
+      "actual_source_commit": "9c58b2da29a7d90949ece7aadfc2413301e7929f",
+      "rows": 16628,
+      "reproduced_actions": 16628,
+      "decision_sha256": "4e12a1975b709ffe89e655f9692ba51a4bc3f5e89f74547bf36d22a0b66b9687",
+      "changed_vs_control": 584,
+      "phase_changes": {
+        "qualifying": 0,
+        "race": 584
+      },
+      "laps_zero_based": {
+        "0": {
+          "calls": 3246,
+          "changed": 584,
+          "lower_ers_request": 584,
+          "higher_ers_request": 0
+        },
+        "1": {
+          "calls": 3158,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        },
+        "2": {
+          "calls": 3828,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        },
+        "3": {
+          "calls": 3141,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        }
+      },
+      "samples": [
+        {
+          "global_s": 1110.2333,
+          "elapsed_s": 11.7,
+          "station_m": 481.27,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.7158481222781772,
+          "new_throttle": 1.0,
+          "observed_old_soc_mj": 0.9382,
+          "veto": "FUTURE_STRAIGHT_RESERVE",
+          "zone": 0
+        },
+        {
+          "global_s": 1117.9,
+          "elapsed_s": 19.366666666666667,
+          "station_m": 1016.378,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.06015837366707371,
+          "new_throttle": 0.11108504458354494,
+          "observed_old_soc_mj": 1.7085,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1125.5333,
+          "elapsed_s": 27.0,
+          "station_m": 1150.838,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.5237082923653803,
+          "new_throttle": 0.9627248792763704,
+          "observed_old_soc_mj": 1.7719,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1130.5333,
+          "elapsed_s": 32.0,
+          "station_m": 1408.093,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 1.0,
+          "new_throttle": 1.0,
+          "observed_old_soc_mj": 0.2506,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1137.7667,
+          "elapsed_s": 39.233333333333334,
+          "station_m": 1957.096,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.34954299051780335,
+          "new_throttle": 0.6438616618255998,
+          "observed_old_soc_mj": 0.3569,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1143.6333,
+          "elapsed_s": 45.1,
+          "station_m": 2263.748,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.5204478414347172,
+          "new_throttle": 0.9824598121898964,
+          "observed_old_soc_mj": 0.6039,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1148.8333,
+          "elapsed_s": 50.3,
+          "station_m": 2379.409,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.8161358325036288,
+          "new_throttle": 1.0,
+          "observed_old_soc_mj": 0.4996,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        },
+        {
+          "global_s": 1155.8333,
+          "elapsed_s": 57.3,
+          "station_m": 2718.963,
+          "old_ers": 3,
+          "new_ers": 1,
+          "old_throttle": 0.061901173171504176,
+          "new_throttle": 0.12452927529961082,
+          "observed_old_soc_mj": 0.3551,
+          "veto": "STORE_FOR_STRAIGHT",
+          "zone": null
+        }
+      ],
+      "scope": "Old poses, SOC, thermal state and opponents stay fixed. Request changes do not establish saved battery, lap gain or new safety outcomes."
+    },
+    {
+      "match_id": "0853449c-127a-44cc-8061-26e9e88f20d1",
+      "actual_source_commit": "ee12c93d76f6ecefc9569776b925139adbd7c860",
+      "rows": 20832,
+      "reproduced_actions": 20832,
+      "decision_sha256": "bb78c83bfff230415a199dd12130bd3b8f2f6e413fa94ec237ef689626e11b07",
+      "changed_vs_control": 0,
+      "phase_changes": {
+        "qualifying": 0,
+        "race": 0
+      },
+      "laps_zero_based": {
+        "0": {
+          "calls": 3876,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        },
+        "1": {
+          "calls": 3765,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        },
+        "2": {
+          "calls": 3862,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        },
+        "3": {
+          "calls": 5093,
+          "changed": 0,
+          "lower_ers_request": 0,
+          "higher_ers_request": 0
+        }
+      },
+      "samples": [],
+      "scope": "Old poses, SOC, thermal state and opponents stay fixed. Request changes do not establish saved battery, lap gain or new safety outcomes."
+    },
+    {
+      "match_id": "efc468c6-cbdf-4284-9723-54ed553ebd2d",
+      "actual_source_commit": "cb01eb0460ac4ebb8c5cf67565c8e15b57e74b78",
+      "rows": 21009,
+      "reproduced_actions": 21009,
+      "decision_sha256": "ab65f2ebee796e1a6606121105430acb802b381af61ff4bffb51f70981408168",
+      "changed_vs_control": 0,
+      "phase_changes": {
+        "qualifying": 0,
+        "race": 0
+      },
+      "laps_zero_based": {},
+      "samples": [],
+      "scope": "Old poses, SOC, thermal state and opponents stay fixed. Request changes do not establish saved battery, lap gain or new safety outcomes."
+    }
+  ],
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0
+}

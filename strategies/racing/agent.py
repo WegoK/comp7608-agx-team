@@ -1357,9 +1357,16 @@ class Driver:
         return True
 
     def energy_budget_active(self, yielding, guard_braking):
-        """Whether the straight schedule replaces the legacy scalar reserve."""
+        """Use the straight budget after a protected low-wetness launch.
+
+        Preserve the first ten seconds and 300m, then share the existing
+        first-lap energy across later straights. Later-lap rules are unchanged.
+        """
         c = self.c
-        return bool(self.energy_windows and self.o['phase'] == 'race' and c['lap'] >= 1
+        first_lap_ready = (c['lap'] == 0 and c['status'] == 'racing' and self.wet < .5
+                           and self.o['tick']-self.launch_tick >= 600
+                           and self.s-self.launch_distance >= 300. and self.v >= 20.)
+        return bool(self.energy_windows and self.o['phase'] == 'race' and (c['lap'] >= 1 or first_lap_ready)
                     and not c['pit_state'] and self.mode != 'DEFEND' and not yielding
                     and guard_braking == 0 and not c['aid_available'] and not c['override_available']
                     and not c['front_sliding'] and not c['rear_sliding']
