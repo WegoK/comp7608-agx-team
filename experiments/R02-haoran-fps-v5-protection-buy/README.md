@@ -50,8 +50,12 @@ python3 scripts/evaluate_fps_protection_buy.py --log dist/fps-inputs/training-4f
 | 阶段 | 状态 |
 |---|---|
 | 实现、购买边界/过程检查、原保护、两场动作对照 | 完成 |
-| 项目基础检查、固定源码和打包 | 待补录 |
+| 项目基础检查、固定源码和打包 | 清洁LF检出check.py / package.py fps通过；ZIP三文件与提交一致，代码哈希匹配完整日志检查版本；包中购买19项/预算800组及瞄准16/搜点27/恢复12项检查通过 |
 | 独立人工审阅 | 待进行 |
 | 平台验证、激活、新候选实战 | 未执行 |
 
 用户提供实战证据并授权改版；Codex实现、编写执行检查并维护报告/包。未补造人工审阅或新策略收益。下一场先核对指纹与实际购买回执，观察头盔/护甲/拆包器持有、死亡与守包参与；不同地图对手的比分不单独作因果证据。
+
+## 上传包
+
+源码 `596c5387f21d8fbb6ee42a34b36a318652db9f40`，[ZIP](../../releases/personal/haoran/fps/596c5387f21d/fps-596c5387f21d.zip)，SHA256 `e839b6f6efc8615bbd9a10ad5b71e6bd82e3621ef32b0432825a8d9d1394217e`。见[清单](package-manifest.json)与[打包检查](packaging-checks.json)。旧第四版179919156da8保留回退；平台序号待用户上传确认。

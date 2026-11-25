@@ -1,0 +1,228 @@
+{
+  "source_commit": "596c5387f21d8fbb6ee42a34b36a318652db9f40",
+  "zip_sha256": "e839b6f6efc8615bbd9a10ad5b71e6bd82e3621ef32b0432825a8d9d1394217e",
+  "project_check": "passed_clean_lf_checkout",
+  "files_match_git": true,
+  "package_source_hash_matches_full_log_checked_source": true,
+  "packaged_buy_checks": {
+    "cases": [
+      "helmet_boundary_below",
+      "helmet_boundary",
+      "already_has_helmet",
+      "partial_armor_no_discount_assumption",
+      "armor_boundary_below",
+      "armor_boundary",
+      "ak_before_upgrades",
+      "m4_before_kit",
+      "defend_pistol_armor_first",
+      "kit_after_protection",
+      "no_duplicate_kit",
+      "attack_never_buys_kit",
+      "direct_buy_rejects_live",
+      "direct_buy_rejects_post",
+      "direct_buy_rejects_finished",
+      "dead_no_purchase",
+      "failed_item_skipped_until_next_round",
+      "success_stops_duplicate",
+      "nonbuy_receipt_not_misattributed"
+    ],
+    "isolated_purchase_scenarios": {
+      "defend800": {
+        "baseline": {
+          "purchases": [
+            "defusekit"
+          ],
+          "cash": 400,
+          "armor": 0,
+          "helmet": false,
+          "has_kit": true,
+          "primary": null
+        },
+        "candidate": {
+          "purchases": [
+            "armor"
+          ],
+          "cash": 150,
+          "armor": 100,
+          "helmet": false,
+          "has_kit": false,
+          "primary": null
+        }
+      },
+      "defend1400": {
+        "baseline": {
+          "purchases": [
+            "defusekit",
+            "armor"
+          ],
+          "cash": 350,
+          "armor": 100,
+          "helmet": false,
+          "has_kit": true,
+          "primary": "m4a1"
+        },
+        "candidate": {
+          "purchases": [
+            "armor",
+            "helmet",
+            "defusekit"
+          ],
+          "cash": 0,
+          "armor": 100,
+          "helmet": true,
+          "has_kit": true,
+          "primary": "m4a1"
+        }
+      },
+      "defend4300": {
+        "baseline": {
+          "purchases": [
+            "defusekit",
+            "m4a1",
+            "armor"
+          ],
+          "cash": 350,
+          "armor": 100,
+          "helmet": false,
+          "has_kit": true,
+          "primary": "m4a1"
+        },
+        "candidate": {
+          "purchases": [
+            "m4a1",
+            "armor",
+            "helmet",
+            "defusekit"
+          ],
+          "cash": 0,
+          "armor": 100,
+          "helmet": true,
+          "has_kit": true,
+          "primary": "m4a1"
+        }
+      },
+      "attack3700": {
+        "baseline": {
+          "purchases": [
+            "ak47",
+            "armor"
+          ],
+          "cash": 350,
+          "armor": 100,
+          "helmet": false,
+          "has_kit": false,
+          "primary": "ak47"
+        },
+        "candidate": {
+          "purchases": [
+            "ak47",
+            "armor",
+            "helmet"
+          ],
+          "cash": 0,
+          "armor": 100,
+          "helmet": true,
+          "has_kit": false,
+          "primary": "ak47"
+        }
+      }
+    },
+    "budget_sweep_cases": 800,
+    "scope": "Purchase transitions use recorded costs and assumed successful receipts; not official admission or combat simulation."
+  },
+  "packaged_aim_checks": {
+    "cases": [
+      "visible_combat_preserved",
+      "bounded_18_tick_hold_without_fire_or_motion",
+      "hidden_frames_do_not_refresh_memory",
+      "expiry_returns_to_objective",
+      "round_clears_memory",
+      "map_clears_memory",
+      "side_clears_memory",
+      "buy_clears_memory",
+      "dead_clears_memory",
+      "blind_clears_memory",
+      "airborne_clears_memory",
+      "backwards_tick_clears_memory",
+      "large_gap_clears_memory",
+      "plant_preempts_memory",
+      "defuse_preempts_memory",
+      "new_visible_target_replaces_memory"
+    ],
+    "alternating_visibility_aim_model": {
+      "baseline": {
+        "visible_fire_requests": 0,
+        "hidden_fire_requests": 0,
+        "pose_switches": 39
+      },
+      "candidate": {
+        "visible_fire_requests": 9,
+        "hidden_fire_requests": 0,
+        "pose_switches": 0
+      },
+      "limitation": "Only angle/pose integration with prescribed alternating visibility; no real hits or wins simulated."
+    }
+  },
+  "packaged_retake_checks": [
+    "scan_then_rotate_after_150_ticks",
+    "injected_arrival_and_repeated_site_search",
+    "continuous_scan_resets_on_combat",
+    "continuous_scan_resets_on_blind",
+    "continuous_scan_resets_on_airborne",
+    "continuous_scan_resets_on_left_site",
+    "continuous_scan_resets_on_callback_gap",
+    "search_state_resets_on_known_position",
+    "search_state_resets_on_round_change",
+    "search_state_resets_on_map_change",
+    "search_state_resets_on_fuse_change",
+    "search_state_resets_on_not_planted",
+    "search_state_resets_on_buy",
+    "search_state_resets_on_dead",
+    "search_state_resets_on_side_change",
+    "attack_priority_or_action_preserved",
+    "ordinary_defend_priority_or_action_preserved",
+    "combat_priority_or_action_preserved",
+    "defuse_priority_or_action_preserved",
+    "plant_priority_or_action_preserved",
+    "known_bomb_travel_runs",
+    "single_site_safe_cycle",
+    "search_routes_on_borgo-r3-v54",
+    "search_routes_on_dust2-cs2-v54",
+    "search_routes_on_mirage-cs2-v54",
+    "search_routes_on_molo-r3-v54",
+    "search_routes_on_nevaio-r3-v54"
+  ],
+  "packaged_recovery_checks": {
+    "cases": [
+      "vertical_bob_does_not_allow_repeated_jump",
+      "horizontal_stall_enters_escape",
+      "detour_waits_for_landing",
+      "arrival_keeps_3d_height_check",
+      "normal_horizontal_and_height_progress_no_escape",
+      "progress_reset_keeps_jump_cooldown",
+      "callback_gap_keeps_jump_cooldown",
+      "round_resets_jump_budget",
+      "dust2-cs2-v54_unchanged_blocked_fixture",
+      "borgo-r3-v54_unchanged_blocked_fixture",
+      "molo-r3-v54_unchanged_blocked_fixture",
+      "nevaio-r3-v54_unchanged_blocked_fixture"
+    ],
+    "blocked_prescribed_telemetry": {
+      "baseline": {
+        "jumps": 1,
+        "escapes": 0,
+        "airborne_detours": 5
+      },
+      "candidate": {
+        "jumps": 1,
+        "escapes": 2,
+        "airborne_detours": 0
+      },
+      "limitation": "Identical prescribed XY/Z inputs; fewer jump requests and escapes do not prove a physically traversable path."
+    }
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run",
+  "candidate_real_matches": 0,
+  "note": "Purchase transitions and recorded inputs are local checks, not official admission or new combat results."
+}

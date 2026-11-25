@@ -1,0 +1,12 @@
+{
+  "game": "fps",
+  "git_sha": "596c5387f21d8fbb6ee42a34b36a318652db9f40",
+  "zip_sha256": "e839b6f6efc8615bbd9a10ad5b71e6bd82e3621ef32b0432825a8d9d1394217e",
+  "files": {
+    "agent.py": "cc5997aa31bfdfbcb47738d091a376105ce88f28177a3d60b481dd4e55f96557",
+    "starter_player.py": "9dad56674db9d8292997123220b2dbbdb9d67149481e63b51a564d9f8d1714c7",
+    "waypoint_nav.py": "9a631454fc5965657f4d44566111d2ded4d128e3d960362edf52d187ae257f31"
+  },
+  "platform_validation": "not_run",
+  "competition_activation": "not_run"
+}
