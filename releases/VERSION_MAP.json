@@ -6,8 +6,8 @@
     {
       "name": "codex/haoran-fps",
       "game": "FPS",
-      "current_game_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
-      "current_source_status": "verified_adopted_in_mirage_match",
+      "current_game_source_commit": "c979ee08a85eb8da54f0c49f6f834a77af3f3dd5",
+      "current_source_status": "fourth_development_candidate_not_uploaded",
       "latest_verified_platform_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40"
     },
     {
@@ -149,6 +149,16 @@
           "version_ordinal_note": "Third development package verified adopted; platform ordinal not inferred from source hash."
         }
       ]
+    },
+    {
+      "game": "fps",
+      "source_commit": "c979ee08a85eb8da54f0c49f6f834a77af3f3dd5",
+      "zip_sha256": "179919156da8b2506834a5b176e1ca6258a439a8b9d01f5c72dff0a09f0e58f2",
+      "zip_path": "releases/personal/haoran/fps/c979ee08a85e/fps-c979ee08a85e.zip",
+      "manifest_path": "releases/personal/haoran/fps/c979ee08a85e/fps-c979ee08a85e.json",
+      "source_files_match_git": true,
+      "note": "Fourth development candidate: Mirage horizontal recovery; locally checked, not uploaded or activated.",
+      "experiment": "experiments/R02-haoran-fps-v4-horizontal-recovery/README.md"
     }
   ],
   "wego_versions": [
@@ -484,6 +494,15 @@
       "development_name": "第三版：短暂丢失视野瞄准保持",
       "source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
       "zip_sha256": "67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b",
+      "platform_version": null,
+      "platform_validation": "not_run",
+      "competition_activation": "not_run"
+    },
+    {
+      "game": "FPS",
+      "development_name": "第四版：Mirage无水平进展跳跃保护",
+      "source_commit": "c979ee08a85eb8da54f0c49f6f834a77af3f3dd5",
+      "zip_sha256": "179919156da8b2506834a5b176e1ca6258a439a8b9d01f5c72dff0a09f0e58f2",
       "platform_version": null,
       "platform_validation": "not_run",
       "competition_activation": "not_run"

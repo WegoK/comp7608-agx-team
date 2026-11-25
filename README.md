@@ -8,7 +8,7 @@
 
 | 后续开发 | 长期分支 | 当前该游戏源码 |
 |---|---|---|
-| FPS | [codex/haoran-fps](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-fps) | `65652c51f1ef`，第三版策略包已由Mirage本人日志核实采用 |
+| FPS | [codex/haoran-fps](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-fps) | `c979ee08a85e`，第四版Mirage恢复候选（待上传）；实战已核实第三版包67e64a8436fe |
 | Racing | [codex/haoran-racing](https://github.com/WegoK/comp7608-agx-team/tree/codex/haoran-racing) | `ee12c93d76f6`，个人 v4/v5 发车候选 |
 
 旧实验分支保留作归档。个人版本包及清单见 [releases/personal/haoran](releases/personal/haoran/)，按固定源码提交存放；分支包含整份仓库，后续主要修改对应游戏目录。

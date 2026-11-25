@@ -35,8 +35,12 @@ python3 scripts/evaluate_fps_jump_recovery.py --log dist/fps-inputs/training-da9
 | 阶段 | 状态 |
 |---|---|
 | 实现、两场历史观察对照、恢复/瞄准/搜点/图算法保护 | 完成 |
-| 项目基础检查、固定源码与打包 | 待补录 |
+| 项目基础检查、固定源码与打包 | 清洁LF检出check.py / package.py fps通过；ZIP三文件与提交一致，代码哈希匹配完整日志检查版本；包中12项恢复、16项瞄准、27项搜点检查通过 |
 | 独立人工审阅 | 待进行 |
 | 平台验证、激活、新候选比赛 | 未执行，不自动操作AGX |
 
 用户提供数据、确认优化方向并要求改版；Codex实现、编写并执行检查、更新报告和留存包。未补造人工审阅或新策略实战贡献。上传后应核对包指纹，重点检查Mirage相同阻塞路点的水平进展、跳跃次数、恢复后实际可达性、到包时间与死亡；同时保留第三版包回退。
+
+## 上传包
+
+源码 `c979ee08a85eb8da54f0c49f6f834a77af3f3dd5`，[ZIP](../../releases/personal/haoran/fps/c979ee08a85e/fps-c979ee08a85e.zip)，SHA256 `179919156da8b2506834a5b176e1ca6258a439a8b9d01f5c72dff0a09f0e58f2`。见[包清单](package-manifest.json)和[打包检查](packaging-checks.json)。旧包第三版67e64a8436fe保留回退；平台序号待用户上传确认。
