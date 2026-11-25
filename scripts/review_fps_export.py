@@ -13,21 +13,25 @@ import types
 from evaluate_fps_navigation import load_agent, reference_file, check_action
 from evaluate_fps_retake import equal
 
-REF = 'e27acc998e08d5dc3f59bac6e0fa5e4a99329058'
-BUNDLE = '06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f'
+POLICIES = {
+    '06bcdcc4ae3947ba07f7085d7d222b10c7b01f6931519b62ce7f5b4d85608e0f': 'e27acc998e08d5dc3f59bac6e0fa5e4a99329058',
+    '67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b': '65652c51f1ef60fb1f365b45bfff3eaa947c7f40',
+}
 
 
 def review(path, events):
+    with path.open('rb') as f:metadata=json.loads(next(f))
+    bundle=metadata['participants'][0]['source_hash'];ref=POLICIES[bundle]
     nav = types.ModuleType('review_frozen_nav')
-    exec(compile(reference_file(REF,'strategies/fps/waypoint_nav.py'),'<frozen-nav>','exec'),nav.__dict__)
-    policy = load_agent('review_frozen_fps',nav,REF).Candidate()
+    exec(compile(reference_file(ref,'strategies/fps/waypoint_nav.py'),'<frozen-nav>','exec'),nav.__dict__)
+    policy = load_agent('review_frozen_fps',nav,ref).Candidate()
     digest=hashlib.sha256(); rows=raw=agreement=faults=0
     rounds={}; footer=outcome=None; previous=None; history=deque(); sites=[]
     with path.open('rb') as f:
         header=json.loads(next(f)); own=header['participants'][0]; seat=own['seat']
         assert header['game_id']=='fps' and len(header['participants'])==1
         assert header['observation_semantics']=='recorded_policy_input'
-        assert header['decision_encoding']=='original-jsonl-bytes' and own['source_hash']==BUNDLE
+        assert header['decision_encoding']=='original-jsonl-bytes' and own['source_hash']==bundle
         for line in f:
             row=json.loads(line)
             if 'observation' not in row:
@@ -52,6 +56,13 @@ def review(path, events):
                 r['position_last']=pos; r['bomb_states'][o['bomb']['state']]+=1
                 if a.get('use'):r['uses'][a['use']]+=1
                 combat=bool(o['visible'] and not m['blind_ticks'])
+                held=(not o['visible'] and getattr(policy,'aim_target',None) is not None and 'fire' in a)
+                c['hidden_aim_hold_calls']+=held
+                if held:
+                    age=tick-policy.aim_seen_tick
+                    assert 0<=age<=18 and a['fire'] is False and a['crouch'] is True
+                    assert not a.get('move_forward') and not a.get('move_right')
+                    r['max_aim_hold_age_ticks']=max(r.get('max_aim_hold_age_ticks',0),age)
                 c['blind_calls']+=bool(m['blind_ticks'])
                 c['fire_requested']+=bool(a.get('fire'))
                 c['reload_requested']+=bool(a.get('reload'))
@@ -80,6 +91,7 @@ def review(path, events):
                     c['combat_after_combat']+=combat and prior_combat
                     c['combat_after_not_visible']+=combat and not prior_combat
                     c['visibility_lost_after_combat']+=not combat and prior_combat
+                    c['pose_switches_live']+=bool(m['crouch'])!=bool(previous['me']['crouch'])
                 if o['side']=='defend' and o['bomb']['state']=='planted':
                     ret=r.setdefault('retake',dict(first_tick=tick,last_tick=tick,min_site_distance={},search_switches=[],scan_calls=0))
                     ret['last_tick']=tick
@@ -112,7 +124,7 @@ def review(path, events):
     assert (rows,raw,digest.hexdigest())==(footer['rows'],footer['raw_bytes'],footer['sha256'])
     assert footer['seat_calls']=={str(seat):rows} and agreement==rows
     result=dict(schema='fps-own-export-review-v1',match_id=header['job_id'],map_id=previous['map_id'],
-        rules_version=header['rules_version'],source_commit=REF,zip_sha256=BUNDLE,
+        rules_version=header['rules_version'],source_commit=ref,zip_sha256=bundle,
         frozen_version_id=own['version_id'],own_seat_zero_based=seat,own_team_zero_based=own['team'],
         integrity=dict(rows=rows,raw_bytes=raw,sha256=digest.hexdigest(),faults=faults,
             reproduced_requested_actions=agreement),outcome=outcome,rounds=rounds,

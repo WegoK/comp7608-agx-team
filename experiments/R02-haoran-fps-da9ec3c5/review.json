@@ -1,0 +1,7714 @@
+{
+  "schema": "fps-own-export-review-v1",
+  "match_id": "da9ec3c5-8ddc-4d1b-9472-37c0a6fdc0ac",
+  "map_id": "mirage-cs2-v54",
+  "rules_version": "rsi-fps-5.5",
+  "source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
+  "zip_sha256": "67e64a8436febd4b5d4f3d1ea9659d03c9ebfca6b3ec71d375ad3b7049080b7b",
+  "frozen_version_id": "d0a8c994-b169-45ab-ba1b-4031c01e790f",
+  "own_seat_zero_based": 6,
+  "own_team_zero_based": 1,
+  "integrity": {
+    "rows": 49514,
+    "raw_bytes": 155380867,
+    "sha256": "c0e8535112067411007eac158c6acee8fec4cf0fa8795f89b5b2d6772606a499",
+    "faults": 0,
+    "reproduced_requested_actions": 49514
+  },
+  "outcome": {
+    "type": "outcome",
+    "winner": 0,
+    "reason": "round_wins",
+    "ranks": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "teams": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "round_wins": [
+      13,
+      9
+    ]
+  },
+  "rounds": {
+    "0": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 2300,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 2300,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 2300
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        92.6595,
+        132.0294,
+        15.835815579954758
+      ],
+      "position_last": [
+        72.51234864219605,
+        83.82453791120793,
+        14.920110076293945
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 360,
+          "end_tick": 1026,
+          "position": [
+            91.88412690431207,
+            132.41595469224848,
+            15.7845785198611
+          ]
+        },
+        {
+          "start_tick": 2178,
+          "end_tick": 2784,
+          "position": [
+            72.22381412662608,
+            83.4757378811487,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 2223,
+          "end_tick": 2877,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 2337,
+          "end_tick": 2943,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 2400,
+          "end_tick": 3051,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 2493,
+          "end_tick": 3105,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 2544,
+          "end_tick": 3198,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 2658,
+          "end_tick": 3264,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 2724,
+          "end_tick": 3372,
+          "position": [
+            72.5504759803436,
+            84.07308507965281,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 2823,
+          "end_tick": 3537,
+          "position": [
+            72.13155283680409,
+            84.66309531882986,
+            15.123281584818494
+          ]
+        },
+        {
+          "start_tick": 3000,
+          "end_tick": 3675,
+          "position": [
+            72.13155269196237,
+            84.66309532942832,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 3093,
+          "end_tick": 3720,
+          "position": [
+            72.13140053356776,
+            82.89856591602977,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 3144,
+          "end_tick": 3822,
+          "position": [
+            72.1315542259172,
+            84.66309521875374,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 3267,
+          "end_tick": 3882,
+          "position": [
+            75.47023869157361,
+            83.53165799565028,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 3324,
+          "end_tick": 3996,
+          "position": [
+            72.13155283583137,
+            84.66309531891461,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 3447,
+          "end_tick": 4134,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 3555,
+          "end_tick": 4164,
+          "position": [
+            73.31039847375517,
+            83.7289509881927,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 3624,
+          "end_tick": 4275,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 3717,
+          "end_tick": 4329,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 3768,
+          "end_tick": 4422,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 3882,
+          "end_tick": 4488,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 3945,
+          "end_tick": 4596,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4038,
+          "end_tick": 4650,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 4089,
+          "end_tick": 4743,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4203,
+          "end_tick": 4809,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 4266,
+          "end_tick": 4917,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4359,
+          "end_tick": 4971,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 4410,
+          "end_tick": 5064,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4524,
+          "end_tick": 5130,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 4587,
+          "end_tick": 5238,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4680,
+          "end_tick": 5292,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 4731,
+          "end_tick": 5385,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 4845,
+          "end_tick": 5451,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 4908,
+          "end_tick": 5559,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5001,
+          "end_tick": 5613,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 5052,
+          "end_tick": 5706,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5166,
+          "end_tick": 5772,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 5229,
+          "end_tick": 5880,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5322,
+          "end_tick": 5934,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 5373,
+          "end_tick": 6027,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5487,
+          "end_tick": 6093,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 5550,
+          "end_tick": 6201,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5643,
+          "end_tick": 6255,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 5694,
+          "end_tick": 6348,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5808,
+          "end_tick": 6414,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 5871,
+          "end_tick": 6522,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 5964,
+          "end_tick": 6576,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 6015,
+          "end_tick": 6669,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 6129,
+          "end_tick": 6735,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 6192,
+          "end_tick": 6843,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 6285,
+          "end_tick": 6897,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 6336,
+          "end_tick": 6990,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 6450,
+          "end_tick": 7056,
+          "position": [
+            73.82988373617538,
+            83.83366351022528,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 6513,
+          "end_tick": 7164,
+          "position": [
+            72.67171499574529,
+            83.99358008161882,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 6606,
+          "end_tick": 7218,
+          "position": [
+            72.39682542367287,
+            83.81655211168658,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 6657,
+          "end_tick": 7257,
+          "position": [
+            72.51234864219605,
+            83.82453791120793,
+            14.920110076293945
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:113",
+          "match_tick": 7260,
+          "round_index": 0,
+          "round_winner": 0,
+          "reason": "timeout",
+          "round_wins": [
+            1,
+            0
+          ],
+          "post_end_tick": 7560,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "1": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1289,
+        "alive_live_calls": 578,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 578,
+        "navigation_calls": 575,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 2,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "combat_calls": 3,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 3,
+        "combat_airborne_calls": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "1": 3
+      },
+      "weapon_combat": {
+        "pistol": 3
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 578
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        92.6595,
+        132.0294,
+        15.835815579954758
+      ],
+      "position_last": [
+        106.42250812815364,
+        59.381929366356204,
+        15.685588214078804
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 9645,
+      "first_combat_frame_trace": [
+        {
+          "tick": 9645,
+          "visible": true,
+          "yaw": 0.6835261410939354,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.14579578049918698,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 9648,
+          "visible": true,
+          "yaw": 0.8335261410939355,
+          "pitch": -0.014579578049918697,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.1495129759996157,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 9651,
+          "visible": true,
+          "yaw": 0.9835261410939357,
+          "pitch": 0.0003717195500428736,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.002782849216665836,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "death_tick": 9654,
+      "death_position": [
+        106.45917186882741,
+        59.34306273445394,
+        15.683909951983212
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:187",
+          "match_tick": 9652,
+          "round_index": 1,
+          "target": 6,
+          "killer": 1,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:301",
+          "match_tick": 11785,
+          "round_index": 1,
+          "round_winner": 0,
+          "reason": "elimination",
+          "round_wins": [
+            2,
+            0
+          ],
+          "post_end_tick": 12085,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "2": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1108,
+        "alive_live_calls": 1108,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 1104,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 3,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "combat_calls": 4,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 4,
+        "combat_airborne_calls": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "4": 4
+      },
+      "weapon_combat": {
+        "pistol": 4
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 721,
+        "world": 387
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        95.1424,
+        134.16303584356885,
+        15.794568395331202
+      ],
+      "position_last": [
+        102.46296829100737,
+        78.46268341578342,
+        15.67430398247281
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 12675,
+          "end_tick": 13341,
+          "position": [
+            92.6207923597838,
+            132.40571150978278,
+            15.797653339048416
+          ]
+        },
+        {
+          "start_tick": 12795,
+          "end_tick": 13404,
+          "position": [
+            93.92400906355283,
+            134.82699483169566,
+            15.777776632438817
+          ]
+        },
+        {
+          "start_tick": 12816,
+          "end_tick": 13428,
+          "position": [
+            92.2653749767191,
+            134.64179357775097,
+            15.776652012467508
+          ]
+        },
+        {
+          "start_tick": 12846,
+          "end_tick": 13542,
+          "position": [
+            92.38768462553213,
+            132.40571165178628,
+            15.79356372194862
+          ]
+        },
+        {
+          "start_tick": 12960,
+          "end_tick": 13800,
+          "position": [
+            89.8715682315936,
+            133.3484849439862,
+            15.74506864740474
+          ]
+        },
+        {
+          "start_tick": 13212,
+          "end_tick": 13833,
+          "position": [
+            91.5608440789539,
+            134.88335767012,
+            15.767618900970744
+          ]
+        },
+        {
+          "start_tick": 13251,
+          "end_tick": 13950,
+          "position": [
+            92.62346855134838,
+            132.4057115192931,
+            15.7977002898149
+          ]
+        },
+        {
+          "start_tick": 13362,
+          "end_tick": 13986,
+          "position": [
+            94.82718933427161,
+            133.95975684272415,
+            15.799082817672415
+          ]
+        },
+        {
+          "start_tick": 13404,
+          "end_tick": 14016,
+          "position": [
+            92.26539498118494,
+            134.64179093187053,
+            15.776652135552753
+          ]
+        },
+        {
+          "start_tick": 13434,
+          "end_tick": 14133,
+          "position": [
+            92.38768619245602,
+            132.40571165176513,
+            15.79356374943866
+          ]
+        },
+        {
+          "start_tick": 13548,
+          "end_tick": 14388,
+          "position": [
+            89.87156996206474,
+            133.34848673403118,
+            15.745068669499641
+          ]
+        },
+        {
+          "start_tick": 13800,
+          "end_tick": 14421,
+          "position": [
+            91.56084407766974,
+            134.88335767300222,
+            15.767618900934911
+          ]
+        },
+        {
+          "start_tick": 13839,
+          "end_tick": 14538,
+          "position": [
+            92.62346855060262,
+            132.4057115192931,
+            15.797700289801814
+          ]
+        },
+        {
+          "start_tick": 13950,
+          "end_tick": 14574,
+          "position": [
+            94.82718933334344,
+            133.9597568434355,
+            15.79908281765675
+          ]
+        },
+        {
+          "start_tick": 13992,
+          "end_tick": 14604,
+          "position": [
+            92.2653949802781,
+            134.64179093199002,
+            15.776652135547184
+          ]
+        },
+        {
+          "start_tick": 14022,
+          "end_tick": 14637,
+          "position": [
+            92.59189016202991,
+            132.40571204214478,
+            15.797146279612905
+          ]
+        }
+      ],
+      "first_combat_tick": 15759,
+      "first_combat_frame_trace": [
+        {
+          "tick": 15759,
+          "visible": true,
+          "yaw": 0.5243737703940633,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.2597335594491277,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 15762,
+          "visible": true,
+          "yaw": 0.6743737703940634,
+          "pitch": -0.025973355944912766,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.39112865229194593,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 15765,
+          "visible": true,
+          "yaw": 0.8243737703940636,
+          "pitch": 0.013139509284281826,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.035564878700081196,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 15768,
+          "visible": true,
+          "yaw": 0.9743737703940637,
+          "pitch": 0.016695997154289946,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.003084575576220855,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "death_tick": 15771,
+      "death_position": [
+        102.50006072916263,
+        78.44638688914728,
+        15.672192476978282
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:491",
+          "match_tick": 15769,
+          "round_index": 2,
+          "target": 6,
+          "killer": 4,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:512",
+          "match_tick": 15769,
+          "round_index": 2,
+          "round_winner": 0,
+          "reason": "elimination",
+          "round_wins": [
+            3,
+            0
+          ],
+          "post_end_tick": 16069,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "3": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1565,
+        "alive_live_calls": 1565,
+        "hidden_aim_hold_calls": 18,
+        "blind_calls": 0,
+        "fire_requested": 11,
+        "reload_requested": 0,
+        "plant_carrier_calls": 765,
+        "navigation_calls": 663,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 21,
+        "combat_after_not_visible": 3,
+        "visibility_lost_after_combat": 3,
+        "pose_switches_live": 8,
+        "combat_calls": 24,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 11,
+        "combat_moving_calls": 15,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 7,
+        "own_hit_events": 5
+      },
+      "visible_targets": {
+        "0": 13,
+        "1": 8,
+        "4": 3
+      },
+      "weapon_combat": {
+        "ak47": 24
+      },
+      "uses": {
+        "plant": 60
+      },
+      "bomb_states": {
+        "held": 765,
+        "planted": 800
+      },
+      "ammo_spent": 7,
+      "damage_taken": 0,
+      "position_start": [
+        96.5552,
+        130.11170264006273,
+        15.813513229099085
+      ],
+      "position_last": [
+        108.12068375823895,
+        50.61086001802261,
+        15.936109870300292
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 18192,
+      "first_combat_frame_trace": [
+        {
+          "tick": 18192,
+          "visible": true,
+          "yaw": 1.4637412845425686,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.40714506580246596,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18195,
+          "visible": true,
+          "yaw": 1.6137412845425687,
+          "pitch": -0.04071450658024659,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.5814432407116062,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18198,
+          "visible": true,
+          "yaw": 1.7637412845425688,
+          "pitch": 0.017429817490914035,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.002592486990821291,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18201,
+          "visible": true,
+          "yaw": 1.913741284542569,
+          "pitch": 0.017689066189996168,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.553464693256777,
+            "pitch_rate": -0.29806341117770435,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18204,
+          "visible": true,
+          "yaw": 1.9967609885310853,
+          "pitch": -0.012117274927774266,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.06402447004294487,
+            "pitch_rate": -0.007401470621508852,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18207,
+          "visible": true,
+          "yaw": 1.9871573180246436,
+          "pitch": -0.012857421989925153,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.020687888914734387,
+            "pitch_rate": -0.1080183158535937,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18210,
+          "visible": true,
+          "yaw": 1.9840541346874334,
+          "pitch": -0.02365925357528452,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.05151039754655844,
+            "pitch_rate": 0.32431521233081934,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18213,
+          "visible": true,
+          "yaw": 1.9763275750554499,
+          "pitch": 0.008772267657797416,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.037571200902339896,
+            "pitch_rate": -0.14996132209639393,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18216,
+          "visible": true,
+          "yaw": 1.9706918949200989,
+          "pitch": -0.0062238645518419775,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.008217793834187267,
+            "pitch_rate": -0.042842572137664556,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18219,
+          "visible": true,
+          "yaw": 1.9694592258449706,
+          "pitch": -0.010508121765608433,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011492606418063527,
+            "pitch_rate": -0.4684167162117842,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 18222,
+          "visible": true,
+          "yaw": 1.9711831168076799,
+          "pitch": -0.05734979338678685,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0060052335111363915,
+            "pitch_rate": -0.08627890178941107,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 18225,
+          "visible": true,
+          "yaw": 1.9720839018343501,
+          "pitch": -0.06597768356572795,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.005134898653071929,
+            "pitch_rate": -0.1963386345820752,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "own_damage": 200.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:607",
+          "match_tick": 18229,
+          "round_index": 3,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:618",
+          "match_tick": 18319,
+          "round_index": 3,
+          "target": 1,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:629",
+          "match_tick": 18726,
+          "round_index": 3,
+          "player": 6,
+          "item_id": "r3:bomb",
+          "site": "B",
+          "position": [
+            108.12068375823895,
+            50.61086001802261,
+            15.936109870300294
+          ],
+          "views": {
+            "6": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:629",
+              "match_tick": 18726,
+              "round_index": 3,
+              "player": 6,
+              "item_id": "r3:bomb",
+              "site": "B"
+            },
+            "8": true
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:644",
+          "match_tick": 21126,
+          "round_index": 3,
+          "item_id": "r3:bomb",
+          "fuse_end_tick": 21126,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:657",
+          "match_tick": 21126,
+          "round_index": 3,
+          "round_winner": 1,
+          "reason": "bomb_explode",
+          "round_wins": [
+            3,
+            1
+          ],
+          "post_end_tick": 21426,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "4": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 992,
+        "alive_live_calls": 992,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 992,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 977,
+        "planted": 15
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        96.7124,
+        135.57909999999998,
+        15.775456858903729
+      ],
+      "position_last": [
+        60.06578521113785,
+        111.92515403067458,
+        13.497710078582763
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 22056,
+          "end_tick": 22662,
+          "position": [
+            92.77571801172994,
+            133.15413946987957,
+            15.796915987810248
+          ]
+        },
+        {
+          "start_tick": 23358,
+          "end_tick": 24033,
+          "position": [
+            59.94659960182364,
+            111.92358581577211,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 23511,
+          "end_tick": 24234,
+          "position": [
+            59.96381027988248,
+            111.92381226911382,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 23643,
+          "end_tick": 24333,
+          "position": [
+            59.94768779392061,
+            111.9236001330751,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 23763,
+          "end_tick": 24375,
+          "position": [
+            57.720772646230024,
+            112.2295137205011,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 23799,
+          "end_tick": 24525,
+          "position": [
+            59.87654600176992,
+            111.92266406528042,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 23934,
+          "end_tick": 24624,
+          "position": [
+            59.947727280487776,
+            111.92360065262957,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 24054,
+          "end_tick": 24666,
+          "position": [
+            57.72078876734107,
+            112.22954289867415,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 24093,
+          "end_tick": 24759,
+          "position": [
+            59.963423787303235,
+            111.92380718373543,
+            13.497710078582763
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:814",
+          "match_tick": 24717,
+          "round_index": 4,
+          "player": 9,
+          "item_id": "r4:bomb",
+          "site": "B",
+          "position": [
+            108.30325848500767,
+            50.780203506009016,
+            15.936109870300292
+          ],
+          "views": {
+            "8": true,
+            "9": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:814",
+              "match_tick": 24717,
+              "round_index": 4,
+              "player": 9,
+              "item_id": "r4:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:848",
+          "match_tick": 24760,
+          "round_index": 4,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            3,
+            2
+          ],
+          "post_end_tick": 25060,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "5": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 783,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 689,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 2,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 4,
+        "combat_calls": 2,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 2,
+        "combat_airborne_calls": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "1": 2
+      },
+      "weapon_combat": {
+        "ak47": 2
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 783
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        96.7124,
+        135.46312469610788,
+        15.765020883589548
+      ],
+      "position_last": [
+        106.98941369324562,
+        47.64461079459589,
+        15.936109870300292
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 27489,
+      "first_combat_frame_trace": [
+        {
+          "tick": 27489,
+          "visible": true,
+          "yaw": 3.022492560892502,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.44893838351372384,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27492,
+          "visible": false,
+          "yaw": -3.1106927462870853,
+          "pitch": 0.04489383835137238,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.40788647633417285,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27495,
+          "visible": false,
+          "yaw": -2.960692746287086,
+          "pitch": 0.08568248598478967,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.9216365794908654,
+            "pitch_rate": 0.0014965862146812392,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27498,
+          "visible": false,
+          "yaw": -2.822447259363456,
+          "pitch": 0.0858321446062578,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011860976833647879,
+            "pitch_rate": 0.0007387458847378514,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27501,
+          "visible": false,
+          "yaw": -2.8206681128384083,
+          "pitch": 0.08590601919473156,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0012664436402568906,
+            "pitch_rate": 7.871843735185458e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27504,
+          "visible": false,
+          "yaw": -2.8204781462923694,
+          "pitch": 0.08591389103846675,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -2.960594732333751e-15,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27507,
+          "visible": false,
+          "yaw": -2.8204781462923694,
+          "pitch": 0.08591389103846675,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -2.960594732333751e-15,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27510,
+          "visible": false,
+          "yaw": -2.8204781462923694,
+          "pitch": 0.08591389103846675,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": -0.24160884610632163,
+            "move_right": -0.9703737246459077,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.8591389103846675,
+            "walk": false
+          }
+        },
+        {
+          "tick": 27513,
+          "visible": true,
+          "yaw": -2.67047814629237,
+          "pitch": 6.938893903907228e-18,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.3121275176973947,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27516,
+          "visible": false,
+          "yaw": -2.8204781462923694,
+          "pitch": 0.031212751769739477,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.07369358151309828,
+            "pitch_rate": 0.414826963135204,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27519,
+          "visible": false,
+          "yaw": -2.8315321835193346,
+          "pitch": 0.07269544808325988,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0011595746232965591,
+            "pitch_rate": -4.876188289315575e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 27522,
+          "visible": false,
+          "yaw": -2.8317061197128295,
+          "pitch": 0.07269057189497057,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 2.960594732333751e-15,
+            "pitch_rate": 0.0,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 27771,
+      "death_position": [
+        106.98941369324562,
+        47.64461079459589,
+        15.936109870300294
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:1010",
+          "match_tick": 27769,
+          "round_index": 5,
+          "target": 6,
+          "killer": 1,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:1080",
+          "match_tick": 32320,
+          "round_index": 5,
+          "round_winner": 0,
+          "reason": "timeout",
+          "round_wins": [
+            4,
+            2
+          ],
+          "post_end_tick": 32620,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "6": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 2300,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 2300,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 2300
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        92.6594930170068,
+        132.0294,
+        15.826275314863624
+      ],
+      "position_last": [
+        72.56435305450864,
+        83.98225360370435,
+        14.920110076293945
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 32982,
+          "end_tick": 33648,
+          "position": [
+            91.921227692491,
+            132.405710457706,
+            15.785380258345795
+          ]
+        },
+        {
+          "start_tick": 33321,
+          "end_tick": 33933,
+          "position": [
+            91.40428546323933,
+            133.715591321894,
+            15.770263609427872
+          ]
+        },
+        {
+          "start_tick": 35115,
+          "end_tick": 35724,
+          "position": [
+            72.2755490253641,
+            84.28416482157643,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 35169,
+          "end_tick": 35814,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 35283,
+          "end_tick": 35889,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 35355,
+          "end_tick": 35997,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 35439,
+          "end_tick": 36051,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 35496,
+          "end_tick": 36141,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 35610,
+          "end_tick": 36216,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 35682,
+          "end_tick": 36324,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 35766,
+          "end_tick": 36378,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 35823,
+          "end_tick": 36468,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 35937,
+          "end_tick": 36543,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 36009,
+          "end_tick": 36651,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 36093,
+          "end_tick": 36705,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 36150,
+          "end_tick": 36795,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 36264,
+          "end_tick": 36870,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 36336,
+          "end_tick": 36978,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 36420,
+          "end_tick": 37032,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 36477,
+          "end_tick": 37122,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 36591,
+          "end_tick": 37197,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 36663,
+          "end_tick": 37305,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 36747,
+          "end_tick": 37359,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 36804,
+          "end_tick": 37449,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 36918,
+          "end_tick": 37524,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 36990,
+          "end_tick": 37632,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 37074,
+          "end_tick": 37686,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 37131,
+          "end_tick": 37776,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 37245,
+          "end_tick": 37851,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 37317,
+          "end_tick": 37959,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 37401,
+          "end_tick": 38013,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 37458,
+          "end_tick": 38103,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 37572,
+          "end_tick": 38178,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 37644,
+          "end_tick": 38286,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 37728,
+          "end_tick": 38340,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 37785,
+          "end_tick": 38430,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 37899,
+          "end_tick": 38505,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 37971,
+          "end_tick": 38613,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 38055,
+          "end_tick": 38667,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 38112,
+          "end_tick": 38757,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 38226,
+          "end_tick": 38832,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 38298,
+          "end_tick": 38940,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 38382,
+          "end_tick": 38994,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 38439,
+          "end_tick": 39084,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 38553,
+          "end_tick": 39159,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 38625,
+          "end_tick": 39267,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 38709,
+          "end_tick": 39321,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 38766,
+          "end_tick": 39411,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 38880,
+          "end_tick": 39486,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 38952,
+          "end_tick": 39594,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 39036,
+          "end_tick": 39648,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 39093,
+          "end_tick": 39738,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 39207,
+          "end_tick": 39813,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 39279,
+          "end_tick": 39879,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:1234",
+          "match_tick": 39880,
+          "round_index": 6,
+          "round_winner": 0,
+          "reason": "timeout",
+          "round_wins": [
+            5,
+            2
+          ],
+          "post_end_tick": 40180,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "7": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1606,
+        "alive_live_calls": 577,
+        "hidden_aim_hold_calls": 32,
+        "blind_calls": 0,
+        "fire_requested": 16,
+        "reload_requested": 0,
+        "plant_carrier_calls": 577,
+        "navigation_calls": 509,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 29,
+        "combat_after_not_visible": 7,
+        "visibility_lost_after_combat": 6,
+        "pose_switches_live": 11,
+        "combat_calls": 36,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 16,
+        "combat_moving_calls": 18,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 9,
+        "own_hit_events": 9
+      },
+      "visible_targets": {
+        "1": 13,
+        "4": 23,
+        "0": 7
+      },
+      "weapon_combat": {
+        "ak47": 36
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 577
+      },
+      "ammo_spent": 9,
+      "damage_taken": 66.62733251692002,
+      "position_start": [
+        99.8858,
+        130.4673,
+        15.834510177001954
+      ],
+      "position_last": [
+        108.58580077692211,
+        58.25646643143666,
+        15.655644052823163
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 41991,
+      "first_combat_frame_trace": [
+        {
+          "tick": 41991,
+          "visible": true,
+          "yaw": 1.5872896101606189,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.2610990013582296,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 41994,
+          "visible": false,
+          "yaw": 1.737289610160619,
+          "pitch": -0.02610990013582296,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.38145991677896535,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 41997,
+          "visible": false,
+          "yaw": 1.8872896101606191,
+          "pitch": 0.012036091542073577,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.0009449803088668572,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42000,
+          "visible": true,
+          "yaw": 2.0372896101606193,
+          "pitch": 0.012130589572960263,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.0010646245713608754,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42003,
+          "visible": true,
+          "yaw": 2.1872896101606187,
+          "pitch": 0.012237052030096349,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.000546001010326546,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42006,
+          "visible": true,
+          "yaw": 2.337289610160618,
+          "pitch": 0.012291652131129004,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.5334488260311095,
+            "pitch_rate": 0.0003637189727559789,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 42009,
+          "visible": true,
+          "yaw": 2.417306934065284,
+          "pitch": 0.012328024028404603,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.007898726051394078,
+            "pitch_rate": 0.00017924016273195356,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 42012,
+          "visible": true,
+          "yaw": 2.4184917429729933,
+          "pitch": 0.0123459480446778,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.03633757870376009,
+            "pitch_rate": -0.10307697872464688,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 42015,
+          "visible": true,
+          "yaw": 2.4239423797785573,
+          "pitch": 0.0020382501722131133,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.009140046814997879,
+            "pitch_rate": 0.02652831855944556,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 42018,
+          "visible": true,
+          "yaw": 2.422571372756308,
+          "pitch": 0.00469108202815767,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.012509921750032404,
+            "pitch_rate": -0.15000490666768151,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 42021,
+          "visible": true,
+          "yaw": 2.420694884493803,
+          "pitch": -0.010309408638610481,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0026259458347451434,
+            "pitch_rate": -0.04289440739241368,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 42024,
+          "visible": true,
+          "yaw": 2.4210887763690145,
+          "pitch": -0.014598849377851848,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011992663219171362,
+            "pitch_rate": -0.16879867190508008,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 42273,
+      "death_position": [
+        108.5951765954719,
+        58.247263849517715,
+        15.655565641543694
+      ],
+      "own_damage": 227.18292163469226,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:1291",
+          "match_tick": 42034,
+          "round_index": 7,
+          "target": 1,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:1309",
+          "match_tick": 42106,
+          "round_index": 7,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:1322",
+          "match_tick": 42271,
+          "round_index": 7,
+          "target": 6,
+          "killer": 4,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:1373",
+          "match_tick": 43470,
+          "round_index": 7,
+          "player": 8,
+          "item_id": "r7:bomb",
+          "site": "B",
+          "position": [
+            109.02543496374692,
+            53.797658667401066,
+            15.732910006866456
+          ],
+          "views": {
+            "8": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:1373",
+              "match_tick": 43470,
+              "round_index": 7,
+              "player": 8,
+              "item_id": "r7:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:1430",
+          "match_tick": 45358,
+          "round_index": 7,
+          "round_winner": 1,
+          "reason": "elimination",
+          "round_wins": [
+            5,
+            3
+          ],
+          "post_end_tick": 45658,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "8": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 2300,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 3,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 2300,
+        "navigation_calls": 2300,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 2300
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        94.4597,
+        129.064,
+        15.812310069427491
+      ],
+      "position_last": [
+        58.18144494599579,
+        111.90036061313525,
+        13.497710078582763
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 46110,
+          "end_tick": 46734,
+          "position": [
+            90.419007653854,
+            132.8388473431254,
+            15.757025764470105
+          ]
+        },
+        {
+          "start_tick": 46227,
+          "end_tick": 46845,
+          "position": [
+            92.38345770416113,
+            133.5719901460481,
+            15.788105078869995
+          ]
+        },
+        {
+          "start_tick": 47538,
+          "end_tick": 48213,
+          "position": [
+            59.946599601823664,
+            111.92358581577211,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 47691,
+          "end_tick": 48414,
+          "position": [
+            59.96381027988249,
+            111.92381226911382,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 47823,
+          "end_tick": 48513,
+          "position": [
+            59.94768779392061,
+            111.9236001330751,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 47943,
+          "end_tick": 48555,
+          "position": [
+            57.720772646230024,
+            112.2295137205011,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 47979,
+          "end_tick": 48705,
+          "position": [
+            59.87654600176992,
+            111.92266406528042,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48114,
+          "end_tick": 48804,
+          "position": [
+            59.947727280487776,
+            111.92360065262957,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48234,
+          "end_tick": 48846,
+          "position": [
+            57.72078876734107,
+            112.22954289867415,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48273,
+          "end_tick": 48993,
+          "position": [
+            59.963423787303235,
+            111.92380718373543,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48405,
+          "end_tick": 49095,
+          "position": [
+            59.94772759028403,
+            111.9236006567058,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48525,
+          "end_tick": 49137,
+          "position": [
+            57.720788893826104,
+            112.22954312759906,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48564,
+          "end_tick": 49284,
+          "position": [
+            59.96342376386056,
+            111.92380718342699,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48696,
+          "end_tick": 49386,
+          "position": [
+            59.94772759271455,
+            111.92360065673776,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48816,
+          "end_tick": 49428,
+          "position": [
+            57.72078889481844,
+            112.22954312939504,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48855,
+          "end_tick": 49575,
+          "position": [
+            59.96342376367661,
+            111.92380718342457,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 48987,
+          "end_tick": 49677,
+          "position": [
+            59.94772759273362,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49107,
+          "end_tick": 49719,
+          "position": [
+            57.72078889482623,
+            112.22954312940898,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49146,
+          "end_tick": 49866,
+          "position": [
+            59.96342376367522,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49278,
+          "end_tick": 49968,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49398,
+          "end_tick": 50010,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49437,
+          "end_tick": 50157,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49569,
+          "end_tick": 50259,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49689,
+          "end_tick": 50301,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49728,
+          "end_tick": 50448,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49860,
+          "end_tick": 50550,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 49980,
+          "end_tick": 50592,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50019,
+          "end_tick": 50739,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50151,
+          "end_tick": 50841,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50271,
+          "end_tick": 50883,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50310,
+          "end_tick": 51030,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50442,
+          "end_tick": 51132,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50562,
+          "end_tick": 51174,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50601,
+          "end_tick": 51321,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50733,
+          "end_tick": 51423,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50853,
+          "end_tick": 51465,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 50892,
+          "end_tick": 51612,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51024,
+          "end_tick": 51714,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51144,
+          "end_tick": 51756,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51183,
+          "end_tick": 51903,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51315,
+          "end_tick": 52005,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51435,
+          "end_tick": 52047,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51474,
+          "end_tick": 52194,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51606,
+          "end_tick": 52296,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51726,
+          "end_tick": 52338,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51765,
+          "end_tick": 52485,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 51897,
+          "end_tick": 52587,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 52017,
+          "end_tick": 52629,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 52056,
+          "end_tick": 52776,
+          "position": [
+            59.96342376367521,
+            111.92380718342456,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 52188,
+          "end_tick": 52878,
+          "position": [
+            59.94772759273371,
+            111.92360065673802,
+            13.497710078582763
+          ]
+        },
+        {
+          "start_tick": 52308,
+          "end_tick": 52917,
+          "position": [
+            57.72078889482632,
+            112.22954312940927,
+            13.497710078582763
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:1670",
+          "match_tick": 52918,
+          "round_index": 8,
+          "round_winner": 0,
+          "reason": "timeout",
+          "round_wins": [
+            6,
+            3
+          ],
+          "post_end_tick": 53218,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "9": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2003,
+        "alive_live_calls": 500,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 497,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 2,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "combat_calls": 3,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 3,
+        "combat_airborne_calls": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "1": 3
+      },
+      "weapon_combat": {
+        "ak47": 3
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 500
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        99.8858,
+        130.4673,
+        15.834510177001954
+      ],
+      "position_last": [
+        106.43112478277789,
+        59.527353965338634,
+        15.687298868541859
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 55071,
+      "first_combat_frame_trace": [
+        {
+          "tick": 55071,
+          "visible": true,
+          "yaw": 0.7044176523019912,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.14603862792200295,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 55074,
+          "visible": true,
+          "yaw": 0.8544176523019913,
+          "pitch": -0.014603862792200294,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.1498940984378568,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 55077,
+          "visible": true,
+          "yaw": 1.0044176523019914,
+          "pitch": 0.000385547051585387,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.001282873037534789,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "death_tick": 55080,
+      "death_position": [
+        106.4648444630462,
+        59.492451198548785,
+        15.686814510114406
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:1770",
+          "match_tick": 55078,
+          "round_index": 9,
+          "target": 6,
+          "killer": 1,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:1825",
+          "match_tick": 57189,
+          "round_index": 9,
+          "player": 5,
+          "item_id": "r9:bomb",
+          "site": "A",
+          "position": [
+            47.68605597463017,
+            88.56442069966991,
+            15.428109973297119
+          ],
+          "views": {
+            "5": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:1825",
+              "match_tick": 57189,
+              "round_index": 9,
+              "player": 5,
+              "item_id": "r9:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:1834",
+          "match_tick": 59589,
+          "round_index": 9,
+          "item_id": "r9:bomb",
+          "fuse_end_tick": 59589,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:1847",
+          "match_tick": 59589,
+          "round_index": 9,
+          "round_winner": 1,
+          "reason": "bomb_explode",
+          "round_wins": [
+            6,
+            4
+          ],
+          "post_end_tick": 59889,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "10": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 2300,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 2300,
+        "navigation_calls": 2300,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "held": 2300
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        96.5552,
+        130.11169999999998,
+        15.831785243821944
+      ],
+      "position_last": [
+        73.03208849331435,
+        84.21798919261909,
+        14.755233628474796
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 60471,
+          "end_tick": 61077,
+          "position": [
+            92.77545440835549,
+            133.15432339714096,
+            15.796910514024395
+          ]
+        },
+        {
+          "start_tick": 60564,
+          "end_tick": 61170,
+          "position": [
+            91.95925089818209,
+            132.39768667287362,
+            15.82347895239649
+          ]
+        },
+        {
+          "start_tick": 60687,
+          "end_tick": 61299,
+          "position": [
+            90.36581315990452,
+            132.52590050272246,
+            15.757537342281768
+          ]
+        },
+        {
+          "start_tick": 60852,
+          "end_tick": 61500,
+          "position": [
+            90.04949137261085,
+            133.18104311114658,
+            15.748963158576267
+          ]
+        },
+        {
+          "start_tick": 60933,
+          "end_tick": 61548,
+          "position": [
+            90.0708814778964,
+            132.52511725868456,
+            15.752366709388799
+          ]
+        },
+        {
+          "start_tick": 61059,
+          "end_tick": 61677,
+          "position": [
+            92.55467795583704,
+            132.70184169568884,
+            15.79512625835974
+          ]
+        },
+        {
+          "start_tick": 61173,
+          "end_tick": 61788,
+          "position": [
+            90.46598692617037,
+            132.840195519982,
+            15.757843739378515
+          ]
+        },
+        {
+          "start_tick": 61320,
+          "end_tick": 61932,
+          "position": [
+            92.53779048091788,
+            133.5304957613838,
+            15.790994229725094
+          ]
+        },
+        {
+          "start_tick": 61359,
+          "end_tick": 61968,
+          "position": [
+            91.60828158315007,
+            133.13572509157865,
+            15.77651962723298
+          ]
+        },
+        {
+          "start_tick": 63225,
+          "end_tick": 63834,
+          "position": [
+            72.2755490253641,
+            84.28416482157643,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 63279,
+          "end_tick": 63924,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 63393,
+          "end_tick": 63999,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 63465,
+          "end_tick": 64107,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 63549,
+          "end_tick": 64161,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 63606,
+          "end_tick": 64251,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 63720,
+          "end_tick": 64326,
+          "position": [
+            73.63979537530074,
+            83.95478547749728,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 63792,
+          "end_tick": 64434,
+          "position": [
+            72.56435305450864,
+            83.98225360370435,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 63876,
+          "end_tick": 64488,
+          "position": [
+            72.21800380523204,
+            84.43560326948078,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 63933,
+          "end_tick": 64578,
+          "position": [
+            72.42605165566158,
+            83.77077825414516,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 64164,
+          "end_tick": 64782,
+          "position": [
+            72.17008578890633,
+            82.77245309731538,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 64359,
+          "end_tick": 64971,
+          "position": [
+            74.72029612151698,
+            82.49882992689507,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 64383,
+          "end_tick": 64989,
+          "position": [
+            72.79867894078687,
+            82.70508260644819,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 64521,
+          "end_tick": 65139,
+          "position": [
+            72.9616567355339,
+            82.35174370721381,
+            14.771487197101846
+          ]
+        },
+        {
+          "start_tick": 64635,
+          "end_tick": 65253,
+          "position": [
+            73.05368799420202,
+            84.06967242868359,
+            14.750249101876962
+          ]
+        },
+        {
+          "start_tick": 64686,
+          "end_tick": 65292,
+          "position": [
+            72.13147632114206,
+            84.1830518774067,
+            15.123302944924966
+          ]
+        },
+        {
+          "start_tick": 64779,
+          "end_tick": 65394,
+          "position": [
+            73.33441884052955,
+            82.12047195315554,
+            14.51370987258911
+          ]
+        },
+        {
+          "start_tick": 64872,
+          "end_tick": 65493,
+          "position": [
+            72.16959452443339,
+            82.89140182951397,
+            15.123309939727784
+          ]
+        },
+        {
+          "start_tick": 65028,
+          "end_tick": 65661,
+          "position": [
+            72.15159647535543,
+            83.69266954393215,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 65238,
+          "end_tick": 65871,
+          "position": [
+            72.13146426909381,
+            84.39127700713917,
+            15.123315793478216
+          ]
+        },
+        {
+          "start_tick": 65310,
+          "end_tick": 65949,
+          "position": [
+            73.04092304968044,
+            84.11814298121907,
+            14.753194873902826
+          ]
+        },
+        {
+          "start_tick": 65484,
+          "end_tick": 66177,
+          "position": [
+            73.14293908140309,
+            83.57713166574653,
+            14.729652588080105
+          ]
+        },
+        {
+          "start_tick": 65625,
+          "end_tick": 66234,
+          "position": [
+            72.69592151295691,
+            83.10050367168958,
+            14.920110076293945
+          ]
+        },
+        {
+          "start_tick": 65664,
+          "end_tick": 66471,
+          "position": [
+            72.13155850364517,
+            84.66309640046967,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 65910,
+          "end_tick": 66537,
+          "position": [
+            72.13147540138199,
+            84.20687095444751,
+            15.123339732397945
+          ]
+        },
+        {
+          "start_tick": 65964,
+          "end_tick": 66600,
+          "position": [
+            72.86672032439373,
+            83.89921163722069,
+            14.920100076293945
+          ]
+        },
+        {
+          "start_tick": 66087,
+          "end_tick": 66768,
+          "position": [
+            72.13143480798472,
+            83.28512393453255,
+            15.123475112443426
+          ]
+        },
+        {
+          "start_tick": 66231,
+          "end_tick": 67017,
+          "position": [
+            72.28337840426539,
+            84.26356069440641,
+            15.123309939727783
+          ]
+        },
+        {
+          "start_tick": 66486,
+          "end_tick": 67134,
+          "position": [
+            73.03722465692302,
+            84.26063156253174,
+            14.7540483536737
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:2012",
+          "match_tick": 67149,
+          "round_index": 10,
+          "round_winner": 0,
+          "reason": "timeout",
+          "round_wins": [
+            7,
+            4
+          ],
+          "post_end_tick": 67449,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "11": {
+      "side": "attack",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2773,
+        "alive_live_calls": 606,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 11,
+        "reload_requested": 0,
+        "plant_carrier_calls": 606,
+        "navigation_calls": 573,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 18,
+        "combat_after_not_visible": 3,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 5,
+        "combat_calls": 21,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 11,
+        "combat_moving_calls": 13,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 7,
+        "own_hit_events": 6
+      },
+      "visible_targets": {
+        "4": 10,
+        "0": 8,
+        "1": 3
+      },
+      "weapon_combat": {
+        "ak47": 21
+      },
+      "uses": {},
+      "bomb_states": {
+        "held": 606
+      },
+      "ammo_spent": 7,
+      "damage_taken": 0,
+      "position_start": [
+        101.0415,
+        132.766,
+        15.77969298650661
+      ],
+      "position_last": [
+        106.56935225593818,
+        59.39892229986797,
+        15.684064109098726
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 69411,
+      "first_combat_frame_trace": [
+        {
+          "tick": 69411,
+          "visible": true,
+          "yaw": 1.8733645619809816,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.9563271554261614,
+            "pitch_rate": -0.43090891829259736,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 69414,
+          "visible": true,
+          "yaw": 2.0168136352949055,
+          "pitch": -0.043090891829259736,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.01134773922867242,
+            "pitch_rate": 0.3381690872532027,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69417,
+          "visible": true,
+          "yaw": 2.018515796179207,
+          "pitch": -0.009273983103939462,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0370189241592378,
+            "pitch_rate": -0.10599777039259928,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69420,
+          "visible": true,
+          "yaw": 2.0240686348030925,
+          "pitch": -0.01987376014319939,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.008345075952839547,
+            "pitch_rate": 0.26917906833621136,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69423,
+          "visible": true,
+          "yaw": 2.022816873410166,
+          "pitch": 0.0070441466904217435,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0077176019976299415,
+            "pitch_rate": -0.15091249459650366,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69426,
+          "visible": true,
+          "yaw": 2.0216592331105216,
+          "pitch": -0.008047102769228622,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011331108470438167,
+            "pitch_rate": -0.04343582014413592,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69429,
+          "visible": true,
+          "yaw": 2.0233588993810874,
+          "pitch": -0.012390684783642213,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.017426108760666047,
+            "pitch_rate": -0.4155877706295691,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 69432,
+          "visible": true,
+          "yaw": 2.025972815695187,
+          "pitch": -0.05394946184659913,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0060032687625325805,
+            "pitch_rate": -0.08628542527686678,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69435,
+          "visible": true,
+          "yaw": 2.026873306009567,
+          "pitch": -0.0625780043742858,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.004976487610687623,
+            "pitch_rate": -0.1963362054081961,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69438,
+          "visible": true,
+          "yaw": 2.0276197791511708,
+          "pitch": -0.0822116249151054,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0017522544025686908,
+            "pitch_rate": 0.1569674597162697,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 69441,
+          "visible": false,
+          "yaw": 2.0278826173115565,
+          "pitch": -0.06651487894347843,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.037635910517404746,
+            "pitch_rate": -0.2004913559436042,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 69444,
+          "visible": false,
+          "yaw": 2.0222372307339462,
+          "pitch": -0.08656401453783887,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.023759865312484862,
+            "pitch_rate": -0.08020925555363376,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 69627,
+      "death_position": [
+        106.60324300509487,
+        59.36421087845565,
+        15.682549372693634
+      ],
+      "own_damage": 200.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:2089",
+          "match_tick": 69439,
+          "round_index": 11,
+          "target": 4,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:2100",
+          "match_tick": 69544,
+          "round_index": 11,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:2109",
+          "match_tick": 69625,
+          "round_index": 11,
+          "target": 6,
+          "killer": 1,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:2228",
+          "match_tick": 73728,
+          "round_index": 11,
+          "player": 9,
+          "item_id": "r11:bomb",
+          "site": "A",
+          "position": [
+            47.50587713442341,
+            88.86469688158982,
+            15.42810997329712
+          ],
+          "views": {
+            "9": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:2228",
+              "match_tick": 73728,
+              "round_index": 11,
+              "player": 9,
+              "item_id": "r11:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:2230",
+          "match_tick": 76128,
+          "round_index": 11,
+          "item_id": "r11:bomb",
+          "fuse_end_tick": 76128,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:2243",
+          "match_tick": 76128,
+          "round_index": 11,
+          "round_winner": 1,
+          "reason": "bomb_explode",
+          "round_wins": [
+            7,
+            5
+          ],
+          "post_end_tick": 76428,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "12": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 797,
+        "hidden_aim_hold_calls": 13,
+        "blind_calls": 0,
+        "fire_requested": 2,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 773,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 7,
+        "combat_after_not_visible": 4,
+        "visibility_lost_after_combat": 4,
+        "pose_switches_live": 6,
+        "combat_calls": 11,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 2,
+        "combat_moving_calls": 3,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 2,
+        "own_hit_events": 2
+      },
+      "visible_targets": {
+        "4": 11
+      },
+      "weapon_combat": {
+        "usp": 11
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 794,
+        "world": 3
+      },
+      "ammo_spent": 2,
+      "damage_taken": 19.538177105394652,
+      "position_start": [
+        51.2321,
+        55.296,
+        13.238746235364221
+      ],
+      "position_last": [
+        41.0527053539133,
+        80.70127500331041,
+        15.42810997329712
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 77676,
+          "end_tick": 78276,
+          "position": [
+            39.72652954345637,
+            65.33372337788902,
+            14.310510009155273
+          ]
+        }
+      ],
+      "first_combat_tick": 79032,
+      "first_combat_frame_trace": [
+        {
+          "tick": 79032,
+          "visible": true,
+          "yaw": -1.1190085833527135,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.9516993696302567,
+            "pitch_rate": -0.023695050107714492,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79035,
+          "visible": false,
+          "yaw": -0.976253677908175,
+          "pitch": -0.0023695050107714493,
+          "action": {
+            "weapon_slot": 1,
+            "move_forward": 0.5775758315999542,
+            "move_right": 0.478441384865086,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.023695050107714492,
+            "walk": true
+          }
+        },
+        {
+          "tick": 79038,
+          "visible": false,
+          "yaw": -1.126253677908175,
+          "pitch": -2.168404344971009e-19,
+          "action": {
+            "weapon_slot": 1,
+            "move_forward": 0.6375818052750466,
+            "move_right": 0.3949549867797754,
+            "yaw_rate": -1.0,
+            "pitch_rate": 2.168404344971009e-18,
+            "walk": true
+          }
+        },
+        {
+          "tick": 79041,
+          "visible": true,
+          "yaw": -1.2762536779081752,
+          "pitch": -2.407412430484045e-35,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.006980805942379631,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79044,
+          "visible": false,
+          "yaw": -1.126253677908175,
+          "pitch": -0.0006980805942379631,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.19632644637978933,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79047,
+          "visible": false,
+          "yaw": -0.976253677908175,
+          "pitch": 0.01893456404374097,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 0.012091445695728472,
+            "pitch_rate": 0.0002327298915259443,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79050,
+          "visible": false,
+          "yaw": -0.9744399610538158,
+          "pitch": 0.018957837032893565,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 8.994858334906061e-05,
+            "pitch_rate": 1.3793676550931389e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79053,
+          "visible": false,
+          "yaw": -0.9744264687663134,
+          "pitch": 0.01895921640054866,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -6.657828122887585e-06,
+            "pitch_rate": 6.218785049416642e-07,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79056,
+          "visible": false,
+          "yaw": -0.9744274674405317,
+          "pitch": 0.018959278588399155,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -6.6578467361466664e-06,
+            "pitch_rate": 6.218800529741997e-07,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79059,
+          "visible": false,
+          "yaw": -0.9744284661175421,
+          "pitch": 0.018959340776404453,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": -6.6578653464451545e-06,
+            "pitch_rate": 6.218816010067352e-07,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 79062,
+          "visible": false,
+          "yaw": -0.9744294647973439,
+          "pitch": 0.018959402964564553,
+          "action": {
+            "weapon_slot": 1,
+            "move_forward": 0.5589045597419114,
+            "move_right": 0.5001256773049152,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.18959402964564553,
+            "walk": true
+          }
+        },
+        {
+          "tick": 79065,
+          "visible": true,
+          "yaw": -1.124429464797344,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 1,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.006657325525885746,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 79179,
+      "death_position": [
+        41.060254744756385,
+        80.73557229482144,
+        15.428109973297119
+      ],
+      "own_damage": 100.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:2368",
+          "match_tick": 79093,
+          "round_index": 12,
+          "target": 4,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:2381",
+          "match_tick": 79177,
+          "round_index": 12,
+          "target": 6,
+          "killer": 2,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:2473",
+          "match_tick": 83688,
+          "round_index": 12,
+          "round_winner": 1,
+          "reason": "timeout",
+          "round_wins": [
+            7,
+            6
+          ],
+          "post_end_tick": 83988,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "13": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2173,
+        "alive_live_calls": 2173,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 2173,
+        "retake_unknown_calls": 800,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 1373,
+        "planted": 800
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        51.2321,
+        55.296,
+        13.238746235364221
+      ],
+      "position_last": [
+        91.88836602954818,
+        51.19054437012203,
+        15.802988482955554
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 85800,
+          "end_tick": 86481,
+          "position": [
+            91.88836602954487,
+            51.1905443701213,
+            15.732910006866454
+          ]
+        },
+        {
+          "start_tick": 85908,
+          "end_tick": 86514,
+          "position": [
+            91.88836602954557,
+            51.19054437012135,
+            16.677689087586444
+          ]
+        },
+        {
+          "start_tick": 85941,
+          "end_tick": 86577,
+          "position": [
+            91.88836602954557,
+            51.19054437012135,
+            15.770883857766444
+          ]
+        },
+        {
+          "start_tick": 86004,
+          "end_tick": 86610,
+          "position": [
+            91.88836602954557,
+            51.19054437012135,
+            16.715662938486435
+          ]
+        },
+        {
+          "start_tick": 86037,
+          "end_tick": 86673,
+          "position": [
+            91.88836602954662,
+            51.1905443701214,
+            15.808857708657332
+          ]
+        },
+        {
+          "start_tick": 86100,
+          "end_tick": 86706,
+          "position": [
+            91.88836602954662,
+            51.1905443701214,
+            16.753636789377325
+          ]
+        },
+        {
+          "start_tick": 86133,
+          "end_tick": 86769,
+          "position": [
+            91.88836602954662,
+            51.1905443701214,
+            15.846831559557323
+          ]
+        },
+        {
+          "start_tick": 86199,
+          "end_tick": 86859,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            16.540142230337317
+          ]
+        },
+        {
+          "start_tick": 86334,
+          "end_tick": 86955,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            15.793800902488412
+          ]
+        },
+        {
+          "start_tick": 86391,
+          "end_tick": 87054,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            16.487111573268404
+          ]
+        },
+        {
+          "start_tick": 86478,
+          "end_tick": 87090,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            17.127090653988397
+          ]
+        },
+        {
+          "start_tick": 86508,
+          "end_tick": 87153,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            15.740770245419503
+          ]
+        },
+        {
+          "start_tick": 86574,
+          "end_tick": 87183,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            17.036086146019496
+          ]
+        },
+        {
+          "start_tick": 86604,
+          "end_tick": 87249,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            15.778744096319494
+          ]
+        },
+        {
+          "start_tick": 86670,
+          "end_tick": 87279,
+          "position": [
+            91.8883660295477,
+            51.19054437012235,
+            17.074059996919488
+          ]
+        },
+        {
+          "start_tick": 86700,
+          "end_tick": 87345,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            15.816717947219486
+          ]
+        },
+        {
+          "start_tick": 86766,
+          "end_tick": 87375,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            17.11203384781948
+          ]
+        },
+        {
+          "start_tick": 86796,
+          "end_tick": 87438,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            15.854691798119475
+          ]
+        },
+        {
+          "start_tick": 86862,
+          "end_tick": 87474,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            17.15000769871947
+          ]
+        },
+        {
+          "start_tick": 86892,
+          "end_tick": 87537,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            15.763687290150575
+          ]
+        },
+        {
+          "start_tick": 86958,
+          "end_tick": 87567,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            17.059003190750566
+          ]
+        },
+        {
+          "start_tick": 86988,
+          "end_tick": 87633,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            15.801661141050564
+          ]
+        },
+        {
+          "start_tick": 87054,
+          "end_tick": 87663,
+          "position": [
+            91.88836602954801,
+            51.190544370122744,
+            17.096977041650558
+          ]
+        },
+        {
+          "start_tick": 87084,
+          "end_tick": 87726,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.839634991944777
+          ]
+        },
+        {
+          "start_tick": 87150,
+          "end_tick": 87762,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.134950892544772
+          ]
+        },
+        {
+          "start_tick": 87180,
+          "end_tick": 87825,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.748630483975877
+          ]
+        },
+        {
+          "start_tick": 87246,
+          "end_tick": 87855,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.043946384575868
+          ]
+        },
+        {
+          "start_tick": 87276,
+          "end_tick": 87921,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.786604334875866
+          ]
+        },
+        {
+          "start_tick": 87342,
+          "end_tick": 87951,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.08192023547586
+          ]
+        },
+        {
+          "start_tick": 87372,
+          "end_tick": 88017,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.824578185775858
+          ]
+        },
+        {
+          "start_tick": 87438,
+          "end_tick": 88047,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.11989408637585
+          ]
+        },
+        {
+          "start_tick": 87471,
+          "end_tick": 88113,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.733573677806957
+          ]
+        },
+        {
+          "start_tick": 87534,
+          "end_tick": 88143,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.02888957840695
+          ]
+        },
+        {
+          "start_tick": 87564,
+          "end_tick": 88209,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.771547528706948
+          ]
+        },
+        {
+          "start_tick": 87630,
+          "end_tick": 88239,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.06686342930694
+          ]
+        },
+        {
+          "start_tick": 87660,
+          "end_tick": 88305,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.80952137960694
+          ]
+        },
+        {
+          "start_tick": 87726,
+          "end_tick": 88335,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.104837280206933
+          ]
+        },
+        {
+          "start_tick": 87756,
+          "end_tick": 88398,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.84749523050693
+          ]
+        },
+        {
+          "start_tick": 87822,
+          "end_tick": 88434,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.142811131106924
+          ]
+        },
+        {
+          "start_tick": 87852,
+          "end_tick": 88497,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.756490722538029
+          ]
+        },
+        {
+          "start_tick": 87918,
+          "end_tick": 88527,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.05180662313802
+          ]
+        },
+        {
+          "start_tick": 87948,
+          "end_tick": 88593,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.794464573438018
+          ]
+        },
+        {
+          "start_tick": 88014,
+          "end_tick": 88623,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.08978047403801
+          ]
+        },
+        {
+          "start_tick": 88044,
+          "end_tick": 88686,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.83243842433801
+          ]
+        },
+        {
+          "start_tick": 88110,
+          "end_tick": 88722,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.127754324938003
+          ]
+        },
+        {
+          "start_tick": 88140,
+          "end_tick": 88785,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.74143391636911
+          ]
+        },
+        {
+          "start_tick": 88206,
+          "end_tick": 88815,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.036749816969103
+          ]
+        },
+        {
+          "start_tick": 88236,
+          "end_tick": 88881,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.7794077672691
+          ]
+        },
+        {
+          "start_tick": 88302,
+          "end_tick": 88911,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.074723667869094
+          ]
+        },
+        {
+          "start_tick": 88332,
+          "end_tick": 88977,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.817381618169092
+          ]
+        },
+        {
+          "start_tick": 88398,
+          "end_tick": 89007,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.112697518769085
+          ]
+        },
+        {
+          "start_tick": 88428,
+          "end_tick": 89070,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.855355469069082
+          ]
+        },
+        {
+          "start_tick": 88494,
+          "end_tick": 89106,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.150671369669077
+          ]
+        },
+        {
+          "start_tick": 88524,
+          "end_tick": 89169,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.764350961100181
+          ]
+        },
+        {
+          "start_tick": 88590,
+          "end_tick": 89199,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.059666861700173
+          ]
+        },
+        {
+          "start_tick": 88620,
+          "end_tick": 89265,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.80232481200017
+          ]
+        },
+        {
+          "start_tick": 88686,
+          "end_tick": 89295,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.097640712600164
+          ]
+        },
+        {
+          "start_tick": 88716,
+          "end_tick": 89358,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.84029866290016
+          ]
+        },
+        {
+          "start_tick": 88782,
+          "end_tick": 89394,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.135614563500155
+          ]
+        },
+        {
+          "start_tick": 88812,
+          "end_tick": 89457,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.74929415493126
+          ]
+        },
+        {
+          "start_tick": 88878,
+          "end_tick": 89487,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.04461005553125
+          ]
+        },
+        {
+          "start_tick": 88908,
+          "end_tick": 89553,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.78726800583125
+          ]
+        },
+        {
+          "start_tick": 88974,
+          "end_tick": 89583,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.082583906431243
+          ]
+        },
+        {
+          "start_tick": 89004,
+          "end_tick": 89649,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.82524185673124
+          ]
+        },
+        {
+          "start_tick": 89070,
+          "end_tick": 89679,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.120557757331234
+          ]
+        },
+        {
+          "start_tick": 89103,
+          "end_tick": 89745,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.73423734876234
+          ]
+        },
+        {
+          "start_tick": 89166,
+          "end_tick": 89775,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.029553249362333
+          ]
+        },
+        {
+          "start_tick": 89196,
+          "end_tick": 89841,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.772211199662332
+          ]
+        },
+        {
+          "start_tick": 89262,
+          "end_tick": 89871,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.067527100262325
+          ]
+        },
+        {
+          "start_tick": 89292,
+          "end_tick": 89937,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.810185050562323
+          ]
+        },
+        {
+          "start_tick": 89358,
+          "end_tick": 89967,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.105500951162316
+          ]
+        },
+        {
+          "start_tick": 89388,
+          "end_tick": 90030,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.848158901462313
+          ]
+        },
+        {
+          "start_tick": 89454,
+          "end_tick": 90066,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.143474802062308
+          ]
+        },
+        {
+          "start_tick": 89484,
+          "end_tick": 90129,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.757154393493412
+          ]
+        },
+        {
+          "start_tick": 89550,
+          "end_tick": 90159,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.052470294093403
+          ]
+        },
+        {
+          "start_tick": 89580,
+          "end_tick": 90225,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.795128244393402
+          ]
+        },
+        {
+          "start_tick": 89646,
+          "end_tick": 90255,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.090444144993395
+          ]
+        },
+        {
+          "start_tick": 89676,
+          "end_tick": 90318,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.833102095293393
+          ]
+        },
+        {
+          "start_tick": 89742,
+          "end_tick": 90354,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.128417995893386
+          ]
+        },
+        {
+          "start_tick": 89772,
+          "end_tick": 90417,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.742097587324492
+          ]
+        },
+        {
+          "start_tick": 89838,
+          "end_tick": 90447,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.037413487924486
+          ]
+        },
+        {
+          "start_tick": 89868,
+          "end_tick": 90513,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.780071438224484
+          ]
+        },
+        {
+          "start_tick": 89934,
+          "end_tick": 90543,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.075387338824477
+          ]
+        },
+        {
+          "start_tick": 89964,
+          "end_tick": 90609,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.818045289124475
+          ]
+        },
+        {
+          "start_tick": 90030,
+          "end_tick": 90639,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.11336118972447
+          ]
+        },
+        {
+          "start_tick": 90060,
+          "end_tick": 90702,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.856019140024465
+          ]
+        },
+        {
+          "start_tick": 90126,
+          "end_tick": 90738,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.15133504062446
+          ]
+        },
+        {
+          "start_tick": 90156,
+          "end_tick": 90801,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.765014632055564
+          ]
+        },
+        {
+          "start_tick": 90222,
+          "end_tick": 90831,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            17.060330532655556
+          ]
+        },
+        {
+          "start_tick": 90252,
+          "end_tick": 90864,
+          "position": [
+            91.88836602954818,
+            51.19054437012203,
+            15.802988482955554
+          ]
+        }
+      ],
+      "retake": {
+        "first_tick": 88467,
+        "last_tick": 90864,
+        "min_site_distance": {
+          "A": 59.98239491405151,
+          "B": 15.56989362657522
+        },
+        "search_switches": [
+          {
+            "tick": 88467,
+            "site": "B"
+          }
+        ],
+        "scan_calls": 0
+      },
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:2604",
+          "match_tick": 88467,
+          "round_index": 13,
+          "player": 1,
+          "item_id": "r13:bomb",
+          "site": "A",
+          "position": [
+            47.953108477138656,
+            88.84768339622609,
+            15.42810997329712
+          ],
+          "views": {
+            "1": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:2604",
+              "match_tick": 88467,
+              "round_index": 13,
+              "player": 1,
+              "item_id": "r13:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:2662",
+          "match_tick": 90867,
+          "round_index": 13,
+          "item_id": "r13:bomb",
+          "fuse_end_tick": 90867,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:2675",
+          "match_tick": 90867,
+          "round_index": 13,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            8,
+            6
+          ],
+          "post_end_tick": 91167,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "14": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2159,
+        "alive_live_calls": 1189,
+        "hidden_aim_hold_calls": 14,
+        "blind_calls": 0,
+        "fire_requested": 17,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 783,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 17,
+        "combat_after_not_visible": 4,
+        "visibility_lost_after_combat": 3,
+        "pose_switches_live": 5,
+        "combat_calls": 21,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 17,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 10,
+        "own_hit_events": 9
+      },
+      "visible_targets": {
+        "0": 9,
+        "3": 12
+      },
+      "weapon_combat": {
+        "m4a1": 21
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 1189
+      },
+      "ammo_spent": 9,
+      "damage_taken": 53.86520281896301,
+      "position_start": [
+        53.8928,
+        56.8263,
+        13.200059853340761
+      ],
+      "position_last": [
+        44.5450912943544,
+        87.90951289931617,
+        15.428109973297119
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 93612,
+      "first_combat_frame_trace": [
+        {
+          "tick": 93612,
+          "visible": true,
+          "yaw": -1.186308356889668,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.2766954952990625,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93615,
+          "visible": true,
+          "yaw": -1.0363083568896678,
+          "pitch": 0.027669549529906252,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.7622096901085484,
+            "pitch_rate": 0.17838856784765467,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93618,
+          "visible": true,
+          "yaw": -0.9219769033733856,
+          "pitch": 0.04550840631467172,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011818467675960658,
+            "pitch_rate": -0.02854955879514738,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 93621,
+          "visible": true,
+          "yaw": -0.9202041332219915,
+          "pitch": 0.042653450435156975,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 9.664903793726864e-05,
+            "pitch_rate": -0.11714059372801656,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 93624,
+          "visible": true,
+          "yaw": -0.9201896358663009,
+          "pitch": 0.03093939106235532,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.011614106036565985,
+            "pitch_rate": 0.03811486465626637,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 93627,
+          "visible": false,
+          "yaw": -0.918447519960816,
+          "pitch": 0.03475087752798195,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0021043838084041275,
+            "pitch_rate": -0.07998400984616773,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93630,
+          "visible": false,
+          "yaw": -0.9187631775320765,
+          "pitch": 0.026752476543365176,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.002253575492886147,
+            "pitch_rate": 0.031467855123743366,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93633,
+          "visible": false,
+          "yaw": -0.9184251412081437,
+          "pitch": 0.02989926205573951,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.002252399349374675,
+            "pitch_rate": 0.03145143201573719,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93636,
+          "visible": false,
+          "yaw": -0.9180872813057376,
+          "pitch": 0.033044405257313225,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0011655972249791091,
+            "pitch_rate": 0.016275844640680284,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93639,
+          "visible": false,
+          "yaw": -0.9179124417219907,
+          "pitch": 0.03467198972138126,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0009307482886870371,
+            "pitch_rate": 0.012996525919590982,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93642,
+          "visible": false,
+          "yaw": -0.9177728294786875,
+          "pitch": 0.035971642313340366,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0007432176041000105,
+            "pitch_rate": 0.010377936734319998,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 93645,
+          "visible": false,
+          "yaw": -0.9176613468380725,
+          "pitch": 0.037009435986772365,
+          "action": {
+            "weapon_slot": 0,
+            "move_forward": 0.723655675587112,
+            "move_right": 0.1970341675714155,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.37009435986772365,
+            "walk": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 95094,
+      "death_position": [
+        44.5450912943544,
+        87.90951289931617,
+        15.428109973297119
+      ],
+      "own_damage": 156.82807833959959,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:2804",
+          "match_tick": 93817,
+          "round_index": 14,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:2856",
+          "match_tick": 95092,
+          "round_index": 14,
+          "target": 3,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:2857",
+          "match_tick": 95092,
+          "round_index": 14,
+          "target": 6,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:2905",
+          "match_tick": 97203,
+          "round_index": 14,
+          "player": 1,
+          "item_id": "r14:bomb",
+          "site": "A",
+          "position": [
+            47.911508747422964,
+            88.80784176504388,
+            15.42810997329712
+          ],
+          "views": {
+            "1": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:2905",
+              "match_tick": 97203,
+              "round_index": 14,
+              "player": 1,
+              "item_id": "r14:bomb",
+              "site": "A"
+            },
+            "5": true
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1817550673:2934",
+          "match_tick": 98004,
+          "round_index": 14,
+          "item_id": "r14:bomb",
+          "fuse_end_tick": 99603,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:2953",
+          "match_tick": 98004,
+          "round_index": 14,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            8,
+            7
+          ],
+          "post_end_tick": 98304,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "15": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2300,
+        "alive_live_calls": 2300,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 1272,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 2300
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        53.8928,
+        56.8263,
+        13.200059853340761
+      ],
+      "position_last": [
+        107.00141844995572,
+        47.76433279999743,
+        15.936109870300294
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 100527,
+          "end_tick": 101172,
+          "position": [
+            92.5079909492182,
+            51.27658765712522,
+            15.732910006866456
+          ]
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "round_end",
+          "event_id": "1817550673:3136",
+          "match_tick": 105564,
+          "round_index": 15,
+          "round_winner": 1,
+          "reason": "timeout",
+          "round_wins": [
+            8,
+            8
+          ],
+          "post_end_tick": 105864,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "16": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1826,
+        "alive_live_calls": 836,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 691,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 836
+      },
+      "ammo_spent": 0,
+      "damage_taken": 80.76897969841511,
+      "position_start": [
+        51.4925,
+        53.264,
+        13.046981344785166
+      ],
+      "position_last": [
+        44.90458162869654,
+        88.04033983477724,
+        15.42810997329712
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 108732,
+      "death_position": [
+        44.90458162869654,
+        88.04033983477724,
+        15.428109973297119
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:3263",
+          "match_tick": 108730,
+          "round_index": 16,
+          "target": 6,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:3273",
+          "match_tick": 109302,
+          "round_index": 16,
+          "player": 3,
+          "item_id": "r16:bomb",
+          "site": "A",
+          "position": [
+            49.72755730436277,
+            90.17942789321798,
+            15.42810997329712
+          ],
+          "views": {
+            "3": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:3273",
+              "match_tick": 109302,
+              "round_index": 16,
+              "player": 3,
+              "item_id": "r16:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:3294",
+          "match_tick": 111702,
+          "round_index": 16,
+          "item_id": "r16:bomb",
+          "fuse_end_tick": 111702,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:3307",
+          "match_tick": 111702,
+          "round_index": 16,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            9,
+            8
+          ],
+          "post_end_tick": 112002,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "17": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 1069,
+        "alive_live_calls": 575,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 571,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 3,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 1,
+        "combat_calls": 4,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 0,
+        "combat_moving_calls": 4,
+        "combat_airborne_calls": 4,
+        "post_calls": 100
+      },
+      "visible_targets": {
+        "3": 4
+      },
+      "weapon_combat": {
+        "m4a1": 4
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 571,
+        "held": 4
+      },
+      "ammo_spent": 0,
+      "damage_taken": 0,
+      "position_start": [
+        51.2321,
+        60.5538,
+        13.273630837571815
+      ],
+      "position_last": [
+        92.9570705747904,
+        51.284315287934284,
+        16.883420677646445
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 114075,
+      "first_combat_frame_trace": [
+        {
+          "tick": 114075,
+          "visible": true,
+          "yaw": 0.02515682524215273,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.7204503140310268,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 114078,
+          "visible": true,
+          "yaw": -0.12484317475784726,
+          "pitch": -0.07204503140310267,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.3305858127468121,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 114081,
+          "visible": true,
+          "yaw": -0.27484317475784725,
+          "pitch": -0.10510361267778387,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.11716227425705217,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 114084,
+          "visible": true,
+          "yaw": -0.4248431747578472,
+          "pitch": -0.09338738525207865,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.13854906193012634,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "death_tick": 114087,
+      "death_position": [
+        92.96981971178361,
+        51.28572264802886,
+        16.78830898544422
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:3375",
+          "match_tick": 114085,
+          "round_index": 17,
+          "target": 6,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:3398",
+          "match_tick": 114453,
+          "round_index": 17,
+          "player": 3,
+          "item_id": "r17:bomb",
+          "site": "B",
+          "position": [
+            106.50841885591741,
+            53.42084430748077,
+            15.732910006866456
+          ],
+          "views": {
+            "3": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:3398",
+              "match_tick": 114453,
+              "round_index": 17,
+              "player": 3,
+              "item_id": "r17:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "defuse_complete",
+          "event_id": "1817550673:3435",
+          "match_tick": 115569,
+          "round_index": 17,
+          "item_id": "r17:bomb",
+          "fuse_end_tick": 116853,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:3454",
+          "match_tick": 115569,
+          "round_index": 17,
+          "round_winner": 1,
+          "reason": "defuse",
+          "round_wins": [
+            9,
+            9
+          ],
+          "post_end_tick": 115869,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "18": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2224,
+        "alive_live_calls": 442,
+        "hidden_aim_hold_calls": 0,
+        "blind_calls": 0,
+        "fire_requested": 0,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 442,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 0,
+        "combat_after_not_visible": 0,
+        "visibility_lost_after_combat": 0,
+        "pose_switches_live": 0,
+        "post_calls": 100
+      },
+      "visible_targets": {},
+      "weapon_combat": {},
+      "uses": {},
+      "bomb_states": {
+        "unknown": 442
+      },
+      "ammo_spent": 0,
+      "damage_taken": 95.86674065007384,
+      "position_start": [
+        51.2321,
+        58.5472,
+        13.209437574493855
+      ],
+      "position_last": [
+        38.74227975850014,
+        76.7680337249355,
+        15.732910006866456
+      ],
+      "slow_navigation_windows": [],
+      "death_tick": 117555,
+      "death_position": [
+        38.7128173124416,
+        76.7809030615057,
+        15.732910006866454
+      ],
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:3534",
+          "match_tick": 117553,
+          "round_index": 18,
+          "target": 6,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:3615",
+          "match_tick": 120501,
+          "round_index": 18,
+          "player": 0,
+          "item_id": "r18:bomb",
+          "site": "A",
+          "position": [
+            49.13847131279764,
+            91.13882615525299,
+            15.428109973297119
+          ],
+          "views": {
+            "0": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:3615",
+              "match_tick": 120501,
+              "round_index": 18,
+              "player": 0,
+              "item_id": "r18:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:3636",
+          "match_tick": 122901,
+          "round_index": 18,
+          "item_id": "r18:bomb",
+          "fuse_end_tick": 122901,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:3649",
+          "match_tick": 122901,
+          "round_index": 18,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            10,
+            9
+          ],
+          "post_end_tick": 123201,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "19": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2866,
+        "alive_live_calls": 2866,
+        "hidden_aim_hold_calls": 6,
+        "blind_calls": 0,
+        "fire_requested": 3,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 1589,
+        "retake_unknown_calls": 800,
+        "retake_known_calls": 0,
+        "combat_after_combat": 8,
+        "combat_after_not_visible": 1,
+        "visibility_lost_after_combat": 1,
+        "pose_switches_live": 2,
+        "combat_calls": 9,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 3,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 2,
+        "own_hit_events": 2
+      },
+      "visible_targets": {
+        "0": 9
+      },
+      "weapon_combat": {
+        "m4a1": 9
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 2066,
+        "planted": 800
+      },
+      "ammo_spent": 2,
+      "damage_taken": 0,
+      "position_start": [
+        51.2321,
+        60.5538,
+        13.273630837571815
+      ],
+      "position_last": [
+        87.44773140147154,
+        83.56828672605461,
+        15.786193978025853
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 130899,
+          "end_tick": 131511,
+          "position": [
+            88.86386680221125,
+            86.09334649026647,
+            15.732919196371073
+          ]
+        },
+        {
+          "start_tick": 131088,
+          "end_tick": 131694,
+          "position": [
+            88.2370093034938,
+            84.5800925048251,
+            15.741077435991432
+          ]
+        },
+        {
+          "start_tick": 131280,
+          "end_tick": 131892,
+          "position": [
+            88.99109844650242,
+            85.89372967984846,
+            15.73297429322717
+          ]
+        },
+        {
+          "start_tick": 131472,
+          "end_tick": 132078,
+          "position": [
+            88.23711716117289,
+            84.58027831469273,
+            15.741072656240656
+          ]
+        }
+      ],
+      "retake": {
+        "first_tick": 129759,
+        "last_tick": 132156,
+        "min_site_distance": {
+          "A": 42.679564827812385,
+          "B": 0.3729713864643383
+        },
+        "search_switches": [
+          {
+            "tick": 129759,
+            "site": "B"
+          },
+          {
+            "tick": 129909,
+            "site": "A"
+          }
+        ],
+        "scan_calls": 50
+      },
+      "first_combat_tick": 130440,
+      "first_combat_frame_trace": [
+        {
+          "tick": 130440,
+          "visible": true,
+          "yaw": -2.197411329433329,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.0980779351149443,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130443,
+          "visible": true,
+          "yaw": -2.3474113294333283,
+          "pitch": -0.009807793511494429,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": 0.11032879114014894,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130446,
+          "visible": true,
+          "yaw": -2.4974113294333278,
+          "pitch": 0.0012250856025204657,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -1.0139772685822598e-05,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130449,
+          "visible": true,
+          "yaw": -2.6474113294333272,
+          "pitch": 0.0012240716252518837,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.0011620565062603469,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130452,
+          "visible": true,
+          "yaw": -2.7974113294333267,
+          "pitch": 0.0011078659746258488,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -1.0,
+            "pitch_rate": -0.0011458201376448023,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130455,
+          "visible": true,
+          "yaw": -2.947411329433326,
+          "pitch": 0.0009932839608613687,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.40807879117478113,
+            "pitch_rate": -0.0006186437295876718,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130458,
+          "visible": true,
+          "yaw": -3.008623148109544,
+          "pitch": 0.0009314195879026017,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -4.439150916191181e-05,
+            "pitch_rate": -0.00012425592759579963,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 130461,
+          "visible": true,
+          "yaw": -3.008629806835918,
+          "pitch": 0.0009189939951430216,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.009895929945870446,
+            "pitch_rate": -0.07325635416392473,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 130464,
+          "visible": true,
+          "yaw": -3.010114196327799,
+          "pitch": -0.006406641421249451,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0021577543977239584,
+            "pitch_rate": 0.016058116069890816,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 130467,
+          "visible": false,
+          "yaw": -3.00979053316814,
+          "pitch": -0.0048008298142603704,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.002113161760159225,
+            "pitch_rate": -0.07997930055760674,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130470,
+          "visible": false,
+          "yaw": -3.0101075074321644,
+          "pitch": -0.012798759870021043,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.00224479762028255,
+            "pitch_rate": 0.031472564369823194,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 130473,
+          "visible": false,
+          "yaw": -3.0097707877891215,
+          "pitch": -0.009651503433038723,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.002243621555907775,
+            "pitch_rate": 0.031456141219336806,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:3817",
+          "match_tick": 129759,
+          "round_index": 19,
+          "player": 0,
+          "item_id": "r19:bomb",
+          "site": "A",
+          "position": [
+            45.434469715591526,
+            93.1839371713553,
+            15.558054592926617
+          ],
+          "views": {
+            "0": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:3817",
+              "match_tick": 129759,
+              "round_index": 19,
+              "player": 0,
+              "item_id": "r19:bomb",
+              "site": "A"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:3849",
+          "match_tick": 132159,
+          "round_index": 19,
+          "item_id": "r19:bomb",
+          "fuse_end_tick": 132159,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:3862",
+          "match_tick": 132159,
+          "round_index": 19,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            11,
+            9
+          ],
+          "post_end_tick": 132459,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "own_damage": 33.067205227100004,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:3837",
+          "match_tick": 130465,
+          "round_index": 19,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "20": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2709,
+        "alive_live_calls": 856,
+        "hidden_aim_hold_calls": 10,
+        "blind_calls": 0,
+        "fire_requested": 7,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 772,
+        "retake_unknown_calls": 0,
+        "retake_known_calls": 0,
+        "combat_after_combat": 6,
+        "combat_after_not_visible": 2,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 2,
+        "combat_calls": 8,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 7,
+        "combat_moving_calls": 1,
+        "combat_airborne_calls": 0,
+        "post_calls": 100,
+        "own_actual_fire_events": 4,
+        "own_hit_events": 3
+      },
+      "visible_targets": {
+        "1": 8
+      },
+      "weapon_combat": {
+        "m4a1": 8
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 856
+      },
+      "ammo_spent": 4,
+      "damage_taken": 79.54948402297822,
+      "position_start": [
+        51.2321,
+        55.296,
+        13.238746235364221
+      ],
+      "position_last": [
+        44.91307810730673,
+        87.9826305260426,
+        15.428109973297119
+      ],
+      "slow_navigation_windows": [],
+      "first_combat_tick": 134862,
+      "first_combat_frame_trace": [
+        {
+          "tick": 134862,
+          "visible": true,
+          "yaw": -1.4020802024414707,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.15571167386633653,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 134865,
+          "visible": false,
+          "yaw": -1.2520802024414706,
+          "pitch": 0.015571167386633653,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.20416733433893947,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 134868,
+          "visible": false,
+          "yaw": -1.1020802024414704,
+          "pitch": 0.035987900820527594,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": 0.00046145673520125996,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 134871,
+          "visible": false,
+          "yaw": -0.9520802024414703,
+          "pitch": 0.03603404649404771,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.16972089760658154,
+            "pitch_rate": 0.0001359536477715806,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 134874,
+          "visible": false,
+          "yaw": -0.926622067800483,
+          "pitch": 0.036047641858824864,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0,
+            "pitch_rate": 6.938893903907228e-17,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 134877,
+          "visible": true,
+          "yaw": -0.926622067800483,
+          "pitch": 0.036047641858824864,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.13098402084709804,
+            "pitch_rate": -0.25963589995228575,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134880,
+          "visible": true,
+          "yaw": -0.9069744646734182,
+          "pitch": 0.010084051863596294,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.033511842775268974,
+            "pitch_rate": -0.0731748496788836,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134883,
+          "visible": true,
+          "yaw": -0.9019476882571279,
+          "pitch": 0.0027665668957079343,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0468710907977273,
+            "pitch_rate": 0.12522211626302662,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134886,
+          "visible": true,
+          "yaw": -0.8949170246374689,
+          "pitch": 0.015288778522010596,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.04267940073932349,
+            "pitch_rate": 0.013843985038230582,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134889,
+          "visible": true,
+          "yaw": -0.8885151145265705,
+          "pitch": 0.016673177025833652,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.04711274481404182,
+            "pitch_rate": 0.1099077578931561,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134892,
+          "visible": true,
+          "yaw": -0.8814482028044642,
+          "pitch": 0.027663952815149266,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.06116893742921903,
+            "pitch_rate": -0.028289591698934247,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 134895,
+          "visible": true,
+          "yaw": -0.8722728621900814,
+          "pitch": 0.024834993645255845,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.045787670884864795,
+            "pitch_rate": 0.02962393183082522,
+            "crouch": true,
+            "fire": true
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "death_tick": 135387,
+      "death_position": [
+        44.91307810730673,
+        87.9826305260426,
+        15.42810997329712
+      ],
+      "own_damage": 64.78817704500527,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:3981",
+          "match_tick": 134896,
+          "round_index": 20,
+          "target": 1,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:4020",
+          "match_tick": 135385,
+          "round_index": 20,
+          "target": 6,
+          "killer": 3,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:4084",
+          "match_tick": 138546,
+          "round_index": 20,
+          "player": 4,
+          "item_id": "r20:bomb",
+          "site": "B",
+          "position": [
+            107.38041703810977,
+            53.04358459048908,
+            15.834510177001954
+          ],
+          "views": {
+            "0": true,
+            "4": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:4084",
+              "match_tick": 138546,
+              "round_index": 20,
+              "player": 4,
+              "item_id": "r20:bomb",
+              "site": "B"
+            }
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:4183",
+          "match_tick": 140946,
+          "round_index": 20,
+          "item_id": "r20:bomb",
+          "fuse_end_tick": 140946,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:4196",
+          "match_tick": 140946,
+          "round_index": 20,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            12,
+            9
+          ],
+          "post_end_tick": 141246,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    },
+    "21": {
+      "side": "defend",
+      "counts": {
+        "buy_calls": 120,
+        "live_calls": 2312,
+        "alive_live_calls": 2312,
+        "hidden_aim_hold_calls": 12,
+        "blind_calls": 0,
+        "fire_requested": 36,
+        "reload_requested": 0,
+        "plant_carrier_calls": 0,
+        "navigation_calls": 1434,
+        "retake_unknown_calls": 800,
+        "retake_known_calls": 0,
+        "combat_after_combat": 38,
+        "combat_after_not_visible": 2,
+        "visibility_lost_after_combat": 2,
+        "pose_switches_live": 4,
+        "combat_calls": 40,
+        "combat_empty_calls": 0,
+        "combat_reload_calls": 0,
+        "combat_fire_calls": 36,
+        "combat_moving_calls": 6,
+        "combat_airborne_calls": 0,
+        "own_actual_fire_events": 19,
+        "own_hit_events": 8
+      },
+      "visible_targets": {
+        "1": 9,
+        "0": 31
+      },
+      "weapon_combat": {
+        "m4a1": 40
+      },
+      "uses": {},
+      "bomb_states": {
+        "unknown": 1512,
+        "planted": 800
+      },
+      "ammo_spent": 19,
+      "damage_taken": 0,
+      "position_start": [
+        53.8928,
+        56.8263,
+        13.200059853340761
+      ],
+      "position_last": [
+        87.44773134213986,
+        83.53457955809168,
+        15.786913218829525
+      ],
+      "slow_navigation_windows": [
+        {
+          "start_tick": 147507,
+          "end_tick": 148260,
+          "position": [
+            87.54160688977987,
+            83.49883492655461,
+            15.784136331723017
+          ]
+        },
+        {
+          "start_tick": 147867,
+          "end_tick": 148479,
+          "position": [
+            88.26710013406893,
+            84.80855662614967,
+            15.739540029315824
+          ]
+        }
+      ],
+      "retake": {
+        "first_tick": 146142,
+        "last_tick": 148539,
+        "min_site_distance": {
+          "A": 42.67825746956643,
+          "B": 0.3176723560411613
+        },
+        "search_switches": [
+          {
+            "tick": 146142,
+            "site": "B"
+          },
+          {
+            "tick": 146292,
+            "site": "A"
+          }
+        ],
+        "scan_calls": 50
+      },
+      "first_combat_tick": 146931,
+      "first_combat_frame_trace": [
+        {
+          "tick": 146931,
+          "visible": true,
+          "yaw": 3.0627843680127387,
+          "pitch": 0.0,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 1.0,
+            "pitch_rate": -0.2154382997483268,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 146934,
+          "visible": true,
+          "yaw": -3.0704009391668485,
+          "pitch": -0.02154382997483268,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.655977021405203,
+            "pitch_rate": 0.1949378046742059,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 146937,
+          "visible": true,
+          "yaw": -2.972004385956068,
+          "pitch": -0.002050049507412087,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.004600842461475926,
+            "pitch_rate": -0.0010868716242944023,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146940,
+          "visible": true,
+          "yaw": -2.971314259586847,
+          "pitch": -0.002158736669841527,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.006396356664515324,
+            "pitch_rate": -0.07408533364415455,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146943,
+          "visible": true,
+          "yaw": -2.9722737130865244,
+          "pitch": -0.009567270034256982,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.004700193174282201,
+            "pitch_rate": 0.015498064139286326,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146946,
+          "visible": true,
+          "yaw": -2.9715686841103817,
+          "pitch": -0.008017463620328347,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0006103233524020387,
+            "pitch_rate": -0.08026603890778147,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146949,
+          "visible": true,
+          "yaw": -2.9716602326132415,
+          "pitch": -0.016044067511106496,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0030431999956626044,
+            "pitch_rate": -0.06493436473050036,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146952,
+          "visible": true,
+          "yaw": -2.971203752613892,
+          "pitch": -0.022537503984156534,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.016290461924445648,
+            "pitch_rate": -0.09130851216816792,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146955,
+          "visible": true,
+          "yaw": -2.968760183325225,
+          "pitch": -0.031668355200973324,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0007918613992075052,
+            "pitch_rate": -0.017945409871771203,
+            "crouch": true,
+            "fire": true
+          }
+        },
+        {
+          "tick": 146958,
+          "visible": false,
+          "yaw": -2.9686414041153437,
+          "pitch": -0.033462896188150446,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.015568720273254993,
+            "pitch_rate": -0.10584008938949171,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 146961,
+          "visible": false,
+          "yaw": -2.9709767121563324,
+          "pitch": -0.04404690512709962,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": -0.0033861962339098994,
+            "pitch_rate": -0.04058844808434965,
+            "crouch": true,
+            "fire": false
+          }
+        },
+        {
+          "tick": 146964,
+          "visible": false,
+          "yaw": -2.971484641591419,
+          "pitch": -0.048105749935534584,
+          "action": {
+            "weapon_slot": 0,
+            "yaw_rate": 0.0011604980036909278,
+            "pitch_rate": 0.05748235141238662,
+            "crouch": true,
+            "fire": false
+          }
+        }
+      ],
+      "max_aim_hold_age_ticks": 18,
+      "objective_events": [
+        {
+          "type": "plant_complete_detail",
+          "event_id": "1817550673:4408",
+          "match_tick": 146142,
+          "round_index": 21,
+          "player": 1,
+          "item_id": "r21:bomb",
+          "site": "A",
+          "position": [
+            47.94011398555523,
+            88.64279543659632,
+            15.42810997329712
+          ],
+          "views": {
+            "0": true,
+            "1": {
+              "type": "plant_complete_detail",
+              "event_id": "1817550673:4408",
+              "match_tick": 146142,
+              "round_index": 21,
+              "player": 1,
+              "item_id": "r21:bomb",
+              "site": "A"
+            },
+            "4": true
+          }
+        },
+        {
+          "type": "bomb_explode",
+          "event_id": "1817550673:4465",
+          "match_tick": 148542,
+          "round_index": 21,
+          "item_id": "r21:bomb",
+          "fuse_end_tick": 148542,
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "round_end",
+          "event_id": "1817550673:4478",
+          "match_tick": 148542,
+          "round_index": 21,
+          "round_winner": 0,
+          "reason": "bomb_explode",
+          "round_wins": [
+            13,
+            9
+          ],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ],
+      "own_damage": 200.0,
+      "own_kill_events": [
+        {
+          "type": "kill",
+          "event_id": "1817550673:4419",
+          "match_tick": 146956,
+          "round_index": 21,
+          "target": 1,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        },
+        {
+          "type": "kill",
+          "event_id": "1817550673:4451",
+          "match_tick": 147490,
+          "round_index": 21,
+          "target": 0,
+          "killer": 6,
+          "assists": [],
+          "views": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true
+          }
+        }
+      ]
+    }
+  },
+  "note": "Real logged match only. Full action reproduction uses legal own observations; public replay is read afterwards. No candidate or counterfactual result.",
+  "public_replay": {
+    "event_counts": {
+      "item_create": 431,
+      "cash": 978,
+      "economy_round_start": 22,
+      "buy": 359,
+      "round_start": 22,
+      "fire": 670,
+      "hit": 399,
+      "kill": 103,
+      "drop": 371,
+      "kill_reward": 103,
+      "round_economy": 22,
+      "round_end": 22,
+      "item_destroy": 349,
+      "draw": 361,
+      "throw": 39,
+      "consume": 39,
+      "bounce": 37,
+      "detonate": 48,
+      "reload_start": 4,
+      "reload_commit": 4,
+      "reload_finish": 4,
+      "plant_start": 13,
+      "plant_complete": 13,
+      "plant_complete_detail": 13,
+      "bomb_explode": 9,
+      "bomb_explode_detail": 9,
+      "pickup": 7,
+      "flash": 20,
+      "side_swap": 1,
+      "defuse_start": 2,
+      "defuse_complete": 2,
+      "defuse_complete_detail": 2,
+      "match_end": 1
+    },
+    "event_samples": {
+      "fire": {
+        "type": "fire",
+        "event_id": "1817550673:54",
+        "match_tick": 2086,
+        "round_index": 0,
+        "player": 2,
+        "weapon": "usp",
+        "pellet": 0,
+        "materials": [],
+        "from": [
+          40.2987971279144,
+          66.57026870015147,
+          16.13370987258911
+        ],
+        "to": [
+          41.754215405481624,
+          75.60705999187589,
+          16.204462861549747
+        ],
+        "views": {
+          "2": true
+        }
+      },
+      "hit": {
+        "type": "hit",
+        "event_id": "1817550673:59",
+        "match_tick": 2356,
+        "round_index": 0,
+        "player": 2,
+        "target": 7,
+        "part": "lower",
+        "kind": "bullet",
+        "amount": 17.138439279435715,
+        "hp_damage": 17.138439279435715,
+        "armor_absorbed": 0.0,
+        "views": {
+          "2": {
+            "type": "hit",
+            "event_id": "1817550673:59",
+            "match_tick": 2356,
+            "round_index": 0,
+            "player": 2,
+            "target": 7,
+            "part": "lower",
+            "kind": "bullet"
+          },
+          "7": {
+            "type": "hit",
+            "event_id": "1817550673:59",
+            "match_tick": 2356,
+            "round_index": 0,
+            "target": 7,
+            "part": "lower",
+            "kind": "bullet",
+            "amount": 17.138439279435715,
+            "hp_damage": 17.138439279435715,
+            "armor_absorbed": 0.0
+          }
+        }
+      },
+      "kill": {
+        "type": "kill",
+        "event_id": "1817550673:74",
+        "match_tick": 2647,
+        "round_index": 0,
+        "target": 2,
+        "killer": 7,
+        "assists": [],
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "round_end": {
+        "type": "round_end",
+        "event_id": "1817550673:113",
+        "match_tick": 7260,
+        "round_index": 0,
+        "round_winner": 0,
+        "reason": "timeout",
+        "round_wins": [
+          1,
+          0
+        ],
+        "post_end_tick": 7560,
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "plant_complete_detail": {
+        "type": "plant_complete_detail",
+        "event_id": "1817550673:629",
+        "match_tick": 18726,
+        "round_index": 3,
+        "player": 6,
+        "item_id": "r3:bomb",
+        "site": "B",
+        "position": [
+          108.12068375823895,
+          50.61086001802261,
+          15.936109870300294
+        ],
+        "views": {
+          "6": {
+            "type": "plant_complete_detail",
+            "event_id": "1817550673:629",
+            "match_tick": 18726,
+            "round_index": 3,
+            "player": 6,
+            "item_id": "r3:bomb",
+            "site": "B"
+          },
+          "8": true
+        }
+      },
+      "defuse_complete": {
+        "type": "defuse_complete",
+        "event_id": "1817550673:2934",
+        "match_tick": 98004,
+        "round_index": 14,
+        "item_id": "r14:bomb",
+        "fuse_end_tick": 99603,
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      },
+      "match_end": {
+        "type": "match_end",
+        "event_id": "1817550673:4479",
+        "match_tick": 148542,
+        "round_index": 21,
+        "match_winner": 0,
+        "reason": "round_wins",
+        "round_wins": [
+          13,
+          9
+        ],
+        "views": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true
+        }
+      }
+    },
+    "kills": 13,
+    "deaths": 12,
+    "hp_damage": 1181.8663822463973,
+    "hit_targets": {
+      "0": 20,
+      "1": 12,
+      "4": 7,
+      "3": 5
+    },
+    "events_sha256": "4e94c6b4f8e0ab0992818d1019d8cff40392249b5323e9b3c317b0c4aed2b0dd"
+  }
+}

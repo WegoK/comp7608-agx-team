@@ -1,14 +1,14 @@
 {
   "schema": "agx-version-and-branch-index-v1",
-  "recorded_on_beijing": "2026-11-24",
+  "recorded_on_beijing": "2026-11-25",
   "remote": "https://github.com/WegoK/comp7608-agx-team.git",
   "long_term_branches": [
     {
       "name": "codex/haoran-fps",
       "game": "FPS",
       "current_game_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40",
-      "current_source_status": "third_development_candidate_not_uploaded",
-      "latest_verified_platform_source_commit": "e27acc998e08d5dc3f59bac6e0fa5e4a99329058"
+      "current_source_status": "verified_adopted_in_mirage_match",
+      "latest_verified_platform_source_commit": "65652c51f1ef60fb1f365b45bfff3eaa947c7f40"
     },
     {
       "name": "codex/haoran-racing",
@@ -140,7 +140,15 @@
       "manifest_path": "releases/personal/haoran/fps/65652c51f1ef/fps-65652c51f1ef.json",
       "source_files_match_git": true,
       "note": "FPS third development candidate; platform version unconfirmed; no upload or activation.",
-      "experiment": "experiments/R02-haoran-fps-v3-aim-hold/README.md"
+      "experiment": "experiments/R02-haoran-fps-v3-aim-hold/README.md",
+      "verified_match_evidence": [
+        {
+          "match_id": "da9ec3c5-8ddc-4d1b-9472-37c0a6fdc0ac",
+          "platform_version_id": "d0a8c994-b169-45ab-ba1b-4031c01e790f",
+          "evidence": "experiments/R02-haoran-fps-da9ec3c5/review.json",
+          "version_ordinal_note": "Third development package verified adopted; platform ordinal not inferred from source hash."
+        }
+      ]
     }
   ],
   "wego_versions": [
